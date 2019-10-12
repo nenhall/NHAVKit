@@ -1,0 +1,28 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - FDFullscreenPopGesture (1.1)
+  - NHExtension (1.1.1):
+    - DZNEmptyDataSet
+    - "UIView+MGBadgeView"
+  - "UIView+MGBadgeView (0.0.1)"
+
+DEPENDENCIES:
+  - FDFullscreenPopGesture
+  - NHExtension
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DZNEmptyDataSet
+    - FDFullscreenPopGesture
+    - NHExtension
+    - "UIView+MGBadgeView"
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  NHExtension: 301f2bdb80f541155ebfae1f34c2914a733bd9dc
+  "UIView+MGBadgeView": 49caf22454d35f042c798dc8ce27ca38fb6e7d2a
+
+PODFILE CHECKSUM: 2463ca1306713ec626a480984560b273b7ba96d3
+
+COCOAPODS: 1.7.1

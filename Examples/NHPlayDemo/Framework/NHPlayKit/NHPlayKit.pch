@@ -1,0 +1,17 @@
+//
+//  NHPlayKit.pch
+//  NHPlayKit
+//
+//  Created by nenhall on 2019/4/29.
+//  Copyright © 2019 nenhall. All rights reserved.
+//
+
+#ifndef NHPlayKit_pch
+#define NHPlayKit_pch
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#endif /* NHPlayKit_pch */

@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8034DF3121995DDD00531A47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8034DF3021995DDD00531A47 /* AppDelegate.m */; };
+		8034DF3721995DDD00531A47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8034DF3521995DDD00531A47 /* Main.storyboard */; };
+		8034DF3921995DEF00531A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8034DF3821995DEF00531A47 /* Assets.xcassets */; };
+		8034DF3C21995DEF00531A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8034DF3A21995DEF00531A47 /* LaunchScreen.storyboard */; };
+		8034DF3F21995DEF00531A47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8034DF3E21995DEF00531A47 /* main.m */; };
+		D7F6FB4560C5BF33DF2699BD /* libPods-NHPlayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BFB854E71B6D4EA853044C /* libPods-NHPlayDemo.a */; };
+		EE1A24222233B97F000D4C53 /* NHPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1A24212233B97F000D4C53 /* NHPlayViewController.m */; };
+		EE254D53235049B600F7434F /* NHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE254D52235049B600F7434F /* NHTabBarController.m */; };
+		EE254D56235049C800F7434F /* NHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE254D55235049C800F7434F /* NHTabBar.m */; };
+		EE9AD91A234F33B90022A98D /* I’m-so-sick-1080P—Apink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE9AD918234F33B90022A98D /* I’m-so-sick-1080P—Apink.mp4 */; };
+		EE9AD91B234F33B90022A98D /* I’m-so-sick.aac in Resources */ = {isa = PBXBuildFile; fileRef = EE9AD919234F33B90022A98D /* I’m-so-sick.aac */; };
+		EE9AD923234F35D40022A98D /* NHTodayNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9AD922234F35D40022A98D /* NHTodayNewsController.m */; };
+		EE9AD926234F365D0022A98D /* NHDouYinController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9AD925234F365D0022A98D /* NHDouYinController.m */; };
+		EE9AD92B234F386D0022A98D /* NHDouYinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9AD92A234F386D0022A98D /* NHDouYinCell.m */; };
+		EE9AD92E234F38830022A98D /* NHTodayNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9AD92D234F38830022A98D /* NHTodayNewsCell.m */; };
+		EEA6BBD5234F258C00D5143E /* NHPlayKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEA6BBD2234F257600D5143E /* NHPlayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEA6BBD1234F257600D5143E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEA6BBCD234F257600D5143E /* NHPlayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4200A722768FF200F22E98;
+			remoteInfo = NHPlayKit;
+		};
+		EEA6BBD3234F257F00D5143E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEA6BBCD234F257600D5143E /* NHPlayKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4200A622768FF200F22E98;
+			remoteInfo = NHPlayKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE26F36C22365BF9007CF8EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEA6BBD5234F258C00D5143E /* NHPlayKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		344FE78A77D5E1E9F3FB73C9 /* Pods-NHPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHPlayDemo.release.xcconfig"; path = "Target Support Files/Pods-NHPlayDemo/Pods-NHPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		48BFB854E71B6D4EA853044C /* libPods-NHPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		697584A840575F34AE11E767 /* Pods-NHPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHPlayDemo.debug.xcconfig"; path = "Target Support Files/Pods-NHPlayDemo/Pods-NHPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8034DF2C21995DDD00531A47 /* NHPlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHPlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8034DF2F21995DDD00531A47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8034DF3021995DDD00531A47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8034DF3621995DDD00531A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8034DF3821995DEF00531A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8034DF3B21995DEF00531A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8034DF3D21995DEF00531A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8034DF3E21995DEF00531A47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE1A24202233B97F000D4C53 /* NHPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NHPlayViewController.h; path = TodayNews/NHPlayViewController.h; sourceTree = "<group>"; };
+		EE1A24212233B97F000D4C53 /* NHPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NHPlayViewController.m; path = TodayNews/NHPlayViewController.m; sourceTree = "<group>"; };
+		EE254D51235049B600F7434F /* NHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHTabBarController.h; sourceTree = "<group>"; };
+		EE254D52235049B600F7434F /* NHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHTabBarController.m; sourceTree = "<group>"; };
+		EE254D54235049C800F7434F /* NHTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHTabBar.h; sourceTree = "<group>"; };
+		EE254D55235049C800F7434F /* NHTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHTabBar.m; sourceTree = "<group>"; };
+		EE9AD918234F33B90022A98D /* I’m-so-sick-1080P—Apink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick-1080P—Apink.mp4"; path = "../../../../Sources/I’m-so-sick-1080P—Apink.mp4"; sourceTree = "<group>"; };
+		EE9AD919234F33B90022A98D /* I’m-so-sick.aac */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick.aac"; path = "../../../../Sources/I’m-so-sick.aac"; sourceTree = "<group>"; };
+		EE9AD921234F35D40022A98D /* NHTodayNewsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHTodayNewsController.h; sourceTree = "<group>"; };
+		EE9AD922234F35D40022A98D /* NHTodayNewsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHTodayNewsController.m; sourceTree = "<group>"; };
+		EE9AD924234F365D0022A98D /* NHDouYinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHDouYinController.h; sourceTree = "<group>"; };
+		EE9AD925234F365D0022A98D /* NHDouYinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHDouYinController.m; sourceTree = "<group>"; };
+		EE9AD929234F386D0022A98D /* NHDouYinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHDouYinCell.h; sourceTree = "<group>"; };
+		EE9AD92A234F386D0022A98D /* NHDouYinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHDouYinCell.m; sourceTree = "<group>"; };
+		EE9AD92C234F38830022A98D /* NHTodayNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHTodayNewsCell.h; sourceTree = "<group>"; };
+		EE9AD92D234F38830022A98D /* NHTodayNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHTodayNewsCell.m; sourceTree = "<group>"; };
+		EE9AD930234F3FC40022A98D /* NHPlayDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHPlayDemo.pch; sourceTree = "<group>"; };
+		EEA6BBCD234F257600D5143E /* NHPlayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NHPlayKit.xcodeproj; path = Framework/NHPlayKit.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8034DF2921995DDD00531A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F6FB4560C5BF33DF2699BD /* libPods-NHPlayDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1785A65D4E8125FDD3B8B84E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48BFB854E71B6D4EA853044C /* libPods-NHPlayDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8034DF2321995DDD00531A47 = {
+			isa = PBXGroup;
+			children = (
+				EEA6BBCD234F257600D5143E /* NHPlayKit.xcodeproj */,
+				8034DF2E21995DDD00531A47 /* NHPlayDemo */,
+				8034DF2D21995DDD00531A47 /* Products */,
+				C81E0606B50F4A1EDB28B746 /* Pods */,
+				1785A65D4E8125FDD3B8B84E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8034DF2D21995DDD00531A47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8034DF2C21995DDD00531A47 /* NHPlayDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8034DF2E21995DDD00531A47 /* NHPlayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AD91E234F345E0022A98D /* Class */,
+				EE9AD920234F34BE0022A98D /* Other */,
+				EE9AD91C234F341E0022A98D /* Resources */,
+			);
+			path = NHPlayDemo;
+			sourceTree = "<group>";
+		};
+		C81E0606B50F4A1EDB28B746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				697584A840575F34AE11E767 /* Pods-NHPlayDemo.debug.xcconfig */,
+				344FE78A77D5E1E9F3FB73C9 /* Pods-NHPlayDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE9AD91C234F341E0022A98D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AD918234F33B90022A98D /* I’m-so-sick-1080P—Apink.mp4 */,
+				EE9AD919234F33B90022A98D /* I’m-so-sick.aac */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE9AD91E234F345E0022A98D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AD927234F382B0022A98D /* DouYin */,
+				EE9AD928234F38360022A98D /* TodayNews */,
+				EE1A24202233B97F000D4C53 /* NHPlayViewController.h */,
+				EE1A24212233B97F000D4C53 /* NHPlayViewController.m */,
+				EE254D51235049B600F7434F /* NHTabBarController.h */,
+				EE254D52235049B600F7434F /* NHTabBarController.m */,
+				EE254D54235049C800F7434F /* NHTabBar.h */,
+				EE254D55235049C800F7434F /* NHTabBar.m */,
+				8034DF2F21995DDD00531A47 /* AppDelegate.h */,
+				8034DF3021995DDD00531A47 /* AppDelegate.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		EE9AD920234F34BE0022A98D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8034DF3521995DDD00531A47 /* Main.storyboard */,
+				8034DF3821995DEF00531A47 /* Assets.xcassets */,
+				8034DF3A21995DEF00531A47 /* LaunchScreen.storyboard */,
+				8034DF3D21995DEF00531A47 /* Info.plist */,
+				8034DF3E21995DEF00531A47 /* main.m */,
+				EE9AD930234F3FC40022A98D /* NHPlayDemo.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EE9AD927234F382B0022A98D /* DouYin */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AD924234F365D0022A98D /* NHDouYinController.h */,
+				EE9AD925234F365D0022A98D /* NHDouYinController.m */,
+				EE9AD929234F386D0022A98D /* NHDouYinCell.h */,
+				EE9AD92A234F386D0022A98D /* NHDouYinCell.m */,
+			);
+			path = DouYin;
+			sourceTree = "<group>";
+		};
+		EE9AD928234F38360022A98D /* TodayNews */ = {
+			isa = PBXGroup;
+			children = (
+				EE9AD921234F35D40022A98D /* NHTodayNewsController.h */,
+				EE9AD922234F35D40022A98D /* NHTodayNewsController.m */,
+				EE9AD92C234F38830022A98D /* NHTodayNewsCell.h */,
+				EE9AD92D234F38830022A98D /* NHTodayNewsCell.m */,
+			);
+			path = TodayNews;
+			sourceTree = "<group>";
+		};
+		EEA6BBCE234F257600D5143E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEA6BBD2234F257600D5143E /* NHPlayKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8034DF2B21995DDD00531A47 /* NHPlayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8034DF4221995DEF00531A47 /* Build configuration list for PBXNativeTarget "NHPlayDemo" */;
+			buildPhases = (
+				41026822FC711FC2D72524D3 /* [CP] Check Pods Manifest.lock */,
+				8034DF2821995DDD00531A47 /* Sources */,
+				8034DF2921995DDD00531A47 /* Frameworks */,
+				8034DF2A21995DDD00531A47 /* Resources */,
+				EE26F36C22365BF9007CF8EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA6BBD4234F257F00D5143E /* PBXTargetDependency */,
+			);
+			name = NHPlayDemo;
+			productName = NHPlayDemo;
+			productReference = 8034DF2C21995DDD00531A47 /* NHPlayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8034DF2421995DDD00531A47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NH;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = nenhall_studio;
+				TargetAttributes = {
+					8034DF2B21995DDD00531A47 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8034DF2721995DDD00531A47 /* Build configuration list for PBXProject "NHPlayDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8034DF2321995DDD00531A47;
+			productRefGroup = 8034DF2D21995DDD00531A47 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EEA6BBCE234F257600D5143E /* Products */;
+					ProjectRef = EEA6BBCD234F257600D5143E /* NHPlayKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8034DF2B21995DDD00531A47 /* NHPlayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EEA6BBD2234F257600D5143E /* NHPlayKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NHPlayKit.framework;
+			remoteRef = EEA6BBD1234F257600D5143E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8034DF2A21995DDD00531A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9AD91A234F33B90022A98D /* I’m-so-sick-1080P—Apink.mp4 in Resources */,
+				EE9AD91B234F33B90022A98D /* I’m-so-sick.aac in Resources */,
+				8034DF3C21995DEF00531A47 /* LaunchScreen.storyboard in Resources */,
+				8034DF3921995DEF00531A47 /* Assets.xcassets in Resources */,
+				8034DF3721995DDD00531A47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41026822FC711FC2D72524D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NHPlayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8034DF2821995DDD00531A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE254D56235049C800F7434F /* NHTabBar.m in Sources */,
+				EE1A24222233B97F000D4C53 /* NHPlayViewController.m in Sources */,
+				EE9AD923234F35D40022A98D /* NHTodayNewsController.m in Sources */,
+				EE9AD926234F365D0022A98D /* NHDouYinController.m in Sources */,
+				EE9AD92B234F386D0022A98D /* NHDouYinCell.m in Sources */,
+				EE9AD92E234F38830022A98D /* NHTodayNewsCell.m in Sources */,
+				EE254D53235049B600F7434F /* NHTabBarController.m in Sources */,
+				8034DF3F21995DEF00531A47 /* main.m in Sources */,
+				8034DF3121995DDD00531A47 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEA6BBD4234F257F00D5143E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NHPlayKit;
+			targetProxy = EEA6BBD3234F257F00D5143E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8034DF3521995DDD00531A47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8034DF3621995DDD00531A47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8034DF3A21995DEF00531A47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8034DF3B21995DEF00531A47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8034DF4021995DEF00531A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8034DF4121995DEF00531A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8034DF4321995DEF00531A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697584A840575F34AE11E767 /* Pods-NHPlayDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NHPlayDemo/NHPlayDemo.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DZNEmptyDataSet\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/NHExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/UIView+MGBadgeView\"",
+				);
+				INFOPLIST_FILE = NHPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHPlayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/../NHPlay";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8034DF4421995DEF00531A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344FE78A77D5E1E9F3FB73C9 /* Pods-NHPlayDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NHPlayDemo/NHPlayDemo.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DZNEmptyDataSet\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/NHExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/UIView+MGBadgeView\"",
+				);
+				INFOPLIST_FILE = NHPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHPlayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/../NHPlay";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8034DF2721995DDD00531A47 /* Build configuration list for PBXProject "NHPlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8034DF4021995DEF00531A47 /* Debug */,
+				8034DF4121995DEF00531A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8034DF4221995DEF00531A47 /* Build configuration list for PBXNativeTarget "NHPlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8034DF4321995DEF00531A47 /* Debug */,
+				8034DF4421995DEF00531A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8034DF2421995DDD00531A47 /* Project object */;
+}

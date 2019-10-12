@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios, '8.0'
+
+target 'NHCaptureDemo' do
+    pod 'FDFullscreenPopGesture'
+    pod 'NHExtension'
+    pod 'NHHUDExtend'
+#    pod 'GPUImage'
+end
