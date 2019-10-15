@@ -23,9 +23,6 @@
 		EE26F520223660FF007CF8EF /* NHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26F51E223660FF007CF8EF /* NHMainViewController.m */; };
 		EE26FACC22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE26FACB22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 */; };
 		EE2CD6802261CF170091CF23 /* I’m-so-sick.aac in Resources */ = {isa = PBXBuildFile; fileRef = EE2CD67D2261CF170091CF23 /* I’m-so-sick.aac */; };
-		EE2CD6812261CF170091CF23 /* I’m-so-sick.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE2CD67F2261CF170091CF23 /* I’m-so-sick.mp4 */; };
-		EEB57621227845E200B830C3 /* NHPlayKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE420634227692BA00F22E98 /* NHPlayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EEB57622227845E600B830C3 /* NHCaptureKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE42009A22768F8000F22E98 /* NHCaptureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EECD2CCF224A46D400F4620C /* NHVideoProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD2CCD224A46D400F4620C /* NHVideoProcessController.m */; };
 		EECD2CD0224A46D400F4620C /* NHVideoProcessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EECD2CCE224A46D400F4620C /* NHVideoProcessController.xib */; };
 		EECD2CD4224A49C800F4620C /* NHVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD2CD2224A49C800F4620C /* NHVideoListController.m */; };
@@ -45,33 +42,33 @@
 			remoteGlobalIDString = EE26F4D322365F95007CF8EF;
 			remoteInfo = NHCaptureDemo;
 		};
-		EE42009922768F8000F22E98 /* PBXContainerItemProxy */ = {
+		EE7EE2322355E38100B63210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE42009522768F8000F22E98 /* NHCaptureKit.xcodeproj */;
+			containerPortal = EE7EE22E2355E38100B63210 /* NHCaptureKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE42F80C227687EC00F22E98;
 			remoteInfo = NHCaptureKit;
 		};
-		EE42009B22768F8B00F22E98 /* PBXContainerItemProxy */ = {
+		EE7EE23A2355E52900B63210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE42009522768F8000F22E98 /* NHCaptureKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EE42F80B227687EC00F22E98;
-			remoteInfo = NHCaptureKit;
-		};
-		EE420633227692BA00F22E98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE42062F227692B900F22E98 /* NHPlayKit.xcodeproj */;
+			containerPortal = EE7EE2362355E52900B63210 /* NHPlayKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE4200A722768FF200F22E98;
 			remoteInfo = NHPlayKit;
 		};
-		EE420635227692DB00F22E98 /* PBXContainerItemProxy */ = {
+		EE7EE23C2355E53F00B63210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE42062F227692B900F22E98 /* NHPlayKit.xcodeproj */;
+			containerPortal = EE7EE2362355E52900B63210 /* NHPlayKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EE4200A622768FF200F22E98;
 			remoteInfo = NHPlayKit;
+		};
+		EE7EE23E2355E54200B63210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE7EE22E2355E38100B63210 /* NHCaptureKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE42F80B227687EC00F22E98;
+			remoteInfo = NHCaptureKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -82,8 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EEB57622227845E600B830C3 /* NHCaptureKit.framework in CopyFiles */,
-				EEB57621227845E200B830C3 /* NHPlayKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,11 +108,10 @@
 		EE26F50E22366080007CF8EF /* NHVideoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoListCell.h; sourceTree = "<group>"; };
 		EE26F51E223660FF007CF8EF /* NHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMainViewController.m; sourceTree = "<group>"; };
 		EE26F51F223660FF007CF8EF /* NHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMainViewController.h; sourceTree = "<group>"; };
-		EE26FACB22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick-1080P—Apink.mp4"; path = "../../../../Sources/I’m-so-sick-1080P—Apink.mp4"; sourceTree = "<group>"; };
-		EE2CD67D2261CF170091CF23 /* I’m-so-sick.aac */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick.aac"; path = "../../../../Sources/I’m-so-sick.aac"; sourceTree = "<group>"; };
-		EE2CD67F2261CF170091CF23 /* I’m-so-sick.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick.mp4"; path = "../../../../Sources/I’m-so-sick.mp4"; sourceTree = "<group>"; };
-		EE42009522768F8000F22E98 /* NHCaptureKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NHCaptureKit.xcodeproj; path = ../../SDK/NHCaptureKit/NHCaptureKit.xcodeproj; sourceTree = "<group>"; };
-		EE42062F227692B900F22E98 /* NHPlayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NHPlayKit.xcodeproj; path = ../../SDK/NHPlayKit/NHPlayKit.xcodeproj; sourceTree = "<group>"; };
+		EE26FACB22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I’m-so-sick-1080P—Apink.mp4"; sourceTree = "<group>"; };
+		EE2CD67D2261CF170091CF23 /* I’m-so-sick.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I’m-so-sick.aac"; sourceTree = "<group>"; };
+		EE7EE22E2355E38100B63210 /* NHCaptureKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NHCaptureKit.xcodeproj; path = Framework/NHCaptureKit/NHCaptureKit.xcodeproj; sourceTree = "<group>"; };
+		EE7EE2362355E52900B63210 /* NHPlayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NHPlayKit.xcodeproj; path = ../NHPlayDemo/Framework/NHPlayKit.xcodeproj; sourceTree = "<group>"; };
 		EECD2CCC224A46D400F4620C /* NHVideoProcessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHVideoProcessController.h; sourceTree = "<group>"; };
 		EECD2CCD224A46D400F4620C /* NHVideoProcessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHVideoProcessController.m; sourceTree = "<group>"; };
 		EECD2CCE224A46D400F4620C /* NHVideoProcessController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NHVideoProcessController.xib; sourceTree = "<group>"; };
@@ -169,8 +163,8 @@
 		EE26F4CB22365F95007CF8EF = {
 			isa = PBXGroup;
 			children = (
-				EE42062F227692B900F22E98 /* NHPlayKit.xcodeproj */,
-				EE42009522768F8000F22E98 /* NHCaptureKit.xcodeproj */,
+				EE7EE2362355E52900B63210 /* NHPlayKit.xcodeproj */,
+				EE7EE22E2355E38100B63210 /* NHCaptureKit.xcodeproj */,
 				EE26F4D622365F95007CF8EF /* NHCaptureDemo */,
 				EE26F4EF22365F96007CF8EF /* NHCaptureDemoUITests */,
 				EE26F4D522365F95007CF8EF /* Products */,
@@ -194,7 +188,7 @@
 				EE26F51322366080007CF8EF /* M */,
 				EE26F50B22366080007CF8EF /* V */,
 				EE26F50F22366080007CF8EF /* C */,
-				EE26F50922366080007CF8EF /* Src */,
+				EE26F50922366080007CF8EF /* Sources */,
 				EE26F51A22366099007CF8EF /* Other */,
 				EE26F4E022365F96007CF8EF /* Assets.xcassets */,
 				EE26F4E522365F96007CF8EF /* Info.plist */,
@@ -212,14 +206,14 @@
 			path = NHCaptureDemoUITests;
 			sourceTree = "<group>";
 		};
-		EE26F50922366080007CF8EF /* Src */ = {
+		EE26F50922366080007CF8EF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				EE2CD67D2261CF170091CF23 /* I’m-so-sick.aac */,
-				EE2CD67F2261CF170091CF23 /* I’m-so-sick.mp4 */,
 				EE26FACB22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 */,
 			);
-			path = Src;
+			name = Sources;
+			path = ../../../Sources;
 			sourceTree = "<group>";
 		};
 		EE26F50B22366080007CF8EF /* V */ = {
@@ -285,18 +279,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE42009622768F8000F22E98 /* Products */ = {
+		EE7EE22F2355E38100B63210 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE42009A22768F8000F22E98 /* NHCaptureKit.framework */,
+				EE7EE2332355E38100B63210 /* NHCaptureKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE420630227692B900F22E98 /* Products */ = {
+		EE7EE2372355E52900B63210 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE420634227692BA00F22E98 /* NHPlayKit.framework */,
+				EE7EE23B2355E52900B63210 /* NHPlayKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,8 +311,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				EE420636227692DB00F22E98 /* PBXTargetDependency */,
-				EE42009C22768F8B00F22E98 /* PBXTargetDependency */,
+				EE7EE23F2355E54200B63210 /* PBXTargetDependency */,
+				EE7EE23D2355E53F00B63210 /* PBXTargetDependency */,
 			);
 			name = NHCaptureDemo;
 			productName = NHCaptureDemo;
@@ -375,12 +369,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EE42009622768F8000F22E98 /* Products */;
-					ProjectRef = EE42009522768F8000F22E98 /* NHCaptureKit.xcodeproj */;
+					ProductGroup = EE7EE22F2355E38100B63210 /* Products */;
+					ProjectRef = EE7EE22E2355E38100B63210 /* NHCaptureKit.xcodeproj */;
 				},
 				{
-					ProductGroup = EE420630227692B900F22E98 /* Products */;
-					ProjectRef = EE42062F227692B900F22E98 /* NHPlayKit.xcodeproj */;
+					ProductGroup = EE7EE2372355E52900B63210 /* Products */;
+					ProjectRef = EE7EE2362355E52900B63210 /* NHPlayKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -392,18 +386,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EE42009A22768F8000F22E98 /* NHCaptureKit.framework */ = {
+		EE7EE2332355E38100B63210 /* NHCaptureKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NHCaptureKit.framework;
-			remoteRef = EE42009922768F8000F22E98 /* PBXContainerItemProxy */;
+			remoteRef = EE7EE2322355E38100B63210 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EE420634227692BA00F22E98 /* NHPlayKit.framework */ = {
+		EE7EE23B2355E52900B63210 /* NHPlayKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NHPlayKit.framework;
-			remoteRef = EE420633227692BA00F22E98 /* PBXContainerItemProxy */;
+			remoteRef = EE7EE23A2355E52900B63210 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -415,7 +409,6 @@
 			files = (
 				EEE13818223E712000B7F45B /* NHPushViewController.xib in Resources */,
 				EE26F4E422365F96007CF8EF /* LaunchScreen.storyboard in Resources */,
-				EE2CD6812261CF170091CF23 /* I’m-so-sick.mp4 in Resources */,
 				EEE1384E223E95D300B7F45B /* NHVideoRecordViewController.xib in Resources */,
 				EE26F4E122365F96007CF8EF /* Assets.xcassets in Resources */,
 				EECD2CD5224A49C800F4620C /* NHVideoListController.xib in Resources */,
@@ -494,15 +487,15 @@
 			target = EE26F4D322365F95007CF8EF /* NHCaptureDemo */;
 			targetProxy = EE26F4ED22365F96007CF8EF /* PBXContainerItemProxy */;
 		};
-		EE42009C22768F8B00F22E98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NHCaptureKit;
-			targetProxy = EE42009B22768F8B00F22E98 /* PBXContainerItemProxy */;
-		};
-		EE420636227692DB00F22E98 /* PBXTargetDependency */ = {
+		EE7EE23D2355E53F00B63210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NHPlayKit;
-			targetProxy = EE420635227692DB00F22E98 /* PBXContainerItemProxy */;
+			targetProxy = EE7EE23C2355E53F00B63210 /* PBXContainerItemProxy */;
+		};
+		EE7EE23F2355E54200B63210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NHCaptureKit;
+			targetProxy = EE7EE23E2355E54200B63210 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -644,7 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DT7B62U27;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NHCaptureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -668,7 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DT7B62U27;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = NHCaptureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

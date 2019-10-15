@@ -30,7 +30,7 @@
 
 
 + (UIImage *)getCoverImageFromVideoURL:(NSURL *)url time:(NSTimeInterval )videoTime{
-    return nil;
+
     if (!url) return nil;
     
     UIImage *shotImage;

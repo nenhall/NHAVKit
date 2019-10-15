@@ -257,7 +257,7 @@ static NSString *kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
 - (void)playbackFinished:(NSNotification *)note {
     NSLog(@"播放完成");
     [[UIDevice currentDevice] setInterfaceOrientations:UIInterfaceOrientationPortrait];
-    OSStatus ret = AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
+//    OSStatus ret = AudioSessionSetActiveWithFlags(NO, kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation);
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(playerObserverStatusChanged:)]) {
         [self.delegate playerObserverStatusChanged:NHPlayerStatusFinished];

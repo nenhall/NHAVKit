@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   基于苹果原生的AVFoundation框架编写的 iOS视频播放、编辑、采集的库
                    DESC
   spec.homepage     = "https://github.com/nenhall/NHAVKit2"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "nenhall" => "nenhall@126.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = "8.0"
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
 
 spec.subspec 'NHAVBaseic' do |b|
-  b.source_files  = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h", "/Users/nenhall/Studio/Repository/NHAVKit2/NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h"
+  b.source_files  = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h", "NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h"
   # b.public_header_files = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h"
   b.resources = "NHAVKit2/NHAVPlayer/NHPlay.bundle"
   b.frameworks = "AVFoundation", "CoreGraphics", "CoreMedia", "VideoToolbox", "AudioToolbox"

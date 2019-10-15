@@ -720,7 +720,7 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate>
   
     if (error) {
       kNSLog(@"%@",error.localizedDescription);
-      return;
+      return position;
     }
   
     if (videoInput) {
