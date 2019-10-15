@@ -13,6 +13,7 @@
 #import "NHGPUImageView.h"
 #import "NHImageBeautifyFilter.h"
 #import "NHFrameImage.h"
+#import "NHH264Encoder.h"
 
 //#import "NHH264Encoder.h"
 //#import "NHWriteH264Stream.h"
@@ -41,7 +42,7 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate>
 
 @implementation NHAVCaptureSession {
     dispatch_queue_t     _encodeQueue;
-//    NHH264Encoder        *_x264Encoder;
+    NHH264Encoder        *_x264Encoder;
 //    NHWriteH264Stream    *_writeH264Stream;
     NHVideoConfiguration *_videoConfiguration;
     CGSize               _captureVideoSize;

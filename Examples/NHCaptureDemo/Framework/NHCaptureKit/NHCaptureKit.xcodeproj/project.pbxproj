@@ -396,6 +396,145 @@
 		EE42FFB72276890200F22E98 /* GPUImageStretchDistortionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE42FB902276890000F22E98 /* GPUImageStretchDistortionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE42FFB82276890200F22E98 /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = EE42FB912276890000F22E98 /* GLProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE42FFB92276890200F22E98 /* GPUImageDarkenBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE42FB922276890000F22E98 /* GPUImageDarkenBlendFilter.m */; };
+		EE7EE2482355EDF800B63210 /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2442355EDF800B63210 /* x264_config.h */; };
+		EE7EE2492355EDF800B63210 /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2452355EDF800B63210 /* x264.h */; };
+		EE7EE24A2355EDF800B63210 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2472355EDF800B63210 /* libx264.a */; };
+		EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24C2355F10900B63210 /* OpenGLES.framework */; };
+		EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24E2355F11000B63210 /* CoreMedia.framework */; };
+		EE7EE2512355F11500B63210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2502355F11500B63210 /* QuartzCore.framework */; };
+		EE7EE2532355F11B00B63210 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2522355F11B00B63210 /* AVFoundation.framework */; };
+		EE7EE2552355F2E800B63210 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2542355F2E800B63210 /* CoreVideo.framework */; };
+		EE7EE2602355F3E900B63210 /* NHWriteH264Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2592355F3E800B63210 /* NHWriteH264Stream.h */; };
+		EE7EE2612355F3E900B63210 /* NHX264OutputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE25A2355F3E800B63210 /* NHX264OutputProtocol.h */; };
+		EE7EE2622355F3E900B63210 /* NHX264Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7EE25B2355F3E800B63210 /* NHX264Manager.m */; };
+		EE7EE2632355F3E900B63210 /* NHH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE25C2355F3E800B63210 /* NHH264Encoder.h */; };
+		EE7EE2642355F3E900B63210 /* NHWriteH264Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7EE25D2355F3E800B63210 /* NHWriteH264Stream.m */; };
+		EE7EE2652355F3E900B63210 /* NHX264Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE25E2355F3E800B63210 /* NHX264Manager.h */; };
+		EE7EE2662355F3E900B63210 /* NHH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7EE25F2355F3E800B63210 /* NHH264Encoder.m */; };
+		EE7EE2EB2355F41D00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE26A2355F41D00B63210 /* version.h */; };
+		EE7EE2EC2355F41D00B63210 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE26B2355F41D00B63210 /* postprocess.h */; };
+		EE7EE2ED2355F41D00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE26D2355F41D00B63210 /* version.h */; };
+		EE7EE2EE2355F41D00B63210 /* buffersrc.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE26E2355F41D00B63210 /* buffersrc.h */; };
+		EE7EE2EF2355F41D00B63210 /* buffersink.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE26F2355F41D00B63210 /* buffersink.h */; };
+		EE7EE2F02355F41D00B63210 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2702355F41D00B63210 /* avfilter.h */; };
+		EE7EE2F12355F41D00B63210 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2712355F41D00B63210 /* avfiltergraph.h */; };
+		EE7EE2F22355F41D00B63210 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2732355F41D00B63210 /* hwcontext.h */; };
+		EE7EE2F32355F41D00B63210 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2742355F41D00B63210 /* time.h */; };
+		EE7EE2F42355F41D00B63210 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2752355F41D00B63210 /* hwcontext_cuda.h */; };
+		EE7EE2F52355F41D00B63210 /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2762355F41D00B63210 /* intfloat.h */; };
+		EE7EE2F62355F41D00B63210 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2772355F41D00B63210 /* error.h */; };
+		EE7EE2F72355F41D00B63210 /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2782355F41D00B63210 /* fifo.h */; };
+		EE7EE2F82355F41D00B63210 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2792355F41D00B63210 /* blowfish.h */; };
+		EE7EE2F92355F41D00B63210 /* replaygain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27A2355F41D00B63210 /* replaygain.h */; };
+		EE7EE2FA2355F41D00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27B2355F41D00B63210 /* version.h */; };
+		EE7EE2FB2355F41D00B63210 /* murmur3.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27C2355F41D00B63210 /* murmur3.h */; };
+		EE7EE2FC2355F41D00B63210 /* stereo3d.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27D2355F41D00B63210 /* stereo3d.h */; };
+		EE7EE2FD2355F41D00B63210 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27E2355F41D00B63210 /* samplefmt.h */; };
+		EE7EE2FE2355F41D00B63210 /* pixdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE27F2355F41D00B63210 /* pixdesc.h */; };
+		EE7EE2FF2355F41D00B63210 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2802355F41D00B63210 /* base64.h */; };
+		EE7EE3002355F41D00B63210 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2812355F41D00B63210 /* rational.h */; };
+		EE7EE3012355F41D00B63210 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2822355F41D00B63210 /* sha.h */; };
+		EE7EE3022355F41D00B63210 /* motion_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2832355F41D00B63210 /* motion_vector.h */; };
+		EE7EE3032355F41D00B63210 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2842355F41D00B63210 /* avconfig.h */; };
+		EE7EE3042355F41D00B63210 /* lfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2852355F41D00B63210 /* lfg.h */; };
+		EE7EE3052355F41D00B63210 /* avutil.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2862355F41D00B63210 /* avutil.h */; };
+		EE7EE3062355F41D00B63210 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2872355F41D00B63210 /* xtea.h */; };
+		EE7EE3072355F41D00B63210 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2882355F41D00B63210 /* crc.h */; };
+		EE7EE3082355F41D00B63210 /* hwcontext_vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2892355F41D00B63210 /* hwcontext_vdpau.h */; };
+		EE7EE3092355F41D00B63210 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28A2355F41D00B63210 /* frame.h */; };
+		EE7EE30A2355F41D00B63210 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28B2355F41D00B63210 /* file.h */; };
+		EE7EE30B2355F41D00B63210 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28C2355F41D00B63210 /* md5.h */; };
+		EE7EE30C2355F41D00B63210 /* cast5.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28D2355F41D00B63210 /* cast5.h */; };
+		EE7EE30D2355F41D00B63210 /* hwcontext_vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28E2355F41D00B63210 /* hwcontext_vaapi.h */; };
+		EE7EE30E2355F41D00B63210 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE28F2355F41D00B63210 /* spherical.h */; };
+		EE7EE30F2355F41D00B63210 /* ffversion.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2902355F41D00B63210 /* ffversion.h */; };
+		EE7EE3102355F41D00B63210 /* audio_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2912355F41D00B63210 /* audio_fifo.h */; };
+		EE7EE3112355F41D00B63210 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2922355F41D00B63210 /* tree.h */; };
+		EE7EE3122355F41D00B63210 /* threadmessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2932355F41D00B63210 /* threadmessage.h */; };
+		EE7EE3132355F41D00B63210 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2942355F41D00B63210 /* attributes.h */; };
+		EE7EE3142355F41D00B63210 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2952355F41D00B63210 /* adler32.h */; };
+		EE7EE3152355F41D00B63210 /* hwcontext_d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2962355F41D00B63210 /* hwcontext_d3d11va.h */; };
+		EE7EE3162355F41D00B63210 /* timecode.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2972355F41D00B63210 /* timecode.h */; };
+		EE7EE3172355F41D00B63210 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2982355F41D00B63210 /* sha512.h */; };
+		EE7EE3182355F41D00B63210 /* hwcontext_dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2992355F41D00B63210 /* hwcontext_dxva2.h */; };
+		EE7EE3192355F41D00B63210 /* display.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29A2355F41D00B63210 /* display.h */; };
+		EE7EE31A2355F41D00B63210 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29B2355F41D00B63210 /* buffer.h */; };
+		EE7EE31B2355F41D00B63210 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29C2355F41D00B63210 /* camellia.h */; };
+		EE7EE31C2355F41D00B63210 /* pixelutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29D2355F41D00B63210 /* pixelutils.h */; };
+		EE7EE31D2355F41D00B63210 /* hwcontext_drm.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29E2355F41D00B63210 /* hwcontext_drm.h */; };
+		EE7EE31E2355F41D00B63210 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE29F2355F41D00B63210 /* common.h */; };
+		EE7EE31F2355F41D00B63210 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A02355F41D00B63210 /* hmac.h */; };
+		EE7EE3202355F41D00B63210 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A12355F41D00B63210 /* eval.h */; };
+		EE7EE3212355F41D00B63210 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A22355F41D00B63210 /* dict.h */; };
+		EE7EE3222355F41D00B63210 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A32355F41D00B63210 /* random_seed.h */; };
+		EE7EE3232355F41D00B63210 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A42355F41D00B63210 /* opt.h */; };
+		EE7EE3242355F41D00B63210 /* mastering_display_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A52355F41D00B63210 /* mastering_display_metadata.h */; };
+		EE7EE3252355F41D00B63210 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A62355F41D00B63210 /* log.h */; };
+		EE7EE3262355F41D00B63210 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A72355F41D00B63210 /* aes.h */; };
+		EE7EE3272355F41D00B63210 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A82355F41D00B63210 /* macros.h */; };
+		EE7EE3282355F41D00B63210 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2A92355F41D00B63210 /* bswap.h */; };
+		EE7EE3292355F41D00B63210 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AA2355F41D00B63210 /* rc4.h */; };
+		EE7EE32A2355F41D00B63210 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AB2355F41D00B63210 /* tea.h */; };
+		EE7EE32B2355F41D00B63210 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AC2355F41D00B63210 /* cpu.h */; };
+		EE7EE32C2355F41D00B63210 /* lzo.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AD2355F41D00B63210 /* lzo.h */; };
+		EE7EE32D2355F41D00B63210 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AE2355F41D00B63210 /* des.h */; };
+		EE7EE32E2355F41D00B63210 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2AF2355F41D00B63210 /* channel_layout.h */; };
+		EE7EE32F2355F41D00B63210 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B02355F41D00B63210 /* twofish.h */; };
+		EE7EE3302355F41D00B63210 /* imgutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B12355F41D00B63210 /* imgutils.h */; };
+		EE7EE3312355F41D00B63210 /* hwcontext_videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B22355F41D00B63210 /* hwcontext_videotoolbox.h */; };
+		EE7EE3322355F41D00B63210 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B32355F41D00B63210 /* mem.h */; };
+		EE7EE3332355F41D00B63210 /* parseutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B42355F41D00B63210 /* parseutils.h */; };
+		EE7EE3342355F41D00B63210 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B52355F41D00B63210 /* ripemd.h */; };
+		EE7EE3352355F41D00B63210 /* bprint.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B62355F41D00B63210 /* bprint.h */; };
+		EE7EE3362355F41D00B63210 /* hwcontext_qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B72355F41D00B63210 /* hwcontext_qsv.h */; };
+		EE7EE3372355F41D00B63210 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B82355F41D00B63210 /* pixfmt.h */; };
+		EE7EE3382355F41D00B63210 /* aes_ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2B92355F41D00B63210 /* aes_ctr.h */; };
+		EE7EE3392355F41E00B63210 /* timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BA2355F41D00B63210 /* timestamp.h */; };
+		EE7EE33A2355F41E00B63210 /* downmix_info.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BB2355F41D00B63210 /* downmix_info.h */; };
+		EE7EE33B2355F41E00B63210 /* avassert.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BC2355F41D00B63210 /* avassert.h */; };
+		EE7EE33C2355F41E00B63210 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BD2355F41D00B63210 /* hash.h */; };
+		EE7EE33D2355F41E00B63210 /* mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BE2355F41D00B63210 /* mathematics.h */; };
+		EE7EE33E2355F41E00B63210 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2BF2355F41D00B63210 /* intreadwrite.h */; };
+		EE7EE33F2355F41E00B63210 /* avstring.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C02355F41D00B63210 /* avstring.h */; };
+		EE7EE3402355F41E00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C22355F41D00B63210 /* version.h */; };
+		EE7EE3412355F41E00B63210 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C32355F41D00B63210 /* avdevice.h */; };
+		EE7EE3422355F41E00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C52355F41D00B63210 /* version.h */; };
+		EE7EE3432355F41E00B63210 /* avio.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C62355F41D00B63210 /* avio.h */; };
+		EE7EE3442355F41E00B63210 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C72355F41D00B63210 /* avformat.h */; };
+		EE7EE3452355F41E00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2C92355F41D00B63210 /* version.h */; };
+		EE7EE3462355F41E00B63210 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2CA2355F41D00B63210 /* swscale.h */; };
+		EE7EE3472355F41E00B63210 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2CC2355F41D00B63210 /* avcodec.h */; };
+		EE7EE3482355F41E00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2CD2355F41D00B63210 /* version.h */; };
+		EE7EE3492355F41E00B63210 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2CE2355F41D00B63210 /* vdpau.h */; };
+		EE7EE34A2355F41E00B63210 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2CF2355F41D00B63210 /* qsv.h */; };
+		EE7EE34B2355F41E00B63210 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D02355F41D00B63210 /* vaapi.h */; };
+		EE7EE34C2355F41E00B63210 /* videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D12355F41D00B63210 /* videotoolbox.h */; };
+		EE7EE34D2355F41E00B63210 /* xvmc.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D22355F41D00B63210 /* xvmc.h */; };
+		EE7EE34E2355F41E00B63210 /* mediacodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D32355F41D00B63210 /* mediacodec.h */; };
+		EE7EE34F2355F41E00B63210 /* d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D42355F41D00B63210 /* d3d11va.h */; };
+		EE7EE3502355F41E00B63210 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D52355F41D00B63210 /* avfft.h */; };
+		EE7EE3512355F41E00B63210 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D62355F41D00B63210 /* vda.h */; };
+		EE7EE3522355F41E00B63210 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D72355F41D00B63210 /* jni.h */; };
+		EE7EE3532355F41E00B63210 /* dirac.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D82355F41D00B63210 /* dirac.h */; };
+		EE7EE3542355F41E00B63210 /* avdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2D92355F41D00B63210 /* avdct.h */; };
+		EE7EE3552355F41E00B63210 /* vorbis_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2DA2355F41D00B63210 /* vorbis_parser.h */; };
+		EE7EE3562355F41E00B63210 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2DB2355F41D00B63210 /* dxva2.h */; };
+		EE7EE3572355F41E00B63210 /* dv_profile.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2DC2355F41D00B63210 /* dv_profile.h */; };
+		EE7EE3582355F41E00B63210 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2DE2355F41D00B63210 /* version.h */; };
+		EE7EE3592355F41E00B63210 /* swresample.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2DF2355F41D00B63210 /* swresample.h */; };
+		EE7EE35A2355F41E00B63210 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E12355F41D00B63210 /* libavutil.a */; };
+		EE7EE35B2355F41E00B63210 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E22355F41D00B63210 /* libavfilter.a */; };
+		EE7EE35C2355F41E00B63210 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E32355F41D00B63210 /* libavcodec.a */; };
+		EE7EE35D2355F41E00B63210 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E42355F41D00B63210 /* libpostproc.a */; };
+		EE7EE35E2355F41E00B63210 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E52355F41D00B63210 /* libavformat.a */; };
+		EE7EE35F2355F41E00B63210 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E62355F41D00B63210 /* libavdevice.a */; };
+		EE7EE3602355F41E00B63210 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E72355F41D00B63210 /* libswresample.a */; };
+		EE7EE3612355F41E00B63210 /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E82355F41D00B63210 /* libfaac.a */; };
+		EE7EE3622355F41E00B63210 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2E92355F41D00B63210 /* libswscale.a */; };
+		EE7EE3632355F41E00B63210 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2EA2355F41D00B63210 /* libx264.a */; };
+		EE7EE3652355F4B600B63210 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3642355F4B600B63210 /* libz.tbd */; };
+		EE7EE3672355F4D100B63210 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3662355F4D100B63210 /* libiconv.tbd */; };
+		EE7EE36D2355F56700B63210 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE36C2355F56700B63210 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -791,6 +930,147 @@
 		EE42FC582276890100F22E98 /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
 		EE42FC592276890100F22E98 /* NHMusicEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMusicEditor.h; sourceTree = "<group>"; };
 		EE42FC5A2276890100F22E98 /* NHVideoWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoWater.h; sourceTree = "<group>"; };
+		EE7EE2442355EDF800B63210 /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
+		EE7EE2452355EDF800B63210 /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
+		EE7EE2472355EDF800B63210 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		EE7EE24C2355F10900B63210 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EE7EE24E2355F11000B63210 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE2502355F11500B63210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE2522355F11B00B63210 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE2542355F2E800B63210 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE2592355F3E800B63210 /* NHWriteH264Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHWriteH264Stream.h; sourceTree = "<group>"; };
+		EE7EE25A2355F3E800B63210 /* NHX264OutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264OutputProtocol.h; sourceTree = "<group>"; };
+		EE7EE25B2355F3E800B63210 /* NHX264Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHX264Manager.m; sourceTree = "<group>"; };
+		EE7EE25C2355F3E800B63210 /* NHH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHH264Encoder.h; sourceTree = "<group>"; };
+		EE7EE25D2355F3E800B63210 /* NHWriteH264Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHWriteH264Stream.m; sourceTree = "<group>"; };
+		EE7EE25E2355F3E800B63210 /* NHX264Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264Manager.h; sourceTree = "<group>"; };
+		EE7EE25F2355F3E800B63210 /* NHH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHH264Encoder.m; sourceTree = "<group>"; };
+		EE7EE26A2355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE26B2355F41D00B63210 /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
+		EE7EE26D2355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE26E2355F41D00B63210 /* buffersrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffersrc.h; sourceTree = "<group>"; };
+		EE7EE26F2355F41D00B63210 /* buffersink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffersink.h; sourceTree = "<group>"; };
+		EE7EE2702355F41D00B63210 /* avfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfilter.h; sourceTree = "<group>"; };
+		EE7EE2712355F41D00B63210 /* avfiltergraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfiltergraph.h; sourceTree = "<group>"; };
+		EE7EE2732355F41D00B63210 /* hwcontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext.h; sourceTree = "<group>"; };
+		EE7EE2742355F41D00B63210 /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		EE7EE2752355F41D00B63210 /* hwcontext_cuda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_cuda.h; sourceTree = "<group>"; };
+		EE7EE2762355F41D00B63210 /* intfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intfloat.h; sourceTree = "<group>"; };
+		EE7EE2772355F41D00B63210 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		EE7EE2782355F41D00B63210 /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
+		EE7EE2792355F41D00B63210 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		EE7EE27A2355F41D00B63210 /* replaygain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = replaygain.h; sourceTree = "<group>"; };
+		EE7EE27B2355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE27C2355F41D00B63210 /* murmur3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = murmur3.h; sourceTree = "<group>"; };
+		EE7EE27D2355F41D00B63210 /* stereo3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stereo3d.h; sourceTree = "<group>"; };
+		EE7EE27E2355F41D00B63210 /* samplefmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplefmt.h; sourceTree = "<group>"; };
+		EE7EE27F2355F41D00B63210 /* pixdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixdesc.h; sourceTree = "<group>"; };
+		EE7EE2802355F41D00B63210 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		EE7EE2812355F41D00B63210 /* rational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rational.h; sourceTree = "<group>"; };
+		EE7EE2822355F41D00B63210 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		EE7EE2832355F41D00B63210 /* motion_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motion_vector.h; sourceTree = "<group>"; };
+		EE7EE2842355F41D00B63210 /* avconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avconfig.h; sourceTree = "<group>"; };
+		EE7EE2852355F41D00B63210 /* lfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfg.h; sourceTree = "<group>"; };
+		EE7EE2862355F41D00B63210 /* avutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avutil.h; sourceTree = "<group>"; };
+		EE7EE2872355F41D00B63210 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
+		EE7EE2882355F41D00B63210 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		EE7EE2892355F41D00B63210 /* hwcontext_vdpau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_vdpau.h; sourceTree = "<group>"; };
+		EE7EE28A2355F41D00B63210 /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		EE7EE28B2355F41D00B63210 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		EE7EE28C2355F41D00B63210 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		EE7EE28D2355F41D00B63210 /* cast5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast5.h; sourceTree = "<group>"; };
+		EE7EE28E2355F41D00B63210 /* hwcontext_vaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_vaapi.h; sourceTree = "<group>"; };
+		EE7EE28F2355F41D00B63210 /* spherical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spherical.h; sourceTree = "<group>"; };
+		EE7EE2902355F41D00B63210 /* ffversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffversion.h; sourceTree = "<group>"; };
+		EE7EE2912355F41D00B63210 /* audio_fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_fifo.h; sourceTree = "<group>"; };
+		EE7EE2922355F41D00B63210 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		EE7EE2932355F41D00B63210 /* threadmessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadmessage.h; sourceTree = "<group>"; };
+		EE7EE2942355F41D00B63210 /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributes.h; sourceTree = "<group>"; };
+		EE7EE2952355F41D00B63210 /* adler32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adler32.h; sourceTree = "<group>"; };
+		EE7EE2962355F41D00B63210 /* hwcontext_d3d11va.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_d3d11va.h; sourceTree = "<group>"; };
+		EE7EE2972355F41D00B63210 /* timecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timecode.h; sourceTree = "<group>"; };
+		EE7EE2982355F41D00B63210 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		EE7EE2992355F41D00B63210 /* hwcontext_dxva2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_dxva2.h; sourceTree = "<group>"; };
+		EE7EE29A2355F41D00B63210 /* display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		EE7EE29B2355F41D00B63210 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		EE7EE29C2355F41D00B63210 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		EE7EE29D2355F41D00B63210 /* pixelutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixelutils.h; sourceTree = "<group>"; };
+		EE7EE29E2355F41D00B63210 /* hwcontext_drm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_drm.h; sourceTree = "<group>"; };
+		EE7EE29F2355F41D00B63210 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		EE7EE2A02355F41D00B63210 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		EE7EE2A12355F41D00B63210 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		EE7EE2A22355F41D00B63210 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		EE7EE2A32355F41D00B63210 /* random_seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random_seed.h; sourceTree = "<group>"; };
+		EE7EE2A42355F41D00B63210 /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		EE7EE2A52355F41D00B63210 /* mastering_display_metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mastering_display_metadata.h; sourceTree = "<group>"; };
+		EE7EE2A62355F41D00B63210 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		EE7EE2A72355F41D00B63210 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		EE7EE2A82355F41D00B63210 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		EE7EE2A92355F41D00B63210 /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bswap.h; sourceTree = "<group>"; };
+		EE7EE2AA2355F41D00B63210 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		EE7EE2AB2355F41D00B63210 /* tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tea.h; sourceTree = "<group>"; };
+		EE7EE2AC2355F41D00B63210 /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		EE7EE2AD2355F41D00B63210 /* lzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzo.h; sourceTree = "<group>"; };
+		EE7EE2AE2355F41D00B63210 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		EE7EE2AF2355F41D00B63210 /* channel_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel_layout.h; sourceTree = "<group>"; };
+		EE7EE2B02355F41D00B63210 /* twofish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twofish.h; sourceTree = "<group>"; };
+		EE7EE2B12355F41D00B63210 /* imgutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgutils.h; sourceTree = "<group>"; };
+		EE7EE2B22355F41D00B63210 /* hwcontext_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_videotoolbox.h; sourceTree = "<group>"; };
+		EE7EE2B32355F41D00B63210 /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		EE7EE2B42355F41D00B63210 /* parseutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseutils.h; sourceTree = "<group>"; };
+		EE7EE2B52355F41D00B63210 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		EE7EE2B62355F41D00B63210 /* bprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bprint.h; sourceTree = "<group>"; };
+		EE7EE2B72355F41D00B63210 /* hwcontext_qsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hwcontext_qsv.h; sourceTree = "<group>"; };
+		EE7EE2B82355F41D00B63210 /* pixfmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixfmt.h; sourceTree = "<group>"; };
+		EE7EE2B92355F41D00B63210 /* aes_ctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ctr.h; sourceTree = "<group>"; };
+		EE7EE2BA2355F41D00B63210 /* timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timestamp.h; sourceTree = "<group>"; };
+		EE7EE2BB2355F41D00B63210 /* downmix_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downmix_info.h; sourceTree = "<group>"; };
+		EE7EE2BC2355F41D00B63210 /* avassert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avassert.h; sourceTree = "<group>"; };
+		EE7EE2BD2355F41D00B63210 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		EE7EE2BE2355F41D00B63210 /* mathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathematics.h; sourceTree = "<group>"; };
+		EE7EE2BF2355F41D00B63210 /* intreadwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intreadwrite.h; sourceTree = "<group>"; };
+		EE7EE2C02355F41D00B63210 /* avstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avstring.h; sourceTree = "<group>"; };
+		EE7EE2C22355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE2C32355F41D00B63210 /* avdevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avdevice.h; sourceTree = "<group>"; };
+		EE7EE2C52355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE2C62355F41D00B63210 /* avio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avio.h; sourceTree = "<group>"; };
+		EE7EE2C72355F41D00B63210 /* avformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avformat.h; sourceTree = "<group>"; };
+		EE7EE2C92355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE2CA2355F41D00B63210 /* swscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swscale.h; sourceTree = "<group>"; };
+		EE7EE2CC2355F41D00B63210 /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
+		EE7EE2CD2355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE2CE2355F41D00B63210 /* vdpau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdpau.h; sourceTree = "<group>"; };
+		EE7EE2CF2355F41D00B63210 /* qsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qsv.h; sourceTree = "<group>"; };
+		EE7EE2D02355F41D00B63210 /* vaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vaapi.h; sourceTree = "<group>"; };
+		EE7EE2D12355F41D00B63210 /* videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videotoolbox.h; sourceTree = "<group>"; };
+		EE7EE2D22355F41D00B63210 /* xvmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xvmc.h; sourceTree = "<group>"; };
+		EE7EE2D32355F41D00B63210 /* mediacodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediacodec.h; sourceTree = "<group>"; };
+		EE7EE2D42355F41D00B63210 /* d3d11va.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d3d11va.h; sourceTree = "<group>"; };
+		EE7EE2D52355F41D00B63210 /* avfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfft.h; sourceTree = "<group>"; };
+		EE7EE2D62355F41D00B63210 /* vda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vda.h; sourceTree = "<group>"; };
+		EE7EE2D72355F41D00B63210 /* jni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jni.h; sourceTree = "<group>"; };
+		EE7EE2D82355F41D00B63210 /* dirac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dirac.h; sourceTree = "<group>"; };
+		EE7EE2D92355F41D00B63210 /* avdct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avdct.h; sourceTree = "<group>"; };
+		EE7EE2DA2355F41D00B63210 /* vorbis_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vorbis_parser.h; sourceTree = "<group>"; };
+		EE7EE2DB2355F41D00B63210 /* dxva2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dxva2.h; sourceTree = "<group>"; };
+		EE7EE2DC2355F41D00B63210 /* dv_profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dv_profile.h; sourceTree = "<group>"; };
+		EE7EE2DE2355F41D00B63210 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		EE7EE2DF2355F41D00B63210 /* swresample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swresample.h; sourceTree = "<group>"; };
+		EE7EE2E12355F41D00B63210 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		EE7EE2E22355F41D00B63210 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		EE7EE2E32355F41D00B63210 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		EE7EE2E42355F41D00B63210 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpostproc.a; sourceTree = "<group>"; };
+		EE7EE2E52355F41D00B63210 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		EE7EE2E62355F41D00B63210 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
+		EE7EE2E72355F41D00B63210 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		EE7EE2E82355F41D00B63210 /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaac.a; sourceTree = "<group>"; };
+		EE7EE2E92355F41D00B63210 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		EE7EE2EA2355F41D00B63210 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		EE7EE3642355F4B600B63210 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		EE7EE3662355F4D100B63210 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		EE7EE3682355F53B00B63210 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE36A2355F54800B63210 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		EE7EE36C2355F56700B63210 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -798,6 +1078,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7EE36D2355F56700B63210 /* VideoToolbox.framework in Frameworks */,
+				EE7EE3672355F4D100B63210 /* libiconv.tbd in Frameworks */,
+				EE7EE3652355F4B600B63210 /* libz.tbd in Frameworks */,
+				EE7EE3602355F41E00B63210 /* libswresample.a in Frameworks */,
+				EE7EE35B2355F41E00B63210 /* libavfilter.a in Frameworks */,
+				EE7EE2552355F2E800B63210 /* CoreVideo.framework in Frameworks */,
+				EE7EE3632355F41E00B63210 /* libx264.a in Frameworks */,
+				EE7EE35E2355F41E00B63210 /* libavformat.a in Frameworks */,
+				EE7EE2532355F11B00B63210 /* AVFoundation.framework in Frameworks */,
+				EE7EE2512355F11500B63210 /* QuartzCore.framework in Frameworks */,
+				EE7EE3622355F41E00B63210 /* libswscale.a in Frameworks */,
+				EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */,
+				EE7EE35A2355F41E00B63210 /* libavutil.a in Frameworks */,
+				EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */,
+				EE7EE35D2355F41E00B63210 /* libpostproc.a in Frameworks */,
+				EE7EE24A2355EDF800B63210 /* libx264.a in Frameworks */,
+				EE7EE35F2355F41E00B63210 /* libavdevice.a in Frameworks */,
+				EE7EE3612355F41E00B63210 /* libfaac.a in Frameworks */,
+				EE7EE35C2355F41E00B63210 /* libavcodec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +1122,7 @@
 			children = (
 				EE42F80E227687EC00F22E98 /* NHCaptureKit */,
 				EE42F80D227687EC00F22E98 /* Products */,
+				EE7EE24B2355F10900B63210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -851,6 +1151,7 @@
 		EE42F818227688FF00F22E98 /* NHCapture */ = {
 			isa = PBXGroup;
 			children = (
+				EE7EE2582355F3E800B63210 /* X264Manager */,
 				EE42F822227688FF00F22E98 /* Unit */,
 				EE42F832227688FF00F22E98 /* Extension */,
 				EE42F99B2276890000F22E98 /* Session */,
@@ -901,6 +1202,8 @@
 		EE42F9A52276890000F22E98 /* NHLib */ = {
 			isa = PBXGroup;
 			children = (
+				EE7EE2672355F41D00B63210 /* FFmpeg */,
+				EE7EE2422355EDF800B63210 /* x264-iOS */,
 				EE42FA2A2276890000F22E98 /* GPUImage */,
 			);
 			name = NHLib;
@@ -1321,6 +1624,272 @@
 			path = GPU;
 			sourceTree = "<group>";
 		};
+		EE7EE2422355EDF800B63210 /* x264-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2432355EDF800B63210 /* include */,
+				EE7EE2462355EDF800B63210 /* lib */,
+			);
+			path = "x264-iOS";
+			sourceTree = "<group>";
+		};
+		EE7EE2432355EDF800B63210 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2442355EDF800B63210 /* x264_config.h */,
+				EE7EE2452355EDF800B63210 /* x264.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EE7EE2462355EDF800B63210 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2472355EDF800B63210 /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EE7EE24B2355F10900B63210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE36C2355F56700B63210 /* VideoToolbox.framework */,
+				EE7EE36A2355F54800B63210 /* CoreAudio.framework */,
+				EE7EE3682355F53B00B63210 /* AudioToolbox.framework */,
+				EE7EE3662355F4D100B63210 /* libiconv.tbd */,
+				EE7EE3642355F4B600B63210 /* libz.tbd */,
+				EE7EE2542355F2E800B63210 /* CoreVideo.framework */,
+				EE7EE2522355F11B00B63210 /* AVFoundation.framework */,
+				EE7EE2502355F11500B63210 /* QuartzCore.framework */,
+				EE7EE24E2355F11000B63210 /* CoreMedia.framework */,
+				EE7EE24C2355F10900B63210 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7EE2582355F3E800B63210 /* X264Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2592355F3E800B63210 /* NHWriteH264Stream.h */,
+				EE7EE25A2355F3E800B63210 /* NHX264OutputProtocol.h */,
+				EE7EE25B2355F3E800B63210 /* NHX264Manager.m */,
+				EE7EE25C2355F3E800B63210 /* NHH264Encoder.h */,
+				EE7EE25D2355F3E800B63210 /* NHWriteH264Stream.m */,
+				EE7EE25E2355F3E800B63210 /* NHX264Manager.h */,
+				EE7EE25F2355F3E800B63210 /* NHH264Encoder.m */,
+			);
+			name = X264Manager;
+			path = ../../../../NHAVKit2/NHAVCapture/FFmpeg/X264Manager;
+			sourceTree = "<group>";
+		};
+		EE7EE2672355F41D00B63210 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2682355F41D00B63210 /* include */,
+				EE7EE2E02355F41D00B63210 /* lib */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
+		EE7EE2682355F41D00B63210 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2692355F41D00B63210 /* libpostproc */,
+				EE7EE26C2355F41D00B63210 /* libavfilter */,
+				EE7EE2722355F41D00B63210 /* libavutil */,
+				EE7EE2C12355F41D00B63210 /* libavdevice */,
+				EE7EE2C42355F41D00B63210 /* libavformat */,
+				EE7EE2C82355F41D00B63210 /* libswscale */,
+				EE7EE2CB2355F41D00B63210 /* libavcodec */,
+				EE7EE2DD2355F41D00B63210 /* libswresample */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EE7EE2692355F41D00B63210 /* libpostproc */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE26A2355F41D00B63210 /* version.h */,
+				EE7EE26B2355F41D00B63210 /* postprocess.h */,
+			);
+			path = libpostproc;
+			sourceTree = "<group>";
+		};
+		EE7EE26C2355F41D00B63210 /* libavfilter */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE26D2355F41D00B63210 /* version.h */,
+				EE7EE26E2355F41D00B63210 /* buffersrc.h */,
+				EE7EE26F2355F41D00B63210 /* buffersink.h */,
+				EE7EE2702355F41D00B63210 /* avfilter.h */,
+				EE7EE2712355F41D00B63210 /* avfiltergraph.h */,
+			);
+			path = libavfilter;
+			sourceTree = "<group>";
+		};
+		EE7EE2722355F41D00B63210 /* libavutil */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2732355F41D00B63210 /* hwcontext.h */,
+				EE7EE2742355F41D00B63210 /* time.h */,
+				EE7EE2752355F41D00B63210 /* hwcontext_cuda.h */,
+				EE7EE2762355F41D00B63210 /* intfloat.h */,
+				EE7EE2772355F41D00B63210 /* error.h */,
+				EE7EE2782355F41D00B63210 /* fifo.h */,
+				EE7EE2792355F41D00B63210 /* blowfish.h */,
+				EE7EE27A2355F41D00B63210 /* replaygain.h */,
+				EE7EE27B2355F41D00B63210 /* version.h */,
+				EE7EE27C2355F41D00B63210 /* murmur3.h */,
+				EE7EE27D2355F41D00B63210 /* stereo3d.h */,
+				EE7EE27E2355F41D00B63210 /* samplefmt.h */,
+				EE7EE27F2355F41D00B63210 /* pixdesc.h */,
+				EE7EE2802355F41D00B63210 /* base64.h */,
+				EE7EE2812355F41D00B63210 /* rational.h */,
+				EE7EE2822355F41D00B63210 /* sha.h */,
+				EE7EE2832355F41D00B63210 /* motion_vector.h */,
+				EE7EE2842355F41D00B63210 /* avconfig.h */,
+				EE7EE2852355F41D00B63210 /* lfg.h */,
+				EE7EE2862355F41D00B63210 /* avutil.h */,
+				EE7EE2872355F41D00B63210 /* xtea.h */,
+				EE7EE2882355F41D00B63210 /* crc.h */,
+				EE7EE2892355F41D00B63210 /* hwcontext_vdpau.h */,
+				EE7EE28A2355F41D00B63210 /* frame.h */,
+				EE7EE28B2355F41D00B63210 /* file.h */,
+				EE7EE28C2355F41D00B63210 /* md5.h */,
+				EE7EE28D2355F41D00B63210 /* cast5.h */,
+				EE7EE28E2355F41D00B63210 /* hwcontext_vaapi.h */,
+				EE7EE28F2355F41D00B63210 /* spherical.h */,
+				EE7EE2902355F41D00B63210 /* ffversion.h */,
+				EE7EE2912355F41D00B63210 /* audio_fifo.h */,
+				EE7EE2922355F41D00B63210 /* tree.h */,
+				EE7EE2932355F41D00B63210 /* threadmessage.h */,
+				EE7EE2942355F41D00B63210 /* attributes.h */,
+				EE7EE2952355F41D00B63210 /* adler32.h */,
+				EE7EE2962355F41D00B63210 /* hwcontext_d3d11va.h */,
+				EE7EE2972355F41D00B63210 /* timecode.h */,
+				EE7EE2982355F41D00B63210 /* sha512.h */,
+				EE7EE2992355F41D00B63210 /* hwcontext_dxva2.h */,
+				EE7EE29A2355F41D00B63210 /* display.h */,
+				EE7EE29B2355F41D00B63210 /* buffer.h */,
+				EE7EE29C2355F41D00B63210 /* camellia.h */,
+				EE7EE29D2355F41D00B63210 /* pixelutils.h */,
+				EE7EE29E2355F41D00B63210 /* hwcontext_drm.h */,
+				EE7EE29F2355F41D00B63210 /* common.h */,
+				EE7EE2A02355F41D00B63210 /* hmac.h */,
+				EE7EE2A12355F41D00B63210 /* eval.h */,
+				EE7EE2A22355F41D00B63210 /* dict.h */,
+				EE7EE2A32355F41D00B63210 /* random_seed.h */,
+				EE7EE2A42355F41D00B63210 /* opt.h */,
+				EE7EE2A52355F41D00B63210 /* mastering_display_metadata.h */,
+				EE7EE2A62355F41D00B63210 /* log.h */,
+				EE7EE2A72355F41D00B63210 /* aes.h */,
+				EE7EE2A82355F41D00B63210 /* macros.h */,
+				EE7EE2A92355F41D00B63210 /* bswap.h */,
+				EE7EE2AA2355F41D00B63210 /* rc4.h */,
+				EE7EE2AB2355F41D00B63210 /* tea.h */,
+				EE7EE2AC2355F41D00B63210 /* cpu.h */,
+				EE7EE2AD2355F41D00B63210 /* lzo.h */,
+				EE7EE2AE2355F41D00B63210 /* des.h */,
+				EE7EE2AF2355F41D00B63210 /* channel_layout.h */,
+				EE7EE2B02355F41D00B63210 /* twofish.h */,
+				EE7EE2B12355F41D00B63210 /* imgutils.h */,
+				EE7EE2B22355F41D00B63210 /* hwcontext_videotoolbox.h */,
+				EE7EE2B32355F41D00B63210 /* mem.h */,
+				EE7EE2B42355F41D00B63210 /* parseutils.h */,
+				EE7EE2B52355F41D00B63210 /* ripemd.h */,
+				EE7EE2B62355F41D00B63210 /* bprint.h */,
+				EE7EE2B72355F41D00B63210 /* hwcontext_qsv.h */,
+				EE7EE2B82355F41D00B63210 /* pixfmt.h */,
+				EE7EE2B92355F41D00B63210 /* aes_ctr.h */,
+				EE7EE2BA2355F41D00B63210 /* timestamp.h */,
+				EE7EE2BB2355F41D00B63210 /* downmix_info.h */,
+				EE7EE2BC2355F41D00B63210 /* avassert.h */,
+				EE7EE2BD2355F41D00B63210 /* hash.h */,
+				EE7EE2BE2355F41D00B63210 /* mathematics.h */,
+				EE7EE2BF2355F41D00B63210 /* intreadwrite.h */,
+				EE7EE2C02355F41D00B63210 /* avstring.h */,
+			);
+			path = libavutil;
+			sourceTree = "<group>";
+		};
+		EE7EE2C12355F41D00B63210 /* libavdevice */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2C22355F41D00B63210 /* version.h */,
+				EE7EE2C32355F41D00B63210 /* avdevice.h */,
+			);
+			path = libavdevice;
+			sourceTree = "<group>";
+		};
+		EE7EE2C42355F41D00B63210 /* libavformat */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2C52355F41D00B63210 /* version.h */,
+				EE7EE2C62355F41D00B63210 /* avio.h */,
+				EE7EE2C72355F41D00B63210 /* avformat.h */,
+			);
+			path = libavformat;
+			sourceTree = "<group>";
+		};
+		EE7EE2C82355F41D00B63210 /* libswscale */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2C92355F41D00B63210 /* version.h */,
+				EE7EE2CA2355F41D00B63210 /* swscale.h */,
+			);
+			path = libswscale;
+			sourceTree = "<group>";
+		};
+		EE7EE2CB2355F41D00B63210 /* libavcodec */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2CC2355F41D00B63210 /* avcodec.h */,
+				EE7EE2CD2355F41D00B63210 /* version.h */,
+				EE7EE2CE2355F41D00B63210 /* vdpau.h */,
+				EE7EE2CF2355F41D00B63210 /* qsv.h */,
+				EE7EE2D02355F41D00B63210 /* vaapi.h */,
+				EE7EE2D12355F41D00B63210 /* videotoolbox.h */,
+				EE7EE2D22355F41D00B63210 /* xvmc.h */,
+				EE7EE2D32355F41D00B63210 /* mediacodec.h */,
+				EE7EE2D42355F41D00B63210 /* d3d11va.h */,
+				EE7EE2D52355F41D00B63210 /* avfft.h */,
+				EE7EE2D62355F41D00B63210 /* vda.h */,
+				EE7EE2D72355F41D00B63210 /* jni.h */,
+				EE7EE2D82355F41D00B63210 /* dirac.h */,
+				EE7EE2D92355F41D00B63210 /* avdct.h */,
+				EE7EE2DA2355F41D00B63210 /* vorbis_parser.h */,
+				EE7EE2DB2355F41D00B63210 /* dxva2.h */,
+				EE7EE2DC2355F41D00B63210 /* dv_profile.h */,
+			);
+			path = libavcodec;
+			sourceTree = "<group>";
+		};
+		EE7EE2DD2355F41D00B63210 /* libswresample */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2DE2355F41D00B63210 /* version.h */,
+				EE7EE2DF2355F41D00B63210 /* swresample.h */,
+			);
+			path = libswresample;
+			sourceTree = "<group>";
+		};
+		EE7EE2E02355F41D00B63210 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE7EE2E12355F41D00B63210 /* libavutil.a */,
+				EE7EE2E22355F41D00B63210 /* libavfilter.a */,
+				EE7EE2E32355F41D00B63210 /* libavcodec.a */,
+				EE7EE2E42355F41D00B63210 /* libpostproc.a */,
+				EE7EE2E52355F41D00B63210 /* libavformat.a */,
+				EE7EE2E62355F41D00B63210 /* libavdevice.a */,
+				EE7EE2E72355F41D00B63210 /* libswresample.a */,
+				EE7EE2E82355F41D00B63210 /* libfaac.a */,
+				EE7EE2E92355F41D00B63210 /* libswscale.a */,
+				EE7EE2EA2355F41D00B63210 /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1332,8 +1901,12 @@
 				EE42008222768D3700F22E98 /* NHExportConfig.h in Headers */,
 				EE42008122768D3700F22E98 /* NHVideoHelper.h in Headers */,
 				EE42FC642276890100F22E98 /* NHCaptureConfig.h in Headers */,
+				EE7EE30A2355F41D00B63210 /* file.h in Headers */,
+				EE7EE31F2355F41D00B63210 /* hmac.h in Headers */,
+				EE7EE3262355F41D00B63210 /* aes.h in Headers */,
 				EE42006C2276890200F22E98 /* NHImageBeautifyFilter.h in Headers */,
 				EE4200742276890200F22E98 /* NHAVEditor.h in Headers */,
+				EE7EE3352355F41D00B63210 /* bprint.h in Headers */,
 				EE42006F2276890200F22E98 /* NHImageCombinationFilter.h in Headers */,
 				EE42FC712276890100F22E98 /* NH_INLINE.h in Headers */,
 				EE42FC732276890100F22E98 /* NSTimer+NHAutoRetain.h in Headers */,
@@ -1341,27 +1914,49 @@
 				EE42FDD62276890100F22E98 /* NHCaptureSessionProtocol.h in Headers */,
 				EE42FC682276890100F22E98 /* NHVideoConfiguration.h in Headers */,
 				EE42FDDB2276890100F22E98 /* NHBeasSession.h in Headers */,
+				EE7EE31B2355F41D00B63210 /* camellia.h in Headers */,
+				EE7EE3272355F41D00B63210 /* macros.h in Headers */,
+				EE7EE2EF2355F41D00B63210 /* buffersink.h in Headers */,
 				EE4200792276890200F22E98 /* NHVideoWater.h in Headers */,
+				EE7EE2F02355F41D00B63210 /* avfilter.h in Headers */,
+				EE7EE2EE2355F41D00B63210 /* buffersrc.h in Headers */,
 				EE4200762276890200F22E98 /* NHGifTool.h in Headers */,
 				EE42FDDD2276890100F22E98 /* NHAVCaptureSession.h in Headers */,
 				EE4200702276890200F22E98 /* NHFrameImage.h in Headers */,
 				EE42FFB82276890200F22E98 /* GLProgram.h in Headers */,
+				EE7EE34F2355F41E00B63210 /* d3d11va.h in Headers */,
 				EE42FE7C2276890100F22E98 /* GPUImageSwirlFilter.h in Headers */,
+				EE7EE3322355F41D00B63210 /* mem.h in Headers */,
+				EE7EE3492355F41E00B63210 /* vdpau.h in Headers */,
+				EE7EE2F92355F41D00B63210 /* replaygain.h in Headers */,
+				EE7EE3342355F41D00B63210 /* ripemd.h in Headers */,
 				EE42FF692276890200F22E98 /* GPUImageCannyEdgeDetectionFilter.h in Headers */,
 				EE42FF602276890200F22E98 /* GPUImageFASTCornerDetectionFilter.h in Headers */,
 				EE42FEBC2276890100F22E98 /* GPUImageCrosshatchFilter.h in Headers */,
 				EE42FF772276890200F22E98 /* GPUImagePixellateFilter.h in Headers */,
+				EE7EE3052355F41D00B63210 /* avutil.h in Headers */,
 				EE42FF012276890200F22E98 /* GPUImageView.h in Headers */,
+				EE7EE3392355F41E00B63210 /* timestamp.h in Headers */,
 				EE42FFA12276890200F22E98 /* GPUImageSourceOverBlendFilter.h in Headers */,
+				EE7EE32F2355F41D00B63210 /* twofish.h in Headers */,
 				EE42FEAE2276890100F22E98 /* GPUImageRGBOpeningFilter.h in Headers */,
+				EE7EE2F52355F41D00B63210 /* intfloat.h in Headers */,
+				EE7EE2602355F3E900B63210 /* NHWriteH264Stream.h in Headers */,
 				EE42FF552276890200F22E98 /* GPUImageSketchFilter.h in Headers */,
+				EE7EE3032355F41D00B63210 /* avconfig.h in Headers */,
+				EE7EE3432355F41E00B63210 /* avio.h in Headers */,
 				EE42FF5A2276890200F22E98 /* GPUImagePixellatePositionFilter.h in Headers */,
+				EE7EE2F62355F41D00B63210 /* error.h in Headers */,
+				EE7EE2FA2355F41D00B63210 /* version.h in Headers */,
 				EE42FE622276890100F22E98 /* GPUImageSmoothToonFilter.h in Headers */,
+				EE7EE3082355F41D00B63210 /* hwcontext_vdpau.h in Headers */,
 				EE42FE612276890100F22E98 /* GPUImageThreeInputFilter.h in Headers */,
+				EE7EE3512355F41E00B63210 /* vda.h in Headers */,
 				EE42FE6E2276890100F22E98 /* GPUImageHazeFilter.h in Headers */,
 				EE42FF842276890200F22E98 /* GPUImageZoomBlurFilter.h in Headers */,
 				EE42FF512276890200F22E98 /* GPUImageHueFilter.h in Headers */,
 				EE42FF592276890200F22E98 /* GPUImageMissEtikateFilter.h in Headers */,
+				EE7EE3422355F41E00B63210 /* version.h in Headers */,
 				EE42FE8B2276890100F22E98 /* GPUImageMotionBlurFilter.h in Headers */,
 				EE42FEFA2276890200F22E98 /* GPUImagePolkaDotFilter.h in Headers */,
 				EE42FF932276890200F22E98 /* GPUImageToneCurveFilter.h in Headers */,
@@ -1369,17 +1964,31 @@
 				EE42FF882276890200F22E98 /* GPUImageMultiplyBlendFilter.h in Headers */,
 				EE42FE682276890100F22E98 /* GPUImageRawDataOutput.h in Headers */,
 				EE42FF3F2276890200F22E98 /* GPUImageUnsharpMaskFilter.h in Headers */,
+				EE7EE2F32355F41D00B63210 /* time.h in Headers */,
+				EE7EE33B2355F41E00B63210 /* avassert.h in Headers */,
 				EE42FF7B2276890200F22E98 /* GPUImageErosionFilter.h in Headers */,
+				EE7EE30E2355F41D00B63210 /* spherical.h in Headers */,
 				EE42FE922276890100F22E98 /* GPUImageTwoInputCrossTextureSamplingFilter.h in Headers */,
 				EE42FF672276890200F22E98 /* GPUImageLevelsFilter.h in Headers */,
 				EE42FFB32276890200F22E98 /* GPUImageBrightnessFilter.h in Headers */,
+				EE7EE2FB2355F41D00B63210 /* murmur3.h in Headers */,
+				EE7EE3152355F41D00B63210 /* hwcontext_d3d11va.h in Headers */,
 				EE42FFAD2276890200F22E98 /* GPUImageColorDodgeBlendFilter.h in Headers */,
+				EE7EE3212355F41D00B63210 /* dict.h in Headers */,
+				EE7EE3302355F41D00B63210 /* imgutils.h in Headers */,
+				EE7EE31A2355F41D00B63210 /* buffer.h in Headers */,
+				EE7EE3182355F41D00B63210 /* hwcontext_dxva2.h in Headers */,
 				EE42FF792276890200F22E98 /* GPUImageDissolveBlendFilter.h in Headers */,
 				EE42FE722276890100F22E98 /* GPUImageRGBDilationFilter.h in Headers */,
 				EE42FF6D2276890200F22E98 /* GPUImageSepiaFilter.h in Headers */,
+				EE7EE3532355F41E00B63210 /* dirac.h in Headers */,
+				EE7EE31C2355F41D00B63210 /* pixelutils.h in Headers */,
 				EE42FED82276890100F22E98 /* GPUImageTextureOutput.h in Headers */,
+				EE7EE3282355F41D00B63210 /* bswap.h in Headers */,
+				EE7EE30F2355F41D00B63210 /* ffversion.h in Headers */,
 				EE42FE712276890100F22E98 /* GPUImageColorConversion.h in Headers */,
 				EE42FF2D2276890200F22E98 /* GPUImageFilterGroup.h in Headers */,
+				EE7EE3242355F41D00B63210 /* mastering_display_metadata.h in Headers */,
 				EE42FDD72276890100F22E98 /* NHGPUImageView.h in Headers */,
 				EE42FE912276890100F22E98 /* GPUImageScreenBlendFilter.h in Headers */,
 				EE42FF542276890200F22E98 /* GPUImageiOSBlurFilter.h in Headers */,
@@ -1387,56 +1996,85 @@
 				EE42FFA42276890200F22E98 /* GPUImageFramebuffer.h in Headers */,
 				EE42FEB62276890100F22E98 /* GPUImageMosaicFilter.h in Headers */,
 				EE42FE7B2276890100F22E98 /* GPUImageMaskFilter.h in Headers */,
+				EE7EE3092355F41D00B63210 /* frame.h in Headers */,
 				EE42FEBA2276890100F22E98 /* GPUImageKuwaharaFilter.h in Headers */,
 				EE42FEEB2276890100F22E98 /* GPUImageStillCamera.h in Headers */,
+				EE7EE34A2355F41E00B63210 /* qsv.h in Headers */,
 				EE42FF212276890200F22E98 /* GPUImageGaussianBlurPositionFilter.h in Headers */,
 				EE42FE752276890100F22E98 /* GPUImageCrosshairGenerator.h in Headers */,
+				EE7EE33E2355F41E00B63210 /* intreadwrite.h in Headers */,
 				EE42FEFC2276890200F22E98 /* GPUImageLuminanceRangeFilter.h in Headers */,
+				EE7EE2FC2355F41D00B63210 /* stereo3d.h in Headers */,
 				EE42FEDC2276890100F22E98 /* GPUImagePrewittEdgeDetectionFilter.h in Headers */,
+				EE7EE30B2355F41D00B63210 /* md5.h in Headers */,
+				EE7EE34E2355F41E00B63210 /* mediacodec.h in Headers */,
+				EE7EE3452355F41E00B63210 /* version.h in Headers */,
 				EE42FE7A2276890100F22E98 /* GPUImageSubtractBlendFilter.h in Headers */,
 				EE42FF9F2276890200F22E98 /* GPUImageRGBFilter.h in Headers */,
 				EE42FEDD2276890100F22E98 /* GPUImageVideoCamera.h in Headers */,
 				EE42FEAA2276890100F22E98 /* GPUImageHoughTransformLineDetector.h in Headers */,
 				EE42FF242276890200F22E98 /* GPUImageSoftEleganceFilter.h in Headers */,
 				EE42FF5E2276890200F22E98 /* GPUImageVibranceFilter.h in Headers */,
+				EE7EE3222355F41D00B63210 /* random_seed.h in Headers */,
 				EE42FFB72276890200F22E98 /* GPUImageStretchDistortionFilter.h in Headers */,
 				EE42FFB62276890200F22E98 /* GPUImageDivideBlendFilter.h in Headers */,
+				EE7EE3542355F41E00B63210 /* avdct.h in Headers */,
 				EE42FF392276890200F22E98 /* GPUImageThresholdEdgeDetectionFilter.h in Headers */,
 				EE42FF372276890200F22E98 /* GPUImageChromaKeyFilter.h in Headers */,
 				EE42FEA22276890100F22E98 /* GPUImageClosingFilter.h in Headers */,
+				EE7EE3592355F41E00B63210 /* swresample.h in Headers */,
 				EE42FE672276890100F22E98 /* GPUImageColorLocalBinaryPatternFilter.h in Headers */,
 				EE42FF6E2276890200F22E98 /* GPUImage3x3TextureSamplingFilter.h in Headers */,
+				EE7EE30D2355F41D00B63210 /* hwcontext_vaapi.h in Headers */,
 				EE42FF112276890200F22E98 /* GPUImageTwoInputFilter.h in Headers */,
 				EE42FE9A2276890100F22E98 /* GPUImageLinearBurnBlendFilter.h in Headers */,
+				EE7EE3552355F41E00B63210 /* vorbis_parser.h in Headers */,
+				EE7EE2482355EDF800B63210 /* x264_config.h in Headers */,
+				EE7EE3142355F41D00B63210 /* adler32.h in Headers */,
+				EE7EE3382355F41D00B63210 /* aes_ctr.h in Headers */,
+				EE7EE2FE2355F41D00B63210 /* pixdesc.h in Headers */,
+				EE7EE2EC2355F41D00B63210 /* postprocess.h in Headers */,
 				EE42FF142276890200F22E98 /* GPUImageEmbossFilter.h in Headers */,
 				EE42FF8F2276890200F22E98 /* GPUImageColorMatrixFilter.h in Headers */,
 				EE42FF422276890200F22E98 /* GPUImageAlphaBlendFilter.h in Headers */,
 				EE42FED52276890100F22E98 /* GPUImagePerlinNoiseFilter.h in Headers */,
+				EE7EE3252355F41D00B63210 /* log.h in Headers */,
 				EE42FFAE2276890200F22E98 /* GPUImageAverageLuminanceThresholdFilter.h in Headers */,
 				EE42FE7D2276890100F22E98 /* GPUImageSoftLightBlendFilter.h in Headers */,
 				EE42FF852276890200F22E98 /* GPUImageSkinToneFilter.h in Headers */,
+				EE7EE3062355F41D00B63210 /* xtea.h in Headers */,
 				EE42FF942276890200F22E98 /* GPUImageGaussianBlurFilter.h in Headers */,
 				EE42FE6D2276890100F22E98 /* GPUImageHalftoneFilter.h in Headers */,
+				EE7EE2FD2355F41D00B63210 /* samplefmt.h in Headers */,
 				EE42FEC52276890100F22E98 /* GPUImageNormalBlendFilter.h in Headers */,
 				EE42FF712276890200F22E98 /* GPUImageSphereRefractionFilter.h in Headers */,
 				EE42FEF12276890200F22E98 /* GPUImageFilter.h in Headers */,
+				EE7EE3502355F41E00B63210 /* avfft.h in Headers */,
 				EE42FF5F2276890200F22E98 /* GPUImageHistogramFilter.h in Headers */,
+				EE7EE3292355F41D00B63210 /* rc4.h in Headers */,
 				EE42FF1B2276890200F22E98 /* GPUImageUIElement.h in Headers */,
 				EE42FFA92276890200F22E98 /* GPUImageLanczosResamplingFilter.h in Headers */,
+				EE7EE2F82355F41D00B63210 /* blowfish.h in Headers */,
 				EE42FEB32276890100F22E98 /* GPUImageThresholdSketchFilter.h in Headers */,
+				EE7EE2492355EDF800B63210 /* x264.h in Headers */,
 				EE42FF7D2276890200F22E98 /* GPUImageSaturationFilter.h in Headers */,
+				EE7EE32D2355F41D00B63210 /* des.h in Headers */,
 				EE42FFAC2276890200F22E98 /* GPUImageXYDerivativeFilter.h in Headers */,
 				EE42FF482276890200F22E98 /* GPUImageBilateralFilter.h in Headers */,
+				EE7EE31E2355F41D00B63210 /* common.h in Headers */,
 				EE42FEA42276890100F22E98 /* GPUImageMotionDetector.h in Headers */,
 				EE42FE872276890100F22E98 /* GPUImagePoissonBlendFilter.h in Headers */,
 				EE42FFAF2276890200F22E98 /* GPUImageOutput.h in Headers */,
+				EE7EE3012355F41D00B63210 /* sha.h in Headers */,
 				EE42FED42276890100F22E98 /* GPUImageHueBlendFilter.h in Headers */,
 				EE42FF582276890200F22E98 /* GPUImageHistogramEqualizationFilter.h in Headers */,
+				EE7EE3002355F41D00B63210 /* rational.h in Headers */,
 				EE42FF1A2276890200F22E98 /* GPUImageWeakPixelInclusionFilter.h in Headers */,
 				EE42FEA82276890100F22E98 /* GPUImageMonochromeFilter.h in Headers */,
 				EE42FE8C2276890100F22E98 /* GPUImageGlassSphereFilter.h in Headers */,
 				EE42FE5C2276890100F22E98 /* GPUImageBuffer.h in Headers */,
 				EE42FF982276890200F22E98 /* GPUImageTiltShiftFilter.h in Headers */,
+				EE7EE3172355F41D00B63210 /* sha512.h in Headers */,
 				EE42FEFD2276890200F22E98 /* GPUImageLuminosityBlendFilter.h in Headers */,
 				EE42FF0B2276890200F22E98 /* GPUImagePicture.h in Headers */,
 				EE42FF732276890200F22E98 /* GPUImageTextureInput.h in Headers */,
@@ -1444,6 +2082,8 @@
 				EE42FEC22276890100F22E98 /* GPUImage3x3ConvolutionFilter.h in Headers */,
 				EE42FF9C2276890200F22E98 /* GPUImage.h in Headers */,
 				EE42FF4C2276890200F22E98 /* GPUImageThresholdedNonMaximumSuppressionFilter.h in Headers */,
+				EE7EE2F22355F41D00B63210 /* hwcontext.h in Headers */,
+				EE7EE34C2355F41E00B63210 /* videotoolbox.h in Headers */,
 				EE42FEB02276890100F22E98 /* GPUImageWhiteBalanceFilter.h in Headers */,
 				EE42FEF92276890200F22E98 /* GPUImageFalseColorFilter.h in Headers */,
 				EE42FEB92276890100F22E98 /* GPUImageSingleComponentGaussianBlurFilter.h in Headers */,
@@ -1453,39 +2093,71 @@
 				EE42FF1D2276890200F22E98 /* GPUImageHighlightShadowTintFilter.h in Headers */,
 				EE42FF922276890200F22E98 /* GPUImageExclusionBlendFilter.h in Headers */,
 				EE42FEBE2276890100F22E98 /* GPUImageHighlightShadowFilter.h in Headers */,
+				EE7EE33A2355F41E00B63210 /* downmix_info.h in Headers */,
+				EE7EE2F12355F41D00B63210 /* avfiltergraph.h in Headers */,
+				EE7EE3162355F41D00B63210 /* timecode.h in Headers */,
 				EE42FF282276890200F22E98 /* GPUImageHighPassFilter.h in Headers */,
 				EE42FF862276890200F22E98 /* GPUImageHarrisCornerDetectionFilter.h in Headers */,
+				EE7EE3582355F41E00B63210 /* version.h in Headers */,
+				EE7EE3372355F41D00B63210 /* pixfmt.h in Headers */,
 				EE42FFB02276890200F22E98 /* GPUImagePosterizeFilter.h in Headers */,
 				EE42FEF42276890200F22E98 /* GPUImageLookupFilter.h in Headers */,
+				EE7EE3192355F41D00B63210 /* display.h in Headers */,
+				EE7EE3522355F41E00B63210 /* jni.h in Headers */,
 				EE42FE942276890100F22E98 /* GPUImagePinchDistortionFilter.h in Headers */,
+				EE7EE33D2355F41E00B63210 /* mathematics.h in Headers */,
 				EE42FF8C2276890200F22E98 /* GPUImageOverlayBlendFilter.h in Headers */,
 				EE42FF822276890200F22E98 /* GPUImageAdaptiveThresholdFilter.h in Headers */,
+				EE7EE2632355F3E900B63210 /* NHH264Encoder.h in Headers */,
 				EE42FEAC2276890100F22E98 /* GPUImageRGBErosionFilter.h in Headers */,
+				EE7EE3482355F41E00B63210 /* version.h in Headers */,
+				EE7EE3332355F41D00B63210 /* parseutils.h in Headers */,
+				EE7EE3122355F41D00B63210 /* threadmessage.h in Headers */,
 				EE42FED02276890100F22E98 /* GPUImageHSBFilter.h in Headers */,
 				EE42FEF22276890200F22E98 /* GPUImageColourFASTSamplingOperation.h in Headers */,
+				EE7EE2FF2355F41D00B63210 /* base64.h in Headers */,
+				EE7EE34B2355F41E00B63210 /* vaapi.h in Headers */,
 				EE42FF3E2276890200F22E98 /* GPUImageTwoPassTextureSamplingFilter.h in Headers */,
 				EE42FF462276890200F22E98 /* GPUImageHistogramGenerator.h in Headers */,
+				EE7EE32E2355F41D00B63210 /* channel_layout.h in Headers */,
+				EE7EE3472355F41E00B63210 /* avcodec.h in Headers */,
+				EE7EE3132355F41D00B63210 /* attributes.h in Headers */,
 				EE42FE6A2276890100F22E98 /* GPUImageContrastFilter.h in Headers */,
+				EE7EE3232355F41D00B63210 /* opt.h in Headers */,
+				EE7EE2612355F3E900B63210 /* NHX264OutputProtocol.h in Headers */,
+				EE7EE3042355F41D00B63210 /* lfg.h in Headers */,
 				EE42FF152276890200F22E98 /* GPUImageGrayscaleFilter.h in Headers */,
 				EE42FE842276890100F22E98 /* GPUImageGaussianSelectiveBlurFilter.h in Headers */,
+				EE7EE2F72355F41D00B63210 /* fifo.h in Headers */,
+				EE7EE32C2355F41D00B63210 /* lzo.h in Headers */,
 				EE42FECB2276890100F22E98 /* GPUImageAddBlendFilter.h in Headers */,
+				EE7EE3462355F41E00B63210 /* swscale.h in Headers */,
+				EE7EE3202355F41D00B63210 /* eval.h in Headers */,
 				EE42FE782276890100F22E98 /* GPUImageColorBlendFilter.h in Headers */,
 				EE42FFA02276890200F22E98 /* GPUImageBoxBlurFilter.h in Headers */,
 				EE42FF782276890200F22E98 /* GPUImageCropFilter.h in Headers */,
 				EE42FF912276890200F22E98 /* GPUImageSolidColorGenerator.h in Headers */,
+				EE7EE34D2355F41E00B63210 /* xvmc.h in Headers */,
 				EE42FF4A2276890200F22E98 /* GPUImageKuwaharaRadius3Filter.h in Headers */,
+				EE7EE3562355F41E00B63210 /* dxva2.h in Headers */,
+				EE7EE30C2355F41D00B63210 /* cast5.h in Headers */,
 				EE42FFB42276890200F22E98 /* GPUImageDifferenceBlendFilter.h in Headers */,
 				EE42FF412276890200F22E98 /* GPUImageGammaFilter.h in Headers */,
 				EE42FF082276890200F22E98 /* GPUImageContext.h in Headers */,
 				EE42FEDF2276890100F22E98 /* GPUImageDarkenBlendFilter.h in Headers */,
 				EE42FF832276890200F22E98 /* GPUImageHardLightBlendFilter.h in Headers */,
+				EE7EE2ED2355F41D00B63210 /* version.h in Headers */,
 				EE42FF1C2276890200F22E98 /* GPUImageColorPackingFilter.h in Headers */,
 				EE42FEFE2276890200F22E98 /* GPUImageExposureFilter.h in Headers */,
 				EE42FE852276890100F22E98 /* GPUImageSharpenFilter.h in Headers */,
+				EE7EE31D2355F41D00B63210 /* hwcontext_drm.h in Headers */,
 				EE42FF7E2276890200F22E98 /* GPUImageOpeningFilter.h in Headers */,
 				EE42FF722276890200F22E98 /* GPUImageRGBClosingFilter.h in Headers */,
 				EE42FF332276890200F22E98 /* GPUImageLuminanceThresholdFilter.h in Headers */,
+				EE7EE3022355F41D00B63210 /* motion_vector.h in Headers */,
 				EE42FEE82276890100F22E98 /* GPUImageLightenBlendFilter.h in Headers */,
+				EE7EE32B2355F41D00B63210 /* cpu.h in Headers */,
+				EE7EE2652355F3E900B63210 /* NHX264Manager.h in Headers */,
 				EE42FFB12276890200F22E98 /* GPUImageDirectionalSobelEdgeDetectionFilter.h in Headers */,
 				EE42FE9B2276890100F22E98 /* GPUImageLocalBinaryPatternFilter.h in Headers */,
 				EE42FE652276890100F22E98 /* GPUImageMovieComposition.h in Headers */,
@@ -1495,25 +2167,37 @@
 				EE42FEB12276890100F22E98 /* GPUImageRawDataInput.h in Headers */,
 				EE42FF7A2276890200F22E98 /* GPUImageToonFilter.h in Headers */,
 				EE42FEC72276890100F22E98 /* GPUImageDilationFilter.h in Headers */,
+				EE7EE3362355F41D00B63210 /* hwcontext_qsv.h in Headers */,
 				EE42FEFB2276890200F22E98 /* GPUImageChromaKeyBlendFilter.h in Headers */,
 				EE42FE9E2276890100F22E98 /* GPUImageDirectionalNonMaximumSuppressionFilter.h in Headers */,
 				EE42FF992276890200F22E98 /* GPUImageSaturationBlendFilter.h in Headers */,
+				EE7EE3102355F41D00B63210 /* audio_fifo.h in Headers */,
 				EE42FF972276890200F22E98 /* GPUImageFramebufferCache.h in Headers */,
 				EE42FF292276890200F22E98 /* GPUImageSobelEdgeDetectionFilter.h in Headers */,
 				EE42FE982276890100F22E98 /* GPUImageMedianFilter.h in Headers */,
 				EE42FFA72276890200F22E98 /* GPUImageLaplacianFilter.h in Headers */,
 				EE42FF682276890200F22E98 /* GPUImageMovie.h in Headers */,
+				EE7EE2EB2355F41D00B63210 /* version.h in Headers */,
+				EE7EE3402355F41E00B63210 /* version.h in Headers */,
 				EE42FF4D2276890200F22E98 /* GPUImageAmatorkaFilter.h in Headers */,
 				EE42FF6B2276890200F22E98 /* GPUImageLineGenerator.h in Headers */,
 				EE42FE602276890100F22E98 /* GPUImageShiTomasiFeatureDetectionFilter.h in Headers */,
+				EE7EE3412355F41E00B63210 /* avdevice.h in Headers */,
+				EE7EE3112355F41D00B63210 /* tree.h in Headers */,
 				EE42FF812276890200F22E98 /* GPUImagePolarPixellateFilter.h in Headers */,
 				EE42FF122276890200F22E98 /* GPUImageColorInvertFilter.h in Headers */,
 				EE42FF312276890200F22E98 /* GPUImageFourInputFilter.h in Headers */,
 				EE42FF4F2276890200F22E98 /* GPUImageTransformFilter.h in Headers */,
+				EE7EE3312355F41D00B63210 /* hwcontext_videotoolbox.h in Headers */,
+				EE7EE33F2355F41E00B63210 /* avstring.h in Headers */,
 				EE42FF0C2276890200F22E98 /* GPUImagePicture+TextureSubimage.h in Headers */,
+				EE7EE3442355F41E00B63210 /* avformat.h in Headers */,
+				EE7EE2F42355F41D00B63210 /* hwcontext_cuda.h in Headers */,
+				EE7EE3572355F41E00B63210 /* dv_profile.h in Headers */,
 				EE42FF162276890200F22E98 /* GPUImageNonMaximumSuppressionFilter.h in Headers */,
 				EE42FE772276890100F22E98 /* GPUImageAverageColor.h in Headers */,
 				EE42FE632276890100F22E98 /* GPUImageVoronoiConsumerFilter.h in Headers */,
+				EE7EE32A2355F41D00B63210 /* tea.h in Headers */,
 				EE42FEEF2276890200F22E98 /* GPUImageColourFASTFeatureDetector.h in Headers */,
 				EE42FF0D2276890200F22E98 /* GPUImage-Prefix.pch in Headers */,
 				EE42FEAD2276890100F22E98 /* GPUImageLowPassFilter.h in Headers */,
@@ -1521,8 +2205,10 @@
 				EE42FF622276890200F22E98 /* GPUImageSolarizeFilter.h in Headers */,
 				EE42FF0A2276890200F22E98 /* GPUImageMovieWriter.h in Headers */,
 				EE42FEF72276890200F22E98 /* GPUImageBulgeDistortionFilter.h in Headers */,
+				EE7EE33C2355F41E00B63210 /* hash.h in Headers */,
 				EE42FC702276890100F22E98 /* NHMacroDefineHeader.h in Headers */,
 				EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */,
+				EE7EE3072355F41D00B63210 /* crc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1663,6 +2349,7 @@
 				EE42FEEC2276890200F22E98 /* GPUImageFilterPipeline.m in Sources */,
 				EE42FF2B2276890200F22E98 /* GPUImageRGBDilationFilter.m in Sources */,
 				EE42FEB52276890100F22E98 /* GPUImageExclusionBlendFilter.m in Sources */,
+				EE7EE2622355F3E900B63210 /* NHX264Manager.m in Sources */,
 				EE42FF9B2276890200F22E98 /* GPUImageChromaKeyBlendFilter.m in Sources */,
 				EE42FDD92276890100F22E98 /* NHBeasSession.m in Sources */,
 				EE42FF6A2276890200F22E98 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
@@ -1761,6 +2448,7 @@
 				EE42FE6F2276890100F22E98 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				EE42FF1E2276890200F22E98 /* GPUImageMaskFilter.m in Sources */,
 				EE42FE762276890100F22E98 /* GPUImageTwoPassFilter.m in Sources */,
+				EE7EE2662355F3E900B63210 /* NHH264Encoder.m in Sources */,
 				EE42FFB52276890200F22E98 /* GPUImageCGAColorspaceFilter.m in Sources */,
 				EE42FEA02276890100F22E98 /* GPUImageiOSBlurFilter.m in Sources */,
 				EE42FF472276890200F22E98 /* GPUImageRGBErosionFilter.m in Sources */,
@@ -1775,6 +2463,7 @@
 				EE42FEE72276890100F22E98 /* GPUImagePosterizeFilter.m in Sources */,
 				EE42FF952276890200F22E98 /* GPUImageExposureFilter.m in Sources */,
 				EE42FF652276890200F22E98 /* GPUImageGlassSphereFilter.m in Sources */,
+				EE7EE2642355F3E900B63210 /* NHWriteH264Stream.m in Sources */,
 				EE42FEFF2276890200F22E98 /* GPUImageFramebufferCache.m in Sources */,
 				EE42FF062276890200F22E98 /* GPUImagePicture.m in Sources */,
 				EE42FF502276890200F22E98 /* GPUImageMotionDetector.m in Sources */,
@@ -1924,9 +2613,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/x264-iOS/include\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/FFmpeg/include\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1937,8 +2625,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/FFmpeg/lib\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/x264-iOS/lib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/x264-iOS/lib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/FFmpeg/lib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nenhall.studio.NHCaptureKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1960,9 +2648,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/x264-iOS/include\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/FFmpeg/include\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1973,8 +2660,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/FFmpeg/lib\"",
-					"\"$(SRCROOT)/../../NHAVFoundation/NHLib/x264-iOS/lib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/x264-iOS/lib\"",
+					"\"$(SRCROOT)/../../../../NHAVKit2/NHAVBaseic/NHLib/FFmpeg/lib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nenhall.studio.NHCaptureKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
