@@ -22,12 +22,12 @@
  @param task blockEvent
  @return 定时器标记，取消的时候需要用到
  */
-+ (NSString *)timerWithTimeInterval:(NSTimeInterval)interval
++ (NSString * _Nonnull)timerWithTimeInterval:(NSTimeInterval)interval
                               start:(NSTimeInterval)start
                             repeats:(BOOL)repeats
                               async:(BOOL)async
                            onlyFlag:(nonnull NSString *)onlyFlag
-                      execTaskBlock:(void(^)(void))task;
+                               execTaskBlock:(void(^_Nullable)(void))task;
 
 /**
  gcd定时器，回调的block内都会是主线程
@@ -40,10 +40,10 @@
  @param async 同步？异步
  @return 定时器标记，取消的时候需要用到
  */
-+ (NSString *)timerWithTimeInterval:(NSTimeInterval)interval
++ (NSString *_Nonnull)timerWithTimeInterval:(NSTimeInterval)interval
                               start:(NSTimeInterval)start
                              target:(nonnull id)target
-                             action:(SEL)action
+                             action:(SEL _Nonnull)action
                             repeats:(BOOL)repeats
                               async:(BOOL)async
                            onlyFlag:(nonnull NSString *)onlyFlag
