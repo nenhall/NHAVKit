@@ -9,6 +9,7 @@
 #import "NHAVPlayer.h"
 #import <UIDevice+NHOrientation.h>
 #import <NHPlayerObserver.h>
+#import "NHPlayerView.h"
 
 
 @interface NHAVPlayer ()<NHPlayerToolBarDelegate,NHPlayerObserverDelegate>
@@ -190,10 +191,17 @@
         case NHPlayerStatusReadyToPlay:{
 //            #if defined(__arm64__)
             CMTime duration = _currentPlayItem.duration;
-            NSLog(@"Ready to Play duration:%f", CMTimeGetSeconds(duration));
-            if (!isnan(CMTimeGetSeconds(duration))) {
-                [_playerView setMaxDuration:CMTimeGetSeconds(duration)];
+            Float64 maxDuration = CMTimeGetSeconds(duration);
+            NSLog(@"Ready to Play duration:%f", maxDuration);
+            if (!isnan(maxDuration)) {
+                [_playerView setMaxDuration:maxDuration];
                 CMTimeShow(duration);
+            }
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:setMaxDuration:)]) {
+                           [self.delegate nhPlayer:self setMaxDuration:maxDuration];
+                       }
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayerReadyToPlay:)]) {
+                [self.delegate nhPlayerReadyToPlay:self];
             }
 //            #endif
         }
@@ -204,19 +212,30 @@
             break;
         case NHPlayerStatusPaused:{
             [_playerView updatePlayStatus:status];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayerPause:)]) {
+                [self.delegate nhPlayerPause:self];
+            }
         }
             
             break;
         case NHPlayerStatusBufferEmpty:
-            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:playFailed:playURL:)]) {
+                [self.delegate nhPlayer:self playFailed:[NSError errorWithDomain:NSCocoaErrorDomain code:NHPlayerStatusBufferEmpty userInfo:@{@"code" : @(NHPlayerStatusBufferEmpty)}] playURL:self.playUrl];
+            }
             break;
         case NHPlayerStatusFailed:{
             [_playerView updatePlayStatus:status];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:playFailed:playURL:)]) {
+                [self.delegate nhPlayer:self playFailed:self.currentPlayItem.error playURL:self.playUrl];
+            }
         }
             
             break;
         case NHPlayerStatusFinished:
             [_playerView playDone];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayerPlayDone:)]) {
+                [self.delegate nhPlayerPlayDone:self];
+            }
             
             break;
         case NHPlayerStatusStalled:{
@@ -251,6 +270,9 @@
         [_player play];
     }
     [_playerView updateCacheProgress:cacheProgress];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:updateCacheProgress:)]) {
+        [self.delegate nhPlayer:self updateCacheProgress:cacheProgress];
+    }
 }
 
 - (void)playerObserverUpdatePlayProgress:(CMTime)time {
@@ -261,6 +283,9 @@
     } else {
         NSLog(@"Current PlayItem is null");
     }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:updatePlayProgress:)]) {
+         [self.delegate nhPlayer:self updatePlayProgress:self.playProgress];
+     }
 }
 
 - (void)playerObserverDeviceOrientationChange:(UIDeviceOrientation)orientation {
@@ -270,6 +295,9 @@
          _isFullScreen = YES;
      }
      [_playerView fullZoom:_isFullScreen];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:fullZoom:)]) {
+        [self.delegate nhPlayer:self fullZoom:_isFullScreen];
+    }
 }
 
 - (void)playerObserverAudioRouteChange:(AVAudioSessionRouteChangeReason)reason info:(NSDictionary *)info{
@@ -356,6 +384,9 @@
             [weakself.playerView pause];
         }
     }];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(nhPlayer:dragSlider:)]) {
+        [self.delegate nhPlayer:self dragSlider:CMTimeGetSeconds(newTime)];
+    }
 }
 
 

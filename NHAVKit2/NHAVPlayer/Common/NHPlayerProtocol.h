@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class NHAVPlayer;
+
+
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, NHPlayerInterruptionType) {
     NHPlayerInterruptionTypeBegan = (1 << 1), /**< 中断开始 eg. 来电 */
@@ -28,32 +32,59 @@ typedef NS_ENUM(NSInteger, NHPlayerStatus) {
 } NS_ENUM_AVAILABLE(10_12, 8_0);
 
 
-@protocol NHPlayerToolBarDelegate <NSObject>
+/// 播放相关事件的代理方法
+@protocol NHPlayerDelegate <NSObject>
 @optional
-- (BOOL)playerToolBarDidClickPlayOrPause;
 
-- (void)playerToolBarDidClickPause;
+/// 播放完成
+/// @param player player description
+- (void)nhPlayerPlayDone:(NHAVPlayer *)player;
 
-- (BOOL)playerToolBarDidClickVideoZoom;
+/// 暂停播放
+/// @param player player description
+- (void)nhPlayerPause:(NHAVPlayer *)player;
 
-- (void)playerToolBarDragSlider:(float)value;
+/// 开始播放
+/// @param player player description
+- (void)nhPlayerPlay:(NHAVPlayer *)player;
+
+/// 准备播放
+/// @param player player description
+- (void)nhPlayerReadyToPlay:(NHAVPlayer *)player;
+
+/// 播放失败
+/// @param player player description
+/// @param error error description
+/// @param playURL playURL description
+- (void)nhPlayer:(NHAVPlayer *)player playFailed:(NSError *)error playURL:(NSString *)playURL;
+
+/// 播放缓存进度更新
+/// @param player player description
+/// @param progress 进度
+- (void)nhPlayer:(NHAVPlayer *)player updateCacheProgress:(float)progress;
+
+/// 播放进度更新
+/// @param player player description
+/// @param progress 播放进度
+- (void)nhPlayer:(NHAVPlayer *)player updatePlayProgress:(float)progress;
+
+/// 用户拖拽进度条(在未自定义playToolBar时生效)
+/// @param player player description
+/// @param progress 拖拽后的进度
+- (void)nhPlayer:(NHAVPlayer *)player dragSlider:(float)progress;
+
+/// 在读取视频文件，准备播放后，设置/获取最大时长时调用(在未自定义playToolBar时，同时将要自动设置最大时长)
+/// @param player player description
+/// @param duration 视频的总时长
+- (void)nhPlayer:(NHAVPlayer *)player setMaxDuration:(float)duration;
+
+/// 全屏或者退出全屏
+/// @param player player description
+/// @param full true为全屏，否则非全屏(在未自定义playToolBar时生效)
+- (void)nhPlayer:(NHAVPlayer *)player fullZoom:(BOOL)full;
+
 @end
 
-
-
-@protocol NHPlayerActionDelegate <NSObject>
-@optional
-- (void)playDone;
-- (void)pause;
-- (void)play;
-- (void)readyToPlay;
-- (void)updateCacheProgress:(float)progress;
-- (void)updatePlayProgress:(float)progress;
-- (void)setMaxDuration:(float)duration;
-- (void)fullZoom:(BOOL)full;
-
-
-@end
 
 
 NS_ASSUME_NONNULL_END

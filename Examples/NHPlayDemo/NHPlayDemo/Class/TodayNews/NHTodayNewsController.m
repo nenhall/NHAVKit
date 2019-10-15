@@ -13,11 +13,13 @@
 #import <NHPlayKit/NHPlayKit.h>
 
 
-@interface NHTodayNewsController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface NHTodayNewsController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,NHPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, copy) NSArray *videoList;
 @property (nonatomic, strong) NHAVPlayer *player;
+@property (nonatomic, strong) NSIndexPath *lastIndexPath;
+
 
 @end
 
@@ -30,7 +32,8 @@
     //    _player = [NHAVPlayer playerWithView:_playView playUrl:_videoList.firstObject];
     _player = [[NHAVPlayer alloc] init];
     [_player setPlayerRate:1.0];
-    _player.playerView.customToolBar = true;
+    _player.delegate = self;
+    _player.customToolBar = true;
     
     
 }
@@ -62,25 +65,41 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NHTodayNewsCell" forIndexPath:indexPath];
     
-    
     return cell;
 }
 
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(NHTodayNewsCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     [cell setPlayURL:self.videoList[indexPath.item]];
-//    [self restartPlay];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    NHTodayNewsCell *currentCell = (NHTodayNewsCell *)[_collectionView cellForItemAtIndexPath:indexPath];
+    [currentCell.player pause];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NHTodayNewsCell *currentCell = (NHTodayNewsCell *)[_collectionView cellForItemAtIndexPath:indexPath];
-    [_player setPlaySuperView:[currentCell playView]];
-    [_player replaceCurrentItemWithPlayUrl:_videoList[indexPath.row]];
-    [_player play];
+//    [_player setPlaySuperView:[currentCell playView]];
+//    [_player replaceCurrentItemWithPlayUrl:_videoList[indexPath.row]];
+//    [_player play];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    NHTodayNewsCell *lastCell = (NHTodayNewsCell *)[_collectionView cellForItemAtIndexPath:_lastIndexPath];
+    [lastCell.player pause];
     
+    NSArray <NHTodayNewsCell *>*cells = [_collectionView visibleCells];
+    for (NHTodayNewsCell *cell in cells) {
+        [cell.player pause];
+    }
+    if (cells.count == 1) {
+        [cells[0].player play];
+        _lastIndexPath = [_collectionView indexPathForCell:cells[0]];
+    } else if (cells.count >= 2) {
+        [cells[1].player play];
+        _lastIndexPath = [_collectionView indexPathForCell:cells[1]];
+    }
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {

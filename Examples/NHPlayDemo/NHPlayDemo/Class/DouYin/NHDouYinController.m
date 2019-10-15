@@ -30,13 +30,51 @@ NSString *cellID = @"NHDouYinCell";
 //    _player = [NHAVPlayer playerWithView:_playView playUrl:_videoList.firstObject];
     _player = [[NHAVPlayer alloc] init];
     [_player setPlayerRate:1.0];
-    _player.playerView.customToolBar = true;
+    _player.delegate = self;
+    _player.customToolBar = true;
     
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [_player pause];
+}
+
+#pragma mark - NHPlayerDelegate
+- (void)nhPlayerPlay:(NHAVPlayer *)player {
+    
+}
+
+- (void)nhPlayerPause:(NHAVPlayer *)player {
+    
+}
+
+- (void)nhPlayerPlayDone:(NHAVPlayer *)player {
+    
+}
+
+- (void)nhPlayerReadyToPlay:(NHAVPlayer *)player {
+    
+}
+
+- (void)nhPlayer:(NHAVPlayer *)player fullZoom:(BOOL)full {
+    
+}
+
+- (void)nhPlayer:(NHAVPlayer *)player dragSlider:(float)progress {
+    
+}
+
+- (void)nhPlayer:(NHAVPlayer *)player updatePlayProgress:(float)progress {
+    
+}
+
+- (void)nhPlayer:(NHAVPlayer *)player updateCacheProgress:(float)progress {
+    
+}
+
+- (void)nhPlayer:(NHAVPlayer *)player playFailed:(NSError *)error playURL:(NSURL *)playURL {
+    
 }
 
 - (IBAction)openPlayController:(UIButton *)sender {

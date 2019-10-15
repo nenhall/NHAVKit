@@ -6,20 +6,21 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
   基于苹果原生的框架编写的 iOS视频播放、编辑、采集的库
                    DESC
-  spec.homepage     = "https://github.com/nenhall/NHAVKit"
+  spec.homepage     = "https://github.com/nenhall/NHAVKit2"
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author       = { "nenhall" => "nenhall@126.com" }
   spec.platform     = :ios
   spec.platform     = :ios, "8.0"
   spec.ios.deployment_target = "10.0"
   spec.ios.deployment_target = "10.0"
-  spec.source       = { :git => "https://github.com/nenhall/NHAVKit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/nenhall/NHAVKit2.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.default_subspec = 'NHAVBaseic', 'NHAVPlayer', 'NHAVCapture'
-end
-  b.subspec 'NHAVBaseic' do |b|
-  b.source_files  = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.{h,m}"
+
+
+spec.subspec 'NHAVBaseic' do |b|
+  b.source_files  = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h"
   b.public_header_files = "NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h"
   b.resources = "NHAVKit2/NHAVPlayer/NHPlay.bundle"
   b.frameworks = "AVFoundation", "CoreGraphics", "CoreMedia", "VideoToolbox", "AudioToolbox"
@@ -43,6 +44,6 @@ spec.subspec 'NHAVCapture' do |c|
 end
 
 
-
+end
 
 

@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "NHPlayerProtocol.h"
+#import "NHPlayerPrivateProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NHPlayerView : UIView <NHPlayerActionDelegate>
+@interface NHPlayerView : UIView <NHPlayerDelegate,NHPlayerPrivateProtocol>
 @property (nonatomic, weak) id<NHPlayerToolBarDelegate> barDelegate;
 /// 点击toolbar显示隐藏手势，默认yes
 @property (nonatomic, assign) BOOL enableToolBarOnTapGesture;

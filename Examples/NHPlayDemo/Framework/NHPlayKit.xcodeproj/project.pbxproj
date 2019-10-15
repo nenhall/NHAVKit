@@ -16,6 +16,7 @@
 		EE4206282276919500F22E98 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4206272276919500F22E98 /* VideoToolbox.framework */; };
 		EE42062A2276919B00F22E98 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4206292276919B00F22E98 /* CoreMedia.framework */; };
 		EE42062C227691A000F22E98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42062B227691A000F22E98 /* CoreGraphics.framework */; };
+		EE7EE22A2355C08A00B63210 /* NHPlayerPrivateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7EE2292355C08A00B63210 /* NHPlayerPrivateProtocol.h */; };
 		EEA6B66D234F21BF00D5143E /* NHFFmpegPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA6B650234F21BF00D5143E /* NHFFmpegPlayer.m */; };
 		EEA6B66E234F21BF00D5143E /* NHFFmpegPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B651234F21BF00D5143E /* NHFFmpegPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEA6B670234F21BF00D5143E /* NHImageHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B654234F21BF00D5143E /* NHImageHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,7 +38,7 @@
 		EEA6B682234F21BF00D5143E /* NHPlayerToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B668234F21BF00D5143E /* NHPlayerToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEA6B683234F21BF00D5143E /* NHPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA6B669234F21BF00D5143E /* NHPlayerView.m */; };
 		EEA6B684234F21BF00D5143E /* NHPlayerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA6B66A234F21BF00D5143E /* NHPlayerToolBar.m */; };
-		EEA6B685234F21BF00D5143E /* NHPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B66B234F21BF00D5143E /* NHPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA6B685234F21BF00D5143E /* NHPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B66B234F21BF00D5143E /* NHPlayerView.h */; };
 		EEA6B68E234F227000D5143E /* NHAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA6B68A234F226F00D5143E /* NHAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEA6B68F234F227000D5143E /* NHBasePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA6B68B234F226F00D5143E /* NHBasePlayer.m */; };
 		EEA6B690234F227000D5143E /* NHAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA6B68C234F226F00D5143E /* NHAVPlayer.m */; };
@@ -182,6 +183,7 @@
 		EE4206272276919500F22E98 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		EE4206292276919B00F22E98 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		EE42062B227691A000F22E98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE7EE2292355C08A00B63210 /* NHPlayerPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHPlayerPrivateProtocol.h; sourceTree = "<group>"; };
 		EEA6B650234F21BF00D5143E /* NHFFmpegPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFFmpegPlayer.m; sourceTree = "<group>"; };
 		EEA6B651234F21BF00D5143E /* NHFFmpegPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFFmpegPlayer.h; sourceTree = "<group>"; };
 		EEA6B654234F21BF00D5143E /* NHImageHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHImageHandle.h; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA6B663234F21BF00D5143E /* NHPlayerProtocol.h */,
+				EE7EE2292355C08A00B63210 /* NHPlayerPrivateProtocol.h */,
 				EEA6B665234F21BF00D5143E /* NSObject+converTime.h */,
 				EEA6B661234F21BF00D5143E /* NSObject+converTime.m */,
 				EEA6B662234F21BF00D5143E /* NSString+time.h */,
@@ -741,13 +744,14 @@
 				EEA6B677234F21BF00D5143E /* NHPlayTimer.h in Headers */,
 				EEA6B672234F21BF00D5143E /* NHPlayerObserver.h in Headers */,
 				EEA6B682234F21BF00D5143E /* NHPlayerToolBar.h in Headers */,
-				EEA6B685234F21BF00D5143E /* NHPlayerView.h in Headers */,
 				EEA6B66E234F21BF00D5143E /* NHFFmpegPlayer.h in Headers */,
 				EEA6B691234F227000D5143E /* NHBasePlayer.h in Headers */,
 				EEA6B67E234F21BF00D5143E /* NHPlayerProtocol.h in Headers */,
 				EEA6B68E234F227000D5143E /* NHAVPlayer.h in Headers */,
 				EEA6B670234F21BF00D5143E /* NHImageHandle.h in Headers */,
 				EEA6B998234F246700D5143E /* vaapi.h in Headers */,
+				EEA6B685234F21BF00D5143E /* NHPlayerView.h in Headers */,
+				EE7EE22A2355C08A00B63210 /* NHPlayerPrivateProtocol.h in Headers */,
 				EEA6B956234F246700D5143E /* frame.h in Headers */,
 				EEA6B680234F21BF00D5143E /* NSObject+converTime.h in Headers */,
 				EEA6B952234F246700D5143E /* avutil.h in Headers */,

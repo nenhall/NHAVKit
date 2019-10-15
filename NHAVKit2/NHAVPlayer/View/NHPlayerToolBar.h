@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "NHPlayerProtocol.h"
+#import "NHPlayerPrivateProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NHPlayerToolBar : UIView <NHPlayerActionDelegate>
+@interface NHPlayerToolBar : UIView <NHPlayerDelegate,NHPlayerPrivateProtocol>
 @property (nonatomic, weak) id<NHPlayerToolBarDelegate> delegate;
 
 //更新播放按钮状态

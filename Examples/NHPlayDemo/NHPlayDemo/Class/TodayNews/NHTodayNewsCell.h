@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NHPlayKit/NHPlayKit.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHTodayNewsCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *playView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) NHAVPlayer *player;
 
 @property (nonatomic, copy) NSString *playURL;
 

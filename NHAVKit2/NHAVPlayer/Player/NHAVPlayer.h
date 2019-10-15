@@ -7,15 +7,16 @@
 //
 
 #import "NHBasePlayer.h"
-#import "NHPlayerProtocol.h"
-#import "NHPlayerView.h"
 #import "NHImageHandle.h"
-
+#import "NHPlayerProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHAVPlayer : NHBasePlayer
+
+/// 播放对象代理
+@property (nonatomic, weak) id<NHPlayerDelegate> delegate;
 
 /// 播放地址
 @property (nonatomic, copy, readonly) NSString *playUrl;
@@ -26,8 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 强制横屏
 @property (nonatomic, assign) BOOL isFullScreen;
 
-/// 播放层
-@property (nonatomic, strong, readonly) NHPlayerView *playerView;
+/// 点击toolbar显示隐藏手势，默认yes
+@property (nonatomic, assign) BOOL enableToolBarOnTapGesture;
+
+/// 自定义工具条，默认false，如果 true 所有相关工具条都会隐藏
+@property (nonatomic, assign) BOOL customToolBar;
 
 /// 播放层的父视图，由外部自定义
 @property (nonatomic, weak  ) UIView *playSuperView;
@@ -60,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  @method            replaceCurrentItemWithPlayerItem:
  @abstract        Replaces the player's current item with the specified player item.
- @param            item
+ @param            playUrl
  The AVPlayerItem that will become the player's current item.
  @discussion
  In all releases of iOS 4, invoking replaceCurrentItemWithPlayerItem: with an AVPlayerItem that's already the receiver's currentItem results in an exception being raised. Starting with iOS 5, it's a no-op.
