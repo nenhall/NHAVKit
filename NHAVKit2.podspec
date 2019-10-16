@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'NHAVKit2'
-  spec.version      = '0.0.1'
+  spec.version      = "0.0.1"
   spec.summary      = 'iOS视频播放、编辑、采集的库'
   spec.description  = <<-DESC
   基于苹果原生的AVFoundation框架编写的 iOS视频播放、编辑、采集的库
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'nenhall' => 'nenhall@126.com' }
   spec.platform     = :ios
   spec.ios.deployment_target = '8.0'
-  spec.source       = { :git => 'https://github.com/nenhall/NHAVKit2.git', :tag => '#{spec.version}' }
+  spec.source       = { :git => "https://github.com/nenhall/NHAVKit2.git", :tag => "#{spec.version}", :submodules => true }
   spec.requires_arc = true
   spec.xcconfig 	= {
       'ENABLE_STRICT_OBJC_MSGSEND' => 'NO'
@@ -38,8 +38,8 @@ end
 
 spec.subspec 'NHAVCapture' do |c|
   c.source_files  = 'NHAVKit2/NHAVCapture/**/*.{h,m}', 'NHAVKit2/NHAVBaseic/NHLib/GPUImage/Source/*.h','NHAVKit2/NHAVBaseic/NHLib/GPUImage/Source/iOS/*.{h,m}'
-  c.public_header_files = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h'
-  c.vendored_libraries  = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/lib/libx264.a'
+  # c.public_header_files = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h'
+  # c.vendored_libraries  = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/lib/libx264.a'
   c.resources = 'NHAVKit2/NHAVPlayer/NHPlay.bundle'
   c.frameworks = 'OpenGLES', 'CoreMedia', 'QuartzCore', 'AVFoundation', 'CoreVideo', 'VideoToolbox'
   c.libraries = 'z', 'bz2', 'iconv'

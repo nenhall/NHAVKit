@@ -19,41 +19,106 @@
 
 @implementation NHImageBeautifyFilter
 
-- (id)init;
-{
-    if (!(self = [super init]))
-    {
+- (id)init {
+    if (!(self = [super init])) {
         return nil;
     }
     
     // First pass: face smoothing filter
-    bilateralFilter = [[GPUImageBilateralFilter alloc] init];
-    bilateralFilter.distanceNormalizationFactor = 4.0;
-    [self addFilter:bilateralFilter];
+    _bilateralFilter = [[GPUImageBilateralFilter alloc] init];
+    _bilateralFilter.distanceNormalizationFactor = 4.0;
+    [self addFilter:_bilateralFilter];
     
     // Second pass: edge detection
-    cannyEdgeFilter = [[GPUImageCannyEdgeDetectionFilter alloc] init];
-    [self addFilter:cannyEdgeFilter];
+    _cannyEdgeFilter = [[GPUImageCannyEdgeDetectionFilter alloc] init];
+    [self addFilter:_cannyEdgeFilter];
     
     // Third pass: combination bilateral, edge detection and origin
-    combinationFilter = [[NHImageCombinationFilter alloc] init];
-    [self addFilter:combinationFilter];
+    _combinationFilter = [[NHImageCombinationFilter alloc] init];
+    [self addFilter:_combinationFilter];
     
     // Adjust HSB
-    hsbFilter = [[GPUImageHSBFilter alloc] init];
-    [hsbFilter adjustBrightness:1.1];
-    [hsbFilter adjustSaturation:1.1];
+    _hsbFilter = [[GPUImageHSBFilter alloc] init];
+    [_hsbFilter adjustBrightness:1.1];
+    [_hsbFilter adjustSaturation:1.1];
     
-    [bilateralFilter addTarget:combinationFilter];
-    [cannyEdgeFilter addTarget:combinationFilter];
+    [_bilateralFilter addTarget:_combinationFilter];
+    [_cannyEdgeFilter addTarget:_combinationFilter];
     
-    [combinationFilter addTarget:hsbFilter];
+    [_combinationFilter addTarget:_hsbFilter];
     
-    self.initialFilters = [NSArray arrayWithObjects:bilateralFilter,cannyEdgeFilter,combinationFilter,nil];
-    self.terminalFilter = hsbFilter;
+    self.initialFilters = [NSArray arrayWithObjects:_bilateralFilter, _cannyEdgeFilter, _combinationFilter, nil];
+    self.terminalFilter = _hsbFilter;
     
     return self;
 }
+
+#pragma makr - private method
+- (BOOL)addExposureFilter {
+    _exposureFilter = [[GPUImageExposureFilter alloc] init];
+    _exposureFilter.exposure = 5;
+    [self addFilter:_exposureFilter];
+    
+    return YES;
+}
+
+- (BOOL)removeExposureFilter {
+    if (_exposureFilter) {
+//        [_exposureFilter removeOutputFramebuffer];
+    }
+    
+    return YES;
+}
+
+- (BOOL)addBrightnessFilter {
+    _brightnessfilter = [[GPUImageBrightnessFilter alloc] init];
+    _brightnessfilter.brightness = 10;
+    [self addFilter:_brightnessfilter];
+    
+    return YES;
+}
+
+- (BOOL)removeBrightnessFilter {
+    
+    return YES;
+}
+
+- (BOOL)addSaturationFilter {
+    _saturationFilter = [[GPUImageSaturationFilter alloc] init];
+    _saturationFilter.saturation = 10;
+    [self addFilter:_saturationFilter];
+    return YES;
+}
+
+- (BOOL)removeSaturationFilter {
+    
+    
+    return YES;
+}
+
+
+- (void)setExposure:(CGFloat)exposure {
+    if (_exposureFilter) {
+        _exposure = exposure;
+        _exposureFilter.exposure = exposure;
+    }
+}
+
+- (void)setBrightness:(CGFloat)brightness {
+    if (_brightnessfilter) {
+        _brightness = brightness;
+        _brightnessfilter.brightness = brightness;
+    }
+}
+
+- (void)setSaturation:(CGFloat)saturation {
+    if (_saturationFilter) {
+        _saturation = saturation;
+        _saturationFilter.saturation = saturation;
+    }
+}
+
+
 
 #pragma mark -
 #pragma mark GPUImageInput protocol
@@ -64,7 +129,7 @@
     {
         if (currentFilter != self.inputFilterToIgnoreForUpdates)
         {
-            if (currentFilter == combinationFilter) {
+            if (currentFilter == _combinationFilter) {
                 textureIndex = 2;
             }
             [currentFilter newFrameReadyAtTime:frameTime atIndex:textureIndex];
@@ -76,7 +141,7 @@
 {
     for (GPUImageOutput<GPUImageInput> *currentFilter in self.initialFilters)
     {
-        if (currentFilter == combinationFilter) {
+        if (currentFilter == _combinationFilter) {
             textureIndex = 2;
         }
         [currentFilter setInputFramebuffer:newInputFramebuffer atIndex:textureIndex];

@@ -40,14 +40,41 @@ typedef enum : NSUInteger {
 @protocol NHCaptureSessionProtocol <NSObject>
 
 @optional
-- (void)capturedidOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer outputType:(NHOutputType)outputType;
 
+/// 已经开始将视频写入到文件
+- (void)captureDidBeginWriteMovieToFile;
+
+/// 视频写入到文件失败
+/// @param error 失败原因
+- (void)captureWriteMovieToFileFailed:(NSError *)error;
+
+/// 完成视频写入文件操作
+/// @param outputURL 输出路径(此路径既你设置的outputURL)
+- (void)captureDidFinishWriteMovieToFile:(NSURL *)outputURL;
+
+/// SampleBuffer输出
+/// @param sampleBuffer sampleBuffer description
+/// @param outputType outputType description
+- (void)captureDidOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer outputType:(NHOutputType)outputType;
+
+/// 开始录制视频
+/// @param fileURL 输出文件路径
+/// @param connections AVCaptureConnection description
 - (void)captureOutputDidStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnection:(NSArray<AVCaptureConnection *> *)connections;
 
-
+/// 录制完成
+/// @param outputFileURL outputFileURL description
+/// @param connections connections description
+/// @param error error description
 - (void)captureOutputDidFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections error:(NSError *)error;
 
 
+/// 导出视频
+/// @param url 导出URL
+/// @param config 导出配置
+/// @param progress 导出进度
+/// @param completed 完成回调
+/// @param save 是否在导出成功的同时保存到相册
 - (void)exportVidelWithUrl:(NSURL *)url
               exportConfig:(NHExportConfig *)config
                   progress:(void (^)(CGFloat value))progress

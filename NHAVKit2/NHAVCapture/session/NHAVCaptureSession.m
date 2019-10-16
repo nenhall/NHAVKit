@@ -71,7 +71,9 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate>
   self = [super initStreamWithInputPath:inPath
                              outputPath:outPath];
   if (self) {
-    [self initializeCaptureSession];
+//    [self initializeCaptureSession];
+      
+      [self initializeGPUCamera];
   }
   return self;
 }
@@ -79,9 +81,9 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate>
 - (instancetype)initSessionWithPreviewView:(UIView *)preview outputType:(NHOutputType)outputType {
   self = [super initSessionWithPreviewView:preview outputType:outputType];
   if (self) {
-    [self initializeCaptureSession];
-    
-    //        [self initializeGPUCamera];
+//    [self initializeCaptureSession];
+
+              [self initializeGPUCamera];
   }
   return self;
 }
@@ -588,8 +590,8 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate>
 
     }
   
-  if (self.delegate && [self.delegate respondsToSelector:@selector(capturedidOutputSampleBuffer:outputType:)]) {
-    [self.delegate capturedidOutputSampleBuffer:sampleBuffer outputType:_outputType];
+  if (self.delegate && [self.delegate respondsToSelector:@selector(captureDidOutputSampleBuffer:outputType:)]) {
+    [self.delegate captureDidOutputSampleBuffer:sampleBuffer outputType:_outputType];
   }
 }
 

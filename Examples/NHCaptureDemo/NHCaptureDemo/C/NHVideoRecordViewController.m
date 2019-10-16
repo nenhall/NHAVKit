@@ -61,9 +61,9 @@
     [super viewDidLoad];
     _videos = [[NSMutableArray alloc] initWithCapacity:3];
     
-    [self initializeAVSession];
+//    [self initializeAVSession];
 //    [self GPUImageMovie];
-//    [self GPUCamera];
+    [self GPUCamera];
   
     [self videoProgressView];
 
@@ -76,17 +76,16 @@
 - (void)GPUCamera {
     _videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionFront];
     _videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
-    ///添加加载输入输出流（用来解决 解决获取视频第一帧图片黑屏问题，不加也行，哈哈）
-    [_videoCamera addAudioInputsAndOutputs];
-    
-    
+//    ///添加加载输入输出流（用来解决 解决获取视频第一帧图片黑屏问题，不加也行，哈哈）
+//    [_videoCamera addAudioInputsAndOutputs];
+
     GPUImageView *gpuImageView = [[GPUImageView alloc] initWithFrame:_previewView.bounds];
     [_previewView addSubview:gpuImageView];
 
-    //初始化滤镜
+//    //初始化滤镜
     beautifyFilter = [[NHImageBeautifyFilter alloc] init];
-    [beautifyFilter addTarget:gpuImageView];
     [_videoCamera addTarget:beautifyFilter];
+    [beautifyFilter addTarget:gpuImageView];
     [_videoCamera startCameraCapture];
     
 }
@@ -120,8 +119,8 @@
     _captureSession.delegate = self;
     [_captureSession startCapture];
     /// 创建渲染滤镜
-    GPUImageSketchFilter  *filter = [[GPUImageSketchFilter alloc] init];
-    [filter addTarget:_previewView];
+//    GPUImageSketchFilter  *filter = [[GPUImageSketchFilter alloc] init];
+//    [filter addTarget:_previewView];
 }
 
 - (void)viewDidLayoutSubviews {

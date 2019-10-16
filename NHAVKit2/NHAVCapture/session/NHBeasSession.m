@@ -49,7 +49,7 @@
     _autoLayoutSubviews = YES;
     _preview = preview;
     _outputType = outputType;
-    [self initializeCaptureSession];
+//    [self initializeCaptureSession];
   }
   return self;
 }

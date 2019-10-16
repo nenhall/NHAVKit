@@ -23,6 +23,8 @@
 		EE26F520223660FF007CF8EF /* NHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26F51E223660FF007CF8EF /* NHMainViewController.m */; };
 		EE26FACC22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE26FACB22367C00007CF8EF /* I’m-so-sick-1080P—Apink.mp4 */; };
 		EE2CD6802261CF170091CF23 /* I’m-so-sick.aac in Resources */ = {isa = PBXBuildFile; fileRef = EE2CD67D2261CF170091CF23 /* I’m-so-sick.aac */; };
+		EE7834862356FEE000EE4710 /* NHPlayKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE7EE23B2355E52900B63210 /* NHPlayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE7834872356FEE300EE4710 /* NHCaptureKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE7EE2332355E38100B63210 /* NHCaptureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EECD2CCF224A46D400F4620C /* NHVideoProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD2CCD224A46D400F4620C /* NHVideoProcessController.m */; };
 		EECD2CD0224A46D400F4620C /* NHVideoProcessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EECD2CCE224A46D400F4620C /* NHVideoProcessController.xib */; };
 		EECD2CD4224A49C800F4620C /* NHVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD2CD2224A49C800F4620C /* NHVideoListController.m */; };
@@ -79,6 +81,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EE7834862356FEE000EE4710 /* NHPlayKit.framework in CopyFiles */,
+				EE7834872356FEE300EE4710 /* NHCaptureKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -232,10 +232,14 @@
 
 - (void)recalculateViewGeometry;
 {
+    __block CGSize currentViewSize;
+
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+        
     runSynchronouslyOnVideoProcessingQueue(^{
         CGFloat heightScaling, widthScaling;
         
-        CGSize currentViewSize = self.bounds.size;
+         currentViewSize = self.bounds.size;
         
         //    CGFloat imageAspectRatio = inputImageSize.width / inputImageSize.height;
         //    CGFloat viewAspectRatio = currentViewSize.width / currentViewSize.height;
@@ -278,6 +282,8 @@
 //        -1.0f,  1.0f,
 //        1.0f,  1.0f,
 //    };
+        });
+
 }
 
 - (void)setBackgroundColorRed:(GLfloat)redComponent green:(GLfloat)greenComponent blue:(GLfloat)blueComponent alpha:(GLfloat)alphaComponent;
