@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73FD3D79E81DF42E6633B54B /* libPods-NHCaptureExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2828D242E99B0B79ACDA332 /* libPods-NHCaptureExamples.a */; };
+		EE06BEAE235F343B00AFB57C /* NHPlayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE06BEAD235F343B00AFB57C /* NHPlayKit.framework */; };
+		EE06BEAF235F344100AFB57C /* NHPlayKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE06BEAD235F343B00AFB57C /* NHPlayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE06BEBA235F359400AFB57C /* I’m-so-sick-1080P—Apink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EE06BEB8235F359400AFB57C /* I’m-so-sick-1080P—Apink.mp4 */; };
+		EE06BEBB235F359400AFB57C /* I’m-so-sick.aac in Resources */ = {isa = PBXBuildFile; fileRef = EE06BEB9235F359400AFB57C /* I’m-so-sick.aac */; };
+		EE6987E9235EC17C00E0D2A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6987E8235EC17C00E0D2A6 /* AppDelegate.m */; };
+		EE6987EC235EC17C00E0D2A6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6987EB235EC17C00E0D2A6 /* SceneDelegate.m */; };
+		EE6987F2235EC17C00E0D2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6987F0235EC17C00E0D2A6 /* Main.storyboard */; };
+		EE6987F4235EC17D00E0D2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6987F3235EC17D00E0D2A6 /* Assets.xcassets */; };
+		EE6987F7235EC17D00E0D2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6987F5235EC17D00E0D2A6 /* LaunchScreen.storyboard */; };
+		EE6987FA235EC17D00E0D2A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6987F9235EC17D00E0D2A6 /* main.m */; };
+		EE698804235EC17E00E0D2A6 /* NHCaptureExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698803235EC17E00E0D2A6 /* NHCaptureExamplesTests.m */; };
+		EE69880F235EC17E00E0D2A6 /* NHCaptureExamplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE69880E235EC17E00E0D2A6 /* NHCaptureExamplesUITests.m */; };
+		EE698873235ED35A00E0D2A6 /* NHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698866235ED35900E0D2A6 /* NHMainViewController.m */; };
+		EE698875235ED35A00E0D2A6 /* NHVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698868235ED35900E0D2A6 /* NHVideoRecordViewController.m */; };
+		EE698878235ED35A00E0D2A6 /* NHVideoRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE69886B235ED35900E0D2A6 /* NHVideoRecordViewController.xib */; };
+		EE69887A235ED35A00E0D2A6 /* NHPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE69886E235ED35900E0D2A6 /* NHPushViewController.m */; };
+		EE69887B235ED35A00E0D2A6 /* NHPushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE698872235ED35A00E0D2A6 /* NHPushViewController.xib */; };
+		EE698881235ED36500E0D2A6 /* NHVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE69887C235ED36500E0D2A6 /* NHVideoListCell.xib */; };
+		EE698882235ED36500E0D2A6 /* NHVideoProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = EE69887F235ED36500E0D2A6 /* NHVideoProgress.m */; };
+		EE698883235ED36500E0D2A6 /* NHVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698880235ED36500E0D2A6 /* NHVideoListCell.m */; };
+		EE698889235ED47C00E0D2A6 /* NHVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698886235ED47B00E0D2A6 /* NHVideoListController.m */; };
+		EE69888A235ED47C00E0D2A6 /* NHVideoListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE698887235ED47C00E0D2A6 /* NHVideoListController.xib */; };
+		EEC330AF235F21E30061C9D9 /* NHCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC330AE235F21E30061C9D9 /* NHCaptureKit.framework */; };
+		EEC330B4235F22050061C9D9 /* NHCaptureKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEC330AE235F21E30061C9D9 /* NHCaptureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE698800235EC17E00E0D2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE6987DC235EC17C00E0D2A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6987E3235EC17C00E0D2A6;
+			remoteInfo = NHCaptureExamples;
+		};
+		EE69880B235EC17E00E0D2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE6987DC235EC17C00E0D2A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6987E3235EC17C00E0D2A6;
+			remoteInfo = NHCaptureExamples;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEC330B2235F21EC0061C9D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE06BEAF235F344100AFB57C /* NHPlayKit.framework in CopyFiles */,
+				EEC330B4235F22050061C9D9 /* NHCaptureKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28BAF18EB33DD6FFE62CC021 /* Pods-NHCaptureExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHCaptureExamples.release.xcconfig"; path = "Target Support Files/Pods-NHCaptureExamples/Pods-NHCaptureExamples.release.xcconfig"; sourceTree = "<group>"; };
+		B2828D242E99B0B79ACDA332 /* libPods-NHCaptureExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHCaptureExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9DA29D81678F0F10EE2DD5 /* Pods-NHCaptureExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHCaptureExamples.debug.xcconfig"; path = "Target Support Files/Pods-NHCaptureExamples/Pods-NHCaptureExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		EE06BEAD235F343B00AFB57C /* NHPlayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHPlayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE06BEB8235F359400AFB57C /* I’m-so-sick-1080P—Apink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick-1080P—Apink.mp4"; path = "../../../../Resources/I’m-so-sick-1080P—Apink.mp4"; sourceTree = "<group>"; };
+		EE06BEB9235F359400AFB57C /* I’m-so-sick.aac */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I’m-so-sick.aac"; path = "../../../../Resources/I’m-so-sick.aac"; sourceTree = "<group>"; };
+		EE6987E4235EC17C00E0D2A6 /* NHCaptureExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHCaptureExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6987E7235EC17C00E0D2A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE6987E8235EC17C00E0D2A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE6987EA235EC17C00E0D2A6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EE6987EB235EC17C00E0D2A6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EE6987F1235EC17C00E0D2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE6987F3235EC17D00E0D2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE6987F6235EC17D00E0D2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE6987F8235EC17D00E0D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6987F9235EC17D00E0D2A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE6987FF235EC17E00E0D2A6 /* NHCaptureExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHCaptureExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE698803235EC17E00E0D2A6 /* NHCaptureExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHCaptureExamplesTests.m; sourceTree = "<group>"; };
+		EE698805235EC17E00E0D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE69880A235EC17E00E0D2A6 /* NHCaptureExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHCaptureExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE69880E235EC17E00E0D2A6 /* NHCaptureExamplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHCaptureExamplesUITests.m; sourceTree = "<group>"; };
+		EE698810235EC17E00E0D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE698866235ED35900E0D2A6 /* NHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMainViewController.m; sourceTree = "<group>"; };
+		EE698868235ED35900E0D2A6 /* NHVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoRecordViewController.m; sourceTree = "<group>"; };
+		EE69886B235ED35900E0D2A6 /* NHVideoRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHVideoRecordViewController.xib; sourceTree = "<group>"; };
+		EE69886E235ED35900E0D2A6 /* NHPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPushViewController.m; sourceTree = "<group>"; };
+		EE69886F235ED35900E0D2A6 /* NHPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPushViewController.h; sourceTree = "<group>"; };
+		EE698870235ED35900E0D2A6 /* NHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMainViewController.h; sourceTree = "<group>"; };
+		EE698871235ED35A00E0D2A6 /* NHVideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoRecordViewController.h; sourceTree = "<group>"; };
+		EE698872235ED35A00E0D2A6 /* NHPushViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHPushViewController.xib; sourceTree = "<group>"; };
+		EE69887C235ED36500E0D2A6 /* NHVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHVideoListCell.xib; sourceTree = "<group>"; };
+		EE69887D235ED36500E0D2A6 /* NHVideoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoListCell.h; sourceTree = "<group>"; };
+		EE69887E235ED36500E0D2A6 /* NHVideoProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoProgress.h; sourceTree = "<group>"; };
+		EE69887F235ED36500E0D2A6 /* NHVideoProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoProgress.m; sourceTree = "<group>"; };
+		EE698880235ED36500E0D2A6 /* NHVideoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoListCell.m; sourceTree = "<group>"; };
+		EE698886235ED47B00E0D2A6 /* NHVideoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoListController.m; sourceTree = "<group>"; };
+		EE698887235ED47C00E0D2A6 /* NHVideoListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHVideoListController.xib; sourceTree = "<group>"; };
+		EE698888235ED47C00E0D2A6 /* NHVideoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoListController.h; sourceTree = "<group>"; };
+		EEC330AE235F21E30061C9D9 /* NHCaptureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHCaptureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC330B9235F24370061C9D9 /* NHCaptureExamples.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureExamples.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE6987E1235EC17C00E0D2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE06BEAE235F343B00AFB57C /* NHPlayKit.framework in Frameworks */,
+				EEC330AF235F21E30061C9D9 /* NHCaptureKit.framework in Frameworks */,
+				73FD3D79E81DF42E6633B54B /* libPods-NHCaptureExamples.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6987FC235EC17E00E0D2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE698807235EC17E00E0D2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A3B666AF895A614FF319867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE06BEAD235F343B00AFB57C /* NHPlayKit.framework */,
+				EEC330AE235F21E30061C9D9 /* NHCaptureKit.framework */,
+				B2828D242E99B0B79ACDA332 /* libPods-NHCaptureExamples.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0827ECDC02D05C37B145D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9DA29D81678F0F10EE2DD5 /* Pods-NHCaptureExamples.debug.xcconfig */,
+				28BAF18EB33DD6FFE62CC021 /* Pods-NHCaptureExamples.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		EE06BEB3235F34F400AFB57C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE06BEB8235F359400AFB57C /* I’m-so-sick-1080P—Apink.mp4 */,
+				EE06BEB9235F359400AFB57C /* I’m-so-sick.aac */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE6987DB235EC17C00E0D2A6 = {
+			isa = PBXGroup;
+			children = (
+				EE6987E6235EC17C00E0D2A6 /* NHCaptureExamples */,
+				EE698802235EC17E00E0D2A6 /* NHCaptureExamplesTests */,
+				EE69880D235EC17E00E0D2A6 /* NHCaptureExamplesUITests */,
+				EE6987E5235EC17C00E0D2A6 /* Products */,
+				A0827ECDC02D05C37B145D27 /* Pods */,
+				4A3B666AF895A614FF319867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE6987E5235EC17C00E0D2A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE6987E4235EC17C00E0D2A6 /* NHCaptureExamples.app */,
+				EE6987FF235EC17E00E0D2A6 /* NHCaptureExamplesTests.xctest */,
+				EE69880A235EC17E00E0D2A6 /* NHCaptureExamplesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE6987E6235EC17C00E0D2A6 /* NHCaptureExamples */ = {
+			isa = PBXGroup;
+			children = (
+				EE06BEB3235F34F400AFB57C /* Resources */,
+				EE698885235ED37C00E0D2A6 /* Other */,
+				EE698863235ED2B300E0D2A6 /* Controller */,
+				EE698864235ED2C600E0D2A6 /* Model */,
+				EE698862235ED2A800E0D2A6 /* View */,
+				EE6987F0235EC17C00E0D2A6 /* Main.storyboard */,
+				EE6987F5235EC17D00E0D2A6 /* LaunchScreen.storyboard */,
+				EE6987F3235EC17D00E0D2A6 /* Assets.xcassets */,
+				EE6987F8235EC17D00E0D2A6 /* Info.plist */,
+				EE6987F9235EC17D00E0D2A6 /* main.m */,
+			);
+			path = NHCaptureExamples;
+			sourceTree = "<group>";
+		};
+		EE698802235EC17E00E0D2A6 /* NHCaptureExamplesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE698803235EC17E00E0D2A6 /* NHCaptureExamplesTests.m */,
+				EE698805235EC17E00E0D2A6 /* Info.plist */,
+			);
+			path = NHCaptureExamplesTests;
+			sourceTree = "<group>";
+		};
+		EE69880D235EC17E00E0D2A6 /* NHCaptureExamplesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE69880E235EC17E00E0D2A6 /* NHCaptureExamplesUITests.m */,
+				EE698810235EC17E00E0D2A6 /* Info.plist */,
+			);
+			path = NHCaptureExamplesUITests;
+			sourceTree = "<group>";
+		};
+		EE698862235ED2A800E0D2A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE69887D235ED36500E0D2A6 /* NHVideoListCell.h */,
+				EE698880235ED36500E0D2A6 /* NHVideoListCell.m */,
+				EE69887C235ED36500E0D2A6 /* NHVideoListCell.xib */,
+				EE69887E235ED36500E0D2A6 /* NHVideoProgress.h */,
+				EE69887F235ED36500E0D2A6 /* NHVideoProgress.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE698863235ED2B300E0D2A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE698870235ED35900E0D2A6 /* NHMainViewController.h */,
+				EE698866235ED35900E0D2A6 /* NHMainViewController.m */,
+				EE69886F235ED35900E0D2A6 /* NHPushViewController.h */,
+				EE69886E235ED35900E0D2A6 /* NHPushViewController.m */,
+				EE698872235ED35A00E0D2A6 /* NHPushViewController.xib */,
+				EE698888235ED47C00E0D2A6 /* NHVideoListController.h */,
+				EE698886235ED47B00E0D2A6 /* NHVideoListController.m */,
+				EE698887235ED47C00E0D2A6 /* NHVideoListController.xib */,
+				EE698871235ED35A00E0D2A6 /* NHVideoRecordViewController.h */,
+				EE698868235ED35900E0D2A6 /* NHVideoRecordViewController.m */,
+				EE69886B235ED35900E0D2A6 /* NHVideoRecordViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE698864235ED2C600E0D2A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE698885235ED37C00E0D2A6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE6987E7235EC17C00E0D2A6 /* AppDelegate.h */,
+				EE6987E8235EC17C00E0D2A6 /* AppDelegate.m */,
+				EE6987EA235EC17C00E0D2A6 /* SceneDelegate.h */,
+				EE6987EB235EC17C00E0D2A6 /* SceneDelegate.m */,
+				EEC330B9235F24370061C9D9 /* NHCaptureExamples.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE6987E3235EC17C00E0D2A6 /* NHCaptureExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE698813235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamples" */;
+			buildPhases = (
+				7E1AB4CFD3B16477A68D8E91 /* [CP] Check Pods Manifest.lock */,
+				EE6987E0235EC17C00E0D2A6 /* Sources */,
+				EE6987E1235EC17C00E0D2A6 /* Frameworks */,
+				EE6987E2235EC17C00E0D2A6 /* Resources */,
+				EEC330B2235F21EC0061C9D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHCaptureExamples;
+			productName = NHCaptureExamples;
+			productReference = EE6987E4235EC17C00E0D2A6 /* NHCaptureExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE6987FE235EC17E00E0D2A6 /* NHCaptureExamplesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE698816235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamplesTests" */;
+			buildPhases = (
+				EE6987FB235EC17E00E0D2A6 /* Sources */,
+				EE6987FC235EC17E00E0D2A6 /* Frameworks */,
+				EE6987FD235EC17E00E0D2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE698801235EC17E00E0D2A6 /* PBXTargetDependency */,
+			);
+			name = NHCaptureExamplesTests;
+			productName = NHCaptureExamplesTests;
+			productReference = EE6987FF235EC17E00E0D2A6 /* NHCaptureExamplesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE698809235EC17E00E0D2A6 /* NHCaptureExamplesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE698819235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamplesUITests" */;
+			buildPhases = (
+				EE698806235EC17E00E0D2A6 /* Sources */,
+				EE698807235EC17E00E0D2A6 /* Frameworks */,
+				EE698808235EC17E00E0D2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE69880C235EC17E00E0D2A6 /* PBXTargetDependency */,
+			);
+			name = NHCaptureExamplesUITests;
+			productName = NHCaptureExamplesUITests;
+			productReference = EE69880A235EC17E00E0D2A6 /* NHCaptureExamplesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE6987DC235EC17C00E0D2A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = nenhall;
+				TargetAttributes = {
+					EE6987E3235EC17C00E0D2A6 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					EE6987FE235EC17E00E0D2A6 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = EE6987E3235EC17C00E0D2A6;
+					};
+					EE698809235EC17E00E0D2A6 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = EE6987E3235EC17C00E0D2A6;
+					};
+				};
+			};
+			buildConfigurationList = EE6987DF235EC17C00E0D2A6 /* Build configuration list for PBXProject "NHCaptureExamples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE6987DB235EC17C00E0D2A6;
+			productRefGroup = EE6987E5235EC17C00E0D2A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE6987E3235EC17C00E0D2A6 /* NHCaptureExamples */,
+				EE6987FE235EC17E00E0D2A6 /* NHCaptureExamplesTests */,
+				EE698809235EC17E00E0D2A6 /* NHCaptureExamplesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE6987E2235EC17C00E0D2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE698878235ED35A00E0D2A6 /* NHVideoRecordViewController.xib in Resources */,
+				EE6987F7235EC17D00E0D2A6 /* LaunchScreen.storyboard in Resources */,
+				EE06BEBB235F359400AFB57C /* I’m-so-sick.aac in Resources */,
+				EE6987F4235EC17D00E0D2A6 /* Assets.xcassets in Resources */,
+				EE6987F2235EC17C00E0D2A6 /* Main.storyboard in Resources */,
+				EE06BEBA235F359400AFB57C /* I’m-so-sick-1080P—Apink.mp4 in Resources */,
+				EE698881235ED36500E0D2A6 /* NHVideoListCell.xib in Resources */,
+				EE69888A235ED47C00E0D2A6 /* NHVideoListController.xib in Resources */,
+				EE69887B235ED35A00E0D2A6 /* NHPushViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6987FD235EC17E00E0D2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE698808235EC17E00E0D2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E1AB4CFD3B16477A68D8E91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NHCaptureExamples-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE6987E0235EC17C00E0D2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE698882235ED36500E0D2A6 /* NHVideoProgress.m in Sources */,
+				EE6987E9235EC17C00E0D2A6 /* AppDelegate.m in Sources */,
+				EE6987FA235EC17D00E0D2A6 /* main.m in Sources */,
+				EE6987EC235EC17C00E0D2A6 /* SceneDelegate.m in Sources */,
+				EE698883235ED36500E0D2A6 /* NHVideoListCell.m in Sources */,
+				EE698875235ED35A00E0D2A6 /* NHVideoRecordViewController.m in Sources */,
+				EE698873235ED35A00E0D2A6 /* NHMainViewController.m in Sources */,
+				EE698889235ED47C00E0D2A6 /* NHVideoListController.m in Sources */,
+				EE69887A235ED35A00E0D2A6 /* NHPushViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6987FB235EC17E00E0D2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE698804235EC17E00E0D2A6 /* NHCaptureExamplesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE698806235EC17E00E0D2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE69880F235EC17E00E0D2A6 /* NHCaptureExamplesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE698801235EC17E00E0D2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6987E3235EC17C00E0D2A6 /* NHCaptureExamples */;
+			targetProxy = EE698800235EC17E00E0D2A6 /* PBXContainerItemProxy */;
+		};
+		EE69880C235EC17E00E0D2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6987E3235EC17C00E0D2A6 /* NHCaptureExamples */;
+			targetProxy = EE69880B235EC17E00E0D2A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE6987F0235EC17C00E0D2A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE6987F1235EC17C00E0D2A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE6987F5235EC17D00E0D2A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE6987F6235EC17D00E0D2A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE698811235EC17E00E0D2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE698812235EC17E00E0D2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE698814235EC17E00E0D2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9DA29D81678F0F10EE2DD5 /* Pods-NHCaptureExamples.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureExamples/NHCaptureExamples.pch";
+				INFOPLIST_FILE = NHCaptureExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHCaptureExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE698815235EC17E00E0D2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BAF18EB33DD6FFE62CC021 /* Pods-NHCaptureExamples.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureExamples/NHCaptureExamples.pch";
+				INFOPLIST_FILE = NHCaptureExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.test2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE698817235EC17E00E0D2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				INFOPLIST_FILE = NHCaptureExamplesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHCaptureExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHCaptureExamples.app/NHCaptureExamples";
+			};
+			name = Debug;
+		};
+		EE698818235EC17E00E0D2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				INFOPLIST_FILE = NHCaptureExamplesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHCaptureExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHCaptureExamples.app/NHCaptureExamples";
+			};
+			name = Release;
+		};
+		EE69881A235EC17E00E0D2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				INFOPLIST_FILE = NHCaptureExamplesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHCaptureExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHCaptureExamples;
+			};
+			name = Debug;
+		};
+		EE69881B235EC17E00E0D2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T87F8K2DQD;
+				INFOPLIST_FILE = NHCaptureExamplesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHCaptureExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHCaptureExamples;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE6987DF235EC17C00E0D2A6 /* Build configuration list for PBXProject "NHCaptureExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE698811235EC17E00E0D2A6 /* Debug */,
+				EE698812235EC17E00E0D2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE698813235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE698814235EC17E00E0D2A6 /* Debug */,
+				EE698815235EC17E00E0D2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE698816235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamplesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE698817235EC17E00E0D2A6 /* Debug */,
+				EE698818235EC17E00E0D2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE698819235EC17E00E0D2A6 /* Build configuration list for PBXNativeTarget "NHCaptureExamplesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE69881A235EC17E00E0D2A6 /* Debug */,
+				EE69881B235EC17E00E0D2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE6987DC235EC17C00E0D2A6 /* Project object */;
+}

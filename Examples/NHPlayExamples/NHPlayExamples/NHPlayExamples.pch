@@ -1,0 +1,22 @@
+//
+//  NHPlayExamples.pch
+//  NHPlayExamples
+//
+//  Created by nenhall on 2019/10/22.
+//  Copyright © 2019 nenhall. All rights reserved.
+//
+
+#ifndef NHPlayExamples_pch
+#define NHPlayExamples_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#endif
+
+#import <NHExtension/NHUIKit.h>
+#import <NHExtension/NHFoundation.h>
+
+
+#endif /* NHPlayExamples_pch */

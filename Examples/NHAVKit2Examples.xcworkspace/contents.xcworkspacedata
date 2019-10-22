@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Framework/NHPlayKit/NHPlayKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Framework/NHCaptureKit/NHCaptureKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHPlayExamples/NHPlayExamples.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHCaptureExamples/NHCaptureExamples.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

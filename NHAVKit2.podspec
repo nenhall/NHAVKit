@@ -13,39 +13,37 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '8.0'
   spec.source       = { :git => "https://github.com/nenhall/NHAVKit2.git", :tag => "#{spec.version}", :submodules => true }
   spec.requires_arc = true
-  spec.xcconfig 	= {
+  spec.xcconfig 	  = {
       'ENABLE_STRICT_OBJC_MSGSEND' => 'NO'
   }
-  spec.default_subspec = 'NHAVBaseic', 'NHAVPlayer', 'NHAVCapture'
+  spec.default_subspec = 'NHBaseic', 'NHPlayer', 'NHCapture'
 
 
-spec.subspec 'NHAVBaseic' do |b|
-  b.source_files  = 'NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h', 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h'
-  b.public_header_files = 'NHAVKit2/NHAVBaseic/NHLib/FFmpeg/include/**/*.h'
-  b.vendored_libraries  = 'NHAVKit2/NHAVBaseic/NHLib/FFmpeg/lib/*.a'
-  b.resources  = 'NHAVKit2/NHAVPlayer/NHPlay.bundle'
+spec.subspec 'NHBaseic' do |b|
+  # b.source_files        = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/include/**/*.h'
+  b.public_header_files = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/include/**/*.h'
+  b.vendored_libraries  = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/lib/*.a'
   b.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'VideoToolbox', 'AudioToolbox'
   b.libraries  = 'z', 'bz2', 'iconv'
 end
 
-spec.subspec 'NHAVPlayer' do |p|
-  p.source_files  = 'NHAVKit2/NHAVPlayer/**/*.{h,m}'
-  p.resources = 'NHAVKit2/NHAVPlayer/NHPlay.bundle'
+spec.subspec 'NHPlayer' do |p|
+  p.source_files  = 'NHAVKit2/NHPlayKit/**/*.{h,m}'
+  p.resources  = 'NHAVKit2/NHPlayKit/Library/NHPlay.bundle'
   p.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'VideoToolbox', 'AudioToolbox'
-  p.libraries = 'z', 'bz2', 'iconv'
+  p.libraries  = 'z', 'bz2', 'iconv'
   p.dependency 'NHAVKit2/NHAVBaseic'
 end
 
-spec.subspec 'NHAVCapture' do |c|
-  c.source_files  = 'NHAVKit2/NHAVCapture/**/*.{h,m}', 'NHAVKit2/NHAVBaseic/NHLib/GPUImage/Source/*.h','NHAVKit2/NHAVBaseic/NHLib/GPUImage/Source/iOS/*.{h,m}'
-  # c.public_header_files = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/include/*.h'
-  # c.vendored_libraries  = 'NHAVKit2/NHAVBaseic/NHLib/x264-iOS/lib/libx264.a'
-  c.resources = 'NHAVKit2/NHAVPlayer/NHPlay.bundle'
+spec.subspec 'NHCapture' do |c|
+  # 'NHAVKit2/NHCaptureKit/Library/x264-iOS/include/*.h'
+  c.source_files  = 'NHAVKit2/NHCaptureKit/**/*.{h,m}', 'NHAVKit2/NHCaptureKit/Library/GPUImage/Source/*.h','NHAVKit2/NHAVCapture/GPUImage/Source/iOS/*.{h,m}'
+  c.public_header_files = 'NHAVKit2/NHCaptureKit/NHLib/x264-iOS/include/*.h'
+  c.vendored_libraries  = 'NHAVKit2/NHCaptureKit/NHLib/x264-iOS/lib/libx264.a'
   c.frameworks = 'OpenGLES', 'CoreMedia', 'QuartzCore', 'AVFoundation', 'CoreVideo', 'VideoToolbox'
-  c.libraries = 'z', 'bz2', 'iconv'
+  c.libraries  = 'z', 'bz2', 'iconv'
   c.dependency 'NHAVKit2/NHAVBaseic'
 end
-
 
 end
 

@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# workspace文件名
+workspace 'NHAVKit2Examples.xcworkspace'
+# workspace的主工程路径，是相对于workspace的路径
+# project 'NHAVKit2Examples/NHAVKit2Examples.xcodeproj'
+
+
+target 'NHPlayExamples' do
+  platform :ios, '8.0'
+# 第一个工程的相对路径，是相对于workspace的路径
+  project 'NHPlayExamples/NHPlayExamples.xcodeproj'
+
+  pod 'FDFullscreenPopGesture'
+  pod 'DZNEmptyDataSet'
+  pod 'NHExtension'
+  pod 'NHHUDExtend'
+
+end
+
+
+target 'NHCaptureExamples' do
+	platform :ios, '8.0'
+	project 'NHCaptureExamples/NHCaptureExamples.xcodeproj'
+
+    pod 'FDFullscreenPopGesture'
+    pod 'DZNEmptyDataSet'
+    pod 'NHExtension'
+    pod 'NHHUDExtend'
+end
