@@ -7,17 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE08A0C2236084970070DC88 /* NHAVKit2Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */; };
+		EE08A0C3236084970070DC88 /* NH_INLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B6236084960070DC88 /* NH_INLINE.h */; };
+		EE08A0C4236084970070DC88 /* NHAVKit2Define.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B7236084960070DC88 /* NHAVKit2Define.h */; };
+		EE08A0C5236084970070DC88 /* NHAVKit2Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */; };
+		EE08A0C6236084970070DC88 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */; };
+		EE08A0C7236084970070DC88 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BB236084960070DC88 /* NSObject+converTime.m */; };
+		EE08A0C8236084970070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BC236084960070DC88 /* NSString+time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0C9236084970070DC88 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BD236084960070DC88 /* NSTimer+NHAutoRetain.m */; };
+		EE08A0CA236084970070DC88 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BE236084960070DC88 /* UIDevice+NHOrientation.m */; };
+		EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BF236084960070DC88 /* NSObject+converTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0C0236084960070DC88 /* NSTimer+NHAutoRetain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0CD236084970070DC88 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0C1236084960070DC88 /* NSString+time.m */; };
+		EE08A0D6236085150070DC88 /* NHFFmpegPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0D0236085150070DC88 /* NHFFmpegPlayer.m */; };
+		EE08A0D7236085150070DC88 /* NHFFmpegPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0D1236085150070DC88 /* NHFFmpegPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0D8236085150070DC88 /* NHAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0D2236085150070DC88 /* NHAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0D9236085150070DC88 /* NHBasePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0D3236085150070DC88 /* NHBasePlayer.m */; };
+		EE08A0DA236085150070DC88 /* NHAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0D4236085150070DC88 /* NHAVPlayer.m */; };
+		EE08A0DB236085150070DC88 /* NHBasePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0D5236085150070DC88 /* NHBasePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE698908235EDAC100E0D2A6 /* NHPlayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698906235EDAC100E0D2A6 /* NHPlayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE6989FC235EE39500E0D2A6 /* NHFFmpegPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698951235EE39400E0D2A6 /* NHFFmpegPlayer.m */; };
-		EE6989FD235EE39500E0D2A6 /* NHFFmpegPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698952235EE39500E0D2A6 /* NHFFmpegPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE6989FE235EE39500E0D2A6 /* NHImageHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698954235EE39500E0D2A6 /* NHImageHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE6989FF235EE39500E0D2A6 /* NHPlayTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698955235EE39500E0D2A6 /* NHPlayTimer.m */; };
-		EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */; };
+		EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE698A01235EE39500E0D2A6 /* NHKVOOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698957235EE39500E0D2A6 /* NHKVOOwner.h */; };
 		EE698A02235EE39500E0D2A6 /* NHImageHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698958235EE39500E0D2A6 /* NHImageHandle.m */; };
 		EE698A03235EE39500E0D2A6 /* NHKVOOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698959235EE39500E0D2A6 /* NHKVOOwner.m */; };
 		EE698A04235EE39500E0D2A6 /* NHPlayerObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EE69895A235EE39500E0D2A6 /* NHPlayerObserver.m */; };
-		EE698A05235EE39500E0D2A6 /* NHPlayTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE69895B235EE39500E0D2A6 /* NHPlayTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE698A06235EE39500E0D2A6 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698960235EE39500E0D2A6 /* version.h */; };
 		EE698A07235EE39500E0D2A6 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698961235EE39500E0D2A6 /* postprocess.h */; };
 		EE698A08235EE39500E0D2A6 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698963235EE39500E0D2A6 /* version.h */; };
@@ -140,23 +154,12 @@
 		EE698A7D235EE39500E0D2A6 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6989DF235EE39500E0D2A6 /* libswscale.a */; };
 		EE698A7E235EE39500E0D2A6 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6989E0235EE39500E0D2A6 /* libx264.a */; };
 		EE698A7F235EE39500E0D2A6 /* NHPlay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE6989E1235EE39500E0D2A6 /* NHPlay.bundle */; };
-		EE698A83235EE39500E0D2A6 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989E9235EE39500E0D2A6 /* UIDevice+NHOrientation.h */; };
-		EE698A84235EE39500E0D2A6 /* NHAVPlayDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989EA235EE39500E0D2A6 /* NHAVPlayDefine.h */; };
 		EE698A85235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989EB235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h */; };
-		EE698A86235EE39500E0D2A6 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989EC235EE39500E0D2A6 /* NSObject+converTime.m */; };
-		EE698A87235EE39500E0D2A6 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989ED235EE39500E0D2A6 /* NSString+time.h */; };
 		EE698A88235EE39500E0D2A6 /* NHPlayerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989EE235EE39500E0D2A6 /* NHPlayerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE698A89235EE39500E0D2A6 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989EF235EE39500E0D2A6 /* UIDevice+NHOrientation.m */; };
-		EE698A8A235EE39500E0D2A6 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989F0235EE39500E0D2A6 /* NSObject+converTime.h */; };
-		EE698A8B235EE39500E0D2A6 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989F1235EE39500E0D2A6 /* NSString+time.m */; };
 		EE698A8C235EE39500E0D2A6 /* NHPlayerToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989F3235EE39500E0D2A6 /* NHPlayerToolBar.h */; };
 		EE698A8D235EE39500E0D2A6 /* NHPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989F4235EE39500E0D2A6 /* NHPlayerView.m */; };
 		EE698A8E235EE39500E0D2A6 /* NHPlayerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989F5235EE39500E0D2A6 /* NHPlayerToolBar.m */; };
 		EE698A8F235EE39500E0D2A6 /* NHPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989F6235EE39500E0D2A6 /* NHPlayerView.h */; };
-		EE698A90235EE39500E0D2A6 /* NHAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989F8235EE39500E0D2A6 /* NHAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE698A91235EE39500E0D2A6 /* NHBasePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989F9235EE39500E0D2A6 /* NHBasePlayer.m */; };
-		EE698A92235EE39500E0D2A6 /* NHAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6989FA235EE39500E0D2A6 /* NHAVPlayer.m */; };
-		EE698A93235EE39500E0D2A6 /* NHBasePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6989FB235EE39500E0D2A6 /* NHBasePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE698A97235EE55B00E0D2A6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE698A96235EE55B00E0D2A6 /* libz.tbd */; };
 		EE698A99235EE56400E0D2A6 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE698A98235EE56400E0D2A6 /* libbz2.tbd */; };
 		EE698A9B235EE56A00E0D2A6 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE698A9A235EE56A00E0D2A6 /* libiconv.tbd */; };
@@ -165,19 +168,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKit2Timer.m; sourceTree = "<group>"; };
+		EE08A0B6236084960070DC88 /* NH_INLINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NH_INLINE.h; sourceTree = "<group>"; };
+		EE08A0B7236084960070DC88 /* NHAVKit2Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Define.h; sourceTree = "<group>"; };
+		EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Timer.h; sourceTree = "<group>"; };
+		EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NHOrientation.h"; sourceTree = "<group>"; };
+		EE08A0BB236084960070DC88 /* NSObject+converTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+converTime.m"; sourceTree = "<group>"; };
+		EE08A0BC236084960070DC88 /* NSString+time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+time.h"; sourceTree = "<group>"; };
+		EE08A0BD236084960070DC88 /* NSTimer+NHAutoRetain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+NHAutoRetain.m"; sourceTree = "<group>"; };
+		EE08A0BE236084960070DC88 /* UIDevice+NHOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NHOrientation.m"; sourceTree = "<group>"; };
+		EE08A0BF236084960070DC88 /* NSObject+converTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+converTime.h"; sourceTree = "<group>"; };
+		EE08A0C0236084960070DC88 /* NSTimer+NHAutoRetain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+NHAutoRetain.h"; sourceTree = "<group>"; };
+		EE08A0C1236084960070DC88 /* NSString+time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+time.m"; sourceTree = "<group>"; };
+		EE08A0D0236085150070DC88 /* NHFFmpegPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFFmpegPlayer.m; sourceTree = "<group>"; };
+		EE08A0D1236085150070DC88 /* NHFFmpegPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFFmpegPlayer.h; sourceTree = "<group>"; };
+		EE08A0D2236085150070DC88 /* NHAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVPlayer.h; sourceTree = "<group>"; };
+		EE08A0D3236085150070DC88 /* NHBasePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBasePlayer.m; sourceTree = "<group>"; };
+		EE08A0D4236085150070DC88 /* NHAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVPlayer.m; sourceTree = "<group>"; };
+		EE08A0D5236085150070DC88 /* NHBasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBasePlayer.h; sourceTree = "<group>"; };
 		EE698903235EDAC100E0D2A6 /* NHPlayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHPlayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE698906235EDAC100E0D2A6 /* NHPlayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHPlayKit.h; sourceTree = "<group>"; };
+		EE698906235EDAC100E0D2A6 /* NHPlayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NHPlayKit.h; path = ../../../../NHAVKit2/Play/NHPlayKit.h; sourceTree = "<group>"; };
 		EE698907235EDAC100E0D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE698951235EE39400E0D2A6 /* NHFFmpegPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFFmpegPlayer.m; sourceTree = "<group>"; };
-		EE698952235EE39500E0D2A6 /* NHFFmpegPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFFmpegPlayer.h; sourceTree = "<group>"; };
 		EE698954235EE39500E0D2A6 /* NHImageHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHImageHandle.h; sourceTree = "<group>"; };
-		EE698955235EE39500E0D2A6 /* NHPlayTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPlayTimer.m; sourceTree = "<group>"; };
 		EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayerObserver.h; sourceTree = "<group>"; };
 		EE698957235EE39500E0D2A6 /* NHKVOOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHKVOOwner.h; sourceTree = "<group>"; };
 		EE698958235EE39500E0D2A6 /* NHImageHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHImageHandle.m; sourceTree = "<group>"; };
 		EE698959235EE39500E0D2A6 /* NHKVOOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKVOOwner.m; sourceTree = "<group>"; };
 		EE69895A235EE39500E0D2A6 /* NHPlayerObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPlayerObserver.m; sourceTree = "<group>"; };
-		EE69895B235EE39500E0D2A6 /* NHPlayTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayTimer.h; sourceTree = "<group>"; };
 		EE698960235EE39500E0D2A6 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		EE698961235EE39500E0D2A6 /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
 		EE698963235EE39500E0D2A6 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
@@ -300,23 +317,12 @@
 		EE6989DF235EE39500E0D2A6 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		EE6989E0235EE39500E0D2A6 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
 		EE6989E1235EE39500E0D2A6 /* NHPlay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NHPlay.bundle; sourceTree = "<group>"; };
-		EE6989E9235EE39500E0D2A6 /* UIDevice+NHOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NHOrientation.h"; sourceTree = "<group>"; };
-		EE6989EA235EE39500E0D2A6 /* NHAVPlayDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVPlayDefine.h; sourceTree = "<group>"; };
 		EE6989EB235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayerPrivateProtocol.h; sourceTree = "<group>"; };
-		EE6989EC235EE39500E0D2A6 /* NSObject+converTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+converTime.m"; sourceTree = "<group>"; };
-		EE6989ED235EE39500E0D2A6 /* NSString+time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+time.h"; sourceTree = "<group>"; };
 		EE6989EE235EE39500E0D2A6 /* NHPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayerProtocol.h; sourceTree = "<group>"; };
-		EE6989EF235EE39500E0D2A6 /* UIDevice+NHOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NHOrientation.m"; sourceTree = "<group>"; };
-		EE6989F0235EE39500E0D2A6 /* NSObject+converTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+converTime.h"; sourceTree = "<group>"; };
-		EE6989F1235EE39500E0D2A6 /* NSString+time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+time.m"; sourceTree = "<group>"; };
 		EE6989F3235EE39500E0D2A6 /* NHPlayerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayerToolBar.h; sourceTree = "<group>"; };
 		EE6989F4235EE39500E0D2A6 /* NHPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPlayerView.m; sourceTree = "<group>"; };
 		EE6989F5235EE39500E0D2A6 /* NHPlayerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPlayerToolBar.m; sourceTree = "<group>"; };
 		EE6989F6235EE39500E0D2A6 /* NHPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPlayerView.h; sourceTree = "<group>"; };
-		EE6989F8235EE39500E0D2A6 /* NHAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVPlayer.h; sourceTree = "<group>"; };
-		EE6989F9235EE39500E0D2A6 /* NHBasePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBasePlayer.m; sourceTree = "<group>"; };
-		EE6989FA235EE39500E0D2A6 /* NHAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVPlayer.m; sourceTree = "<group>"; };
-		EE6989FB235EE39500E0D2A6 /* NHBasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBasePlayer.h; sourceTree = "<group>"; };
 		EE698A94235EE41100E0D2A6 /* NHPlayKit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHPlayKit.pch; sourceTree = "<group>"; };
 		EE698A96235EE55B00E0D2A6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		EE698A98235EE56400E0D2A6 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
@@ -351,6 +357,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE08A0B3236084960070DC88 /* Baseic */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0B4236084960070DC88 /* Unit */,
+				EE08A0B9236084960070DC88 /* Extension */,
+			);
+			name = Baseic;
+			path = ../../../../NHAVKit2/Baseic;
+			sourceTree = "<group>";
+		};
+		EE08A0B4236084960070DC88 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */,
+				EE08A0B6236084960070DC88 /* NH_INLINE.h */,
+				EE08A0B7236084960070DC88 /* NHAVKit2Define.h */,
+				EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		EE08A0B9236084960070DC88 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */,
+				EE08A0BB236084960070DC88 /* NSObject+converTime.m */,
+				EE08A0BC236084960070DC88 /* NSString+time.h */,
+				EE08A0BD236084960070DC88 /* NSTimer+NHAutoRetain.m */,
+				EE08A0BE236084960070DC88 /* UIDevice+NHOrientation.m */,
+				EE08A0BF236084960070DC88 /* NSObject+converTime.h */,
+				EE08A0C0236084960070DC88 /* NSTimer+NHAutoRetain.h */,
+				EE08A0C1236084960070DC88 /* NSString+time.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE08A0CE236085150070DC88 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0CF236085150070DC88 /* FFmpeg */,
+				EE08A0D2236085150070DC88 /* NHAVPlayer.h */,
+				EE08A0D4236085150070DC88 /* NHAVPlayer.m */,
+				EE08A0D5236085150070DC88 /* NHBasePlayer.h */,
+				EE08A0D3236085150070DC88 /* NHBasePlayer.m */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		EE08A0CF236085150070DC88 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0D1236085150070DC88 /* NHFFmpegPlayer.h */,
+				EE08A0D0236085150070DC88 /* NHFFmpegPlayer.m */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
 		EE6988F9235EDAC100E0D2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -371,7 +434,8 @@
 		EE698905235EDAC100E0D2A6 /* NHPlayKit */ = {
 			isa = PBXGroup;
 			children = (
-				EE69894F235EE39400E0D2A6 /* NHPlayKit */,
+				EE08A0B3236084960070DC88 /* Baseic */,
+				EE69894F235EE39400E0D2A6 /* Play */,
 				EE698906235EDAC100E0D2A6 /* NHPlayKit.h */,
 				EE698A94235EE41100E0D2A6 /* NHPlayKit.pch */,
 				EE698907235EDAC100E0D2A6 /* Info.plist */,
@@ -379,27 +443,17 @@
 			path = NHPlayKit;
 			sourceTree = "<group>";
 		};
-		EE69894F235EE39400E0D2A6 /* NHPlayKit */ = {
+		EE69894F235EE39400E0D2A6 /* Play */ = {
 			isa = PBXGroup;
 			children = (
 				EE6989E8235EE39500E0D2A6 /* Common */,
-				EE698950235EE39400E0D2A6 /* FFmpeg */,
 				EE69895C235EE39500E0D2A6 /* Library */,
-				EE6989F7235EE39500E0D2A6 /* Player */,
 				EE698953235EE39500E0D2A6 /* Unit */,
 				EE6989F2235EE39500E0D2A6 /* View */,
+				EE08A0CE236085150070DC88 /* Decoder */,
 			);
-			name = NHPlayKit;
-			path = ../../../../NHAVKit2/NHPlayKit;
-			sourceTree = "<group>";
-		};
-		EE698950235EE39400E0D2A6 /* FFmpeg */ = {
-			isa = PBXGroup;
-			children = (
-				EE698951235EE39400E0D2A6 /* NHFFmpegPlayer.m */,
-				EE698952235EE39500E0D2A6 /* NHFFmpegPlayer.h */,
-			);
-			path = FFmpeg;
+			name = Play;
+			path = ../../../../NHAVKit2/Play;
 			sourceTree = "<group>";
 		};
 		EE698953235EE39500E0D2A6 /* Unit */ = {
@@ -411,8 +465,6 @@
 				EE698959235EE39500E0D2A6 /* NHKVOOwner.m */,
 				EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */,
 				EE69895A235EE39500E0D2A6 /* NHPlayerObserver.m */,
-				EE69895B235EE39500E0D2A6 /* NHPlayTimer.h */,
-				EE698955235EE39500E0D2A6 /* NHPlayTimer.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -432,7 +484,8 @@
 				EE69895E235EE39500E0D2A6 /* include */,
 				EE6989D6235EE39500E0D2A6 /* lib */,
 			);
-			path = FFmpeg;
+			name = FFmpeg;
+			path = ../../Library/FFmpeg;
 			sourceTree = "<group>";
 		};
 		EE69895E235EE39500E0D2A6 /* include */ = {
@@ -637,15 +690,8 @@
 		EE6989E8235EE39500E0D2A6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EE6989EA235EE39500E0D2A6 /* NHAVPlayDefine.h */,
 				EE6989EB235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h */,
 				EE6989EE235EE39500E0D2A6 /* NHPlayerProtocol.h */,
-				EE6989F0235EE39500E0D2A6 /* NSObject+converTime.h */,
-				EE6989EC235EE39500E0D2A6 /* NSObject+converTime.m */,
-				EE6989ED235EE39500E0D2A6 /* NSString+time.h */,
-				EE6989F1235EE39500E0D2A6 /* NSString+time.m */,
-				EE6989E9235EE39500E0D2A6 /* UIDevice+NHOrientation.h */,
-				EE6989EF235EE39500E0D2A6 /* UIDevice+NHOrientation.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -659,17 +705,6 @@
 				EE6989F4235EE39500E0D2A6 /* NHPlayerView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		EE6989F7235EE39500E0D2A6 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				EE6989F8235EE39500E0D2A6 /* NHAVPlayer.h */,
-				EE6989F9235EE39500E0D2A6 /* NHBasePlayer.m */,
-				EE6989FA235EE39500E0D2A6 /* NHAVPlayer.m */,
-				EE6989FB235EE39500E0D2A6 /* NHBasePlayer.h */,
-			);
-			path = Player;
 			sourceTree = "<group>";
 		};
 		EE698A95235EE55B00E0D2A6 /* Frameworks */ = {
@@ -691,24 +726,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE08A0DB236085150070DC88 /* NHBasePlayer.h in Headers */,
+				EE08A0D7236085150070DC88 /* NHFFmpegPlayer.h in Headers */,
+				EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
+				EE08A0C8236084970070DC88 /* NSString+time.h in Headers */,
+				EE08A0D8236085150070DC88 /* NHAVPlayer.h in Headers */,
+				EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */,
+				EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */,
 				EE698A88235EE39500E0D2A6 /* NHPlayerProtocol.h in Headers */,
 				EE6989FE235EE39500E0D2A6 /* NHImageHandle.h in Headers */,
-				EE698A90235EE39500E0D2A6 /* NHAVPlayer.h in Headers */,
-				EE698A93235EE39500E0D2A6 /* NHBasePlayer.h in Headers */,
-				EE6989FD235EE39500E0D2A6 /* NHFFmpegPlayer.h in Headers */,
-				EE698A05235EE39500E0D2A6 /* NHPlayTimer.h in Headers */,
-				EE698A8A235EE39500E0D2A6 /* NSObject+converTime.h in Headers */,
 				EE698A41235EE39500E0D2A6 /* aes.h in Headers */,
 				EE698A85235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h in Headers */,
 				EE698A5D235EE39500E0D2A6 /* version.h in Headers */,
 				EE698A0E235EE39500E0D2A6 /* time.h in Headers */,
 				EE698A52235EE39500E0D2A6 /* pixfmt.h in Headers */,
 				EE698A19235EE39500E0D2A6 /* pixdesc.h in Headers */,
+				EE08A0C5236084970070DC88 /* NHAVKit2Timer.h in Headers */,
 				EE698A35235EE39500E0D2A6 /* buffer.h in Headers */,
 				EE698A07235EE39500E0D2A6 /* postprocess.h in Headers */,
 				EE698A26235EE39500E0D2A6 /* md5.h in Headers */,
 				EE698A74235EE39500E0D2A6 /* swresample.h in Headers */,
-				EE698A83235EE39500E0D2A6 /* UIDevice+NHOrientation.h in Headers */,
 				EE698A54235EE39500E0D2A6 /* timestamp.h in Headers */,
 				EE698A4B235EE39500E0D2A6 /* imgutils.h in Headers */,
 				EE698A38235EE39500E0D2A6 /* hwcontext_drm.h in Headers */,
@@ -738,6 +775,7 @@
 				EE698A11235EE39500E0D2A6 /* error.h in Headers */,
 				EE698A20235EE39500E0D2A6 /* avutil.h in Headers */,
 				EE698A6B235EE39500E0D2A6 /* avfft.h in Headers */,
+				EE08A0C6236084970070DC88 /* UIDevice+NHOrientation.h in Headers */,
 				EE698A68235EE39500E0D2A6 /* xvmc.h in Headers */,
 				EE698A6E235EE39500E0D2A6 /* dirac.h in Headers */,
 				EE698A43235EE39500E0D2A6 /* bswap.h in Headers */,
@@ -748,7 +786,6 @@
 				EE698A6C235EE39500E0D2A6 /* vda.h in Headers */,
 				EE698A33235EE39500E0D2A6 /* hwcontext_dxva2.h in Headers */,
 				EE698A08235EE39500E0D2A6 /* version.h in Headers */,
-				EE698A87235EE39500E0D2A6 /* NSString+time.h in Headers */,
 				EE698A22235EE39500E0D2A6 /* crc.h in Headers */,
 				EE698A70235EE39500E0D2A6 /* vorbis_parser.h in Headers */,
 				EE698A12235EE39500E0D2A6 /* fifo.h in Headers */,
@@ -775,6 +812,7 @@
 				EE698A3B235EE39500E0D2A6 /* eval.h in Headers */,
 				EE698A27235EE39500E0D2A6 /* cast5.h in Headers */,
 				EE698A17235EE39500E0D2A6 /* stereo3d.h in Headers */,
+				EE08A0C4236084970070DC88 /* NHAVKit2Define.h in Headers */,
 				EE698A47235EE39500E0D2A6 /* lzo.h in Headers */,
 				EE698A5F235EE39500E0D2A6 /* avformat.h in Headers */,
 				EE698A39235EE39500E0D2A6 /* common.h in Headers */,
@@ -785,7 +823,6 @@
 				EE698A2D235EE39500E0D2A6 /* threadmessage.h in Headers */,
 				EE698A46235EE39500E0D2A6 /* cpu.h in Headers */,
 				EE698A67235EE39500E0D2A6 /* videotoolbox.h in Headers */,
-				EE698A84235EE39500E0D2A6 /* NHAVPlayDefine.h in Headers */,
 				EE698A15235EE39500E0D2A6 /* version.h in Headers */,
 				EE698A65235EE39500E0D2A6 /* qsv.h in Headers */,
 				EE698A3E235EE39500E0D2A6 /* opt.h in Headers */,
@@ -803,7 +840,7 @@
 				EE698A3D235EE39500E0D2A6 /* random_seed.h in Headers */,
 				EE698A4A235EE39500E0D2A6 /* twofish.h in Headers */,
 				EE698A66235EE39500E0D2A6 /* vaapi.h in Headers */,
-				EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */,
+				EE08A0C3236084970070DC88 /* NH_INLINE.h in Headers */,
 				EE698A2B235EE39500E0D2A6 /* audio_fifo.h in Headers */,
 				EE698A16235EE39500E0D2A6 /* murmur3.h in Headers */,
 				EE698A57235EE39500E0D2A6 /* hash.h in Headers */,
@@ -891,17 +928,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE698A8E235EE39500E0D2A6 /* NHPlayerToolBar.m in Sources */,
-				EE698A92235EE39500E0D2A6 /* NHAVPlayer.m in Sources */,
+				EE08A0DA236085150070DC88 /* NHAVPlayer.m in Sources */,
+				EE08A0D9236085150070DC88 /* NHBasePlayer.m in Sources */,
+				EE08A0C9236084970070DC88 /* NSTimer+NHAutoRetain.m in Sources */,
 				EE698A03235EE39500E0D2A6 /* NHKVOOwner.m in Sources */,
 				EE698A02235EE39500E0D2A6 /* NHImageHandle.m in Sources */,
+				EE08A0D6236085150070DC88 /* NHFFmpegPlayer.m in Sources */,
+				EE08A0C2236084970070DC88 /* NHAVKit2Timer.m in Sources */,
+				EE08A0CD236084970070DC88 /* NSString+time.m in Sources */,
+				EE08A0C7236084970070DC88 /* NSObject+converTime.m in Sources */,
 				EE698A04235EE39500E0D2A6 /* NHPlayerObserver.m in Sources */,
-				EE698A86235EE39500E0D2A6 /* NSObject+converTime.m in Sources */,
 				EE698A8D235EE39500E0D2A6 /* NHPlayerView.m in Sources */,
-				EE698A8B235EE39500E0D2A6 /* NSString+time.m in Sources */,
-				EE6989FC235EE39500E0D2A6 /* NHFFmpegPlayer.m in Sources */,
-				EE6989FF235EE39500E0D2A6 /* NHPlayTimer.m in Sources */,
-				EE698A91235EE39500E0D2A6 /* NHBasePlayer.m in Sources */,
-				EE698A89235EE39500E0D2A6 /* UIDevice+NHOrientation.m in Sources */,
+				EE08A0CA236084970070DC88 /* UIDevice+NHOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,7 +1073,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHPlayKit/NHPlayKit.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/NHPlayKit/Library/FFmpeg/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"";
 				INFOPLIST_FILE = NHPlayKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1044,7 +1082,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/NHPlayKit/Library/FFmpeg/lib\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/lib\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHPlayKit2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1063,7 +1101,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHPlayKit/NHPlayKit.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/NHPlayKit/Library/FFmpeg/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"";
 				INFOPLIST_FILE = NHPlayKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1072,7 +1110,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/NHPlayKit/Library/FFmpeg/lib\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/lib\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.studio.NHPlayKit2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

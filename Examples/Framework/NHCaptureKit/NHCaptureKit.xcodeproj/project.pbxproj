@@ -11,6 +11,34 @@
 		EE06BEC7235F4A0900AFB57C /* NHImageCombinationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE06BEC3235F4A0900AFB57C /* NHImageCombinationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE06BEC8235F4A0900AFB57C /* NHImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE06BEC4235F4A0900AFB57C /* NHImageBeautifyFilter.m */; };
 		EE06BEC9235F4A0900AFB57C /* NHImageCombinationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE06BEC5235F4A0900AFB57C /* NHImageCombinationFilter.m */; };
+		EE08A06D23607E460070DC88 /* NHFFmpegSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A05C23607E460070DC88 /* NHFFmpegSession.m */; };
+		EE08A06E23607E460070DC88 /* NHFFmpegSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A05D23607E460070DC88 /* NHFFmpegSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A05F23607E460070DC88 /* NHWriteH264Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06023607E460070DC88 /* NHX264OutputProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A07123607E460070DC88 /* NHX264Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06123607E460070DC88 /* NHX264Manager.m */; };
+		EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06223607E460070DC88 /* NHH264Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A07323607E460070DC88 /* NHWriteH264Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06323607E460070DC88 /* NHWriteH264Stream.m */; };
+		EE08A07423607E460070DC88 /* NHX264Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06423607E460070DC88 /* NHX264Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A07523607E460070DC88 /* NHH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06523607E460070DC88 /* NHH264Encoder.m */; };
+		EE08A08F23607EC40070DC88 /* NHBeasSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A07E23607EC30070DC88 /* NHBeasSession.m */; };
+		EE08A09023607EC40070DC88 /* NHCaptureSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08323607EC40070DC88 /* NHGPUImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A09423607EC40070DC88 /* NHGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A08423607EC40070DC88 /* NHGPUImageView.m */; };
+		EE08A09523607EC40070DC88 /* NHAVCaptureSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A09623607EC40070DC88 /* NHAVCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */; };
+		EE08A09723607EC40070DC88 /* NHBeasSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08723607EC40070DC88 /* NHBeasSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0A723607F3A0070DC88 /* NHAVKit2Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */; };
+		EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09B23607F3A0070DC88 /* NH_INLINE.h */; };
+		EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */; };
+		EE08A0AA23607F3A0070DC88 /* NHAVKit2Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09F23607F3A0070DC88 /* UIDevice+NHOrientation.h */; };
+		EE08A0AC23607F3A0070DC88 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A023607F3A0070DC88 /* NSObject+converTime.m */; };
+		EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A123607F3A0070DC88 /* NSString+time.h */; };
+		EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A223607F3A0070DC88 /* NSTimer+NHAutoRetain.m */; };
+		EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A323607F3A0070DC88 /* UIDevice+NHOrientation.m */; };
+		EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */; };
+		EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A523607F3A0070DC88 /* NSTimer+NHAutoRetain.h */; };
+		EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A623607F3A0070DC88 /* NSString+time.m */; };
 		EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE42F80F227687EC00F22E98 /* NHCaptureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24C2355F10900B63210 /* OpenGLES.framework */; platformFilter = ios; };
 		EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24E2355F11000B63210 /* CoreMedia.framework */; };
@@ -20,21 +48,10 @@
 		EE7EE3652355F4B600B63210 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3642355F4B600B63210 /* libz.tbd */; };
 		EE7EE3672355F4D100B63210 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3662355F4D100B63210 /* libiconv.tbd */; };
 		EE7EE36D2355F56700B63210 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE36C2355F56700B63210 /* VideoToolbox.framework */; };
-		EEC32EA3235F1BAC0061C9D9 /* NHWriteH264Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C81235F1BAB0061C9D9 /* NHWriteH264Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EA4235F1BAC0061C9D9 /* NHX264OutputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C82235F1BAB0061C9D9 /* NHX264OutputProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EA5235F1BAC0061C9D9 /* NHX264Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C83235F1BAB0061C9D9 /* NHX264Manager.m */; };
-		EEC32EA6235F1BAC0061C9D9 /* NHH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C84235F1BAB0061C9D9 /* NHH264Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EA7235F1BAC0061C9D9 /* NHWriteH264Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C85235F1BAB0061C9D9 /* NHWriteH264Stream.m */; };
-		EEC32EA8235F1BAC0061C9D9 /* NHX264Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C86235F1BAB0061C9D9 /* NHX264Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EA9235F1BAC0061C9D9 /* NHH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C87235F1BAB0061C9D9 /* NHH264Encoder.m */; };
 		EEC32EAA235F1BAC0061C9D9 /* NHVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C89235F1BAB0061C9D9 /* NHVideoConfiguration.m */; };
 		EEC32EAB235F1BAC0061C9D9 /* NHCaptureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8A235F1BAB0061C9D9 /* NHCaptureConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EAD235F1BAC0061C9D9 /* NHCaptureConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */; };
-		EEC32EAE235F1BAC0061C9D9 /* NHMacroDefineHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8E235F1BAB0061C9D9 /* NHMacroDefineHeader.h */; };
-		EEC32EAF235F1BAC0061C9D9 /* NH_INLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8F235F1BAB0061C9D9 /* NH_INLINE.h */; };
-		EEC32EB0235F1BAC0061C9D9 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C90235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.m */; };
-		EEC32EB1235F1BAC0061C9D9 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C91235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C96235F1BAB0061C9D9 /* version.h */; };
 		EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C97235F1BAB0061C9D9 /* postprocess.h */; };
 		EEC32EB4235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C99235F1BAB0061C9D9 /* version.h */; };
@@ -127,7 +144,7 @@
 		EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF3235F1BAB0061C9D9 /* avformat.h */; };
 		EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF5235F1BAB0061C9D9 /* version.h */; };
 		EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF6235F1BAB0061C9D9 /* swscale.h */; };
-		EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF8235F1BAB0061C9D9 /* avcodec.h */; };
+		EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF8235F1BAB0061C9D9 /* avcodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F0F235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF9235F1BAB0061C9D9 /* version.h */; };
 		EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFA235F1BAB0061C9D9 /* vdpau.h */; };
 		EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFB235F1BAB0061C9D9 /* qsv.h */; };
@@ -514,9 +531,7 @@
 		EEC3308E235F1BAD0061C9D9 /* libx264.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32E81235F1BAC0061C9D9 /* libx264.2.a */; };
 		EEC3308F235F1BAD0061C9D9 /* NHVideoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC33090235F1BAD0061C9D9 /* NHExportConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC33091235F1BAD0061C9D9 /* NHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E85235F1BAC0061C9D9 /* NHTimer.m */; };
 		EEC33092235F1BAD0061C9D9 /* NHVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */; };
-		EEC33093235F1BAD0061C9D9 /* NHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E87235F1BAC0061C9D9 /* NHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC33094235F1BAD0061C9D9 /* NHExportConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */; };
 		EEC33099235F1BAD0061C9D9 /* NHFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3309A235F1BAD0061C9D9 /* NHGifTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */; };
@@ -528,15 +543,6 @@
 		EEC330A0235F1BAD0061C9D9 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E96235F1BAC0061C9D9 /* NHAVEditor.m */; };
 		EEC330A1235F1BAD0061C9D9 /* NHMusicEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E97235F1BAC0061C9D9 /* NHMusicEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC330A2235F1BAD0061C9D9 /* NHVideoWater.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E98235F1BAC0061C9D9 /* NHVideoWater.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A3235F1BAD0061C9D9 /* NHFFmpegSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E9A235F1BAC0061C9D9 /* NHFFmpegSession.m */; };
-		EEC330A4235F1BAD0061C9D9 /* NHCaptureSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E9B235F1BAC0061C9D9 /* NHCaptureSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A5235F1BAD0061C9D9 /* NHGPUImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E9C235F1BAC0061C9D9 /* NHGPUImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A6235F1BAD0061C9D9 /* NHAVCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E9D235F1BAC0061C9D9 /* NHAVCaptureSession.m */; };
-		EEC330A7235F1BAD0061C9D9 /* NHBeasSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E9E235F1BAC0061C9D9 /* NHBeasSession.m */; };
-		EEC330A8235F1BAD0061C9D9 /* NHFFmpegSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E9F235F1BAC0061C9D9 /* NHFFmpegSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A9235F1BAD0061C9D9 /* NHBeasSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32EA0235F1BAC0061C9D9 /* NHBeasSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330AA235F1BAD0061C9D9 /* NHGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32EA1235F1BAC0061C9D9 /* NHGPUImageView.m */; };
-		EEC330AB235F1BAD0061C9D9 /* NHAVCaptureSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32EA2235F1BAC0061C9D9 /* NHAVCaptureSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC330AD235F21A30061C9D9 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC330AC235F21A20061C9D9 /* libbz2.tbd */; };
 /* End PBXBuildFile section */
 
@@ -545,10 +551,39 @@
 		EE06BEC3235F4A0900AFB57C /* NHImageCombinationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHImageCombinationFilter.h; sourceTree = "<group>"; };
 		EE06BEC4235F4A0900AFB57C /* NHImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHImageBeautifyFilter.m; sourceTree = "<group>"; };
 		EE06BEC5235F4A0900AFB57C /* NHImageCombinationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHImageCombinationFilter.m; sourceTree = "<group>"; };
+		EE08A05C23607E460070DC88 /* NHFFmpegSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFFmpegSession.m; sourceTree = "<group>"; };
+		EE08A05D23607E460070DC88 /* NHFFmpegSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFFmpegSession.h; sourceTree = "<group>"; };
+		EE08A05F23607E460070DC88 /* NHWriteH264Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHWriteH264Stream.h; sourceTree = "<group>"; };
+		EE08A06023607E460070DC88 /* NHX264OutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264OutputProtocol.h; sourceTree = "<group>"; };
+		EE08A06123607E460070DC88 /* NHX264Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHX264Manager.m; sourceTree = "<group>"; };
+		EE08A06223607E460070DC88 /* NHH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHH264Encoder.h; sourceTree = "<group>"; };
+		EE08A06323607E460070DC88 /* NHWriteH264Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHWriteH264Stream.m; sourceTree = "<group>"; };
+		EE08A06423607E460070DC88 /* NHX264Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264Manager.h; sourceTree = "<group>"; };
+		EE08A06523607E460070DC88 /* NHH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHH264Encoder.m; sourceTree = "<group>"; };
+		EE08A07E23607EC30070DC88 /* NHBeasSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBeasSession.m; sourceTree = "<group>"; };
+		EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureSessionProtocol.h; sourceTree = "<group>"; };
+		EE08A08323607EC40070DC88 /* NHGPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGPUImageView.h; sourceTree = "<group>"; };
+		EE08A08423607EC40070DC88 /* NHGPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGPUImageView.m; sourceTree = "<group>"; };
+		EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVCaptureSession.h; sourceTree = "<group>"; };
+		EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVCaptureSession.m; sourceTree = "<group>"; };
+		EE08A08723607EC40070DC88 /* NHBeasSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBeasSession.h; sourceTree = "<group>"; };
+		EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKit2Timer.m; sourceTree = "<group>"; };
+		EE08A09B23607F3A0070DC88 /* NH_INLINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NH_INLINE.h; sourceTree = "<group>"; };
+		EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Define.h; sourceTree = "<group>"; };
+		EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Timer.h; sourceTree = "<group>"; };
+		EE08A09F23607F3A0070DC88 /* UIDevice+NHOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NHOrientation.h"; sourceTree = "<group>"; };
+		EE08A0A023607F3A0070DC88 /* NSObject+converTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+converTime.m"; sourceTree = "<group>"; };
+		EE08A0A123607F3A0070DC88 /* NSString+time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+time.h"; sourceTree = "<group>"; };
+		EE08A0A223607F3A0070DC88 /* NSTimer+NHAutoRetain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+NHAutoRetain.m"; sourceTree = "<group>"; };
+		EE08A0A323607F3A0070DC88 /* UIDevice+NHOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NHOrientation.m"; sourceTree = "<group>"; };
+		EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+converTime.h"; sourceTree = "<group>"; };
+		EE08A0A523607F3A0070DC88 /* NSTimer+NHAutoRetain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+NHAutoRetain.h"; sourceTree = "<group>"; };
+		EE08A0A623607F3A0070DC88 /* NSString+time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+time.m"; sourceTree = "<group>"; };
 		EE42F80C227687EC00F22E98 /* NHCaptureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHCaptureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE42F80F227687EC00F22E98 /* NHCaptureKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureKit.h; sourceTree = "<group>"; };
+		EE42F80F227687EC00F22E98 /* NHCaptureKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NHCaptureKit.h; path = ../../../../NHAVKit2/Capture/NHCaptureKit.h; sourceTree = "<group>"; };
 		EE42F810227687EC00F22E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE42F8172276888200F22E98 /* NHCaptureKit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureKit.pch; sourceTree = "<group>"; };
+		EE6E359D236036D7003093E4 /* NHCapturePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCapturePrivate.h; sourceTree = "<group>"; };
 		EE7EE24C2355F10900B63210 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EE7EE24E2355F11000B63210 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		EE7EE2502355F11500B63210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -559,21 +594,10 @@
 		EE7EE3682355F53B00B63210 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		EE7EE36A2355F54800B63210 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		EE7EE36C2355F56700B63210 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		EEC32C81235F1BAB0061C9D9 /* NHWriteH264Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHWriteH264Stream.h; sourceTree = "<group>"; };
-		EEC32C82235F1BAB0061C9D9 /* NHX264OutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264OutputProtocol.h; sourceTree = "<group>"; };
-		EEC32C83235F1BAB0061C9D9 /* NHX264Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHX264Manager.m; sourceTree = "<group>"; };
-		EEC32C84235F1BAB0061C9D9 /* NHH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHH264Encoder.h; sourceTree = "<group>"; };
-		EEC32C85235F1BAB0061C9D9 /* NHWriteH264Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHWriteH264Stream.m; sourceTree = "<group>"; };
-		EEC32C86235F1BAB0061C9D9 /* NHX264Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHX264Manager.h; sourceTree = "<group>"; };
-		EEC32C87235F1BAB0061C9D9 /* NHH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHH264Encoder.m; sourceTree = "<group>"; };
 		EEC32C89235F1BAB0061C9D9 /* NHVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoConfiguration.m; sourceTree = "<group>"; };
 		EEC32C8A235F1BAB0061C9D9 /* NHCaptureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureConfig.h; sourceTree = "<group>"; };
 		EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoConfiguration.h; sourceTree = "<group>"; };
 		EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCaptureConfig.m; sourceTree = "<group>"; };
-		EEC32C8E235F1BAB0061C9D9 /* NHMacroDefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMacroDefineHeader.h; sourceTree = "<group>"; };
-		EEC32C8F235F1BAB0061C9D9 /* NH_INLINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NH_INLINE.h; sourceTree = "<group>"; };
-		EEC32C90235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+NHAutoRetain.m"; sourceTree = "<group>"; };
-		EEC32C91235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+NHAutoRetain.h"; sourceTree = "<group>"; };
 		EEC32C96235F1BAB0061C9D9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		EEC32C97235F1BAB0061C9D9 /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
 		EEC32C99235F1BAB0061C9D9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
@@ -1053,9 +1077,7 @@
 		EEC32E81235F1BAC0061C9D9 /* libx264.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.2.a; sourceTree = "<group>"; };
 		EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoHelper.h; sourceTree = "<group>"; };
 		EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHExportConfig.h; sourceTree = "<group>"; };
-		EEC32E85235F1BAC0061C9D9 /* NHTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHTimer.m; sourceTree = "<group>"; };
 		EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoHelper.m; sourceTree = "<group>"; };
-		EEC32E87235F1BAC0061C9D9 /* NHTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHTimer.h; sourceTree = "<group>"; };
 		EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHExportConfig.m; sourceTree = "<group>"; };
 		EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFrameImage.h; sourceTree = "<group>"; };
 		EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGifTool.m; sourceTree = "<group>"; };
@@ -1067,15 +1089,6 @@
 		EEC32E96235F1BAC0061C9D9 /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
 		EEC32E97235F1BAC0061C9D9 /* NHMusicEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMusicEditor.h; sourceTree = "<group>"; };
 		EEC32E98235F1BAC0061C9D9 /* NHVideoWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoWater.h; sourceTree = "<group>"; };
-		EEC32E9A235F1BAC0061C9D9 /* NHFFmpegSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFFmpegSession.m; sourceTree = "<group>"; };
-		EEC32E9B235F1BAC0061C9D9 /* NHCaptureSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureSessionProtocol.h; sourceTree = "<group>"; };
-		EEC32E9C235F1BAC0061C9D9 /* NHGPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGPUImageView.h; sourceTree = "<group>"; };
-		EEC32E9D235F1BAC0061C9D9 /* NHAVCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVCaptureSession.m; sourceTree = "<group>"; };
-		EEC32E9E235F1BAC0061C9D9 /* NHBeasSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBeasSession.m; sourceTree = "<group>"; };
-		EEC32E9F235F1BAC0061C9D9 /* NHFFmpegSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFFmpegSession.h; sourceTree = "<group>"; };
-		EEC32EA0235F1BAC0061C9D9 /* NHBeasSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBeasSession.h; sourceTree = "<group>"; };
-		EEC32EA1235F1BAC0061C9D9 /* NHGPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGPUImageView.m; sourceTree = "<group>"; };
-		EEC32EA2235F1BAC0061C9D9 /* NHAVCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVCaptureSession.h; sourceTree = "<group>"; };
 		EEC330AC235F21A20061C9D9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1110,6 +1123,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE08A05223607E460070DC88 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A05B23607E460070DC88 /* FFmpeg */,
+				EE08A05E23607E460070DC88 /* X264 */,
+				EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */,
+				EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */,
+				EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */,
+				EE08A08723607EC40070DC88 /* NHBeasSession.h */,
+				EE08A07E23607EC30070DC88 /* NHBeasSession.m */,
+				EE08A08323607EC40070DC88 /* NHGPUImageView.h */,
+				EE08A08423607EC40070DC88 /* NHGPUImageView.m */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		EE08A05B23607E460070DC88 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A05D23607E460070DC88 /* NHFFmpegSession.h */,
+				EE08A05C23607E460070DC88 /* NHFFmpegSession.m */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
+		EE08A05E23607E460070DC88 /* X264 */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A06223607E460070DC88 /* NHH264Encoder.h */,
+				EE08A06523607E460070DC88 /* NHH264Encoder.m */,
+				EE08A05F23607E460070DC88 /* NHWriteH264Stream.h */,
+				EE08A06323607E460070DC88 /* NHWriteH264Stream.m */,
+				EE08A06423607E460070DC88 /* NHX264Manager.h */,
+				EE08A06123607E460070DC88 /* NHX264Manager.m */,
+				EE08A06023607E460070DC88 /* NHX264OutputProtocol.h */,
+			);
+			path = X264;
+			sourceTree = "<group>";
+		};
+		EE08A09823607F3A0070DC88 /* Baseic */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A09923607F3A0070DC88 /* Unit */,
+				EE08A09E23607F3A0070DC88 /* Extension */,
+			);
+			name = Baseic;
+			path = ../../../../NHAVKit2/Baseic;
+			sourceTree = "<group>";
+		};
+		EE08A09923607F3A0070DC88 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A09B23607F3A0070DC88 /* NH_INLINE.h */,
+				EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */,
+				EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */,
+				EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		EE08A09E23607F3A0070DC88 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */,
+				EE08A0A023607F3A0070DC88 /* NSObject+converTime.m */,
+				EE08A0A123607F3A0070DC88 /* NSString+time.h */,
+				EE08A0A623607F3A0070DC88 /* NSString+time.m */,
+				EE08A0A523607F3A0070DC88 /* NSTimer+NHAutoRetain.h */,
+				EE08A0A223607F3A0070DC88 /* NSTimer+NHAutoRetain.m */,
+				EE08A09F23607F3A0070DC88 /* UIDevice+NHOrientation.h */,
+				EE08A0A323607F3A0070DC88 /* UIDevice+NHOrientation.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EE42F802227687EC00F22E98 = {
 			isa = PBXGroup;
 			children = (
@@ -1130,7 +1218,8 @@
 		EE42F80E227687EC00F22E98 /* NHCaptureKit */ = {
 			isa = PBXGroup;
 			children = (
-				EEC32C7E235F1BAB0061C9D9 /* NHCaptureKit */,
+				EE08A09823607F3A0070DC88 /* Baseic */,
+				EEC32C7E235F1BAB0061C9D9 /* Capture */,
 				EE42F80F227687EC00F22E98 /* NHCaptureKit.h */,
 				EE42F8172276888200F22E98 /* NHCaptureKit.pch */,
 				EE42F810227687EC00F22E98 /* Info.plist */,
@@ -1156,41 +1245,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEC32C7E235F1BAB0061C9D9 /* NHCaptureKit */ = {
+		EEC32C7E235F1BAB0061C9D9 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
-				EEC32C7F235F1BAB0061C9D9 /* FFmpeg */,
 				EEC32C88235F1BAB0061C9D9 /* Unit */,
 				EEC32C8D235F1BAB0061C9D9 /* Extension */,
 				EEC32C92235F1BAB0061C9D9 /* Library */,
 				EEC32E82235F1BAC0061C9D9 /* Common */,
 				EEC32E89235F1BAC0061C9D9 /* Process */,
-				EEC32E99235F1BAC0061C9D9 /* Session */,
+				EE08A05223607E460070DC88 /* Encoder */,
 			);
-			name = NHCaptureKit;
-			path = ../../../../NHAVKit2/NHCaptureKit;
-			sourceTree = "<group>";
-		};
-		EEC32C7F235F1BAB0061C9D9 /* FFmpeg */ = {
-			isa = PBXGroup;
-			children = (
-				EEC32C80235F1BAB0061C9D9 /* X264Manager */,
-			);
-			path = FFmpeg;
-			sourceTree = "<group>";
-		};
-		EEC32C80235F1BAB0061C9D9 /* X264Manager */ = {
-			isa = PBXGroup;
-			children = (
-				EEC32C81235F1BAB0061C9D9 /* NHWriteH264Stream.h */,
-				EEC32C82235F1BAB0061C9D9 /* NHX264OutputProtocol.h */,
-				EEC32C83235F1BAB0061C9D9 /* NHX264Manager.m */,
-				EEC32C84235F1BAB0061C9D9 /* NHH264Encoder.h */,
-				EEC32C85235F1BAB0061C9D9 /* NHWriteH264Stream.m */,
-				EEC32C86235F1BAB0061C9D9 /* NHX264Manager.h */,
-				EEC32C87235F1BAB0061C9D9 /* NHH264Encoder.m */,
-			);
-			path = X264Manager;
+			name = Capture;
+			path = ../../../../NHAVKit2/Capture;
 			sourceTree = "<group>";
 		};
 		EEC32C88235F1BAB0061C9D9 /* Unit */ = {
@@ -1207,10 +1273,7 @@
 		EEC32C8D235F1BAB0061C9D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EEC32C8F235F1BAB0061C9D9 /* NH_INLINE.h */,
-				EEC32C8E235F1BAB0061C9D9 /* NHMacroDefineHeader.h */,
-				EEC32C91235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.h */,
-				EEC32C90235F1BAB0061C9D9 /* NSTimer+NHAutoRetain.m */,
+				EE6E359D236036D7003093E4 /* NHCapturePrivate.h */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1220,7 +1283,7 @@
 			children = (
 				EEC32C93235F1BAB0061C9D9 /* FFmpeg */,
 				EEC32D17235F1BAB0061C9D9 /* GPUImage */,
-				EEC32E7C235F1BAC0061C9D9 /* x264-iOS */,
+				EEC32E7C235F1BAC0061C9D9 /* x264 */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1231,7 +1294,8 @@
 				EEC32C94235F1BAB0061C9D9 /* include */,
 				EEC32D0C235F1BAB0061C9D9 /* lib */,
 			);
-			path = FFmpeg;
+			name = FFmpeg;
+			path = ../../Library/FFmpeg;
 			sourceTree = "<group>";
 		};
 		EEC32C94235F1BAB0061C9D9 /* include */ = {
@@ -1817,13 +1881,14 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		EEC32E7C235F1BAC0061C9D9 /* x264-iOS */ = {
+		EEC32E7C235F1BAC0061C9D9 /* x264 */ = {
 			isa = PBXGroup;
 			children = (
 				EEC32E7D235F1BAC0061C9D9 /* include */,
 				EEC32E80235F1BAC0061C9D9 /* lib */,
 			);
-			path = "x264-iOS";
+			name = x264;
+			path = ../../Library/x264;
 			sourceTree = "<group>";
 		};
 		EEC32E7D235F1BAC0061C9D9 /* include */ = {
@@ -1848,8 +1913,6 @@
 			children = (
 				EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */,
 				EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */,
-				EEC32E87235F1BAC0061C9D9 /* NHTimer.h */,
-				EEC32E85235F1BAC0061C9D9 /* NHTimer.m */,
 				EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */,
 				EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */,
 			);
@@ -1877,22 +1940,6 @@
 			path = Process;
 			sourceTree = "<group>";
 		};
-		EEC32E99235F1BAC0061C9D9 /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				EEC32EA2235F1BAC0061C9D9 /* NHAVCaptureSession.h */,
-				EEC32E9D235F1BAC0061C9D9 /* NHAVCaptureSession.m */,
-				EEC32EA0235F1BAC0061C9D9 /* NHBeasSession.h */,
-				EEC32E9E235F1BAC0061C9D9 /* NHBeasSession.m */,
-				EEC32E9B235F1BAC0061C9D9 /* NHCaptureSessionProtocol.h */,
-				EEC32E9F235F1BAC0061C9D9 /* NHFFmpegSession.h */,
-				EEC32E9A235F1BAC0061C9D9 /* NHFFmpegSession.m */,
-				EEC32E9C235F1BAC0061C9D9 /* NHGPUImageView.h */,
-				EEC32EA1235F1BAC0061C9D9 /* NHGPUImageView.m */,
-			);
-			path = Session;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1900,13 +1947,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
+				EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */,
+				EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */,
+				EE08A09023607EC40070DC88 /* NHCaptureSessionProtocol.h in Headers */,
+				EE08A09723607EC40070DC88 /* NHBeasSession.h in Headers */,
+				EE08A09523607EC40070DC88 /* NHAVCaptureSession.h in Headers */,
+				EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */,
+				EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */,
+				EE08A07423607E460070DC88 /* NHX264Manager.h in Headers */,
+				EE08A06E23607E460070DC88 /* NHFFmpegSession.h in Headers */,
+				EE08A0AA23607F3A0070DC88 /* NHAVKit2Timer.h in Headers */,
 				EE06BEC6235F4A0900AFB57C /* NHImageBeautifyFilter.h in Headers */,
 				EE06BEC7235F4A0900AFB57C /* NHImageCombinationFilter.h in Headers */,
-				EEC330A4235F1BAD0061C9D9 /* NHCaptureSessionProtocol.h in Headers */,
-				EEC32EA3235F1BAC0061C9D9 /* NHWriteH264Stream.h in Headers */,
-				EEC32EA8235F1BAC0061C9D9 /* NHX264Manager.h in Headers */,
-				EEC330AB235F1BAD0061C9D9 /* NHAVCaptureSession.h in Headers */,
-				EEC330A8235F1BAD0061C9D9 /* NHFFmpegSession.h in Headers */,
 				EEC3309F235F1BAD0061C9D9 /* NHGifTool.h in Headers */,
 				EEC3308A235F1BAD0061C9D9 /* GLProgram.h in Headers */,
 				EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */,
@@ -1914,14 +1967,9 @@
 				EEC32EAB235F1BAC0061C9D9 /* NHCaptureConfig.h in Headers */,
 				EEC330A2235F1BAD0061C9D9 /* NHVideoWater.h in Headers */,
 				EEC33099235F1BAD0061C9D9 /* NHFrameImage.h in Headers */,
-				EEC32EA4235F1BAC0061C9D9 /* NHX264OutputProtocol.h in Headers */,
-				EEC33093235F1BAD0061C9D9 /* NHTimer.h in Headers */,
 				EEC3309D235F1BAD0061C9D9 /* NHAVEditor.h in Headers */,
-				EEC330A9235F1BAD0061C9D9 /* NHBeasSession.h in Headers */,
-				EEC32EB1235F1BAC0061C9D9 /* NSTimer+NHAutoRetain.h in Headers */,
 				EEC3308F235F1BAD0061C9D9 /* NHVideoHelper.h in Headers */,
 				EEC330A1235F1BAD0061C9D9 /* NHMusicEditor.h in Headers */,
-				EEC32EA6235F1BAC0061C9D9 /* NHH264Encoder.h in Headers */,
 				EEC33023235F1BAD0061C9D9 /* GPUImageHueFilter.h in Headers */,
 				EEC32F5F235F1BAC0061C9D9 /* GPUImageMotionBlurFilter.h in Headers */,
 				EEC32FD5235F1BAD0061C9D9 /* GPUImageView.h in Headers */,
@@ -1941,6 +1989,7 @@
 				EEC33040235F1BAD0061C9D9 /* GPUImage3x3TextureSamplingFilter.h in Headers */,
 				EEC32F58235F1BAC0061C9D9 /* GPUImageGaussianSelectiveBlurFilter.h in Headers */,
 				EEC33053235F1BAD0061C9D9 /* GPUImagePolarPixellateFilter.h in Headers */,
+				EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */,
 				EEC33045235F1BAD0061C9D9 /* GPUImageTextureInput.h in Headers */,
 				EEC32F9F235F1BAC0061C9D9 /* GPUImageAddBlendFilter.h in Headers */,
 				EEC32F66235F1BAC0061C9D9 /* GPUImageTwoInputCrossTextureSamplingFilter.h in Headers */,
@@ -1974,6 +2023,7 @@
 				EEC3302C235F1BAD0061C9D9 /* GPUImagePixellatePositionFilter.h in Headers */,
 				EEC32F51235F1BAC0061C9D9 /* GPUImageSoftLightBlendFilter.h in Headers */,
 				EEC32FED235F1BAD0061C9D9 /* GPUImageUIElement.h in Headers */,
+				EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
 				EEC3303A235F1BAD0061C9D9 /* GPUImageMovie.h in Headers */,
 				EEC32FB3235F1BAC0061C9D9 /* GPUImageDarkenBlendFilter.h in Headers */,
 				EEC32FA4235F1BAC0061C9D9 /* GPUImageHSBFilter.h in Headers */,
@@ -2073,7 +2123,6 @@
 				EEC3304D235F1BAD0061C9D9 /* GPUImageErosionFilter.h in Headers */,
 				EEC32F5B235F1BAC0061C9D9 /* GPUImagePoissonBlendFilter.h in Headers */,
 				EEC32FDE235F1BAD0061C9D9 /* GPUImagePicture+TextureSubimage.h in Headers */,
-				EEC330A5235F1BAD0061C9D9 /* NHGPUImageView.h in Headers */,
 				EEC33014235F1BAD0061C9D9 /* GPUImageAlphaBlendFilter.h in Headers */,
 				EEC32F34235F1BAC0061C9D9 /* GPUImageShiTomasiFeatureDetectionFilter.h in Headers */,
 				EEC32F9B235F1BAC0061C9D9 /* GPUImageDilationFilter.h in Headers */,
@@ -2098,7 +2147,9 @@
 				EEC33011235F1BAD0061C9D9 /* GPUImageUnsharpMaskFilter.h in Headers */,
 				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
 				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
+				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
 				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
+				EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */,
 				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
 				EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */,
 				EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */,
@@ -2119,6 +2170,7 @@
 				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
 				EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */,
 				EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */,
+				EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */,
 				EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */,
 				EEC32F07235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */,
@@ -2134,12 +2186,12 @@
 				EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */,
 				EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */,
 				EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */,
+				EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */,
 				EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */,
 				EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */,
 				EEC32EC1235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */,
 				EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */,
-				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
 				EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */,
 				EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */,
 				EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */,
@@ -2163,7 +2215,6 @@
 				EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */,
 				EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */,
 				EEC32ED6235F1BAC0061C9D9 /* ffversion.h in Headers */,
-				EEC32EAE235F1BAC0061C9D9 /* NHMacroDefineHeader.h in Headers */,
 				EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */,
 				EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */,
 				EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */,
@@ -2172,7 +2223,6 @@
 				EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */,
 				EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */,
 				EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32EAF235F1BAC0061C9D9 /* NH_INLINE.h in Headers */,
 				EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */,
 				EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */,
 				EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */,
@@ -2308,6 +2358,7 @@
 				EEC32FC7235F1BAD0061C9D9 /* GPUImageLaplacianFilter.m in Sources */,
 				EEC33087235F1BAD0061C9D9 /* GPUImageCGAColorspaceFilter.m in Sources */,
 				EEC3303C235F1BAD0061C9D9 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
+				EE08A07523607E460070DC88 /* NHH264Encoder.m in Sources */,
 				EEC32F69235F1BAC0061C9D9 /* GPUImageVibranceFilter.m in Sources */,
 				EEC32FCC235F1BAD0061C9D9 /* GPUImageRGBFilter.m in Sources */,
 				EEC3300D235F1BAD0061C9D9 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
@@ -2319,7 +2370,6 @@
 				EEC32F79235F1BAC0061C9D9 /* GPUImageHueFilter.m in Sources */,
 				EEC3300C235F1BAD0061C9D9 /* GPUImageThreeInputFilter.m in Sources */,
 				EEC32FC1235F1BAC0061C9D9 /* GPUImageXYDerivativeFilter.m in Sources */,
-				EEC330AA235F1BAD0061C9D9 /* NHGPUImageView.m in Sources */,
 				EEC3307A235F1BAD0061C9D9 /* GPUImageColourFASTFeatureDetector.m in Sources */,
 				EEC32F55235F1BAC0061C9D9 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				EEC33042235F1BAD0061C9D9 /* GPUImageTextureOutput.m in Sources */,
@@ -2337,6 +2387,7 @@
 				EEC32FE0235F1BAD0061C9D9 /* GPUImageSaturationBlendFilter.m in Sources */,
 				EEC33051235F1BAD0061C9D9 /* GPUImageNormalBlendFilter.m in Sources */,
 				EEC32FAD235F1BAC0061C9D9 /* GPUImageRGBClosingFilter.m in Sources */,
+				EE08A06D23607E460070DC88 /* NHFFmpegSession.m in Sources */,
 				EEC3305B235F1BAD0061C9D9 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				EEC32F88235F1BAC0061C9D9 /* GPUImageAlphaBlendFilter.m in Sources */,
 				EEC33094235F1BAD0061C9D9 /* NHExportConfig.m in Sources */,
@@ -2352,17 +2403,18 @@
 				EEC32FD3235F1BAD0061C9D9 /* GPUImageFramebufferCache.m in Sources */,
 				EEC33041235F1BAD0061C9D9 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				EEC33077235F1BAD0061C9D9 /* GPUImageColourFASTSamplingOperation.m in Sources */,
+				EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */,
 				EEC33062235F1BAD0061C9D9 /* GPUImageMosaicFilter.m in Sources */,
 				EEC32FDB235F1BAD0061C9D9 /* GPUImageView.m in Sources */,
 				EEC32FEA235F1BAD0061C9D9 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
 				EEC32F93235F1BAC0061C9D9 /* GPUImageSkinToneFilter.m in Sources */,
 				EEC32F43235F1BAC0061C9D9 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				EEC33068235F1BAD0061C9D9 /* GPUImageLuminosityBlendFilter.m in Sources */,
+				EE08A09623607EC40070DC88 /* NHAVCaptureSession.m in Sources */,
 				EEC32FA1235F1BAC0061C9D9 /* GPUImageDissolveBlendFilter.m in Sources */,
 				EEC32EAA235F1BAC0061C9D9 /* NHVideoConfiguration.m in Sources */,
 				EEC32F40235F1BAC0061C9D9 /* GPUImageFourInputFilter.m in Sources */,
 				EEC32FF8235F1BAD0061C9D9 /* GPUImageColorBlendFilter.m in Sources */,
-				EEC33091235F1BAD0061C9D9 /* NHTimer.m in Sources */,
 				EE06BEC8235F4A0900AFB57C /* NHImageBeautifyFilter.m in Sources */,
 				EEC32F8F235F1BAC0061C9D9 /* GPUImageColorMatrixFilter.m in Sources */,
 				EEC33075235F1BAD0061C9D9 /* GPUImageLookupFilter.m in Sources */,
@@ -2370,17 +2422,21 @@
 				EEC32FFE235F1BAD0061C9D9 /* GPUImageContrastFilter.m in Sources */,
 				EEC3305F235F1BAD0061C9D9 /* GPUImageKuwaharaFilter.m in Sources */,
 				EEC33084235F1BAD0061C9D9 /* GPUImageLightenBlendFilter.m in Sources */,
+				EE08A0AC23607F3A0070DC88 /* NSObject+converTime.m in Sources */,
 				EEC32FB9235F1BAC0061C9D9 /* GPUImageOutput.m in Sources */,
 				EEC3301B235F1BAD0061C9D9 /* GPUImageLowPassFilter.m in Sources */,
 				EEC32FB7235F1BAC0061C9D9 /* GPUImageStretchDistortionFilter.m in Sources */,
 				EEC32F62235F1BAC0061C9D9 /* GPUImageLevelsFilter.m in Sources */,
+				EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */,
 				EEC32FFD235F1BAD0061C9D9 /* GPUImageRGBDilationFilter.m in Sources */,
 				EEC32F64235F1BAC0061C9D9 /* GPUImageSolarizeFilter.m in Sources */,
 				EEC32F83235F1BAC0061C9D9 /* GPUImageHistogramGenerator.m in Sources */,
 				EEC3306F235F1BAD0061C9D9 /* GPUImageFalseColorFilter.m in Sources */,
 				EEC33052235F1BAD0061C9D9 /* GPUImageDilationFilter.m in Sources */,
+				EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */,
 				EEC32FA6235F1BAC0061C9D9 /* GPUImagePixellateFilter.m in Sources */,
 				EEC33046235F1BAD0061C9D9 /* GPUImageHueBlendFilter.m in Sources */,
+				EE08A09423607EC40070DC88 /* NHGPUImageView.m in Sources */,
 				EEC3302D235F1BAD0061C9D9 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				EEC32FB8235F1BAC0061C9D9 /* GPUImageDivideBlendFilter.m in Sources */,
 				EEC33001235F1BAD0061C9D9 /* GPUImageHazeFilter.m in Sources */,
@@ -2398,13 +2454,13 @@
 				EEC32FAF235F1BAC0061C9D9 /* GPUImageLineGenerator.m in Sources */,
 				EEC32FBB235F1BAC0061C9D9 /* GPUImagePosterizeFilter.m in Sources */,
 				EEC33019235F1BAD0061C9D9 /* GPUImageRGBErosionFilter.m in Sources */,
-				EEC32EB0235F1BAC0061C9D9 /* NSTimer+NHAutoRetain.m in Sources */,
 				EEC33022235F1BAD0061C9D9 /* GPUImageMotionDetector.m in Sources */,
 				EEC32F5E235F1BAC0061C9D9 /* GPUImageGrayscaleFilter.m in Sources */,
 				EEC33017235F1BAD0061C9D9 /* GPUImageRawDataInput.m in Sources */,
 				EEC33020235F1BAD0061C9D9 /* GPUImageHoughTransformLineDetector.m in Sources */,
 				EEC32EAD235F1BAC0061C9D9 /* NHCaptureConfig.m in Sources */,
 				EEC32FD7235F1BAD0061C9D9 /* GPUImageMovieWriter.m in Sources */,
+				EE08A07323607E460070DC88 /* NHWriteH264Stream.m in Sources */,
 				EEC32FC4235F1BAD0061C9D9 /* GPUImageFramebuffer.m in Sources */,
 				EEC32FBE235F1BAC0061C9D9 /* GPUImageLanczosResamplingFilter.m in Sources */,
 				EEC33016235F1BAD0061C9D9 /* GPUImageWhiteBalanceFilter.m in Sources */,
@@ -2414,16 +2470,15 @@
 				EEC32F73235F1BAC0061C9D9 /* GPUImageSketchFilter.m in Sources */,
 				EEC32F4D235F1BAC0061C9D9 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
 				EEC32F86235F1BAC0061C9D9 /* GPUImageGammaFilter.m in Sources */,
+				EE08A07123607E460070DC88 /* NHX264Manager.m in Sources */,
 				EEC32F48235F1BAC0061C9D9 /* GPUImageSoftEleganceFilter.m in Sources */,
 				EEC3303E235F1BAD0061C9D9 /* GPUImageVideoCamera.m in Sources */,
 				EEC3309C235F1BAD0061C9D9 /* NHMusicEditor.m in Sources */,
-				EEC330A3235F1BAD0061C9D9 /* NHFFmpegSession.m in Sources */,
 				EEC33007235F1BAD0061C9D9 /* GPUImageSmoothToonFilter.m in Sources */,
 				EEC3302E235F1BAD0061C9D9 /* GPUImageMedianFilter.m in Sources */,
 				EEC32F9A235F1BAC0061C9D9 /* GPUImagePolarPixellateFilter.m in Sources */,
 				EEC32FFC235F1BAD0061C9D9 /* GPUImageColorConversion.m in Sources */,
 				EEC32FF9235F1BAD0061C9D9 /* GPUImageAverageColor.m in Sources */,
-				EEC330A6235F1BAD0061C9D9 /* NHAVCaptureSession.m in Sources */,
 				EEC32FE9235F1BAD0061C9D9 /* GPUImageSharpenFilter.m in Sources */,
 				EEC32FE5235F1BAD0061C9D9 /* GPUImagePoissonBlendFilter.m in Sources */,
 				EEC32FB2235F1BAC0061C9D9 /* GLProgram.m in Sources */,
@@ -2438,16 +2493,15 @@
 				EEC32F74235F1BAC0061C9D9 /* GPUImageiOSBlurFilter.m in Sources */,
 				EEC3300E235F1BAD0061C9D9 /* GPUImageBuffer.m in Sources */,
 				EEC32FF1235F1BAD0061C9D9 /* GPUImageSwirlFilter.m in Sources */,
-				EEC32EA5235F1BAC0061C9D9 /* NHX264Manager.m in Sources */,
 				EEC32F33235F1BAC0061C9D9 /* GPUImageUnsharpMaskFilter.m in Sources */,
 				EEC32FF0235F1BAD0061C9D9 /* GPUImageMaskFilter.m in Sources */,
 				EEC32F98235F1BAC0061C9D9 /* GPUImageHardLightBlendFilter.m in Sources */,
 				EEC32FAE235F1BAC0061C9D9 /* GPUImageSepiaFilter.m in Sources */,
 				EEC32FE2235F1BAD0061C9D9 /* GPUImageGaussianBlurFilter.m in Sources */,
-				EEC32EA9235F1BAC0061C9D9 /* NHH264Encoder.m in Sources */,
 				EEC32FA5235F1BAC0061C9D9 /* GPUImageCropFilter.m in Sources */,
 				EEC3309B235F1BAD0061C9D9 /* NHVideoWater.m in Sources */,
 				EEC32F38235F1BAC0061C9D9 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
+				EE08A08F23607EC40070DC88 /* NHBeasSession.m in Sources */,
 				EEC32F4A235F1BAC0061C9D9 /* GPUImageTwoPassFilter.m in Sources */,
 				EEC32F52235F1BAC0061C9D9 /* GPUImageColorPackingFilter.m in Sources */,
 				EEC33012235F1BAD0061C9D9 /* GPUImageThresholdSketchFilter.m in Sources */,
@@ -2467,6 +2521,7 @@
 				EEC32FC0235F1BAC0061C9D9 /* GPUImageFilterPipeline.m in Sources */,
 				EEC32FA2235F1BAC0061C9D9 /* GPUImageSaturationFilter.m in Sources */,
 				EEC32F75235F1BAC0061C9D9 /* GPUImageJFAVoronoiFilter.m in Sources */,
+				EE08A0A723607F3A0070DC88 /* NHAVKit2Timer.m in Sources */,
 				EEC3307C235F1BAD0061C9D9 /* GPUImageStillCamera.m in Sources */,
 				EEC3308B235F1BAD0061C9D9 /* GPUImageDarkenBlendFilter.m in Sources */,
 				EEC3309E235F1BAD0061C9D9 /* NHFrameImage.m in Sources */,
@@ -2474,10 +2529,8 @@
 				EEC33038235F1BAD0061C9D9 /* GPUImageMotionBlurFilter.m in Sources */,
 				EEC32FBA235F1BAC0061C9D9 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
 				EEC32F8B235F1BAC0061C9D9 /* GPUImageSolidColorGenerator.m in Sources */,
-				EEC330A7235F1BAD0061C9D9 /* NHBeasSession.m in Sources */,
 				EEC33078235F1BAD0061C9D9 /* GPUImageFilter.m in Sources */,
 				EEC32F77235F1BAC0061C9D9 /* GPUImageTransformFilter.m in Sources */,
-				EEC32EA7235F1BAC0061C9D9 /* NHWriteH264Stream.m in Sources */,
 				EEC32F3A235F1BAC0061C9D9 /* GPUImageChromaKeyFilter.m in Sources */,
 				EEC32F32235F1BAC0061C9D9 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				EEC33070235F1BAD0061C9D9 /* GPUImagePolkaDotFilter.m in Sources */,
@@ -2619,8 +2672,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/x264-iOS/include\"",
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/FFmpeg/include\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2631,8 +2684,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/x264-iOS/lib\"",
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/lib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nenhall.studio.NHCaptureKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2655,8 +2708,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/x264-iOS/include\"",
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/FFmpeg/include\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2667,8 +2720,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/x264-iOS/lib\"",
-					"\"$(SRCROOT)/../../../NHAVKit2/NHCaptureKit/Library/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/lib\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nenhall.studio.NHCaptureKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

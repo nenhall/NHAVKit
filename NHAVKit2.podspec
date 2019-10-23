@@ -16,33 +16,59 @@ Pod::Spec.new do |spec|
   spec.xcconfig 	  = {
       'ENABLE_STRICT_OBJC_MSGSEND' => 'NO'
   }
-  spec.default_subspec = 'NHBaseic', 'NHPlayer', 'NHCapture'
+  spec.default_subspec = 'Baseic', 'FFmpegEncoder','FFmpegDecoder', 'X26x', 'Play', 'Capture'
 
 
-spec.subspec 'NHBaseic' do |b|
-  # b.source_files        = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/include/**/*.h'
-  b.public_header_files = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/include/**/*.h'
-  b.vendored_libraries  = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/lib/*.a'
-  b.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'VideoToolbox', 'AudioToolbox'
-  b.libraries  = 'z', 'bz2', 'iconv'
+spec.subspec 'Baseic' do |b|
+  b.source_files        = 'NHAVKit2/Baseic/**/*.{h,m}'
+  b.frameworks          = 'Foundation', 'UIKit'
+  b.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>'
 end
 
-spec.subspec 'NHPlayer' do |p|
-  p.source_files  = 'NHAVKit2/NHPlayKit/**/*.{h,m}'
-  p.resources  = 'NHAVKit2/NHPlayKit/Library/NHPlay.bundle'
-  p.frameworks = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'VideoToolbox', 'AudioToolbox'
+spec.subspec 'FFmpegEncoder' do |cf|
+  cf.source_files        = 'NHAVKit2/Library/FFmpeg/include/**/*.h', 'NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}'
+  cf.header_mappings_dir = 'NHAVKit2/Library/FFmpeg/include'
+  cf.vendored_libraries  = 'NHAVKit2/Library/FFmpeg/lib/*.a'
+  cf.frameworks = 'AVFoundation', 'VideoToolbox', 'AudioToolbox'
+  cf.libraries  = 'z', 'bz2', 'iconv'
+  cf.dependency 'NHAVKit2/Baseic'
+end
+
+spec.subspec 'FFmpegDecoder' do |pf|
+  pf.source_files        = 'NHAVKit2/Library/FFmpeg/include/**/*.h'
+  # b.public_header_files = 'NHAVKit2/NHCaptureKit/Library/FFmpeg/include/**/*.h'
+  pf.header_mappings_dir = 'NHAVKit2/Library/FFmpeg/include'
+  pf.vendored_libraries  = 'NHAVKit2/Library/FFmpeg/lib/*.a'
+  pf.frameworks = 'AVFoundation', 'VideoToolbox', 'AudioToolbox'
+  pf.libraries  = 'z', 'bz2', 'iconv'
+  pf.dependency 'NHAVKit2/Baseic'
+end
+
+spec.subspec 'X26x' do |x|
+  x.source_files        = 'NHAVKit2/Library/x264/include/**/*.h', 'NHAVKit2/Capture/Encoder/X264/*.{h,m}'
+  x.header_mappings_dir = 'NHAVKit2/Library/x264/include'
+  x.vendored_libraries  = 'NHAVKit2/Library/x264/lib/*.a'
+  x.frameworks = 'AVFoundation', 'VideoToolbox', 'AudioToolbox'
+  x.libraries  = 'z', 'bz2', 'iconv'
+  x.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>', '#import <AVFoundation/AVFoundation.h>'
+  x.dependency 'NHAVKit2/Baseic'
+end
+
+spec.subspec 'Play' do |p|
+  p.source_files  = 'NHAVKit2/Play/**/*.{h,m}', 'NHAVKit2/Play/Decoder/**/*.{h,m}'
+  p.public_header_files = 'NHAVKit2/Play/Library/FFmpeg/include/**/*.h'
+  p.resources  = 'NHAVKit2/Play/Library/NHPlay.bundle'
+  p.frameworks = 'AVFoundation', 'VideoToolbox'
   p.libraries  = 'z', 'bz2', 'iconv'
-  p.dependency 'NHAVKit2/NHAVBaseic'
+  p.dependency 'NHAVKit2/Baseic'
 end
 
-spec.subspec 'NHCapture' do |c|
-  # 'NHAVKit2/NHCaptureKit/Library/x264-iOS/include/*.h'
-  c.source_files  = 'NHAVKit2/NHCaptureKit/**/*.{h,m}', 'NHAVKit2/NHCaptureKit/Library/GPUImage/Source/*.h','NHAVKit2/NHAVCapture/GPUImage/Source/iOS/*.{h,m}'
-  c.public_header_files = 'NHAVKit2/NHCaptureKit/NHLib/x264-iOS/include/*.h'
-  c.vendored_libraries  = 'NHAVKit2/NHCaptureKit/NHLib/x264-iOS/lib/libx264.a'
-  c.frameworks = 'OpenGLES', 'CoreMedia', 'QuartzCore', 'AVFoundation', 'CoreVideo', 'VideoToolbox'
+
+spec.subspec 'Capture' do |c|
+  c.source_files  = 'NHAVKit2/Capture/**/*.{h,m}', 'NHAVKit2/Capture/Library/GPUImage/Source/*.h','NHAVKit2/Capture/GPUImage/Source/iOS/*.{h,m}'
+  c.frameworks = 'OpenGLES', 'AVFoundation', 'CoreVideo', 'VideoToolbox'
   c.libraries  = 'z', 'bz2', 'iconv'
-  c.dependency 'NHAVKit2/NHAVBaseic'
+  c.dependency 'NHAVKit2/Baseic'
 end
 
 end
