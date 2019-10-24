@@ -37,14 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)nhAVPlayCurrentMoveFrame:(UIImage *)image avPlay:(NHFFmpegPlayer *)avPlay;
 
-- (void)nhAVPlayCurrentMoveFrameTime:(double)time nowTime:(double)nowTime avPlay:(NHFFmpegPlayer *)avPlay;
+- (void)nhAVPlayCurrentMoveFrameTime:(double)time
+                             nowTime:(double)nowTime
+                              avPlay:(NHFFmpegPlayer *)avPlay;
 
 @end
 
 
 @interface NHFFmpegPlayer : NHBasePlayer
 
-#ifdef ENABLE_FFMPEG
 @property (nonatomic, weak) id<NHFFmpegPlayerDelegate> delegate;
 @property (nonatomic, copy) NSString *currentPath;
 
@@ -97,8 +98,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 切换资源 */
 - (void)replaceTheResource:(NSString *)videoPath;
 
-
-#endif
 
 @end
 

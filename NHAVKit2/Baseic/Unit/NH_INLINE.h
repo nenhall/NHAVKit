@@ -79,7 +79,7 @@ NS_INLINE BOOL kObjIsNSNullClass(id _Nonnull obj) {
 
 /** NSInteger to NSString */
 NS_INLINE NSString* kGetIntegerWithString(NSInteger value){
-    return [NSString stringWithFormat:@"%ld",value];
+    return [NSString stringWithFormat:@"%ld",(long)value];
 }
 
 /** int to NSString */

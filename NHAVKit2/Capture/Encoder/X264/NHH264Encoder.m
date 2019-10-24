@@ -10,8 +10,6 @@
 #import "NHWriteH264Stream.h"
 
 
-#ifdef ENABLE_FFMPEG
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,10 +28,8 @@ extern "C" {
 @property (strong, nonatomic) NHVideoConfiguration *videoConfiguration;
 
 @end
-#endif
 
 @implementation NHH264Encoder
-#ifdef ENABLE_FFMPEG
 {
     AVCodecContext                      *_pCodecCtx;
     AVCodec                             *_pCodec;
@@ -203,7 +199,5 @@ extern "C" {
     self.outputObject = output;
 }
 
-
-#endif
 
 @end

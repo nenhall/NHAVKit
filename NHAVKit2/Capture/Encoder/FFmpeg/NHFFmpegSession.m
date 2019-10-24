@@ -9,7 +9,6 @@
 #import "NHFFmpegSession.h"
 
 
-#ifdef ENABLE_FFMPEG
 
 #include <libavformat/avformat.h>
 #include <libavformat/avio.h>
@@ -29,11 +28,8 @@
 
 @end
 
-#endif
 
 @implementation NHFFmpegSession
-
-#ifdef ENABLE_FFMPEG
 
 - (void)decoderFormCamera {
     
@@ -335,6 +331,5 @@ end:
 //}
 
 
-#endif
 
 @end

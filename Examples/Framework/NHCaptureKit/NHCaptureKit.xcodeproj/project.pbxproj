@@ -53,116 +53,116 @@
 		EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EAD235F1BAC0061C9D9 /* NHCaptureConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */; };
 		EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C96235F1BAB0061C9D9 /* version.h */; };
-		EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C97235F1BAB0061C9D9 /* postprocess.h */; };
+		EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C97235F1BAB0061C9D9 /* postprocess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EB4235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C99235F1BAB0061C9D9 /* version.h */; };
-		EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9A235F1BAB0061C9D9 /* buffersrc.h */; };
-		EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9B235F1BAB0061C9D9 /* buffersink.h */; };
-		EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9C235F1BAB0061C9D9 /* avfilter.h */; };
-		EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9D235F1BAB0061C9D9 /* avfiltergraph.h */; };
-		EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9F235F1BAB0061C9D9 /* hwcontext.h */; };
-		EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA0235F1BAB0061C9D9 /* time.h */; };
-		EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA1235F1BAB0061C9D9 /* hwcontext_cuda.h */; };
-		EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA2235F1BAB0061C9D9 /* intfloat.h */; };
-		EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA3235F1BAB0061C9D9 /* error.h */; };
-		EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA4235F1BAB0061C9D9 /* fifo.h */; };
-		EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA5235F1BAB0061C9D9 /* blowfish.h */; };
-		EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA6235F1BAB0061C9D9 /* replaygain.h */; };
+		EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9A235F1BAB0061C9D9 /* buffersrc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9B235F1BAB0061C9D9 /* buffersink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9C235F1BAB0061C9D9 /* avfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9D235F1BAB0061C9D9 /* avfiltergraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9F235F1BAB0061C9D9 /* hwcontext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA0235F1BAB0061C9D9 /* time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA1235F1BAB0061C9D9 /* hwcontext_cuda.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA2235F1BAB0061C9D9 /* intfloat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA3235F1BAB0061C9D9 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA4235F1BAB0061C9D9 /* fifo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA5235F1BAB0061C9D9 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA6235F1BAB0061C9D9 /* replaygain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32EC1235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA7235F1BAB0061C9D9 /* version.h */; };
-		EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA8235F1BAB0061C9D9 /* murmur3.h */; };
-		EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA9235F1BAB0061C9D9 /* stereo3d.h */; };
-		EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAA235F1BAB0061C9D9 /* samplefmt.h */; };
-		EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAB235F1BAB0061C9D9 /* pixdesc.h */; };
-		EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAC235F1BAB0061C9D9 /* base64.h */; };
-		EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAD235F1BAB0061C9D9 /* rational.h */; };
-		EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAE235F1BAB0061C9D9 /* sha.h */; };
-		EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAF235F1BAB0061C9D9 /* motion_vector.h */; };
-		EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB0235F1BAB0061C9D9 /* avconfig.h */; };
-		EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB1235F1BAB0061C9D9 /* lfg.h */; };
-		EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB2235F1BAB0061C9D9 /* avutil.h */; };
-		EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB3235F1BAB0061C9D9 /* xtea.h */; };
-		EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB4235F1BAB0061C9D9 /* crc.h */; };
-		EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB5235F1BAB0061C9D9 /* hwcontext_vdpau.h */; };
-		EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB6235F1BAB0061C9D9 /* frame.h */; };
-		EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB7235F1BAB0061C9D9 /* file.h */; };
-		EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB8235F1BAB0061C9D9 /* md5.h */; };
-		EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB9235F1BAB0061C9D9 /* cast5.h */; };
-		EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBA235F1BAB0061C9D9 /* hwcontext_vaapi.h */; };
-		EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBB235F1BAB0061C9D9 /* spherical.h */; };
+		EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA8235F1BAB0061C9D9 /* murmur3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA9235F1BAB0061C9D9 /* stereo3d.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAA235F1BAB0061C9D9 /* samplefmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAB235F1BAB0061C9D9 /* pixdesc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAC235F1BAB0061C9D9 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAD235F1BAB0061C9D9 /* rational.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAE235F1BAB0061C9D9 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAF235F1BAB0061C9D9 /* motion_vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB0235F1BAB0061C9D9 /* avconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB1235F1BAB0061C9D9 /* lfg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB2235F1BAB0061C9D9 /* avutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB3235F1BAB0061C9D9 /* xtea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB4235F1BAB0061C9D9 /* crc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB5235F1BAB0061C9D9 /* hwcontext_vdpau.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB6235F1BAB0061C9D9 /* frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB7235F1BAB0061C9D9 /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB8235F1BAB0061C9D9 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB9235F1BAB0061C9D9 /* cast5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBA235F1BAB0061C9D9 /* hwcontext_vaapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBB235F1BAB0061C9D9 /* spherical.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32ED6235F1BAC0061C9D9 /* ffversion.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBC235F1BAB0061C9D9 /* ffversion.h */; };
-		EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBD235F1BAB0061C9D9 /* audio_fifo.h */; };
-		EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBE235F1BAB0061C9D9 /* tree.h */; };
-		EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBF235F1BAB0061C9D9 /* threadmessage.h */; };
-		EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC0235F1BAB0061C9D9 /* attributes.h */; };
-		EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC1235F1BAB0061C9D9 /* adler32.h */; };
-		EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC2235F1BAB0061C9D9 /* hwcontext_d3d11va.h */; };
-		EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC3235F1BAB0061C9D9 /* timecode.h */; };
-		EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC4235F1BAB0061C9D9 /* sha512.h */; };
-		EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC5235F1BAB0061C9D9 /* hwcontext_dxva2.h */; };
-		EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC6235F1BAB0061C9D9 /* display.h */; };
-		EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC7235F1BAB0061C9D9 /* buffer.h */; };
-		EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC8235F1BAB0061C9D9 /* camellia.h */; };
-		EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC9235F1BAB0061C9D9 /* pixelutils.h */; };
-		EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCA235F1BAB0061C9D9 /* hwcontext_drm.h */; };
-		EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCB235F1BAB0061C9D9 /* common.h */; };
-		EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCC235F1BAB0061C9D9 /* hmac.h */; };
-		EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCD235F1BAB0061C9D9 /* eval.h */; };
-		EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCE235F1BAB0061C9D9 /* dict.h */; };
-		EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCF235F1BAB0061C9D9 /* random_seed.h */; };
-		EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD0235F1BAB0061C9D9 /* opt.h */; };
-		EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD1235F1BAB0061C9D9 /* mastering_display_metadata.h */; };
-		EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD2235F1BAB0061C9D9 /* log.h */; };
-		EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD3235F1BAB0061C9D9 /* aes.h */; };
-		EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD4235F1BAB0061C9D9 /* macros.h */; };
-		EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD5235F1BAB0061C9D9 /* bswap.h */; };
-		EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD6235F1BAB0061C9D9 /* rc4.h */; };
-		EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD7235F1BAB0061C9D9 /* tea.h */; };
-		EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD8235F1BAB0061C9D9 /* cpu.h */; };
-		EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD9235F1BAB0061C9D9 /* lzo.h */; };
-		EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDA235F1BAB0061C9D9 /* des.h */; };
-		EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDB235F1BAB0061C9D9 /* channel_layout.h */; };
-		EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDC235F1BAB0061C9D9 /* twofish.h */; };
-		EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDD235F1BAB0061C9D9 /* imgutils.h */; };
-		EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDE235F1BAB0061C9D9 /* hwcontext_videotoolbox.h */; };
-		EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDF235F1BAB0061C9D9 /* mem.h */; };
-		EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE0235F1BAB0061C9D9 /* parseutils.h */; };
-		EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE1235F1BAB0061C9D9 /* ripemd.h */; };
-		EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE2235F1BAB0061C9D9 /* bprint.h */; };
-		EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE3235F1BAB0061C9D9 /* hwcontext_qsv.h */; };
-		EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE4235F1BAB0061C9D9 /* pixfmt.h */; };
-		EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE5235F1BAB0061C9D9 /* aes_ctr.h */; };
-		EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE6235F1BAB0061C9D9 /* timestamp.h */; };
-		EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE7235F1BAB0061C9D9 /* downmix_info.h */; };
-		EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE8235F1BAB0061C9D9 /* avassert.h */; };
-		EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE9235F1BAB0061C9D9 /* hash.h */; };
-		EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEA235F1BAB0061C9D9 /* mathematics.h */; };
-		EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEB235F1BAB0061C9D9 /* intreadwrite.h */; };
-		EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEC235F1BAB0061C9D9 /* avstring.h */; };
+		EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBD235F1BAB0061C9D9 /* audio_fifo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBE235F1BAB0061C9D9 /* tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBF235F1BAB0061C9D9 /* threadmessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC0235F1BAB0061C9D9 /* attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC1235F1BAB0061C9D9 /* adler32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC2235F1BAB0061C9D9 /* hwcontext_d3d11va.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC3235F1BAB0061C9D9 /* timecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC4235F1BAB0061C9D9 /* sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC5235F1BAB0061C9D9 /* hwcontext_dxva2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC6235F1BAB0061C9D9 /* display.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC7235F1BAB0061C9D9 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC8235F1BAB0061C9D9 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC9235F1BAB0061C9D9 /* pixelutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCA235F1BAB0061C9D9 /* hwcontext_drm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCB235F1BAB0061C9D9 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCC235F1BAB0061C9D9 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCD235F1BAB0061C9D9 /* eval.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCE235F1BAB0061C9D9 /* dict.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCF235F1BAB0061C9D9 /* random_seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD0235F1BAB0061C9D9 /* opt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD1235F1BAB0061C9D9 /* mastering_display_metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD2235F1BAB0061C9D9 /* log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD3235F1BAB0061C9D9 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD4235F1BAB0061C9D9 /* macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD5235F1BAB0061C9D9 /* bswap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD6235F1BAB0061C9D9 /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD7235F1BAB0061C9D9 /* tea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD8235F1BAB0061C9D9 /* cpu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD9235F1BAB0061C9D9 /* lzo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDA235F1BAB0061C9D9 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDB235F1BAB0061C9D9 /* channel_layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDC235F1BAB0061C9D9 /* twofish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDD235F1BAB0061C9D9 /* imgutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDE235F1BAB0061C9D9 /* hwcontext_videotoolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDF235F1BAB0061C9D9 /* mem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE0235F1BAB0061C9D9 /* parseutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE1235F1BAB0061C9D9 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE2235F1BAB0061C9D9 /* bprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE3235F1BAB0061C9D9 /* hwcontext_qsv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE4235F1BAB0061C9D9 /* pixfmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE5235F1BAB0061C9D9 /* aes_ctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE6235F1BAB0061C9D9 /* timestamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE7235F1BAB0061C9D9 /* downmix_info.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE8235F1BAB0061C9D9 /* avassert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE9235F1BAB0061C9D9 /* hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEA235F1BAB0061C9D9 /* mathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEB235F1BAB0061C9D9 /* intreadwrite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEC235F1BAB0061C9D9 /* avstring.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F07235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEE235F1BAB0061C9D9 /* version.h */; };
-		EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEF235F1BAB0061C9D9 /* avdevice.h */; };
+		EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEF235F1BAB0061C9D9 /* avdevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F09235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF1235F1BAB0061C9D9 /* version.h */; };
-		EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF2235F1BAB0061C9D9 /* avio.h */; };
-		EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF3235F1BAB0061C9D9 /* avformat.h */; };
+		EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF2235F1BAB0061C9D9 /* avio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF3235F1BAB0061C9D9 /* avformat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF5235F1BAB0061C9D9 /* version.h */; };
-		EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF6235F1BAB0061C9D9 /* swscale.h */; };
+		EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF6235F1BAB0061C9D9 /* swscale.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF8235F1BAB0061C9D9 /* avcodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F0F235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF9235F1BAB0061C9D9 /* version.h */; };
-		EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFA235F1BAB0061C9D9 /* vdpau.h */; };
-		EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFB235F1BAB0061C9D9 /* qsv.h */; };
-		EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFC235F1BAB0061C9D9 /* vaapi.h */; };
-		EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFD235F1BAB0061C9D9 /* videotoolbox.h */; };
-		EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFE235F1BAB0061C9D9 /* xvmc.h */; };
-		EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFF235F1BAB0061C9D9 /* mediacodec.h */; };
-		EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D00235F1BAB0061C9D9 /* d3d11va.h */; };
-		EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D01235F1BAB0061C9D9 /* avfft.h */; };
-		EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D02235F1BAB0061C9D9 /* vda.h */; };
-		EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D03235F1BAB0061C9D9 /* jni.h */; };
-		EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D04235F1BAB0061C9D9 /* dirac.h */; };
-		EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D05235F1BAB0061C9D9 /* avdct.h */; };
-		EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D06235F1BAB0061C9D9 /* vorbis_parser.h */; };
-		EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D07235F1BAB0061C9D9 /* dxva2.h */; };
-		EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D08235F1BAB0061C9D9 /* dv_profile.h */; };
+		EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFA235F1BAB0061C9D9 /* vdpau.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFB235F1BAB0061C9D9 /* qsv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFC235F1BAB0061C9D9 /* vaapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFD235F1BAB0061C9D9 /* videotoolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFE235F1BAB0061C9D9 /* xvmc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFF235F1BAB0061C9D9 /* mediacodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D00235F1BAB0061C9D9 /* d3d11va.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D01235F1BAB0061C9D9 /* avfft.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D02235F1BAB0061C9D9 /* vda.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D03235F1BAB0061C9D9 /* jni.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D04235F1BAB0061C9D9 /* dirac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D05235F1BAB0061C9D9 /* avdct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D06235F1BAB0061C9D9 /* vorbis_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D07235F1BAB0061C9D9 /* dxva2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D08235F1BAB0061C9D9 /* dv_profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F1F235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0A235F1BAB0061C9D9 /* version.h */; };
-		EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0B235F1BAB0061C9D9 /* swresample.h */; };
+		EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0B235F1BAB0061C9D9 /* swresample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC32F21235F1BAC0061C9D9 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0D235F1BAB0061C9D9 /* libavutil.a */; };
 		EEC32F22235F1BAC0061C9D9 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0E235F1BAB0061C9D9 /* libavfilter.a */; };
 		EEC32F23235F1BAC0061C9D9 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0F235F1BAB0061C9D9 /* libavcodec.a */; };
@@ -1947,6 +1947,107 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
+				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
+				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
+				EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */,
+				EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */,
+				EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */,
+				EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */,
+				EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */,
+				EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */,
+				EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */,
+				EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */,
+				EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */,
+				EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */,
+				EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */,
+				EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */,
+				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
+				EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */,
+				EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */,
+				EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */,
+				EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */,
+				EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */,
+				EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */,
+				EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */,
+				EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */,
+				EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */,
+				EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */,
+				EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */,
+				EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */,
+				EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */,
+				EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */,
+				EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */,
+				EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */,
+				EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */,
+				EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */,
+				EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */,
+				EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */,
+				EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */,
+				EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */,
+				EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */,
+				EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */,
+				EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */,
+				EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */,
+				EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */,
+				EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */,
+				EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */,
+				EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */,
+				EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */,
+				EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */,
+				EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */,
+				EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */,
+				EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */,
+				EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */,
+				EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */,
+				EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */,
+				EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */,
+				EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */,
+				EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */,
+				EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */,
+				EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */,
+				EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */,
+				EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */,
+				EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */,
+				EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */,
+				EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */,
+				EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */,
+				EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */,
+				EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */,
+				EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */,
+				EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */,
+				EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */,
+				EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */,
+				EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */,
+				EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */,
+				EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */,
+				EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */,
+				EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */,
+				EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */,
+				EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */,
+				EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */,
+				EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */,
+				EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */,
+				EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */,
+				EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */,
+				EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */,
+				EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */,
+				EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */,
+				EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */,
+				EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */,
+				EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */,
+				EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */,
+				EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */,
+				EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */,
+				EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */,
+				EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */,
+				EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */,
+				EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */,
+				EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */,
+				EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */,
+				EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */,
+				EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */,
+				EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */,
 				EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */,
 				EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */,
 				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
@@ -2147,122 +2248,21 @@
 				EEC32F60235F1BAC0061C9D9 /* GPUImageGlassSphereFilter.h in Headers */,
 				EEC33056235F1BAD0061C9D9 /* GPUImageZoomBlurFilter.h in Headers */,
 				EEC33011235F1BAD0061C9D9 /* GPUImageUnsharpMaskFilter.h in Headers */,
-				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
-				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
-				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
-				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
-				EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */,
-				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
-				EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */,
-				EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */,
-				EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */,
-				EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */,
-				EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */,
-				EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */,
 				EEC32F0F235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */,
-				EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */,
-				EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */,
-				EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */,
-				EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */,
-				EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */,
-				EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */,
-				EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */,
-				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
-				EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */,
-				EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */,
-				EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */,
-				EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */,
 				EEC32F07235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */,
-				EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */,
-				EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */,
-				EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */,
-				EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */,
-				EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */,
-				EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */,
-				EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */,
-				EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */,
-				EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */,
-				EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */,
-				EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */,
-				EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */,
-				EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */,
-				EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */,
-				EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */,
 				EEC32EC1235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */,
-				EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */,
-				EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */,
-				EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */,
-				EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */,
-				EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */,
-				EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */,
-				EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */,
-				EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */,
-				EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */,
-				EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */,
-				EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */,
-				EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */,
-				EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */,
-				EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */,
-				EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */,
-				EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */,
-				EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */,
-				EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */,
 				EEC32EB4235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */,
-				EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */,
-				EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */,
-				EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */,
 				EEC32ED6235F1BAC0061C9D9 /* ffversion.h in Headers */,
-				EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */,
-				EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */,
-				EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */,
 				EEC32F09235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */,
-				EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */,
-				EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */,
 				EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */,
-				EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */,
-				EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */,
-				EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */,
-				EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */,
-				EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */,
-				EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */,
-				EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */,
-				EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */,
 				EEC32F1F235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */,
-				EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */,
-				EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */,
-				EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */,
-				EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */,
 				EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */,
-				EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */,
-				EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */,
-				EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */,
-				EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */,
-				EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */,
-				EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */,
+				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
+				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
+				EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */,
+				EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */,
+				EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */,
 				EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */,
-				EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */,
-				EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */,
-				EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */,
-				EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */,
-				EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */,
-				EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */,
-				EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */,
-				EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */,
-				EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */,
-				EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */,
-				EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */,
-				EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */,
-				EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */,
-				EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */,
-				EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

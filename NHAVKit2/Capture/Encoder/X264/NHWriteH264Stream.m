@@ -8,7 +8,6 @@
 
 #import "NHWriteH264Stream.h"
 
-#ifdef ENABLE_FFMPEG
 
 #ifdef __cplusplus
 extern "C" {
@@ -21,10 +20,8 @@ extern "C" {
 }
 #endif
 
-#endif
 
 @implementation NHWriteH264Stream
-#ifdef ENABLE_FFMPEG
 {
     char *_out_file;
     FILE *_pFile;
@@ -95,6 +92,5 @@ extern "C" {
     NSLog(@"%s",__func__);
 }
 
-#endif
 
 @end

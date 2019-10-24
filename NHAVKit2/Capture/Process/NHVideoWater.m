@@ -10,6 +10,10 @@
 #import <Photos/Photos.h>
 
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+
 @interface NHVideoWater ()
 @property (nonatomic, strong) GPUImageNormalBlendFilter *filter;
 @property (nonatomic, strong) GPUImageMovie *movieFile;
@@ -146,5 +150,7 @@
         });
     }];
 }
+
+#pragma clang diagnostic pop
 
 @end

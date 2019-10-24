@@ -10,13 +10,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "NHVideoConfiguration.h"
 #import "NHX264OutputProtocol.h"
-#import "NHCaptureSessionProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHH264Encoder : NSObject <NHX264OutputProtocol>
-#ifdef ENABLE_FFMPEG
 
 @property (nonatomic, strong) id<NHX264OutputProtocol> outputObject;
 
@@ -26,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)teardown;
 
-
-#endif
 
 @end
 

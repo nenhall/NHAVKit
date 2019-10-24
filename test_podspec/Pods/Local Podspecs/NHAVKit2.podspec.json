@@ -32,8 +32,8 @@
     "X26xEncoder"
   ],
   "info_plist": {
-    "CFBundleIdentifier": "com.myorg.MyLib",
-    "MY_VAR": "SOME_VALUE"
+    "NSCameraUsageDescription": "Use Camera",
+    "NSMicrophoneUsageDescription": "Use Microphone"
   },
   "subspecs": [
     {

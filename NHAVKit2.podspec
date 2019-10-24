@@ -21,8 +21,10 @@ Pod::Spec.new do |spec|
     'FFmpegEncoder','FFmpegDecoder', 'X26xEncoder'
   ]
   spec.info_plist = {
-    'CFBundleIdentifier' => 'com.myorg.MyLib',
-    'MY_VAR' => 'SOME_VALUE'
+    'NSCameraUsageDescription' => 'Use Camera',
+    'NSMicrophoneUsageDescription' => 'Use Microphone',
+    # 'NSPhotoLibraryAddUsageDescription' => 'Use Camera',
+    # 'NSPhotoLibraryUsageDescription' => 'Use Camera',
   }
   
   spec.subspec 'Baseic' do |b|

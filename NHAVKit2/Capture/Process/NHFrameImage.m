@@ -65,7 +65,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
        fromConnection:(AVCaptureConnection *)connection
 {
     // 通过抽样缓存数据创建一个UIImage对象
-    UIImage *image = [NHFrameImage imageFromSampleBuffer:sampleBuffer];
+    UIImage *image = [NHFrameImage nh_imageFromSampleBuffer:sampleBuffer];
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 
 //    < 此处添加使用该image对象的代码 >
@@ -77,7 +77,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 
 
 // 通过抽样缓存数据创建一个UIImage对象
-+ (UIImage *) imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
++ (UIImage *)nh_imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
 {
     // 为媒体数据设置一个CMSampleBuffer的Core Video图像缓存对象
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);

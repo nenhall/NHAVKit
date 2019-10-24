@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol NHX264OutputProtocol <NSObject>
+@optional
 
 - (void)setOutput:(id<NHX264OutputProtocol>)output;
 

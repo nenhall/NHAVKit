@@ -12,6 +12,7 @@
 #include <libavcodec/avcodec.h>
 #include <libswscale/swscale.h>
 #import "NHAVKit2Timer.h"
+#import "NHAVKit2Define.h"
 
 
 @interface NHFFmpegPlayer ()
@@ -20,7 +21,6 @@
 @end
 
 @implementation NHFFmpegPlayer
-#ifdef ENABLE_FFMPEG
 {
     AVFormatContext *nhFormatContext;
     AVCodecContext  *nhcodeContext;
@@ -334,7 +334,5 @@ initError:NSLog(@"发生了一个错误呼呼");
     avformat_network_deinit();
     
 }
-
-#endif
 
 @end
