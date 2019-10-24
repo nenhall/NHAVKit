@@ -1,0 +1,1 @@
+../../../../../NHAVKit2/Capture/Common/NHVideoHelper.h

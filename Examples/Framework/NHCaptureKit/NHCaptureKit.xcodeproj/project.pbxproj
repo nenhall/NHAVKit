@@ -526,8 +526,8 @@
 		EEC33089235F1BAD0061C9D9 /* GPUImageStretchDistortionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E79235F1BAC0061C9D9 /* GPUImageStretchDistortionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3308A235F1BAD0061C9D9 /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7A235F1BAC0061C9D9 /* GLProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3308B235F1BAD0061C9D9 /* GPUImageDarkenBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E7B235F1BAC0061C9D9 /* GPUImageDarkenBlendFilter.m */; };
-		EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7E235F1BAC0061C9D9 /* x264_config.h */; };
-		EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7F235F1BAC0061C9D9 /* x264.h */; };
+		EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7E235F1BAC0061C9D9 /* x264_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7F235F1BAC0061C9D9 /* x264.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3308E235F1BAD0061C9D9 /* libx264.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32E81235F1BAC0061C9D9 /* libx264.2.a */; };
 		EEC3308F235F1BAD0061C9D9 /* NHVideoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC33090235F1BAD0061C9D9 /* NHExportConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1947,6 +1947,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */,
+				EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */,
 				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
 				EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */,
 				EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */,
@@ -2164,7 +2166,6 @@
 				EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */,
 				EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */,
 				EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */,
-				EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */,
 				EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */,
 				EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */,
 				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
@@ -2245,7 +2246,6 @@
 				EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */,
 				EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */,
 				EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */,
-				EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */,
 				EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */,
 				EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */,
 				EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */,

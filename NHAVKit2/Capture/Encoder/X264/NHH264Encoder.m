@@ -9,18 +9,19 @@
 #import "NHH264Encoder.h"
 #import "NHWriteH264Stream.h"
 
+
 #ifdef ENABLE_FFMPEG
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-    
 #include <libavutil/opt.h>
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
 #include <libavutil/imgutils.h>
-
+#include "x264.h"
+#include "x264_config.h"
 #ifdef __cplusplus
 }
 #endif

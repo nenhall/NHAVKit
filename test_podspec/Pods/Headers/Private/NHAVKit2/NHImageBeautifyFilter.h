@@ -1,0 +1,1 @@
+../../../../../NHAVKit2/Capture/Process/NHImageBeautifyFilter.h

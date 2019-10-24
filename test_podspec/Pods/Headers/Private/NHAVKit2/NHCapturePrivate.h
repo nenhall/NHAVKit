@@ -1,0 +1,1 @@
+../../../../../NHAVKit2/Capture/Extension/NHCapturePrivate.h
