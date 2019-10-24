@@ -79,6 +79,12 @@ extern "C" {
     fflush(_pFile);
 }
 
+- (void)writeData:(uint8_t *)data size:(int)size index:(NSInteger)index {
+    
+    fwrite(data, size, 1, _pFile);
+    
+    fflush(_pFile);
+}
 
 - (void)setOutput:(id<NHX264OutputProtocol>)output {
     

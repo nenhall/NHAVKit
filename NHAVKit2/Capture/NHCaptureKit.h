@@ -33,3 +33,7 @@ FOUNDATION_EXPORT const unsigned char NHCaptureKitVersionString[];
 #if __has_include("NHH264Encoder.h")
 #import "NHH264Encoder.h"
 #endif
+
+#if __has_include("NHWriteH264Stream.h")
+#import "NHWriteH264Stream.h"
+#endif

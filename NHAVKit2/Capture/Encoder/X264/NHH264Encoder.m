@@ -18,8 +18,6 @@ extern "C" {
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
 #include <libavutil/imgutils.h>
-#include "x264.h"
-#include "x264_config.h"
 #ifdef __cplusplus
 }
 #endif
@@ -172,8 +170,8 @@ extern "C" {
         NSLog(@"Succeed to encode frame: %5d\tsize:%5d", _frameCounter, _packet.size);
         _frameCounter++;
         NHWriteH264Stream *writeH264Stream = self.outputObject;
-        [writeH264Stream writeFrame:_packet streamIndex:_packet.stream_index];
-        
+//        [writeH264Stream writeFrame:_packet streamIndex:_packet.stream_index];
+        [writeH264Stream writeData:_packet.data size:_packet.size index:_packet.stream_index];
         av_free_packet(&_packet);
     }
     

@@ -36,10 +36,12 @@
 		EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A123607F3A0070DC88 /* NSString+time.h */; };
 		EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A223607F3A0070DC88 /* NSTimer+NHAutoRetain.m */; };
 		EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A323607F3A0070DC88 /* UIDevice+NHOrientation.m */; };
-		EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */; };
+		EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A523607F3A0070DC88 /* NSTimer+NHAutoRetain.h */; };
 		EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A623607F3A0070DC88 /* NSString+time.m */; };
 		EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE42F80F227687EC00F22E98 /* NHCaptureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE7C10182361B9410092368D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7C10172361B9410092368D /* UIKit.framework */; };
+		EE7C101A2361B94A0092368D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7C10192361B94A0092368D /* CoreGraphics.framework */; };
 		EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24C2355F10900B63210 /* OpenGLES.framework */; platformFilter = ios; };
 		EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24E2355F11000B63210 /* CoreMedia.framework */; };
 		EE7EE2512355F11500B63210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2502355F11500B63210 /* QuartzCore.framework */; };
@@ -584,6 +586,8 @@
 		EE42F810227687EC00F22E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE42F8172276888200F22E98 /* NHCaptureKit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCaptureKit.pch; sourceTree = "<group>"; };
 		EE6E359D236036D7003093E4 /* NHCapturePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHCapturePrivate.h; sourceTree = "<group>"; };
+		EE7C10172361B9410092368D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE7C10192361B94A0092368D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EE7EE24C2355F10900B63210 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EE7EE24E2355F11000B63210 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		EE7EE2502355F11500B63210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1097,6 +1101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7C101A2361B94A0092368D /* CoreGraphics.framework in Frameworks */,
+				EE7C10182361B9410092368D /* UIKit.framework in Frameworks */,
 				EEC330AD235F21A30061C9D9 /* libbz2.tbd in Frameworks */,
 				EEC32F26235F1BAC0061C9D9 /* libavdevice.a in Frameworks */,
 				EEC32F27235F1BAC0061C9D9 /* libswresample.a in Frameworks */,
@@ -1230,6 +1236,8 @@
 		EE7EE24B2355F10900B63210 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE7C10192361B94A0092368D /* CoreGraphics.framework */,
+				EE7C10172361B9410092368D /* UIKit.framework */,
 				EEC330AC235F21A20061C9D9 /* libbz2.tbd */,
 				EE7EE36C2355F56700B63210 /* VideoToolbox.framework */,
 				EE7EE36A2355F54800B63210 /* CoreAudio.framework */,
@@ -1947,6 +1955,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
 				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
 				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
 				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
@@ -2258,7 +2267,6 @@
 				EEC32F1F235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
-				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
 				EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */,
 				EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */,
 				EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */,
@@ -2674,6 +2682,7 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
+					"\"$(SRCROOT)/NHCaptureKit/Capture/Library/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2710,6 +2719,7 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
+					"\"$(SRCROOT)/NHCaptureKit/Capture/Library/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
