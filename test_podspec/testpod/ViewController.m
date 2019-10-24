@@ -10,6 +10,7 @@
 #import <NHAVKit2/NHPlayKit.h>
 #import <NHAVKit2/NHCaptureKit.h>
 #import <NHAVKit2/x264.h>
+#import <NHAVKit2/libavcodec/avcodec.h>
 
 
 @interface ViewController ()
@@ -17,8 +18,8 @@
 @property (nonatomic, strong) NHAVCaptureSession *capture;
 @property (nonatomic, strong) NHGPUImageView *imageView;
 @property (nonatomic, strong) NHX264Manager *x264;
-@property (nonatomic, strong) NHWriteH264Stream *wirter;
-//@property (nonatomic, strong) NHFFmpegPlayer *captureSession;
+@property (nonatomic, strong) NHH264Encoder *x264Encoder;
+@property (nonatomic, strong) NHFFmpegPlayer *ffmpegPlay;
 
 @end
 
@@ -36,7 +37,9 @@
     [_x264 encoding:nil];
     
     AVPacket *packet;
-    [self.wirter writeFrame:*packet streamIndex:nil];
+    
+    _x264Encoder = [[NHH264Encoder alloc] init];
+    [_x264Encoder encoding:0 timestamp:0];
     
     x264_nal_t x264t;
     x264t.i_first_mb;
