@@ -11,8 +11,8 @@
 #include <libavutil/avutil.h>
 #include <libavcodec/avcodec.h>
 #include <libswscale/swscale.h>
-#import "NHAVKit2Timer.h"
-#import "NHAVKit2Define.h"
+#import "NHAVKitTimer.h"
+#import "NHAVKitDefine.h"
 
 
 @interface NHFFmpegPlayer ()
@@ -133,13 +133,13 @@ initError:NSLog(@"发生了一个错误呼呼");
     }
     
     [self seekTime:time];
-    [NHAVKit2Timer timerWithTimeInterval:1 / self.fps start:0 target:self action:@selector(displayNextFrame) repeats:YES async:NO onlyFlag:@"play"];
+    [NHAVKitTimer timerWithTimeInterval:1 / self.fps start:0 target:self action:@selector(displayNextFrame) repeats:YES async:NO onlyFlag:@"play"];
 }
 
 - (void)displayNextFrame {
     
     if (![self stepFrame]) {
-        [NHAVKit2Timer cancelTask:@"play"];
+        [NHAVKitTimer cancelTask:@"play"];
         if (self.delegate && [self.delegate respondsToSelector:@selector(nhAVPlayComplete:)]) {
             [self.delegate nhAVPlayComplete:self];
         }
@@ -159,12 +159,12 @@ initError:NSLog(@"发生了一个错误呼呼");
 }
 
 - (void)stop {
-    [NHAVKit2Timer cancelTask:@"play"];
+    [NHAVKitTimer cancelTask:@"play"];
     [self releaseResources];
 }
 
 - (void)pause {
-    [NHAVKit2Timer cancelTask:@"play"];
+    [NHAVKitTimer cancelTask:@"play"];
 }
 
 - (void)redialPlay {

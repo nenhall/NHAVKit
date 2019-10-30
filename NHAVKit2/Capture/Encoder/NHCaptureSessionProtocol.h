@@ -11,10 +11,10 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-
 #if __has_include(<libavformat/avformat.h>)
 #define ENABLE_FFMPEG 1
 #endif
+
 
 @class NHExportConfig;
 
@@ -85,6 +85,12 @@ typedef enum : NSUInteger {
 
 
 @end
+
+
+#pragma mark - NHFFmpegSessionProtocol
+/****************************** NHFFmpegSessionProtocol   *************************/
+/****************************** NHFFmpegSessionProtocol   *************************/
+/****************************** NHFFmpegSessionProtocol   *************************/
 
 @protocol NHFFmpegSessionProtocol <NSObject>
 

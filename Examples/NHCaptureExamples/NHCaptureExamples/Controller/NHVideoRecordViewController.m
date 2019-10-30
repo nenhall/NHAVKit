@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet NHGPUImageView *previewView;
 @property (weak, nonatomic) IBOutlet UIButton *playBtn;
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
-@property (nonatomic, strong) NHAVCaptureSession  *captureSession;
+@property (nonatomic, strong) NHAVCapture  *captureSession;
 @property (nonatomic, strong) NSMutableArray *videos;
 @property (nonatomic, strong) NHVideoProgress *videoProgressView;
 @property (nonatomic, strong) NHAVPlayer *player;
@@ -72,7 +72,7 @@
 }
 
 - (void)initializeAVSession {
-    _captureSession = [NHAVCaptureSession sessionWithPreviewView:_previewView outputType:NHOutputTypeStillImage];
+    _captureSession = [NHAVCapture sessionWithPreviewView:_previewView outputType:NHOutputTypeStillImage];
     _captureSession.autoLayoutSubviews = NO;
     _captureSession.outputURL = [NSURL fileURLWithPath:[self outputURL]];
     _captureSession.delegate = self;

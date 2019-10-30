@@ -13,10 +13,10 @@
 		EE06BEC9235F4A0900AFB57C /* NHImageCombinationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE06BEC5235F4A0900AFB57C /* NHImageCombinationFilter.m */; };
 		EE08A06D23607E460070DC88 /* NHFFmpegSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A05C23607E460070DC88 /* NHFFmpegSession.m */; };
 		EE08A06E23607E460070DC88 /* NHFFmpegSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A05D23607E460070DC88 /* NHFFmpegSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A05F23607E460070DC88 /* NHWriteH264Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06023607E460070DC88 /* NHX264OutputProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A05F23607E460070DC88 /* NHWriteH264Stream.h */; };
+		EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06023607E460070DC88 /* NHX264OutputProtocol.h */; };
 		EE08A07123607E460070DC88 /* NHX264Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06123607E460070DC88 /* NHX264Manager.m */; };
-		EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06223607E460070DC88 /* NHH264Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06223607E460070DC88 /* NHH264Encoder.h */; };
 		EE08A07323607E460070DC88 /* NHWriteH264Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06323607E460070DC88 /* NHWriteH264Stream.m */; };
 		EE08A07423607E460070DC88 /* NHX264Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A06423607E460070DC88 /* NHX264Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE08A07523607E460070DC88 /* NHH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A06523607E460070DC88 /* NHH264Encoder.m */; };
@@ -24,147 +24,141 @@
 		EE08A09023607EC40070DC88 /* NHCaptureSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08323607EC40070DC88 /* NHGPUImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE08A09423607EC40070DC88 /* NHGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A08423607EC40070DC88 /* NHGPUImageView.m */; };
-		EE08A09523607EC40070DC88 /* NHAVCaptureSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE08A09623607EC40070DC88 /* NHAVCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */; };
+		EE08A09523607EC40070DC88 /* NHAVCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08523607EC40070DC88 /* NHAVCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A09623607EC40070DC88 /* NHAVCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A08623607EC40070DC88 /* NHAVCapture.m */; };
 		EE08A09723607EC40070DC88 /* NHBeasSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A08723607EC40070DC88 /* NHBeasSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE08A0A723607F3A0070DC88 /* NHAVKit2Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */; };
+		EE08A0A723607F3A0070DC88 /* NHAVKitTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A09A23607F3A0070DC88 /* NHAVKitTimer.m */; };
 		EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09B23607F3A0070DC88 /* NH_INLINE.h */; };
-		EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */; };
-		EE08A0AA23607F3A0070DC88 /* NHAVKit2Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0A923607F3A0070DC88 /* NHAVKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09C23607F3A0070DC88 /* NHAVKitDefine.h */; };
+		EE08A0AA23607F3A0070DC88 /* NHAVKitTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09D23607F3A0070DC88 /* NHAVKitTimer.h */; };
 		EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A09F23607F3A0070DC88 /* UIDevice+NHOrientation.h */; };
 		EE08A0AC23607F3A0070DC88 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A023607F3A0070DC88 /* NSObject+converTime.m */; };
 		EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A123607F3A0070DC88 /* NSString+time.h */; };
 		EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A223607F3A0070DC88 /* NSTimer+NHAutoRetain.m */; };
 		EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A323607F3A0070DC88 /* UIDevice+NHOrientation.m */; };
-		EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A423607F3A0070DC88 /* NSObject+converTime.h */; };
 		EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0A523607F3A0070DC88 /* NSTimer+NHAutoRetain.h */; };
 		EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0A623607F3A0070DC88 /* NSString+time.m */; };
 		EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE42F80F227687EC00F22E98 /* NHCaptureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE7C10182361B9410092368D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7C10172361B9410092368D /* UIKit.framework */; };
-		EE7C101A2361B94A0092368D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7C10192361B94A0092368D /* CoreGraphics.framework */; };
 		EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24C2355F10900B63210 /* OpenGLES.framework */; platformFilter = ios; };
-		EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE24E2355F11000B63210 /* CoreMedia.framework */; };
-		EE7EE2512355F11500B63210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2502355F11500B63210 /* QuartzCore.framework */; };
 		EE7EE2532355F11B00B63210 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2522355F11B00B63210 /* AVFoundation.framework */; };
-		EE7EE2552355F2E800B63210 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE2542355F2E800B63210 /* CoreVideo.framework */; };
 		EE7EE3652355F4B600B63210 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3642355F4B600B63210 /* libz.tbd */; };
 		EE7EE3672355F4D100B63210 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE3662355F4D100B63210 /* libiconv.tbd */; };
 		EE7EE36D2355F56700B63210 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EE36C2355F56700B63210 /* VideoToolbox.framework */; };
 		EEC32EAA235F1BAC0061C9D9 /* NHVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C89235F1BAB0061C9D9 /* NHVideoConfiguration.m */; };
-		EEC32EAB235F1BAC0061C9D9 /* NHCaptureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8A235F1BAB0061C9D9 /* NHCaptureConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EAD235F1BAC0061C9D9 /* NHCaptureConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */; };
+		EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */; };
 		EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C96235F1BAB0061C9D9 /* version.h */; };
-		EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C97235F1BAB0061C9D9 /* postprocess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C97235F1BAB0061C9D9 /* postprocess.h */; };
 		EEC32EB4235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C99235F1BAB0061C9D9 /* version.h */; };
-		EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9A235F1BAB0061C9D9 /* buffersrc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9B235F1BAB0061C9D9 /* buffersink.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9C235F1BAB0061C9D9 /* avfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9D235F1BAB0061C9D9 /* avfiltergraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9F235F1BAB0061C9D9 /* hwcontext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA0235F1BAB0061C9D9 /* time.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA1235F1BAB0061C9D9 /* hwcontext_cuda.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA2235F1BAB0061C9D9 /* intfloat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA3235F1BAB0061C9D9 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA4235F1BAB0061C9D9 /* fifo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA5235F1BAB0061C9D9 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA6235F1BAB0061C9D9 /* replaygain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9A235F1BAB0061C9D9 /* buffersrc.h */; };
+		EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9B235F1BAB0061C9D9 /* buffersink.h */; };
+		EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9C235F1BAB0061C9D9 /* avfilter.h */; };
+		EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9D235F1BAB0061C9D9 /* avfiltergraph.h */; };
+		EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32C9F235F1BAB0061C9D9 /* hwcontext.h */; };
+		EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA0235F1BAB0061C9D9 /* time.h */; };
+		EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA1235F1BAB0061C9D9 /* hwcontext_cuda.h */; };
+		EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA2235F1BAB0061C9D9 /* intfloat.h */; };
+		EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA3235F1BAB0061C9D9 /* error.h */; };
+		EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA4235F1BAB0061C9D9 /* fifo.h */; };
+		EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA5235F1BAB0061C9D9 /* blowfish.h */; };
+		EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA6235F1BAB0061C9D9 /* replaygain.h */; };
 		EEC32EC1235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA7235F1BAB0061C9D9 /* version.h */; };
-		EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA8235F1BAB0061C9D9 /* murmur3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA9235F1BAB0061C9D9 /* stereo3d.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAA235F1BAB0061C9D9 /* samplefmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAB235F1BAB0061C9D9 /* pixdesc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAC235F1BAB0061C9D9 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAD235F1BAB0061C9D9 /* rational.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAE235F1BAB0061C9D9 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAF235F1BAB0061C9D9 /* motion_vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB0235F1BAB0061C9D9 /* avconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB1235F1BAB0061C9D9 /* lfg.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB2235F1BAB0061C9D9 /* avutil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB3235F1BAB0061C9D9 /* xtea.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB4235F1BAB0061C9D9 /* crc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB5235F1BAB0061C9D9 /* hwcontext_vdpau.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB6235F1BAB0061C9D9 /* frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB7235F1BAB0061C9D9 /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB8235F1BAB0061C9D9 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB9235F1BAB0061C9D9 /* cast5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBA235F1BAB0061C9D9 /* hwcontext_vaapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBB235F1BAB0061C9D9 /* spherical.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA8235F1BAB0061C9D9 /* murmur3.h */; };
+		EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CA9235F1BAB0061C9D9 /* stereo3d.h */; };
+		EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAA235F1BAB0061C9D9 /* samplefmt.h */; };
+		EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAB235F1BAB0061C9D9 /* pixdesc.h */; };
+		EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAC235F1BAB0061C9D9 /* base64.h */; };
+		EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAD235F1BAB0061C9D9 /* rational.h */; };
+		EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAE235F1BAB0061C9D9 /* sha.h */; };
+		EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CAF235F1BAB0061C9D9 /* motion_vector.h */; };
+		EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB0235F1BAB0061C9D9 /* avconfig.h */; };
+		EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB1235F1BAB0061C9D9 /* lfg.h */; };
+		EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB2235F1BAB0061C9D9 /* avutil.h */; };
+		EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB3235F1BAB0061C9D9 /* xtea.h */; };
+		EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB4235F1BAB0061C9D9 /* crc.h */; };
+		EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB5235F1BAB0061C9D9 /* hwcontext_vdpau.h */; };
+		EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB6235F1BAB0061C9D9 /* frame.h */; };
+		EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB7235F1BAB0061C9D9 /* file.h */; };
+		EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB8235F1BAB0061C9D9 /* md5.h */; };
+		EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CB9235F1BAB0061C9D9 /* cast5.h */; };
+		EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBA235F1BAB0061C9D9 /* hwcontext_vaapi.h */; };
+		EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBB235F1BAB0061C9D9 /* spherical.h */; };
 		EEC32ED6235F1BAC0061C9D9 /* ffversion.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBC235F1BAB0061C9D9 /* ffversion.h */; };
-		EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBD235F1BAB0061C9D9 /* audio_fifo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBE235F1BAB0061C9D9 /* tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBF235F1BAB0061C9D9 /* threadmessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC0235F1BAB0061C9D9 /* attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC1235F1BAB0061C9D9 /* adler32.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC2235F1BAB0061C9D9 /* hwcontext_d3d11va.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC3235F1BAB0061C9D9 /* timecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC4235F1BAB0061C9D9 /* sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC5235F1BAB0061C9D9 /* hwcontext_dxva2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC6235F1BAB0061C9D9 /* display.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC7235F1BAB0061C9D9 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC8235F1BAB0061C9D9 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC9235F1BAB0061C9D9 /* pixelutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCA235F1BAB0061C9D9 /* hwcontext_drm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCB235F1BAB0061C9D9 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCC235F1BAB0061C9D9 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCD235F1BAB0061C9D9 /* eval.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCE235F1BAB0061C9D9 /* dict.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCF235F1BAB0061C9D9 /* random_seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD0235F1BAB0061C9D9 /* opt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD1235F1BAB0061C9D9 /* mastering_display_metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD2235F1BAB0061C9D9 /* log.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD3235F1BAB0061C9D9 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD4235F1BAB0061C9D9 /* macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD5235F1BAB0061C9D9 /* bswap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD6235F1BAB0061C9D9 /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD7235F1BAB0061C9D9 /* tea.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD8235F1BAB0061C9D9 /* cpu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD9235F1BAB0061C9D9 /* lzo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDA235F1BAB0061C9D9 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDB235F1BAB0061C9D9 /* channel_layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDC235F1BAB0061C9D9 /* twofish.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDD235F1BAB0061C9D9 /* imgutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDE235F1BAB0061C9D9 /* hwcontext_videotoolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDF235F1BAB0061C9D9 /* mem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE0235F1BAB0061C9D9 /* parseutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE1235F1BAB0061C9D9 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE2235F1BAB0061C9D9 /* bprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE3235F1BAB0061C9D9 /* hwcontext_qsv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE4235F1BAB0061C9D9 /* pixfmt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE5235F1BAB0061C9D9 /* aes_ctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE6235F1BAB0061C9D9 /* timestamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE7235F1BAB0061C9D9 /* downmix_info.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE8235F1BAB0061C9D9 /* avassert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE9235F1BAB0061C9D9 /* hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEA235F1BAB0061C9D9 /* mathematics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEB235F1BAB0061C9D9 /* intreadwrite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEC235F1BAB0061C9D9 /* avstring.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBD235F1BAB0061C9D9 /* audio_fifo.h */; };
+		EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBE235F1BAB0061C9D9 /* tree.h */; };
+		EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CBF235F1BAB0061C9D9 /* threadmessage.h */; };
+		EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC0235F1BAB0061C9D9 /* attributes.h */; };
+		EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC1235F1BAB0061C9D9 /* adler32.h */; };
+		EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC2235F1BAB0061C9D9 /* hwcontext_d3d11va.h */; };
+		EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC3235F1BAB0061C9D9 /* timecode.h */; };
+		EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC4235F1BAB0061C9D9 /* sha512.h */; };
+		EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC5235F1BAB0061C9D9 /* hwcontext_dxva2.h */; };
+		EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC6235F1BAB0061C9D9 /* display.h */; };
+		EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC7235F1BAB0061C9D9 /* buffer.h */; };
+		EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC8235F1BAB0061C9D9 /* camellia.h */; };
+		EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CC9235F1BAB0061C9D9 /* pixelutils.h */; };
+		EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCA235F1BAB0061C9D9 /* hwcontext_drm.h */; };
+		EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCB235F1BAB0061C9D9 /* common.h */; };
+		EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCC235F1BAB0061C9D9 /* hmac.h */; };
+		EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCD235F1BAB0061C9D9 /* eval.h */; };
+		EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCE235F1BAB0061C9D9 /* dict.h */; };
+		EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CCF235F1BAB0061C9D9 /* random_seed.h */; };
+		EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD0235F1BAB0061C9D9 /* opt.h */; };
+		EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD1235F1BAB0061C9D9 /* mastering_display_metadata.h */; };
+		EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD2235F1BAB0061C9D9 /* log.h */; };
+		EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD3235F1BAB0061C9D9 /* aes.h */; };
+		EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD4235F1BAB0061C9D9 /* macros.h */; };
+		EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD5235F1BAB0061C9D9 /* bswap.h */; };
+		EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD6235F1BAB0061C9D9 /* rc4.h */; };
+		EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD7235F1BAB0061C9D9 /* tea.h */; };
+		EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD8235F1BAB0061C9D9 /* cpu.h */; };
+		EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CD9235F1BAB0061C9D9 /* lzo.h */; };
+		EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDA235F1BAB0061C9D9 /* des.h */; };
+		EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDB235F1BAB0061C9D9 /* channel_layout.h */; };
+		EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDC235F1BAB0061C9D9 /* twofish.h */; };
+		EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDD235F1BAB0061C9D9 /* imgutils.h */; };
+		EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDE235F1BAB0061C9D9 /* hwcontext_videotoolbox.h */; };
+		EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CDF235F1BAB0061C9D9 /* mem.h */; };
+		EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE0235F1BAB0061C9D9 /* parseutils.h */; };
+		EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE1235F1BAB0061C9D9 /* ripemd.h */; };
+		EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE2235F1BAB0061C9D9 /* bprint.h */; };
+		EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE3235F1BAB0061C9D9 /* hwcontext_qsv.h */; };
+		EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE4235F1BAB0061C9D9 /* pixfmt.h */; };
+		EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE5235F1BAB0061C9D9 /* aes_ctr.h */; };
+		EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE6235F1BAB0061C9D9 /* timestamp.h */; };
+		EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE7235F1BAB0061C9D9 /* downmix_info.h */; };
+		EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE8235F1BAB0061C9D9 /* avassert.h */; };
+		EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CE9235F1BAB0061C9D9 /* hash.h */; };
+		EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEA235F1BAB0061C9D9 /* mathematics.h */; };
+		EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEB235F1BAB0061C9D9 /* intreadwrite.h */; };
+		EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEC235F1BAB0061C9D9 /* avstring.h */; };
 		EEC32F07235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEE235F1BAB0061C9D9 /* version.h */; };
-		EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEF235F1BAB0061C9D9 /* avdevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CEF235F1BAB0061C9D9 /* avdevice.h */; };
 		EEC32F09235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF1235F1BAB0061C9D9 /* version.h */; };
-		EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF2235F1BAB0061C9D9 /* avio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF3235F1BAB0061C9D9 /* avformat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF2235F1BAB0061C9D9 /* avio.h */; };
+		EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF3235F1BAB0061C9D9 /* avformat.h */; };
 		EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF5235F1BAB0061C9D9 /* version.h */; };
-		EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF6235F1BAB0061C9D9 /* swscale.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF8235F1BAB0061C9D9 /* avcodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF6235F1BAB0061C9D9 /* swscale.h */; };
+		EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF8235F1BAB0061C9D9 /* avcodec.h */; };
 		EEC32F0F235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CF9235F1BAB0061C9D9 /* version.h */; };
-		EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFA235F1BAB0061C9D9 /* vdpau.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFB235F1BAB0061C9D9 /* qsv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFC235F1BAB0061C9D9 /* vaapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFD235F1BAB0061C9D9 /* videotoolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFE235F1BAB0061C9D9 /* xvmc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFF235F1BAB0061C9D9 /* mediacodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D00235F1BAB0061C9D9 /* d3d11va.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D01235F1BAB0061C9D9 /* avfft.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D02235F1BAB0061C9D9 /* vda.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D03235F1BAB0061C9D9 /* jni.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D04235F1BAB0061C9D9 /* dirac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D05235F1BAB0061C9D9 /* avdct.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D06235F1BAB0061C9D9 /* vorbis_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D07235F1BAB0061C9D9 /* dxva2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D08235F1BAB0061C9D9 /* dv_profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFA235F1BAB0061C9D9 /* vdpau.h */; };
+		EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFB235F1BAB0061C9D9 /* qsv.h */; };
+		EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFC235F1BAB0061C9D9 /* vaapi.h */; };
+		EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFD235F1BAB0061C9D9 /* videotoolbox.h */; };
+		EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFE235F1BAB0061C9D9 /* xvmc.h */; };
+		EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32CFF235F1BAB0061C9D9 /* mediacodec.h */; };
+		EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D00235F1BAB0061C9D9 /* d3d11va.h */; };
+		EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D01235F1BAB0061C9D9 /* avfft.h */; };
+		EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D02235F1BAB0061C9D9 /* vda.h */; };
+		EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D03235F1BAB0061C9D9 /* jni.h */; };
+		EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D04235F1BAB0061C9D9 /* dirac.h */; };
+		EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D05235F1BAB0061C9D9 /* avdct.h */; };
+		EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D06235F1BAB0061C9D9 /* vorbis_parser.h */; };
+		EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D07235F1BAB0061C9D9 /* dxva2.h */; };
+		EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D08235F1BAB0061C9D9 /* dv_profile.h */; };
 		EEC32F1F235F1BAC0061C9D9 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0A235F1BAB0061C9D9 /* version.h */; };
-		EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0B235F1BAB0061C9D9 /* swresample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32D0B235F1BAB0061C9D9 /* swresample.h */; };
 		EEC32F21235F1BAC0061C9D9 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0D235F1BAB0061C9D9 /* libavutil.a */; };
 		EEC32F22235F1BAC0061C9D9 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0E235F1BAB0061C9D9 /* libavfilter.a */; };
 		EEC32F23235F1BAC0061C9D9 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32D0F235F1BAB0061C9D9 /* libavcodec.a */; };
@@ -528,23 +522,15 @@
 		EEC33089235F1BAD0061C9D9 /* GPUImageStretchDistortionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E79235F1BAC0061C9D9 /* GPUImageStretchDistortionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3308A235F1BAD0061C9D9 /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7A235F1BAC0061C9D9 /* GLProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3308B235F1BAD0061C9D9 /* GPUImageDarkenBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E7B235F1BAC0061C9D9 /* GPUImageDarkenBlendFilter.m */; };
-		EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7E235F1BAC0061C9D9 /* x264_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7F235F1BAC0061C9D9 /* x264.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7E235F1BAC0061C9D9 /* x264_config.h */; };
+		EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E7F235F1BAC0061C9D9 /* x264.h */; };
 		EEC3308E235F1BAD0061C9D9 /* libx264.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC32E81235F1BAC0061C9D9 /* libx264.2.a */; };
-		EEC3308F235F1BAD0061C9D9 /* NHVideoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC33090235F1BAD0061C9D9 /* NHExportConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC33092235F1BAD0061C9D9 /* NHVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */; };
 		EEC33094235F1BAD0061C9D9 /* NHExportConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */; };
 		EEC33099235F1BAD0061C9D9 /* NHFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3309A235F1BAD0061C9D9 /* NHGifTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */; };
-		EEC3309B235F1BAD0061C9D9 /* NHVideoWater.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E91235F1BAC0061C9D9 /* NHVideoWater.m */; };
-		EEC3309C235F1BAD0061C9D9 /* NHMusicEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E92235F1BAC0061C9D9 /* NHMusicEditor.m */; };
-		EEC3309D235F1BAD0061C9D9 /* NHAVEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E93235F1BAC0061C9D9 /* NHAVEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC3309E235F1BAD0061C9D9 /* NHFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E94235F1BAC0061C9D9 /* NHFrameImage.m */; };
 		EEC3309F235F1BAD0061C9D9 /* NHGifTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E95235F1BAC0061C9D9 /* NHGifTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A0235F1BAD0061C9D9 /* NHAVEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC32E96235F1BAC0061C9D9 /* NHAVEditor.m */; };
-		EEC330A1235F1BAD0061C9D9 /* NHMusicEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E97235F1BAC0061C9D9 /* NHMusicEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC330A2235F1BAD0061C9D9 /* NHVideoWater.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC32E98235F1BAC0061C9D9 /* NHVideoWater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC330AD235F21A30061C9D9 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC330AC235F21A20061C9D9 /* libbz2.tbd */; };
 /* End PBXBuildFile section */
 
@@ -566,13 +552,13 @@
 		EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureSessionProtocol.h; sourceTree = "<group>"; };
 		EE08A08323607EC40070DC88 /* NHGPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGPUImageView.h; sourceTree = "<group>"; };
 		EE08A08423607EC40070DC88 /* NHGPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGPUImageView.m; sourceTree = "<group>"; };
-		EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVCaptureSession.h; sourceTree = "<group>"; };
-		EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVCaptureSession.m; sourceTree = "<group>"; };
+		EE08A08523607EC40070DC88 /* NHAVCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVCapture.h; sourceTree = "<group>"; };
+		EE08A08623607EC40070DC88 /* NHAVCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVCapture.m; sourceTree = "<group>"; };
 		EE08A08723607EC40070DC88 /* NHBeasSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBeasSession.h; sourceTree = "<group>"; };
-		EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKit2Timer.m; sourceTree = "<group>"; };
+		EE08A09A23607F3A0070DC88 /* NHAVKitTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKitTimer.m; sourceTree = "<group>"; };
 		EE08A09B23607F3A0070DC88 /* NH_INLINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NH_INLINE.h; sourceTree = "<group>"; };
-		EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Define.h; sourceTree = "<group>"; };
-		EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Timer.h; sourceTree = "<group>"; };
+		EE08A09C23607F3A0070DC88 /* NHAVKitDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKitDefine.h; sourceTree = "<group>"; };
+		EE08A09D23607F3A0070DC88 /* NHAVKitTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKitTimer.h; sourceTree = "<group>"; };
 		EE08A09F23607F3A0070DC88 /* UIDevice+NHOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NHOrientation.h"; sourceTree = "<group>"; };
 		EE08A0A023607F3A0070DC88 /* NSObject+converTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+converTime.m"; sourceTree = "<group>"; };
 		EE08A0A123607F3A0070DC88 /* NSString+time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+time.h"; sourceTree = "<group>"; };
@@ -599,9 +585,7 @@
 		EE7EE36A2355F54800B63210 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		EE7EE36C2355F56700B63210 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		EEC32C89235F1BAB0061C9D9 /* NHVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoConfiguration.m; sourceTree = "<group>"; };
-		EEC32C8A235F1BAB0061C9D9 /* NHCaptureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCaptureConfig.h; sourceTree = "<group>"; };
 		EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoConfiguration.h; sourceTree = "<group>"; };
-		EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCaptureConfig.m; sourceTree = "<group>"; };
 		EEC32C96235F1BAB0061C9D9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		EEC32C97235F1BAB0061C9D9 /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
 		EEC32C99235F1BAB0061C9D9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
@@ -1079,20 +1063,12 @@
 		EEC32E7E235F1BAC0061C9D9 /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
 		EEC32E7F235F1BAC0061C9D9 /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
 		EEC32E81235F1BAC0061C9D9 /* libx264.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.2.a; sourceTree = "<group>"; };
-		EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoHelper.h; sourceTree = "<group>"; };
 		EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHExportConfig.h; sourceTree = "<group>"; };
-		EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoHelper.m; sourceTree = "<group>"; };
 		EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHExportConfig.m; sourceTree = "<group>"; };
 		EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFrameImage.h; sourceTree = "<group>"; };
 		EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHGifTool.m; sourceTree = "<group>"; };
-		EEC32E91235F1BAC0061C9D9 /* NHVideoWater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHVideoWater.m; sourceTree = "<group>"; };
-		EEC32E92235F1BAC0061C9D9 /* NHMusicEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHMusicEditor.m; sourceTree = "<group>"; };
-		EEC32E93235F1BAC0061C9D9 /* NHAVEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVEditor.h; sourceTree = "<group>"; };
 		EEC32E94235F1BAC0061C9D9 /* NHFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFrameImage.m; sourceTree = "<group>"; };
 		EEC32E95235F1BAC0061C9D9 /* NHGifTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHGifTool.h; sourceTree = "<group>"; };
-		EEC32E96235F1BAC0061C9D9 /* NHAVEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVEditor.m; sourceTree = "<group>"; };
-		EEC32E97235F1BAC0061C9D9 /* NHMusicEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHMusicEditor.h; sourceTree = "<group>"; };
-		EEC32E98235F1BAC0061C9D9 /* NHVideoWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHVideoWater.h; sourceTree = "<group>"; };
 		EEC330AC235F21A20061C9D9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1101,7 +1077,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7C101A2361B94A0092368D /* CoreGraphics.framework in Frameworks */,
 				EE7C10182361B9410092368D /* UIKit.framework in Frameworks */,
 				EEC330AD235F21A30061C9D9 /* libbz2.tbd in Frameworks */,
 				EEC32F26235F1BAC0061C9D9 /* libavdevice.a in Frameworks */,
@@ -1112,16 +1087,13 @@
 				EE7EE36D2355F56700B63210 /* VideoToolbox.framework in Frameworks */,
 				EE7EE3672355F4D100B63210 /* libiconv.tbd in Frameworks */,
 				EE7EE3652355F4B600B63210 /* libz.tbd in Frameworks */,
-				EE7EE2552355F2E800B63210 /* CoreVideo.framework in Frameworks */,
 				EE7EE2532355F11B00B63210 /* AVFoundation.framework in Frameworks */,
 				EEC32F25235F1BAC0061C9D9 /* libavformat.a in Frameworks */,
 				EEC32F28235F1BAC0061C9D9 /* libfaac.a in Frameworks */,
 				EEC32F2A235F1BAC0061C9D9 /* libx264.a in Frameworks */,
 				EEC32F22235F1BAC0061C9D9 /* libavfilter.a in Frameworks */,
 				EEC32F29235F1BAC0061C9D9 /* libswscale.a in Frameworks */,
-				EE7EE2512355F11500B63210 /* QuartzCore.framework in Frameworks */,
 				EEC32F23235F1BAC0061C9D9 /* libavcodec.a in Frameworks */,
-				EE7EE24F2355F11000B63210 /* CoreMedia.framework in Frameworks */,
 				EE7EE24D2355F10A00B63210 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1132,15 +1104,15 @@
 		EE08A05223607E460070DC88 /* Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				EE08A05B23607E460070DC88 /* FFmpeg */,
-				EE08A05E23607E460070DC88 /* X264 */,
-				EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */,
-				EE08A08523607EC40070DC88 /* NHAVCaptureSession.h */,
-				EE08A08623607EC40070DC88 /* NHAVCaptureSession.m */,
+				EE08A08523607EC40070DC88 /* NHAVCapture.h */,
+				EE08A08623607EC40070DC88 /* NHAVCapture.m */,
 				EE08A08723607EC40070DC88 /* NHBeasSession.h */,
 				EE08A07E23607EC30070DC88 /* NHBeasSession.m */,
+				EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */,
 				EE08A08323607EC40070DC88 /* NHGPUImageView.h */,
 				EE08A08423607EC40070DC88 /* NHGPUImageView.m */,
+				EE08A05B23607E460070DC88 /* FFmpeg */,
+				EE08A05E23607E460070DC88 /* X264 */,
 			);
 			path = Encoder;
 			sourceTree = "<group>";
@@ -1182,9 +1154,9 @@
 			isa = PBXGroup;
 			children = (
 				EE08A09B23607F3A0070DC88 /* NH_INLINE.h */,
-				EE08A09C23607F3A0070DC88 /* NHAVKit2Define.h */,
-				EE08A09D23607F3A0070DC88 /* NHAVKit2Timer.h */,
-				EE08A09A23607F3A0070DC88 /* NHAVKit2Timer.m */,
+				EE08A09C23607F3A0070DC88 /* NHAVKitDefine.h */,
+				EE08A09D23607F3A0070DC88 /* NHAVKitTimer.h */,
+				EE08A09A23607F3A0070DC88 /* NHAVKitTimer.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -1256,11 +1228,10 @@
 		EEC32C7E235F1BAB0061C9D9 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
-				EEC32C88235F1BAB0061C9D9 /* Unit */,
 				EEC32C8D235F1BAB0061C9D9 /* Extension */,
+				EEC32C88235F1BAB0061C9D9 /* Unit */,
 				EEC32C92235F1BAB0061C9D9 /* Library */,
-				EEC32E82235F1BAC0061C9D9 /* Common */,
-				EEC32E89235F1BAC0061C9D9 /* Process */,
+				EEC32E89235F1BAC0061C9D9 /* Filter */,
 				EE08A05223607E460070DC88 /* Encoder */,
 			);
 			name = Capture;
@@ -1270,8 +1241,12 @@
 		EEC32C88235F1BAB0061C9D9 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				EEC32C8A235F1BAB0061C9D9 /* NHCaptureConfig.h */,
-				EEC32C8C235F1BAB0061C9D9 /* NHCaptureConfig.m */,
+				EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */,
+				EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */,
+				EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */,
+				EEC32E94235F1BAC0061C9D9 /* NHFrameImage.m */,
+				EEC32E95235F1BAC0061C9D9 /* NHGifTool.h */,
+				EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */,
 				EEC32C8B235F1BAB0061C9D9 /* NHVideoConfiguration.h */,
 				EEC32C89235F1BAB0061C9D9 /* NHVideoConfiguration.m */,
 			);
@@ -1916,36 +1891,15 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		EEC32E82235F1BAC0061C9D9 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				EEC32E84235F1BAC0061C9D9 /* NHExportConfig.h */,
-				EEC32E88235F1BAC0061C9D9 /* NHExportConfig.m */,
-				EEC32E83235F1BAC0061C9D9 /* NHVideoHelper.h */,
-				EEC32E86235F1BAC0061C9D9 /* NHVideoHelper.m */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		EEC32E89235F1BAC0061C9D9 /* Process */ = {
+		EEC32E89235F1BAC0061C9D9 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
 				EE06BEC2235F4A0900AFB57C /* NHImageBeautifyFilter.h */,
 				EE06BEC4235F4A0900AFB57C /* NHImageBeautifyFilter.m */,
 				EE06BEC3235F4A0900AFB57C /* NHImageCombinationFilter.h */,
 				EE06BEC5235F4A0900AFB57C /* NHImageCombinationFilter.m */,
-				EEC32E93235F1BAC0061C9D9 /* NHAVEditor.h */,
-				EEC32E96235F1BAC0061C9D9 /* NHAVEditor.m */,
-				EEC32E8F235F1BAC0061C9D9 /* NHFrameImage.h */,
-				EEC32E94235F1BAC0061C9D9 /* NHFrameImage.m */,
-				EEC32E95235F1BAC0061C9D9 /* NHGifTool.h */,
-				EEC32E90235F1BAC0061C9D9 /* NHGifTool.m */,
-				EEC32E97235F1BAC0061C9D9 /* NHMusicEditor.h */,
-				EEC32E92235F1BAC0061C9D9 /* NHMusicEditor.m */,
-				EEC32E98235F1BAC0061C9D9 /* NHVideoWater.h */,
-				EEC32E91235F1BAC0061C9D9 /* NHVideoWater.m */,
 			);
-			path = Process;
+			path = Filter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1955,133 +1909,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
-				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
-				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
-				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
-				EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */,
-				EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */,
-				EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */,
-				EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */,
-				EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */,
-				EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */,
-				EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */,
-				EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */,
-				EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */,
-				EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */,
-				EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */,
-				EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */,
-				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
-				EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */,
-				EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */,
-				EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */,
-				EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */,
-				EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */,
-				EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */,
-				EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */,
-				EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */,
-				EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */,
-				EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */,
-				EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */,
-				EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */,
-				EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */,
-				EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */,
-				EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */,
-				EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */,
-				EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */,
-				EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */,
-				EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */,
-				EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */,
-				EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */,
-				EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */,
-				EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */,
-				EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */,
-				EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */,
-				EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */,
-				EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */,
-				EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */,
-				EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */,
-				EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */,
-				EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */,
-				EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */,
-				EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */,
-				EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */,
-				EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */,
-				EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */,
-				EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */,
-				EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */,
-				EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */,
-				EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */,
-				EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */,
-				EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */,
-				EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */,
-				EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */,
-				EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */,
-				EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */,
-				EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */,
-				EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */,
-				EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */,
-				EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */,
-				EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */,
-				EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */,
-				EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */,
-				EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */,
-				EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */,
-				EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */,
-				EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */,
-				EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */,
-				EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */,
-				EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */,
-				EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */,
-				EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */,
-				EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */,
-				EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */,
-				EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */,
-				EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */,
-				EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */,
-				EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */,
-				EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */,
-				EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */,
-				EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */,
-				EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */,
-				EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */,
-				EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */,
-				EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */,
-				EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */,
-				EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */,
-				EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */,
-				EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */,
-				EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */,
-				EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */,
-				EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */,
-				EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */,
-				EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */,
-				EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */,
-				EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */,
-				EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */,
-				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
-				EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */,
-				EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */,
-				EE08A09023607EC40070DC88 /* NHCaptureSessionProtocol.h in Headers */,
-				EE08A09723607EC40070DC88 /* NHBeasSession.h in Headers */,
-				EE08A09523607EC40070DC88 /* NHAVCaptureSession.h in Headers */,
-				EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */,
-				EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */,
-				EE08A07423607E460070DC88 /* NHX264Manager.h in Headers */,
-				EE08A06E23607E460070DC88 /* NHFFmpegSession.h in Headers */,
-				EE08A0AA23607F3A0070DC88 /* NHAVKit2Timer.h in Headers */,
-				EE06BEC6235F4A0900AFB57C /* NHImageBeautifyFilter.h in Headers */,
-				EE06BEC7235F4A0900AFB57C /* NHImageCombinationFilter.h in Headers */,
-				EEC3309F235F1BAD0061C9D9 /* NHGifTool.h in Headers */,
-				EEC3308A235F1BAD0061C9D9 /* GLProgram.h in Headers */,
-				EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */,
-				EEC33090235F1BAD0061C9D9 /* NHExportConfig.h in Headers */,
-				EEC32EAB235F1BAC0061C9D9 /* NHCaptureConfig.h in Headers */,
-				EEC330A2235F1BAD0061C9D9 /* NHVideoWater.h in Headers */,
-				EEC33099235F1BAD0061C9D9 /* NHFrameImage.h in Headers */,
-				EEC3309D235F1BAD0061C9D9 /* NHAVEditor.h in Headers */,
-				EEC3308F235F1BAD0061C9D9 /* NHVideoHelper.h in Headers */,
-				EEC330A1235F1BAD0061C9D9 /* NHMusicEditor.h in Headers */,
 				EEC33023235F1BAD0061C9D9 /* GPUImageHueFilter.h in Headers */,
 				EEC32F5F235F1BAC0061C9D9 /* GPUImageMotionBlurFilter.h in Headers */,
 				EEC32FD5235F1BAD0061C9D9 /* GPUImageView.h in Headers */,
@@ -2101,7 +1928,6 @@
 				EEC33040235F1BAD0061C9D9 /* GPUImage3x3TextureSamplingFilter.h in Headers */,
 				EEC32F58235F1BAC0061C9D9 /* GPUImageGaussianSelectiveBlurFilter.h in Headers */,
 				EEC33053235F1BAD0061C9D9 /* GPUImagePolarPixellateFilter.h in Headers */,
-				EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */,
 				EEC33045235F1BAD0061C9D9 /* GPUImageTextureInput.h in Headers */,
 				EEC32F9F235F1BAC0061C9D9 /* GPUImageAddBlendFilter.h in Headers */,
 				EEC32F66235F1BAC0061C9D9 /* GPUImageTwoInputCrossTextureSamplingFilter.h in Headers */,
@@ -2130,12 +1956,10 @@
 				EEC33086235F1BAD0061C9D9 /* GPUImageDifferenceBlendFilter.h in Headers */,
 				EEC32F45235F1BAC0061C9D9 /* GPUImageColorConversion.h in Headers */,
 				EEC32FDC235F1BAD0061C9D9 /* GPUImageMovieWriter.h in Headers */,
-				EEC32F8D235F1BAC0061C9D9 /* GPUImageSingleComponentGaussianBlurFilter.h in Headers */,
 				EEC32F4C235F1BAC0061C9D9 /* GPUImageColorBlendFilter.h in Headers */,
 				EEC3302C235F1BAD0061C9D9 /* GPUImagePixellatePositionFilter.h in Headers */,
 				EEC32F51235F1BAC0061C9D9 /* GPUImageSoftLightBlendFilter.h in Headers */,
 				EEC32FED235F1BAD0061C9D9 /* GPUImageUIElement.h in Headers */,
-				EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
 				EEC3303A235F1BAD0061C9D9 /* GPUImageMovie.h in Headers */,
 				EEC32FB3235F1BAC0061C9D9 /* GPUImageDarkenBlendFilter.h in Headers */,
 				EEC32FA4235F1BAC0061C9D9 /* GPUImageHSBFilter.h in Headers */,
@@ -2254,9 +2078,135 @@
 				EEC32F7E235F1BAC0061C9D9 /* GPUImageHoughTransformLineDetector.h in Headers */,
 				EEC32F87235F1BAC0061C9D9 /* GPUImageThresholdSketchFilter.h in Headers */,
 				EEC32F39235F1BAC0061C9D9 /* GPUImageMovieComposition.h in Headers */,
-				EEC32F60235F1BAC0061C9D9 /* GPUImageGlassSphereFilter.h in Headers */,
 				EEC33056235F1BAD0061C9D9 /* GPUImageZoomBlurFilter.h in Headers */,
 				EEC33011235F1BAD0061C9D9 /* GPUImageUnsharpMaskFilter.h in Headers */,
+				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
+				EEC3308A235F1BAD0061C9D9 /* GLProgram.h in Headers */,
+				EEC32F8D235F1BAC0061C9D9 /* GPUImageSingleComponentGaussianBlurFilter.h in Headers */,
+				EEC32F60235F1BAC0061C9D9 /* GPUImageGlassSphereFilter.h in Headers */,
+				EE08A09523607EC40070DC88 /* NHAVCapture.h in Headers */,
+				EE08A09323607EC40070DC88 /* NHGPUImageView.h in Headers */,
+				EE08A09023607EC40070DC88 /* NHCaptureSessionProtocol.h in Headers */,
+				EE08A09723607EC40070DC88 /* NHBeasSession.h in Headers */,
+				EE08A07423607E460070DC88 /* NHX264Manager.h in Headers */,
+				EE08A06E23607E460070DC88 /* NHFFmpegSession.h in Headers */,
+				EE06BEC6235F4A0900AFB57C /* NHImageBeautifyFilter.h in Headers */,
+				EE06BEC7235F4A0900AFB57C /* NHImageCombinationFilter.h in Headers */,
+				EEC3309F235F1BAD0061C9D9 /* NHGifTool.h in Headers */,
+				EEC33090235F1BAD0061C9D9 /* NHExportConfig.h in Headers */,
+				EEC33099235F1BAD0061C9D9 /* NHFrameImage.h in Headers */,
+				EE08A0AD23607F3A0070DC88 /* NSString+time.h in Headers */,
+				EE08A0B123607F3A0070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
+				EE08A0B023607F3A0070DC88 /* NSObject+converTime.h in Headers */,
+				EEC32F1E235F1BAC0061C9D9 /* dv_profile.h in Headers */,
+				EEC32F12235F1BAC0061C9D9 /* vaapi.h in Headers */,
+				EEC32F0D235F1BAC0061C9D9 /* swscale.h in Headers */,
+				EEC32ED1235F1BAC0061C9D9 /* file.h in Headers */,
+				EEC32EBF235F1BAC0061C9D9 /* blowfish.h in Headers */,
+				EEC32EBB235F1BAC0061C9D9 /* hwcontext_cuda.h in Headers */,
+				EEC32F15235F1BAC0061C9D9 /* mediacodec.h in Headers */,
+				EEC32EF4235F1BAC0061C9D9 /* des.h in Headers */,
+				EEC32EBA235F1BAC0061C9D9 /* time.h in Headers */,
+				EEC32EDE235F1BAC0061C9D9 /* sha512.h in Headers */,
+				EEC32F14235F1BAC0061C9D9 /* xvmc.h in Headers */,
+				EEC32EE6235F1BAC0061C9D9 /* hmac.h in Headers */,
+				EEC32F1C235F1BAC0061C9D9 /* vorbis_parser.h in Headers */,
+				EEC32EFB235F1BAC0061C9D9 /* ripemd.h in Headers */,
+				EEC32EFF235F1BAC0061C9D9 /* aes_ctr.h in Headers */,
+				EEC32EC8235F1BAC0061C9D9 /* sha.h in Headers */,
+				EEC32EFD235F1BAC0061C9D9 /* hwcontext_qsv.h in Headers */,
+				EEC32EC2235F1BAC0061C9D9 /* murmur3.h in Headers */,
+				EEC32EE2235F1BAC0061C9D9 /* camellia.h in Headers */,
+				EEC32EBE235F1BAC0061C9D9 /* fifo.h in Headers */,
+				EEC32ED9235F1BAC0061C9D9 /* threadmessage.h in Headers */,
+				EEC32EB7235F1BAC0061C9D9 /* avfilter.h in Headers */,
+				EEC32ECA235F1BAC0061C9D9 /* avconfig.h in Headers */,
+				EEC32EBD235F1BAC0061C9D9 /* error.h in Headers */,
+				EEC32EF8235F1BAC0061C9D9 /* hwcontext_videotoolbox.h in Headers */,
+				EEC32F1B235F1BAC0061C9D9 /* avdct.h in Headers */,
+				EEC32EE9235F1BAC0061C9D9 /* random_seed.h in Headers */,
+				EEC32ED3235F1BAC0061C9D9 /* cast5.h in Headers */,
+				EEC32EBC235F1BAC0061C9D9 /* intfloat.h in Headers */,
+				EEC32EF9235F1BAC0061C9D9 /* mem.h in Headers */,
+				EEC32ED7235F1BAC0061C9D9 /* audio_fifo.h in Headers */,
+				EEC32EE7235F1BAC0061C9D9 /* eval.h in Headers */,
+				EEC32ED4235F1BAC0061C9D9 /* hwcontext_vaapi.h in Headers */,
+				EEC32EF7235F1BAC0061C9D9 /* imgutils.h in Headers */,
+				EEC32F13235F1BAC0061C9D9 /* videotoolbox.h in Headers */,
+				EEC32F00235F1BAC0061C9D9 /* timestamp.h in Headers */,
+				EEC32F18235F1BAC0061C9D9 /* vda.h in Headers */,
+				EEC32ECF235F1BAC0061C9D9 /* hwcontext_vdpau.h in Headers */,
+				EEC32F20235F1BAC0061C9D9 /* swresample.h in Headers */,
+				EEC32EDC235F1BAC0061C9D9 /* hwcontext_d3d11va.h in Headers */,
+				EEC32EF0235F1BAC0061C9D9 /* rc4.h in Headers */,
+				EEC32EDB235F1BAC0061C9D9 /* adler32.h in Headers */,
+				EEC32EFC235F1BAC0061C9D9 /* bprint.h in Headers */,
+				EEC32EB5235F1BAC0061C9D9 /* buffersrc.h in Headers */,
+				EEC32EED235F1BAC0061C9D9 /* aes.h in Headers */,
+				EEC32EE4235F1BAC0061C9D9 /* hwcontext_drm.h in Headers */,
+				EEC32EB9235F1BAC0061C9D9 /* hwcontext.h in Headers */,
+				EEC32F1D235F1BAC0061C9D9 /* dxva2.h in Headers */,
+				EEC32F17235F1BAC0061C9D9 /* avfft.h in Headers */,
+				EEC32EE0235F1BAC0061C9D9 /* display.h in Headers */,
+				EEC32F1A235F1BAC0061C9D9 /* dirac.h in Headers */,
+				EEC32F10235F1BAC0061C9D9 /* vdpau.h in Headers */,
+				EEC32EFA235F1BAC0061C9D9 /* parseutils.h in Headers */,
+				EEC32ED2235F1BAC0061C9D9 /* md5.h in Headers */,
+				EEC32F04235F1BAC0061C9D9 /* mathematics.h in Headers */,
+				EEC32EF6235F1BAC0061C9D9 /* twofish.h in Headers */,
+				EEC32F08235F1BAC0061C9D9 /* avdevice.h in Headers */,
+				EEC32ECB235F1BAC0061C9D9 /* lfg.h in Headers */,
+				EEC32F06235F1BAC0061C9D9 /* avstring.h in Headers */,
+				EEC32F01235F1BAC0061C9D9 /* downmix_info.h in Headers */,
+				EEC32EF3235F1BAC0061C9D9 /* lzo.h in Headers */,
+				EEC32F11235F1BAC0061C9D9 /* qsv.h in Headers */,
+				EEC32ECD235F1BAC0061C9D9 /* xtea.h in Headers */,
+				EEC32ED5235F1BAC0061C9D9 /* spherical.h in Headers */,
+				EEC32ED8235F1BAC0061C9D9 /* tree.h in Headers */,
+				EEC32EEA235F1BAC0061C9D9 /* opt.h in Headers */,
+				EEC32EEE235F1BAC0061C9D9 /* macros.h in Headers */,
+				EEC32EE3235F1BAC0061C9D9 /* pixelutils.h in Headers */,
+				EEC32F19235F1BAC0061C9D9 /* jni.h in Headers */,
+				EEC32EDD235F1BAC0061C9D9 /* timecode.h in Headers */,
+				EEC32F16235F1BAC0061C9D9 /* d3d11va.h in Headers */,
+				EEC32F02235F1BAC0061C9D9 /* avassert.h in Headers */,
+				EEC32EDF235F1BAC0061C9D9 /* hwcontext_dxva2.h in Headers */,
+				EEC32F0B235F1BAC0061C9D9 /* avformat.h in Headers */,
+				EEC32F03235F1BAC0061C9D9 /* hash.h in Headers */,
+				EEC32EEB235F1BAC0061C9D9 /* mastering_display_metadata.h in Headers */,
+				EEC32EE5235F1BAC0061C9D9 /* common.h in Headers */,
+				EEC32ECE235F1BAC0061C9D9 /* crc.h in Headers */,
+				EEC32EEF235F1BAC0061C9D9 /* bswap.h in Headers */,
+				EEC32F05235F1BAC0061C9D9 /* intreadwrite.h in Headers */,
+				EEC32EB8235F1BAC0061C9D9 /* avfiltergraph.h in Headers */,
+				EEC32EC6235F1BAC0061C9D9 /* base64.h in Headers */,
+				EEC32EC5235F1BAC0061C9D9 /* pixdesc.h in Headers */,
+				EEC32EF1235F1BAC0061C9D9 /* tea.h in Headers */,
+				EEC32EB3235F1BAC0061C9D9 /* postprocess.h in Headers */,
+				EEC32EC3235F1BAC0061C9D9 /* stereo3d.h in Headers */,
+				EEC32F0A235F1BAC0061C9D9 /* avio.h in Headers */,
+				EEC32EC9235F1BAC0061C9D9 /* motion_vector.h in Headers */,
+				EEC32EC0235F1BAC0061C9D9 /* replaygain.h in Headers */,
+				EEC32EB6235F1BAC0061C9D9 /* buffersink.h in Headers */,
+				EEC32EC7235F1BAC0061C9D9 /* rational.h in Headers */,
+				EEC32EFE235F1BAC0061C9D9 /* pixfmt.h in Headers */,
+				EEC32EEC235F1BAC0061C9D9 /* log.h in Headers */,
+				EEC32ED0235F1BAC0061C9D9 /* frame.h in Headers */,
+				EEC32EE8235F1BAC0061C9D9 /* dict.h in Headers */,
+				EEC32EF5235F1BAC0061C9D9 /* channel_layout.h in Headers */,
+				EEC32EF2235F1BAC0061C9D9 /* cpu.h in Headers */,
+				EEC32EE1235F1BAC0061C9D9 /* buffer.h in Headers */,
+				EEC32ECC235F1BAC0061C9D9 /* avutil.h in Headers */,
+				EEC32EDA235F1BAC0061C9D9 /* attributes.h in Headers */,
+				EEC32EC4235F1BAC0061C9D9 /* samplefmt.h in Headers */,
+				EEC3308D235F1BAD0061C9D9 /* x264.h in Headers */,
+				EEC3308C235F1BAD0061C9D9 /* x264_config.h in Headers */,
+				EEC32F0E235F1BAC0061C9D9 /* avcodec.h in Headers */,
+				EE08A07223607E460070DC88 /* NHH264Encoder.h in Headers */,
+				EE08A06F23607E460070DC88 /* NHWriteH264Stream.h in Headers */,
+				EE08A07023607E460070DC88 /* NHX264OutputProtocol.h in Headers */,
+				EE08A0AA23607F3A0070DC88 /* NHAVKitTimer.h in Headers */,
+				EEC32EAC235F1BAC0061C9D9 /* NHVideoConfiguration.h in Headers */,
 				EEC32F0F235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32F07235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32EC1235F1BAC0061C9D9 /* version.h in Headers */,
@@ -2266,10 +2216,9 @@
 				EEC32EB2235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32F1F235F1BAC0061C9D9 /* version.h in Headers */,
 				EEC32F0C235F1BAC0061C9D9 /* version.h in Headers */,
-				EEC33065235F1BAD0061C9D9 /* GPUImageToneCurveFilter.h in Headers */,
 				EE08A0A823607F3A0070DC88 /* NH_INLINE.h in Headers */,
 				EE08A0AB23607F3A0070DC88 /* UIDevice+NHOrientation.h in Headers */,
-				EE08A0A923607F3A0070DC88 /* NHAVKit2Define.h in Headers */,
+				EE08A0A923607F3A0070DC88 /* NHAVKitDefine.h in Headers */,
 				EE42F811227687EC00F22E98 /* NHCaptureKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2366,12 +2315,10 @@
 				EEC32FC7235F1BAD0061C9D9 /* GPUImageLaplacianFilter.m in Sources */,
 				EEC33087235F1BAD0061C9D9 /* GPUImageCGAColorspaceFilter.m in Sources */,
 				EEC3303C235F1BAD0061C9D9 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
-				EE08A07523607E460070DC88 /* NHH264Encoder.m in Sources */,
 				EEC32F69235F1BAC0061C9D9 /* GPUImageVibranceFilter.m in Sources */,
 				EEC32FCC235F1BAD0061C9D9 /* GPUImageRGBFilter.m in Sources */,
 				EEC3300D235F1BAD0061C9D9 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				EEC32F89235F1BAC0061C9D9 /* GPUImageExclusionBlendFilter.m in Sources */,
-				EEC3309A235F1BAD0061C9D9 /* NHGifTool.m in Sources */,
 				EEC32F7F235F1BAC0061C9D9 /* GPUImageBilateralFilter.m in Sources */,
 				EEC33074235F1BAD0061C9D9 /* GPUImageBulgeDistortionFilter.m in Sources */,
 				EEC32F70235F1BAC0061C9D9 /* GPUImageVignetteFilter.m in Sources */,
@@ -2395,14 +2342,11 @@
 				EEC32FE0235F1BAD0061C9D9 /* GPUImageSaturationBlendFilter.m in Sources */,
 				EEC33051235F1BAD0061C9D9 /* GPUImageNormalBlendFilter.m in Sources */,
 				EEC32FAD235F1BAC0061C9D9 /* GPUImageRGBClosingFilter.m in Sources */,
-				EE08A06D23607E460070DC88 /* NHFFmpegSession.m in Sources */,
 				EEC3305B235F1BAD0061C9D9 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				EEC32F88235F1BAC0061C9D9 /* GPUImageAlphaBlendFilter.m in Sources */,
-				EEC33094235F1BAD0061C9D9 /* NHExportConfig.m in Sources */,
 				EEC32F9E235F1BAC0061C9D9 /* GPUImageErosionFilter.m in Sources */,
 				EEC32FA7235F1BAC0061C9D9 /* GPUImageTextureInput.m in Sources */,
 				EEC33033235F1BAD0061C9D9 /* GPUImagePinchDistortionFilter.m in Sources */,
-				EEC330A0235F1BAD0061C9D9 /* NHAVEditor.m in Sources */,
 				EEC33024235F1BAD0061C9D9 /* GPUImageClosingFilter.m in Sources */,
 				EEC32F31235F1BAC0061C9D9 /* GPUImageColorBurnBlendFilter.m in Sources */,
 				EEC32F7B235F1BAC0061C9D9 /* GPUImageAmatorkaFilter.m in Sources */,
@@ -2411,37 +2355,30 @@
 				EEC32FD3235F1BAD0061C9D9 /* GPUImageFramebufferCache.m in Sources */,
 				EEC33041235F1BAD0061C9D9 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				EEC33077235F1BAD0061C9D9 /* GPUImageColourFASTSamplingOperation.m in Sources */,
-				EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */,
 				EEC33062235F1BAD0061C9D9 /* GPUImageMosaicFilter.m in Sources */,
 				EEC32FDB235F1BAD0061C9D9 /* GPUImageView.m in Sources */,
 				EEC32FEA235F1BAD0061C9D9 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
 				EEC32F93235F1BAC0061C9D9 /* GPUImageSkinToneFilter.m in Sources */,
 				EEC32F43235F1BAC0061C9D9 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				EEC33068235F1BAD0061C9D9 /* GPUImageLuminosityBlendFilter.m in Sources */,
-				EE08A09623607EC40070DC88 /* NHAVCaptureSession.m in Sources */,
 				EEC32FA1235F1BAC0061C9D9 /* GPUImageDissolveBlendFilter.m in Sources */,
-				EEC32EAA235F1BAC0061C9D9 /* NHVideoConfiguration.m in Sources */,
 				EEC32F40235F1BAC0061C9D9 /* GPUImageFourInputFilter.m in Sources */,
 				EEC32FF8235F1BAD0061C9D9 /* GPUImageColorBlendFilter.m in Sources */,
-				EE06BEC8235F4A0900AFB57C /* NHImageBeautifyFilter.m in Sources */,
 				EEC32F8F235F1BAC0061C9D9 /* GPUImageColorMatrixFilter.m in Sources */,
 				EEC33075235F1BAD0061C9D9 /* GPUImageLookupFilter.m in Sources */,
 				EEC32FD4235F1BAD0061C9D9 /* GPUImageTiltShiftFilter.m in Sources */,
 				EEC32FFE235F1BAD0061C9D9 /* GPUImageContrastFilter.m in Sources */,
 				EEC3305F235F1BAD0061C9D9 /* GPUImageKuwaharaFilter.m in Sources */,
 				EEC33084235F1BAD0061C9D9 /* GPUImageLightenBlendFilter.m in Sources */,
-				EE08A0AC23607F3A0070DC88 /* NSObject+converTime.m in Sources */,
 				EEC32FB9235F1BAC0061C9D9 /* GPUImageOutput.m in Sources */,
 				EEC3301B235F1BAD0061C9D9 /* GPUImageLowPassFilter.m in Sources */,
 				EEC32FB7235F1BAC0061C9D9 /* GPUImageStretchDistortionFilter.m in Sources */,
 				EEC32F62235F1BAC0061C9D9 /* GPUImageLevelsFilter.m in Sources */,
-				EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */,
 				EEC32FFD235F1BAD0061C9D9 /* GPUImageRGBDilationFilter.m in Sources */,
 				EEC32F64235F1BAC0061C9D9 /* GPUImageSolarizeFilter.m in Sources */,
 				EEC32F83235F1BAC0061C9D9 /* GPUImageHistogramGenerator.m in Sources */,
 				EEC3306F235F1BAD0061C9D9 /* GPUImageFalseColorFilter.m in Sources */,
 				EEC33052235F1BAD0061C9D9 /* GPUImageDilationFilter.m in Sources */,
-				EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */,
 				EEC32FA6235F1BAC0061C9D9 /* GPUImagePixellateFilter.m in Sources */,
 				EEC33046235F1BAD0061C9D9 /* GPUImageHueBlendFilter.m in Sources */,
 				EE08A09423607EC40070DC88 /* NHGPUImageView.m in Sources */,
@@ -2466,9 +2403,7 @@
 				EEC32F5E235F1BAC0061C9D9 /* GPUImageGrayscaleFilter.m in Sources */,
 				EEC33017235F1BAD0061C9D9 /* GPUImageRawDataInput.m in Sources */,
 				EEC33020235F1BAD0061C9D9 /* GPUImageHoughTransformLineDetector.m in Sources */,
-				EEC32EAD235F1BAC0061C9D9 /* NHCaptureConfig.m in Sources */,
 				EEC32FD7235F1BAD0061C9D9 /* GPUImageMovieWriter.m in Sources */,
-				EE08A07323607E460070DC88 /* NHWriteH264Stream.m in Sources */,
 				EEC32FC4235F1BAD0061C9D9 /* GPUImageFramebuffer.m in Sources */,
 				EEC32FBE235F1BAC0061C9D9 /* GPUImageLanczosResamplingFilter.m in Sources */,
 				EEC33016235F1BAD0061C9D9 /* GPUImageWhiteBalanceFilter.m in Sources */,
@@ -2478,10 +2413,8 @@
 				EEC32F73235F1BAC0061C9D9 /* GPUImageSketchFilter.m in Sources */,
 				EEC32F4D235F1BAC0061C9D9 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
 				EEC32F86235F1BAC0061C9D9 /* GPUImageGammaFilter.m in Sources */,
-				EE08A07123607E460070DC88 /* NHX264Manager.m in Sources */,
 				EEC32F48235F1BAC0061C9D9 /* GPUImageSoftEleganceFilter.m in Sources */,
 				EEC3303E235F1BAD0061C9D9 /* GPUImageVideoCamera.m in Sources */,
-				EEC3309C235F1BAD0061C9D9 /* NHMusicEditor.m in Sources */,
 				EEC33007235F1BAD0061C9D9 /* GPUImageSmoothToonFilter.m in Sources */,
 				EEC3302E235F1BAD0061C9D9 /* GPUImageMedianFilter.m in Sources */,
 				EEC32F9A235F1BAC0061C9D9 /* GPUImagePolarPixellateFilter.m in Sources */,
@@ -2489,14 +2422,12 @@
 				EEC32FF9235F1BAD0061C9D9 /* GPUImageAverageColor.m in Sources */,
 				EEC32FE9235F1BAD0061C9D9 /* GPUImageSharpenFilter.m in Sources */,
 				EEC32FE5235F1BAD0061C9D9 /* GPUImagePoissonBlendFilter.m in Sources */,
-				EEC32FB2235F1BAC0061C9D9 /* GLProgram.m in Sources */,
 				EEC32F3F235F1BAC0061C9D9 /* GPUImageFilterGroup.m in Sources */,
 				EEC33037235F1BAD0061C9D9 /* GPUImageGlassSphereFilter.m in Sources */,
 				EEC32F63235F1BAC0061C9D9 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				EEC32F3D235F1BAC0061C9D9 /* GPUImageLuminanceThresholdFilter.m in Sources */,
 				EEC32FCA235F1BAD0061C9D9 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				EEC32FC2235F1BAD0061C9D9 /* GPUImageColorDodgeBlendFilter.m in Sources */,
-				EEC33092235F1BAD0061C9D9 /* NHVideoHelper.m in Sources */,
 				EEC32F6D235F1BAC0061C9D9 /* GPUImagePixellatePositionFilter.m in Sources */,
 				EEC32F74235F1BAC0061C9D9 /* GPUImageiOSBlurFilter.m in Sources */,
 				EEC3300E235F1BAD0061C9D9 /* GPUImageBuffer.m in Sources */,
@@ -2507,9 +2438,7 @@
 				EEC32FAE235F1BAC0061C9D9 /* GPUImageSepiaFilter.m in Sources */,
 				EEC32FE2235F1BAD0061C9D9 /* GPUImageGaussianBlurFilter.m in Sources */,
 				EEC32FA5235F1BAC0061C9D9 /* GPUImageCropFilter.m in Sources */,
-				EEC3309B235F1BAD0061C9D9 /* NHVideoWater.m in Sources */,
 				EEC32F38235F1BAC0061C9D9 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
-				EE08A08F23607EC40070DC88 /* NHBeasSession.m in Sources */,
 				EEC32F4A235F1BAC0061C9D9 /* GPUImageTwoPassFilter.m in Sources */,
 				EEC32F52235F1BAC0061C9D9 /* GPUImageColorPackingFilter.m in Sources */,
 				EEC33012235F1BAD0061C9D9 /* GPUImageThresholdSketchFilter.m in Sources */,
@@ -2521,7 +2450,6 @@
 				EEC3300A235F1BAD0061C9D9 /* GPUImageMovieComposition.m in Sources */,
 				EEC32F94235F1BAC0061C9D9 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
 				EEC32F9D235F1BAC0061C9D9 /* GPUImageOpeningFilter.m in Sources */,
-				EE06BEC9235F4A0900AFB57C /* NHImageCombinationFilter.m in Sources */,
 				EEC33015235F1BAD0061C9D9 /* GPUImageRGBOpeningFilter.m in Sources */,
 				EEC32F57235F1BAC0061C9D9 /* GPUImageNonMaximumSuppressionFilter.m in Sources */,
 				EEC3305C235F1BAD0061C9D9 /* GPUImageCrosshatchFilter.m in Sources */,
@@ -2529,10 +2457,8 @@
 				EEC32FC0235F1BAC0061C9D9 /* GPUImageFilterPipeline.m in Sources */,
 				EEC32FA2235F1BAC0061C9D9 /* GPUImageSaturationFilter.m in Sources */,
 				EEC32F75235F1BAC0061C9D9 /* GPUImageJFAVoronoiFilter.m in Sources */,
-				EE08A0A723607F3A0070DC88 /* NHAVKit2Timer.m in Sources */,
 				EEC3307C235F1BAD0061C9D9 /* GPUImageStillCamera.m in Sources */,
 				EEC3308B235F1BAD0061C9D9 /* GPUImageDarkenBlendFilter.m in Sources */,
-				EEC3309E235F1BAD0061C9D9 /* NHFrameImage.m in Sources */,
 				EEC3301D235F1BAD0061C9D9 /* GPUImageMonochromeFilter.m in Sources */,
 				EEC33038235F1BAD0061C9D9 /* GPUImageMotionBlurFilter.m in Sources */,
 				EEC32FBA235F1BAC0061C9D9 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
@@ -2543,6 +2469,24 @@
 				EEC32F32235F1BAC0061C9D9 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				EEC33070235F1BAD0061C9D9 /* GPUImagePolkaDotFilter.m in Sources */,
 				EEC32FE1235F1BAD0061C9D9 /* GPUImageToneCurveFilter.m in Sources */,
+				EE08A07523607E460070DC88 /* NHH264Encoder.m in Sources */,
+				EEC3309A235F1BAD0061C9D9 /* NHGifTool.m in Sources */,
+				EE08A06D23607E460070DC88 /* NHFFmpegSession.m in Sources */,
+				EEC33094235F1BAD0061C9D9 /* NHExportConfig.m in Sources */,
+				EE08A0AF23607F3A0070DC88 /* UIDevice+NHOrientation.m in Sources */,
+				EE08A09623607EC40070DC88 /* NHAVCapture.m in Sources */,
+				EEC32EAA235F1BAC0061C9D9 /* NHVideoConfiguration.m in Sources */,
+				EE06BEC8235F4A0900AFB57C /* NHImageBeautifyFilter.m in Sources */,
+				EE08A0AC23607F3A0070DC88 /* NSObject+converTime.m in Sources */,
+				EE08A0B223607F3A0070DC88 /* NSString+time.m in Sources */,
+				EE08A0AE23607F3A0070DC88 /* NSTimer+NHAutoRetain.m in Sources */,
+				EE08A07323607E460070DC88 /* NHWriteH264Stream.m in Sources */,
+				EE08A07123607E460070DC88 /* NHX264Manager.m in Sources */,
+				EEC32FB2235F1BAC0061C9D9 /* GLProgram.m in Sources */,
+				EE08A08F23607EC40070DC88 /* NHBeasSession.m in Sources */,
+				EE06BEC9235F4A0900AFB57C /* NHImageCombinationFilter.m in Sources */,
+				EE08A0A723607F3A0070DC88 /* NHAVKitTimer.m in Sources */,
+				EEC3309E235F1BAD0061C9D9 /* NHFrameImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2670,6 +2614,7 @@
 		EE42F815227687EC00F22E98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -2678,11 +2623,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
-					"\"$(SRCROOT)/NHCaptureKit/Capture/Library/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2707,6 +2650,7 @@
 		EE42F816227687EC00F22E98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -2715,11 +2659,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/NHCaptureKit/NHCaptureKit.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/FFmpeg/include\"",
 					"\"$(SRCROOT)/../../../NHAVKit2/Library/x264/include\"",
-					"\"$(SRCROOT)/NHCaptureKit/Capture/Library/FFmpeg/include\"",
 				);
 				INFOPLIST_FILE = NHCaptureKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

@@ -1,1 +1,1 @@
-../../../../../NHAVKit2/Capture/Process/NHFrameImage.h
+../../../../../NHAVKit2/Capture/Unit/NHFrameImage.h

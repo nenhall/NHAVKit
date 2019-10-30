@@ -10,7 +10,7 @@
 #define NHCapturePrivate_h
 
 #import "NH_INLINE.h"
-#import "NHAVKit2Define.h"
+#import "NHAVKitDefine.h"
 #import "NSTimer+NHAutoRetain.h"
 
 #endif /* NHCapturePrivate_h */

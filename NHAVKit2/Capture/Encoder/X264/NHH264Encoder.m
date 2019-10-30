@@ -9,18 +9,12 @@
 #import "NHH264Encoder.h"
 #import "NHWriteH264Stream.h"
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 #include <libavutil/opt.h>
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
 #include <libavutil/imgutils.h>
-#ifdef __cplusplus
-}
-#endif
+
 
 @interface NHH264Encoder ()
 @property (strong, nonatomic) NHVideoConfiguration *videoConfiguration;
@@ -169,9 +163,9 @@ extern "C" {
     if (got_picture == 1) {
         NSLog(@"Succeed to encode frame: %5d\tsize:%5d", _frameCounter, _packet.size);
         _frameCounter++;
-        NHWriteH264Stream *writeH264Stream = self.outputObject;
-//        [writeH264Stream writeFrame:_packet streamIndex:_packet.stream_index];
-        [writeH264Stream writeData:_packet.data size:_packet.size index:_packet.stream_index];
+        NHWriteH264Stream *writeH264Stream = self.outputDelegate;
+        [writeH264Stream writeFrame:_packet streamIndex:_packet.stream_index];
+//        [writeH264Stream writeData:_packet.data size:_packet.size index:_packet.stream_index];
         av_free_packet(&_packet);
     }
     
@@ -182,7 +176,7 @@ extern "C" {
 }
 
 - (void)teardown {
-    NHWriteH264Stream *writeH264Streaming = self.outputObject;
+    NHWriteH264Stream *writeH264Streaming = self.outputDelegate;
     writeH264Streaming = nil;
     
     avcodec_close(_pCodecCtx);
@@ -194,7 +188,7 @@ extern "C" {
 
 #pragma mark -- NHX264OutputProtocol
 - (void)setOutput:(id<NHX264OutputProtocol>)output {
-    self.outputObject = output;
+    self.outputDelegate = output;
 }
 
 

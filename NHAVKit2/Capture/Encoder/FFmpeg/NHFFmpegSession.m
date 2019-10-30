@@ -8,15 +8,13 @@
 
 #import "NHFFmpegSession.h"
 
-
-
 #include <libavformat/avformat.h>
 #include <libavformat/avio.h>
 #include <libavutil/opt.h>
 #include <libavutil/time.h>
+    //#include <libavutil/mathematics.h>
+    //#include <libavutil/time.h>
 
-//#include <libavutil/mathematics.h>
-//#include <libavutil/time.h>
 
 @interface NHFFmpegSession () {
     AVOutputFormat *_outputFmt;

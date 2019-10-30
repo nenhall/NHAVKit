@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE08A0C2236084970070DC88 /* NHAVKit2Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */; };
+		EE08A0C2236084970070DC88 /* NHAVKitTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0B5236084960070DC88 /* NHAVKitTimer.m */; };
 		EE08A0C3236084970070DC88 /* NH_INLINE.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B6236084960070DC88 /* NH_INLINE.h */; };
-		EE08A0C4236084970070DC88 /* NHAVKit2Define.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B7236084960070DC88 /* NHAVKit2Define.h */; };
-		EE08A0C5236084970070DC88 /* NHAVKit2Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */; };
+		EE08A0C4236084970070DC88 /* NHAVKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B7236084960070DC88 /* NHAVKitDefine.h */; };
+		EE08A0C5236084970070DC88 /* NHAVKitTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B8236084960070DC88 /* NHAVKitTimer.h */; };
 		EE08A0C6236084970070DC88 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */; };
 		EE08A0C7236084970070DC88 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BB236084960070DC88 /* NSObject+converTime.m */; };
 		EE08A0C8236084970070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BC236084960070DC88 /* NSString+time.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,10 +168,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKit2Timer.m; sourceTree = "<group>"; };
+		EE08A0B5236084960070DC88 /* NHAVKitTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAVKitTimer.m; sourceTree = "<group>"; };
 		EE08A0B6236084960070DC88 /* NH_INLINE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NH_INLINE.h; sourceTree = "<group>"; };
-		EE08A0B7236084960070DC88 /* NHAVKit2Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Define.h; sourceTree = "<group>"; };
-		EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKit2Timer.h; sourceTree = "<group>"; };
+		EE08A0B7236084960070DC88 /* NHAVKitDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKitDefine.h; sourceTree = "<group>"; };
+		EE08A0B8236084960070DC88 /* NHAVKitTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAVKitTimer.h; sourceTree = "<group>"; };
 		EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NHOrientation.h"; sourceTree = "<group>"; };
 		EE08A0BB236084960070DC88 /* NSObject+converTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+converTime.m"; sourceTree = "<group>"; };
 		EE08A0BC236084960070DC88 /* NSString+time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+time.h"; sourceTree = "<group>"; };
@@ -371,9 +371,9 @@
 			isa = PBXGroup;
 			children = (
 				EE08A0B6236084960070DC88 /* NH_INLINE.h */,
-				EE08A0B7236084960070DC88 /* NHAVKit2Define.h */,
-				EE08A0B8236084960070DC88 /* NHAVKit2Timer.h */,
-				EE08A0B5236084960070DC88 /* NHAVKit2Timer.m */,
+				EE08A0B7236084960070DC88 /* NHAVKitDefine.h */,
+				EE08A0B8236084960070DC88 /* NHAVKitTimer.h */,
+				EE08A0B5236084960070DC88 /* NHAVKitTimer.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -741,7 +741,7 @@
 				EE698A0E235EE39500E0D2A6 /* time.h in Headers */,
 				EE698A52235EE39500E0D2A6 /* pixfmt.h in Headers */,
 				EE698A19235EE39500E0D2A6 /* pixdesc.h in Headers */,
-				EE08A0C5236084970070DC88 /* NHAVKit2Timer.h in Headers */,
+				EE08A0C5236084970070DC88 /* NHAVKitTimer.h in Headers */,
 				EE698A35235EE39500E0D2A6 /* buffer.h in Headers */,
 				EE698A07235EE39500E0D2A6 /* postprocess.h in Headers */,
 				EE698A26235EE39500E0D2A6 /* md5.h in Headers */,
@@ -812,7 +812,7 @@
 				EE698A3B235EE39500E0D2A6 /* eval.h in Headers */,
 				EE698A27235EE39500E0D2A6 /* cast5.h in Headers */,
 				EE698A17235EE39500E0D2A6 /* stereo3d.h in Headers */,
-				EE08A0C4236084970070DC88 /* NHAVKit2Define.h in Headers */,
+				EE08A0C4236084970070DC88 /* NHAVKitDefine.h in Headers */,
 				EE698A47235EE39500E0D2A6 /* lzo.h in Headers */,
 				EE698A5F235EE39500E0D2A6 /* avformat.h in Headers */,
 				EE698A39235EE39500E0D2A6 /* common.h in Headers */,
@@ -934,7 +934,7 @@
 				EE698A03235EE39500E0D2A6 /* NHKVOOwner.m in Sources */,
 				EE698A02235EE39500E0D2A6 /* NHImageHandle.m in Sources */,
 				EE08A0D6236085150070DC88 /* NHFFmpegPlayer.m in Sources */,
-				EE08A0C2236084970070DC88 /* NHAVKit2Timer.m in Sources */,
+				EE08A0C2236084970070DC88 /* NHAVKitTimer.m in Sources */,
 				EE08A0CD236084970070DC88 /* NSString+time.m in Sources */,
 				EE08A0C7236084970070DC88 /* NSObject+converTime.m in Sources */,
 				EE698A04235EE39500E0D2A6 /* NHPlayerObserver.m in Sources */,

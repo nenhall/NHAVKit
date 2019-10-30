@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import "NHVideoConfiguration.h"
 #import "NHX264OutputProtocol.h"
+#import "NHVideoConfiguration.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class NHVideoConfiguration;
+
 @interface NHH264Encoder : NSObject <NHX264OutputProtocol>
 
-@property (nonatomic, strong) id<NHX264OutputProtocol> outputObject;
+@property (nonatomic, strong) id<NHX264OutputProtocol> outputDelegate;
 
 - (instancetype)initWithVideoConfiguration:(NHVideoConfiguration *)videoConfiguration;
 

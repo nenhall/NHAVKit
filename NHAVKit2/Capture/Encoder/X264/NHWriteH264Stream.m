@@ -8,17 +8,11 @@
 
 #import "NHWriteH264Stream.h"
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 #include <libavutil/opt.h>
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
-#ifdef __cplusplus
-}
-#endif
+
 
 
 @implementation NHWriteH264Stream
@@ -45,7 +39,6 @@ extern "C" {
     _pFile = fopen(filePath, "wb");
     NSLog(@"%s",filePath);
 }
-
 
 /** 文件保存路径 */
 - (NSString *)saveFilePath {

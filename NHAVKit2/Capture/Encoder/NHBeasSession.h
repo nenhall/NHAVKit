@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NHCaptureSessionProtocol.h"
+#import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "NHCaptureSessionProtocol.h"
 #import "GPUImage.h"
+
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -38,7 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 摄像头位置 */
 @property (nonatomic, assign, readonly) AVCaptureDevicePosition cameraPosition;
-
 @property (nonatomic, assign) BOOL isRecording;
 @property (nonatomic, weak  ) UIView *preview;
 @property (nonatomic, assign) NHOutputType outputType;

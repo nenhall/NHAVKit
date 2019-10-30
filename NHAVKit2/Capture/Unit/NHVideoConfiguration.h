@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NHVideoConfiguration : NSObject
-@property (assign, nonatomic) CGSize videoSize;
+@property (assign, nonatomic) CGSize videoSize;  /**< 视频尺寸 */
 @property (assign, nonatomic) CGFloat frameRate; /**< 视频码率 */
 @property (assign, nonatomic) CGFloat maxKeyframeInterval; /**< 最大帧率 */
 @property (assign, nonatomic) CGFloat bitrate; /**< 视频码率 */

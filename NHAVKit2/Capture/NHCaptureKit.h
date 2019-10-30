@@ -15,12 +15,12 @@ FOUNDATION_EXPORT double NHCaptureKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char NHCaptureKitVersionString[];
 
 
-#import "GPUImage.h"
-#import "NHAVCaptureSession.h"
-#import "NHCaptureSessionProtocol.h"
-#import "NHExportConfig.h"
+//#import "GPUImage.h"
 #import "NHGPUImageView.h"
 #import "NHImageBeautifyFilter.h"
+#import "NHAVCapture.h"
+#import "NHFrameImage.h"
+
 
 #if __has_include("NHFFmpegSession.h")
 #import "NHFFmpegSession.h"
@@ -28,12 +28,4 @@ FOUNDATION_EXPORT const unsigned char NHCaptureKitVersionString[];
 
 #if __has_include("NHX264Manager.h")
 #import "NHX264Manager.h"
-#endif
-
-#if __has_include("NHH264Encoder.h")
-#import "NHH264Encoder.h"
-#endif
-
-#if __has_include("NHWriteH264Stream.h")
-#import "NHWriteH264Stream.h"
 #endif

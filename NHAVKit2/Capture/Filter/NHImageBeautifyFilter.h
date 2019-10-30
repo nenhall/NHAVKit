@@ -7,9 +7,13 @@
 //
 
 #import "GPUImageFilterGroup.h"
+#import "GPUImageHSBFilter.h"
+#import "GPUImageBilateralFilter.h"
+#import "GPUImageCannyEdgeDetectionFilter.h"
+#import "GPUImageExposureFilter.h"
+#import "GPUImageBrightnessFilter.h"
+#import "GPUImageSaturationFilter.h"
 #import "NHImageCombinationFilter.h"
-#import "GPUImage.h"
-
 
 
 NS_ASSUME_NONNULL_BEGIN

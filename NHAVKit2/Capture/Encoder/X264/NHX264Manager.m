@@ -7,9 +7,11 @@
 //
 
 #import "NHX264Manager.h"
+#import <UIKit/UIKit.h>
 #import "NHH264Encoder.h"
 #import "NHWriteH264Stream.h"
 #import "NHVideoConfiguration.h"
+
 
 @interface NHX264Manager ()
 
@@ -38,31 +40,25 @@
     });
 }
 
-
 - (void)initializeX264Encode {
-    
     _encodeQueue = dispatch_queue_create("avcaptureSession", DISPATCH_QUEUE_SERIAL);
     dispatch_sync(_encodeQueue, ^{
-        _writeH264Stream = [[NHWriteH264Stream alloc] init];
-        
         _videoConfiguration = [NHVideoConfiguration defaultConfiguration];
         _videoConfiguration.videoSize = _captureVideoSize;
         _videoConfiguration.frameRate = 30;
         _videoConfiguration.maxKeyframeInterval = 60;
         _videoConfiguration.bitrate = 1536*1000;
-        _x264Encoder = [[NHH264Encoder alloc] initWithVideoConfiguration:_videoConfiguration];
-        [_x264Encoder setOutputObject:_writeH264Stream];
         
+        _x264Encoder = [[NHH264Encoder alloc] initWithVideoConfiguration:_videoConfiguration];
+        _writeH264Stream = [[NHWriteH264Stream alloc] init];
+        [_x264Encoder setOutputDelegate:_writeH264Stream];
 //        self.isRecording = YES;
         NSLog(@"开始录制.");
     });
 }
 
-
 - (void)encoding:(CMSampleBufferRef)sampleBuffer {
-    
     dispatch_sync(_encodeQueue, ^{
-        
         CVPixelBufferRef pixelBufferRef = CMSampleBufferGetImageBuffer(sampleBuffer);
         CMTime ptsTime = CMSampleBufferGetOutputPresentationTimeStamp(sampleBuffer);
         CGFloat pts = CMTimeGetSeconds(ptsTime);

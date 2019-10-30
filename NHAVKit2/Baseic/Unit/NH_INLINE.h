@@ -7,7 +7,8 @@
 
 #ifndef NH_INLINE_h
 #define NH_INLINE_h
-#ifdef __OBJC__
+
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <objc/message.h>
@@ -15,8 +16,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** 这里只适合放简单的函数 */
-/** 这里只适合放简单的函数 */
 /** 这里只适合放简单的函数 */
 
 /** 主线程do */
@@ -177,6 +176,4 @@ NS_INLINE void NH_Method_swizzling(Class class, SEL originalSelector, SEL swizzl
 
 NS_ASSUME_NONNULL_END
 
-
-#endif
 #endif /* NH_INLINE_h */

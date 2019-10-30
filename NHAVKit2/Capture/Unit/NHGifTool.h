@@ -10,12 +10,6 @@
 #import <UIKit/UIKit.h>
 
 
-#ifdef DEBUG
-#define NSLog(fmt, ...) NSLog((@"%s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__);
-#else
-#define NSLog(...)
-#endif
-
 typedef void(^NHInterceptBlock)(NSError *error, NSURL *url);
 
 @interface NHGifTool : NSObject

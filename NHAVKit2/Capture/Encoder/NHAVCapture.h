@@ -6,7 +6,7 @@
 //  Copyright © 2019 neghao. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import "NHBeasSession.h"
 
 
@@ -20,29 +20,34 @@ typedef enum : NSUInteger {
     NHImageFilterCustomFilter,
 } NHImageFilterType;
 
-@interface NHAVCaptureSession : NHBeasSession
+
+@interface NHAVCapture : NHBeasSession
 @property (nonatomic, strong, readonly) AVCaptureSession *captureSession;
 @property (nonatomic, weak) id<NHCaptureSessionProtocol> delegate;
 @property (nonatomic, assign) NHImageFilterType filterType;
-/**
- 摄像头位置
- */
+
+/// 摄像头位置
 @property (nonatomic, assign, readonly) AVCaptureDevicePosition cameraPosition;
 
+/// 初始化
+/// @param preview 预览层
+/// @param outputType 文件输出类型
 + (instancetype)sessionWithPreviewView:(UIView *)preview outputType:(NHOutputType)outputType;
-
-///**
-// 开始录制264格式视频
-// */
-//- (void)startRecordX264;
 
 /// 开始录制视频写入到文件
 /// @param outputURL 输出文件路径
 - (void)startWriteMovieToFileWithOutputURL:(NSURL *)outputURL;
+
+/// 完成录制
 - (void)finishRecording;
-//- (void)finishRecordingWithCompletionHandler:(void (^)(void))handler;
+
+/// 取消录制
 - (void)cancelRecording;
+
+/// 暂停录制
 - (void)pauseRecording;
+
+/// 恢复录制
 - (void)resumeRecording;
 
 

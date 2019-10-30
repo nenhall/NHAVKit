@@ -1,1 +1,1 @@
-../../../../../NHAVKit2/Capture/Process/NHImageCombinationFilter.h
+../../../../../NHAVKit2/Capture/Filter/NHImageCombinationFilter.h

@@ -7,13 +7,13 @@
 //  Copyright © 2018年 facebac.com. All rights reserved.
 //
 
-#import "NHAVKit2Timer.h"
+#import "NHAVKitTimer.h"
 #include <objc/message.h>
 
 static NSMutableDictionary *timers_bk;
 dispatch_semaphore_t semaphore_play;
 
-@implementation NHAVKit2Timer
+@implementation NHAVKitTimer
 
 + (void)initialize {
     static dispatch_once_t onceToken;

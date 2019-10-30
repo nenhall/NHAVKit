@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NHAVKit2Timer : NSObject
+@interface NHAVKitTimer : NSObject
 
 
 /**

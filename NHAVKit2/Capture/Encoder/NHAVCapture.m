@@ -6,14 +6,12 @@
 //  Copyright © 2019 neghao. All rights reserved.
 //
 
-#import "NHAVCaptureSession.h"
-#import <CoreVideo/CoreVideo.h>
-#import "NHVideoConfiguration.h"
-#import "NHVideoHelper.h"
+#import "NHAVCapture.h"
+//#import <CoreVideo/CoreVideo.h>
+//#import "NHVideoConfiguration.h"
 #import "NHGPUImageView.h"
 #import "NHImageBeautifyFilter.h"
 #import "NHFrameImage.h"
-#import "NHH264Encoder.h"
 #import "NHCapturePrivate.h"
 
 #if __has_include("NHFFmpegSession.h")
@@ -24,9 +22,15 @@
 #import "NHX264Manager.h"
 #endif
 
+#if __has_include("NHH264Encoder.h")
+#import "NHH264Encoder.h"
+#endif
+
 #if __has_include("NHWriteH264Stream.h")
 #import "NHWriteH264Stream.h"
 #endif
+
+
 
 typedef enum : NSUInteger {
     NHCaptureGPUImage,
@@ -34,9 +38,12 @@ typedef enum : NSUInteger {
     NHCaptureFFmpeg,
 } NHCaptureType;
 
-@interface NHAVCaptureSession ()<
-AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,
-AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate,GPUImageVideoCameraDelegate>
+@interface NHAVCapture ()<
+AVCaptureVideoDataOutputSampleBufferDelegate,
+AVCaptureAudioDataOutputSampleBufferDelegate,
+AVCaptureFileOutputRecordingDelegate,
+AVCaptureMetadataOutputObjectsDelegate,
+GPUImageVideoCameraDelegate>
 
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureDeviceInput *videoDeviceInput;
@@ -60,11 +67,11 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate,GPUI
 @end
 
 
-@implementation NHAVCaptureSession {
+@implementation NHAVCapture {
     dispatch_queue_t     _encodeQueue;
     NHH264Encoder        *_x264Encoder;
 //    NHWriteH264Stream    *_writeH264Stream;
-    NHVideoConfiguration *_videoConfiguration;
+//    NHVideoConfiguration *_videoConfiguration;
     NHImageBeautifyFilter *_beautifyFilter;
     GPUImageMovie        *_movieFile;
     GPUImageMovieWriter  *_movieWriter;
@@ -81,7 +88,7 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate,GPUI
 }
 
 + (instancetype)sessionWithPreviewView:(UIView *)preview outputType:(NHOutputType)outputType {
-    return [[NHAVCaptureSession alloc] initSessionWithPreviewView:preview outputType:outputType];
+    return [[NHAVCapture alloc] initSessionWithPreviewView:preview outputType:outputType];
 }
 
 - (instancetype)initStreamWithInputURL:(NSURL *)inURL outputURL:(NSURL *)outURL {
@@ -823,7 +830,7 @@ AVCaptureFileOutputRecordingDelegate,AVCaptureMetadataOutputObjectsDelegate,GPUI
 
 
 - (void)exportVidelWithUrl:(NSURL *)url exportConfig:(NHExportConfig *)config progress:(nonnull void (^)(CGFloat))progress completed:(nonnull void (^)(NSURL * _Nonnull, NSError * _Nonnull))completed savedPhotosAlbum:(BOOL)save {
-  [[NHVideoHelper new] exportVidelWithUrl:url exportConfig:config progress:progress completed:completed savedPhotosAlbum:YES];
+  [NHFrameImage exportVidelWithUrl:url exportConfig:config progress:progress completed:completed savedPhotosAlbum:YES];
 }
 
 

@@ -13,7 +13,6 @@
 
 
 #import "NHImageBeautifyFilter.h"
-#import "NHImageCombinationFilter.h"
 
 
 

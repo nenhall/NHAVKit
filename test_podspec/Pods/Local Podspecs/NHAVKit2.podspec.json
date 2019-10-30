@@ -73,6 +73,7 @@
     {
       "name": "FFmpegEncoder",
       "source_files": "NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}",
+      "public_header_files": "NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h",
       "dependencies": {
         "NHAVKit2/Baseic": [
 
@@ -97,8 +98,8 @@
     {
       "name": "X26xLib",
       "source_files": "NHAVKit2/Library/x264/include/**/*.h",
-      "header_mappings_dir": "NHAVKit2/Library/x264/include",
       "public_header_files": "NHAVKit2/Library/x264/include/**/*.h",
+      "header_mappings_dir": "NHAVKit2/Library/x264/include",
       "vendored_libraries": "NHAVKit2/Library/x264/lib/*.a",
       "frameworks": [
         "VideoToolbox",
@@ -109,10 +110,6 @@
         "bz2",
         "iconv"
       ],
-      "prefix_header_contents": [
-        "#import <Foundation/Foundation.h>",
-        "#import <AVFoundation/AVFoundation.h>"
-      ],
       "dependencies": {
         "NHAVKit2/Baseic": [
 
@@ -122,6 +119,8 @@
     {
       "name": "X26xEncoder",
       "source_files": "NHAVKit2/Capture/Encoder/X264/*.{h,m}",
+      "public_header_files": "NHAVKit2/Capture/Encoder/X264/NHX264Manager.h",
+      "private_header_files": "NHAVKit2/Capture/Encoder/X264/{NHH264Encoder,NHWriteH264Stream,NHX264OutputProtocol}.h",
       "frameworks": [
         "VideoToolbox",
         "AudioToolbox"
@@ -130,10 +129,6 @@
         "z",
         "bz2",
         "iconv"
-      ],
-      "prefix_header_contents": [
-        "#import <Foundation/Foundation.h>",
-        "#import <AVFoundation/AVFoundation.h>"
       ],
       "dependencies": {
         "NHAVKit2/Baseic": [
@@ -150,6 +145,7 @@
     {
       "name": "Play",
       "source_files": "NHAVKit2/Play/**/*.{h,m}",
+      "public_header_files": "NHAVKit2/Play/**/{NHFFmpegPlayer}.h",
       "exclude_files": "NHAVKit2/Play/Decoder/FFmpeg/**/*.{h,m}",
       "resources": "NHAVKit2/Play/Library/NHPlay.bundle",
       "frameworks": [
@@ -182,7 +178,6 @@
       "frameworks": [
         "OpenGLES",
         "AVFoundation",
-        "CoreVideo",
         "VideoToolbox"
       ],
       "libraries": [
