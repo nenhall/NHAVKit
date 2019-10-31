@@ -11,13 +11,14 @@
 #import <NHAVKit2/NHCaptureKit.h>
 #import <NHAVKit2/x264.h>
 
-
 @interface ViewController ()
 @property (nonatomic, strong) NHAVPlayer *player;
 @property (nonatomic, strong) NHAVCapture *capture;
 @property (nonatomic, strong) NHGPUImageView *imageView;
 @property (nonatomic, strong) NHX264Manager *x264;
 @property (nonatomic, strong) NHFFmpegPlayer *ffmpegPlay;
+@property (nonatomic, strong) NHFrameImage *fImage;
+@property (nonatomic, strong) NHGifTool *gitTool;
 
 @end
 

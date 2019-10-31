@@ -5,20 +5,7 @@
 //  Created by nenhall on 2018/7/16.
 //  Copyright © 2018年 nenhall_studio. All rights reserved.
 //
-/**
- - (void)nhAVPlayCurrentMoveFrameTime:(double)frameTime nowTime:(double)nowTime avPlay:(NHAVPlay *)avPlay {
- NSLog(@"frameTime:%f---nowTime:%f",frameTime,nowTime);
- _lastPlayTime = nowTime;
- 
- self.time.text = [self dealTime:nowTime];
- if (_lastFrameTime < 0) {
- _lastFrameTime = frameTime;
- } else {
- _lastFrameTime = NH_LERP(frameTime, _lastFrameTime, 0.8);
- }
- self.fps.text = [NSString stringWithFormat:@"fps：%0.f",_lastFrameTime];
- }
- */
+
 
 #import "NHBasePlayer.h"
 #import "NHPlayerProtocol.h"
@@ -31,6 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class NHFFmpegPlayer;
+
 @protocol NHFFmpegPlayerDelegate <NSObject>
 
 - (void)nhAVPlayComplete:(NHFFmpegPlayer *)avPlay;

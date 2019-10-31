@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "NHX264OutputProtocol.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-#include <libavcodec/avcodec.h>
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
+//#include <libavcodec/avcodec.h>
+//#ifdef __cplusplus
+//}
+//#endif
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -23,8 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NHWriteH264Stream : NSObject <NHX264OutputProtocol>
 @property (copy, nonatomic) NSString *filePath;
 
-- (void)writeFrame:(AVPacket)packet streamIndex:(NSInteger)streamIndex;
-//- (void)writeData:(uint8_t*)data size:(int)size index:(NSInteger)index;
+//- (void)writeFrame:(AVPacket)packet streamIndex:(NSInteger)streamIndex;
+- (void)writeData:(uint8_t*)data size:(int)size index:(NSInteger)index;
 
 
 @end

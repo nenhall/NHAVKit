@@ -20,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char NHCaptureKitVersionString[];
 #import "NHImageBeautifyFilter.h"
 #import "NHAVCapture.h"
 #import "NHFrameImage.h"
+#import "NHGifTool.h"
 
 
 #if __has_include("NHFFmpegSession.h")

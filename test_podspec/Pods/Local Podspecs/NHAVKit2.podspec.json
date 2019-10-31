@@ -39,6 +39,7 @@
     {
       "name": "Baseic",
       "source_files": "NHAVKit2/Baseic/**/*.{h,m}",
+      "public_header_files": "NHAVKit2/Baseic/**/*.h",
       "frameworks": [
         "Foundation",
         "UIKit"
@@ -49,7 +50,7 @@
       ]
     },
     {
-      "name": "FFmpeg",
+      "name": "FFmpegLib",
       "source_files": "NHAVKit2/Library/FFmpeg/include/**/*.h",
       "public_header_files": "NHAVKit2/Library/FFmpeg/include/**/*.h",
       "header_mappings_dir": "NHAVKit2/Library/FFmpeg/include",
@@ -63,37 +64,7 @@
         "z",
         "bz2",
         "iconv"
-      ],
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ]
-      }
-    },
-    {
-      "name": "FFmpegEncoder",
-      "source_files": "NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}",
-      "public_header_files": "NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h",
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ],
-        "NHAVKit2/FFmpeg": [
-
-        ]
-      }
-    },
-    {
-      "name": "FFmpegDecoder",
-      "source_files": "NHAVKit2/Play/Decoder/FFmpeg/*.{h,m}",
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ],
-        "NHAVKit2/FFmpeg": [
-
-        ]
-      }
+      ]
     },
     {
       "name": "X26xLib",
@@ -109,9 +80,36 @@
         "z",
         "bz2",
         "iconv"
-      ],
+      ]
+    },
+    {
+      "name": "FFmpegEncoder",
+      "source_files": "NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}",
+      "public_header_files": "NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h",
       "dependencies": {
         "NHAVKit2/Baseic": [
+
+        ],
+        "NHAVKit2/FFmpegLib": [
+
+        ],
+        "NHAVKit2/Capture": [
+
+        ]
+      }
+    },
+    {
+      "name": "FFmpegDecoder",
+      "source_files": "NHAVKit2/Play/Decoder/FFmpeg/*.{h,m}",
+      "public_header_files": "NHAVKit2/Play/Decoder/FFmpeg/NHFFmpegPlayer.h",
+      "dependencies": {
+        "NHAVKit2/Baseic": [
+
+        ],
+        "NHAVKit2/FFmpegLib": [
+
+        ],
+        "NHAVKit2/Play": [
 
         ]
       }
@@ -134,6 +132,9 @@
         "NHAVKit2/Baseic": [
 
         ],
+        "NHAVKit2/FFmpegLib": [
+
+        ],
         "NHAVKit2/X26xLib": [
 
         ],
@@ -145,7 +146,12 @@
     {
       "name": "Play",
       "source_files": "NHAVKit2/Play/**/*.{h,m}",
-      "public_header_files": "NHAVKit2/Play/**/{NHFFmpegPlayer}.h",
+      "public_header_files": [
+        "NHAVKit2/Play/Decoder/*.h",
+        "NHAVKit2/Play/Common/{NHPlayerProtocol}.h",
+        "NHAVKit2/Play/Unit/{NHImageHandle}.h",
+        "NHAVKit2/Play/NHPlayKit.h"
+      ],
       "exclude_files": "NHAVKit2/Play/Decoder/FFmpeg/**/*.{h,m}",
       "resources": "NHAVKit2/Play/Library/NHPlay.bundle",
       "frameworks": [
@@ -169,6 +175,14 @@
         "NHAVKit2/Capture/**/*.{h,m}",
         "NHAVKit2/Capture/Library/GPUImage/Source/*.h",
         "NHAVKit2/Capture/Library/GPUImage/Source/iOS/*.{h,m}"
+      ],
+      "public_header_files": [
+        "NHAVKit2/Capture/Encoder/*.h",
+        "NHAVKit2/Capture/Filter/*.h",
+        "NHAVKit2/Capture/Library/GPUImage/Source/**/*.h",
+        "NHAVKit2/Capture/Common/NHCaptureSessionProtocol.h",
+        "NHAVKit2/Capture/Unit/{NHExportConfig,NHFrameImage,NHGifTool}.h",
+        "NHAVKit2/Capture/NHCaptureKit.h"
       ],
       "exclude_files": [
         "NHAVKit2/Capture/Encoder/FFmpeg/**/*.{h,m}",

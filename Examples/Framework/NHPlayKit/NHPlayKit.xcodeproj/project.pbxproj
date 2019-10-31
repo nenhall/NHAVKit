@@ -13,11 +13,11 @@
 		EE08A0C5236084970070DC88 /* NHAVKitTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0B8236084960070DC88 /* NHAVKitTimer.h */; };
 		EE08A0C6236084970070DC88 /* UIDevice+NHOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BA236084960070DC88 /* UIDevice+NHOrientation.h */; };
 		EE08A0C7236084970070DC88 /* NSObject+converTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BB236084960070DC88 /* NSObject+converTime.m */; };
-		EE08A0C8236084970070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BC236084960070DC88 /* NSString+time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0C8236084970070DC88 /* NSString+time.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BC236084960070DC88 /* NSString+time.h */; };
 		EE08A0C9236084970070DC88 /* NSTimer+NHAutoRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BD236084960070DC88 /* NSTimer+NHAutoRetain.m */; };
 		EE08A0CA236084970070DC88 /* UIDevice+NHOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0BE236084960070DC88 /* UIDevice+NHOrientation.m */; };
-		EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BF236084960070DC88 /* NSObject+converTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0C0236084960070DC88 /* NSTimer+NHAutoRetain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0BF236084960070DC88 /* NSObject+converTime.h */; };
+		EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0C0236084960070DC88 /* NSTimer+NHAutoRetain.h */; };
 		EE08A0CD236084970070DC88 /* NSString+time.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0C1236084960070DC88 /* NSString+time.m */; };
 		EE08A0D6236085150070DC88 /* NHFFmpegPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE08A0D0236085150070DC88 /* NHFFmpegPlayer.m */; };
 		EE08A0D7236085150070DC88 /* NHFFmpegPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0D1236085150070DC88 /* NHFFmpegPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +27,7 @@
 		EE08A0DB236085150070DC88 /* NHBasePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE08A0D5236085150070DC88 /* NHBasePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE698908235EDAC100E0D2A6 /* NHPlayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698906235EDAC100E0D2A6 /* NHPlayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE6989FE235EE39500E0D2A6 /* NHImageHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698954235EE39500E0D2A6 /* NHImageHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698956235EE39500E0D2A6 /* NHPlayerObserver.h */; };
 		EE698A01235EE39500E0D2A6 /* NHKVOOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = EE698957235EE39500E0D2A6 /* NHKVOOwner.h */; };
 		EE698A02235EE39500E0D2A6 /* NHImageHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698958235EE39500E0D2A6 /* NHImageHandle.m */; };
 		EE698A03235EE39500E0D2A6 /* NHKVOOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = EE698959235EE39500E0D2A6 /* NHKVOOwner.m */; };
@@ -728,14 +728,14 @@
 			files = (
 				EE08A0DB236085150070DC88 /* NHBasePlayer.h in Headers */,
 				EE08A0D7236085150070DC88 /* NHFFmpegPlayer.h in Headers */,
-				EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
-				EE08A0C8236084970070DC88 /* NSString+time.h in Headers */,
 				EE08A0D8236085150070DC88 /* NHAVPlayer.h in Headers */,
-				EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */,
-				EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */,
 				EE698A88235EE39500E0D2A6 /* NHPlayerProtocol.h in Headers */,
 				EE6989FE235EE39500E0D2A6 /* NHImageHandle.h in Headers */,
 				EE698A41235EE39500E0D2A6 /* aes.h in Headers */,
+				EE08A0CC236084970070DC88 /* NSTimer+NHAutoRetain.h in Headers */,
+				EE08A0C8236084970070DC88 /* NSString+time.h in Headers */,
+				EE08A0CB236084970070DC88 /* NSObject+converTime.h in Headers */,
+				EE698A00235EE39500E0D2A6 /* NHPlayerObserver.h in Headers */,
 				EE698A85235EE39500E0D2A6 /* NHPlayerPrivateProtocol.h in Headers */,
 				EE698A5D235EE39500E0D2A6 /* version.h in Headers */,
 				EE698A0E235EE39500E0D2A6 /* time.h in Headers */,

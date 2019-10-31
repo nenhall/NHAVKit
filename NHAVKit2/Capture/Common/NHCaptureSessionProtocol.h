@@ -15,6 +15,9 @@
 #define ENABLE_FFMPEG 1
 #endif
 
+#if __has_include(<x264.h>)
+#define ENABLE_X264 1
+#endif
 
 @class NHExportConfig;
 

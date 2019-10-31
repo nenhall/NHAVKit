@@ -9,22 +9,23 @@ PODS:
   - NHAVKit2/Baseic (0.0.1)
   - NHAVKit2/Capture (0.0.1):
     - NHAVKit2/Baseic
-  - NHAVKit2/FFmpeg (0.0.1):
-    - NHAVKit2/Baseic
   - NHAVKit2/FFmpegDecoder (0.0.1):
     - NHAVKit2/Baseic
-    - NHAVKit2/FFmpeg
+    - NHAVKit2/FFmpegLib
+    - NHAVKit2/Play
   - NHAVKit2/FFmpegEncoder (0.0.1):
     - NHAVKit2/Baseic
-    - NHAVKit2/FFmpeg
+    - NHAVKit2/Capture
+    - NHAVKit2/FFmpegLib
+  - NHAVKit2/FFmpegLib (0.0.1)
   - NHAVKit2/Play (0.0.1):
     - NHAVKit2/Baseic
   - NHAVKit2/X26xEncoder (0.0.1):
     - NHAVKit2/Baseic
     - NHAVKit2/FFmpegEncoder
+    - NHAVKit2/FFmpegLib
     - NHAVKit2/X26xLib
-  - NHAVKit2/X26xLib (0.0.1):
-    - NHAVKit2/Baseic
+  - NHAVKit2/X26xLib (0.0.1)
 
 DEPENDENCIES:
   - NHAVKit2 (from `../NHAVKit2.podspec`)
@@ -34,7 +35,7 @@ EXTERNAL SOURCES:
     :path: "../NHAVKit2.podspec"
 
 SPEC CHECKSUMS:
-  NHAVKit2: a435b250487db3af89b39493178eb92f690e0b55
+  NHAVKit2: f3d49bc9f2e8e116efcd46a00f8ba5f4e56ca11f
 
 PODFILE CHECKSUM: cdd65dd9c0716120e815767631185e16bed14904
 

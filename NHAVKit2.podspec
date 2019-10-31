@@ -30,12 +30,13 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Baseic' do |b|
     b.source_files        = 'NHAVKit2/Baseic/**/*.{h,m}'
-    # b.public_header_files = 'NHAVKit2/Baseic/**/*.h'
+    b.public_header_files = 'NHAVKit2/Baseic/**/*.h'
+    # b.private_header_files = 'NHAVKit2/Baseic/**/*.h'
     b.frameworks          = 'Foundation', 'UIKit'
     b.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>'
   end
   
-  spec.subspec 'FFmpeg' do |ff|
+  spec.subspec 'FFmpegLib' do |ff|
     ff.source_files        = 'NHAVKit2/Library/FFmpeg/include/**/*.h'
     ff.public_header_files = 'NHAVKit2/Library/FFmpeg/include/**/*.h'
     # ff.private_header_files = 'NHAVKit2/Library/FFmpeg/include/**/*.h'
@@ -43,32 +44,32 @@ Pod::Spec.new do |spec|
     ff.vendored_libraries  = 'NHAVKit2/Library/FFmpeg/lib/*.a'
     ff.frameworks = 'AVFoundation', 'VideoToolbox', 'AudioToolbox'
     ff.libraries  = 'z', 'bz2', 'iconv'
-    ff.dependency 'NHAVKit2/Baseic'
   end
   
-  spec.subspec 'FFmpegEncoder' do |fec|
-    fec.source_files = 'NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}'
-    fec.public_header_files = 'NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h'
-    # fec.private_header_files = 'NHAVKit2/Capture/Encoder/FFmpeg/{NHFFmpegSession}.h'
-    fec.dependency 'NHAVKit2/Baseic'
-    fec.dependency 'NHAVKit2/FFmpeg'
-  end
-  
-  spec.subspec 'FFmpegDecoder' do |fdc|
-    fdc.source_files = 'NHAVKit2/Play/Decoder/FFmpeg/*.{h,m}'
-    # fdc.public_header_files = 'NHAVKit2/Play/Decoder/FFmpeg/*.h'
-    fdc.dependency 'NHAVKit2/Baseic'
-    fdc.dependency 'NHAVKit2/FFmpeg'
-  end
-  
-  spec.subspec 'X26xLib' do |x|
+    spec.subspec 'X26xLib' do |x|
     x.source_files        = 'NHAVKit2/Library/x264/include/**/*.h'
     x.public_header_files = 'NHAVKit2/Library/x264/include/**/*.h'
     x.header_mappings_dir = 'NHAVKit2/Library/x264/include'
     x.vendored_libraries  = 'NHAVKit2/Library/x264/lib/*.a'
     x.frameworks = 'VideoToolbox', 'AudioToolbox'
     x.libraries  = 'z', 'bz2', 'iconv'
-    x.dependency 'NHAVKit2/Baseic'
+  end
+
+  spec.subspec 'FFmpegEncoder' do |fec|
+    fec.source_files = 'NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}'
+    fec.public_header_files = 'NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h'
+    # fec.private_header_files = 'NHAVKit2/Capture/Encoder/FFmpeg/{NHFFmpegSession}.h'
+    fec.dependency 'NHAVKit2/Baseic'
+    fec.dependency 'NHAVKit2/FFmpegLib'
+    fec.dependency 'NHAVKit2/Capture'
+  end
+  
+  spec.subspec 'FFmpegDecoder' do |fdc|
+    fdc.source_files = 'NHAVKit2/Play/Decoder/FFmpeg/*.{h,m}'
+    fdc.public_header_files = 'NHAVKit2/Play/Decoder/FFmpeg/NHFFmpegPlayer.h'
+    fdc.dependency 'NHAVKit2/Baseic'
+    fdc.dependency 'NHAVKit2/FFmpegLib'
+    fdc.dependency 'NHAVKit2/Play'
   end
 
   spec.subspec 'X26xEncoder' do |x26ec|
@@ -78,13 +79,19 @@ Pod::Spec.new do |spec|
     x26ec.frameworks = 'VideoToolbox', 'AudioToolbox'
     x26ec.libraries  = 'z', 'bz2', 'iconv'
     x26ec.dependency 'NHAVKit2/Baseic'
+    x26ec.dependency 'NHAVKit2/FFmpegLib'
     x26ec.dependency 'NHAVKit2/X26xLib'
     x26ec.dependency 'NHAVKit2/FFmpegEncoder'
   end
   
   spec.subspec 'Play' do |p|
     p.source_files  = 'NHAVKit2/Play/**/*.{h,m}'
-    p.public_header_files = 'NHAVKit2/Play/**/{NHFFmpegPlayer}.h'
+    p.public_header_files = [
+      'NHAVKit2/Play/Decoder/*.h',
+      'NHAVKit2/Play/Common/{NHPlayerProtocol}.h',
+      'NHAVKit2/Play/Unit/{NHImageHandle}.h',
+      'NHAVKit2/Play/NHPlayKit.h',
+    ]
     # p.private_header_files = 'NHAVKit2/Play/**/{NHFFmpegPlayer}.h'
     p.exclude_files = 'NHAVKit2/Play/Decoder/FFmpeg/**/*.{h,m}'
     p.resources  = 'NHAVKit2/Play/Library/NHPlay.bundle'
@@ -98,6 +105,14 @@ Pod::Spec.new do |spec|
       'NHAVKit2/Capture/**/*.{h,m}',
       'NHAVKit2/Capture/Library/GPUImage/Source/*.h',
       'NHAVKit2/Capture/Library/GPUImage/Source/iOS/*.{h,m}'
+    ]
+    c.public_header_files = [
+      'NHAVKit2/Capture/Encoder/*.h',
+      'NHAVKit2/Capture/Filter/*.h',
+      'NHAVKit2/Capture/Library/GPUImage/Source/**/*.h',
+      'NHAVKit2/Capture/Common/NHCaptureSessionProtocol.h',
+      'NHAVKit2/Capture/Unit/{NHExportConfig,NHFrameImage,NHGifTool}.h',
+      'NHAVKit2/Capture/NHCaptureKit.h',
     ]
     c.exclude_files = [
       'NHAVKit2/Capture/Encoder/FFmpeg/**/*.{h,m}',

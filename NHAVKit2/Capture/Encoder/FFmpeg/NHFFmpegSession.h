@@ -6,7 +6,6 @@
 //  Copyright © 2019 neghao. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "NHBeasSession.h"
 
 

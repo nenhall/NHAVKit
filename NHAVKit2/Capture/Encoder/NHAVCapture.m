@@ -7,29 +7,19 @@
 //
 
 #import "NHAVCapture.h"
-//#import <CoreVideo/CoreVideo.h>
-//#import "NHVideoConfiguration.h"
 #import "NHGPUImageView.h"
 #import "NHImageBeautifyFilter.h"
 #import "NHFrameImage.h"
 #import "NHCapturePrivate.h"
 
-#if __has_include("NHFFmpegSession.h")
+
+#ifdef ENABLE_FFMPEG
 #import "NHFFmpegSession.h"
 #endif
 
-#if __has_include("NHX264Manager.h")
+#ifdef ENABLE_X264
 #import "NHX264Manager.h"
 #endif
-
-#if __has_include("NHH264Encoder.h")
-#import "NHH264Encoder.h"
-#endif
-
-#if __has_include("NHWriteH264Stream.h")
-#import "NHWriteH264Stream.h"
-#endif
-
 
 
 typedef enum : NSUInteger {
@@ -52,15 +42,19 @@ GPUImageVideoCameraDelegate>
 @property (nonatomic, strong) AVCaptureAudioDataOutput *audioDataOutput;
 @property (nonatomic, strong) AVCaptureMovieFileOutput *moveFileOutput;
 @property (nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
-@property (nonatomic, strong) GPUImageStillCamera *gpuStillCamera;
-@property (nonatomic, strong) GPUImageMovieWriter *gpuMovieWriter;
-@property (nonatomic, strong) GPUImageMovie *gpuMovie;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic, strong) UITapGestureRecognizer *focusGesture;
 @property (nonatomic, weak  ) AVCaptureConnection *videoCaptureConnection;
 @property (nonatomic, weak  ) AVCaptureConnection *audioCaptureConnection;
+#ifdef ENABLE_X264
+@property (nonatomic, strong) NHX264Manager *x264Manger;
+#endif
+@property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
+@property (nonatomic, strong) GPUImageStillCamera *gpuStillCamera;
+@property (nonatomic, strong) GPUImageMovieWriter *gpuMovieWriter;
+@property (nonatomic, strong) GPUImageMovie *gpuMovie;
 @property (nonatomic, strong) NHGPUImageView *gpuImageView;
-//@property (nonatomic, strong) NHX264Manager *x264Manger;
+@property (nonatomic, strong) NHImageBeautifyFilter *beautifyFilter;
 @property (nonatomic, assign) NHCaptureType captureType;
 
 
@@ -69,13 +63,6 @@ GPUImageVideoCameraDelegate>
 
 @implementation NHAVCapture {
     dispatch_queue_t     _encodeQueue;
-    NHH264Encoder        *_x264Encoder;
-//    NHWriteH264Stream    *_writeH264Stream;
-//    NHVideoConfiguration *_videoConfiguration;
-    NHImageBeautifyFilter *_beautifyFilter;
-    GPUImageMovie        *_movieFile;
-    GPUImageMovieWriter  *_movieWriter;
-    GPUImageVideoCamera  *_videoCamera;
 }
 
 - (instancetype)init {
@@ -232,10 +219,10 @@ GPUImageVideoCameraDelegate>
 
 - (GPUImageStillCamera *)gpuStillCamera {
     if (!_gpuStillCamera) {
-        NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                  [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
-                                  kCVPixelBufferPixelFormatTypeKey,
-                                  nil];
+//        NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
+//                                  [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA],
+//                                  kCVPixelBufferPixelFormatTypeKey,
+//                                  nil];
         //        _gpuStillCamera.videoCaptureConnection.output.videoSettings = settings;
         _gpuStillCamera = [[GPUImageStillCamera alloc] initWithSessionPreset:_captureSessionPreset cameraPosition:_cameraPosition];
         _gpuStillCamera.outputImageOrientation = UIInterfaceOrientationPortrait;

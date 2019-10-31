@@ -1,1 +1,1 @@
-../../../../../NHAVKit2/Capture/Extension/NHCapturePrivate.h
+../../../../../NHAVKit2/Capture/Common/NHCapturePrivate.h

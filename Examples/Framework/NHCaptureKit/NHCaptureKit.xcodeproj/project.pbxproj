@@ -1108,7 +1108,6 @@
 				EE08A08623607EC40070DC88 /* NHAVCapture.m */,
 				EE08A08723607EC40070DC88 /* NHBeasSession.h */,
 				EE08A07E23607EC30070DC88 /* NHBeasSession.m */,
-				EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */,
 				EE08A08323607EC40070DC88 /* NHGPUImageView.h */,
 				EE08A08423607EC40070DC88 /* NHGPUImageView.m */,
 				EE08A05B23607E460070DC88 /* FFmpeg */,
@@ -1176,6 +1175,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		EE1FCA05236A9F4900DD992A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE08A07F23607EC30070DC88 /* NHCaptureSessionProtocol.h */,
+				EE6E359D236036D7003093E4 /* NHCapturePrivate.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EE42F802227687EC00F22E98 = {
 			isa = PBXGroup;
 			children = (
@@ -1228,6 +1236,7 @@
 		EEC32C7E235F1BAB0061C9D9 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				EE1FCA05236A9F4900DD992A /* Common */,
 				EEC32C8D235F1BAB0061C9D9 /* Extension */,
 				EEC32C88235F1BAB0061C9D9 /* Unit */,
 				EEC32C92235F1BAB0061C9D9 /* Library */,
@@ -1256,7 +1265,6 @@
 		EEC32C8D235F1BAB0061C9D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EE6E359D236036D7003093E4 /* NHCapturePrivate.h */,
 			);
 			path = Extension;
 			sourceTree = "<group>";

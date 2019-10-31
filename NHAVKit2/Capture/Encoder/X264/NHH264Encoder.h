@@ -14,8 +14,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class NHVideoConfiguration;
-
 @interface NHH264Encoder : NSObject <NHX264OutputProtocol>
 
 @property (nonatomic, strong) id<NHX264OutputProtocol> outputDelegate;
