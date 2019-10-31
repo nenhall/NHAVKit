@@ -26,10 +26,7 @@
   "default_subspecs": [
     "Baseic",
     "Play",
-    "Capture",
-    "FFmpegEncoder",
-    "FFmpegDecoder",
-    "X26xEncoder"
+    "Capture"
   ],
   "info_plist": {
     "NSCameraUsageDescription": "Use Camera",
@@ -50,119 +47,18 @@
       ]
     },
     {
-      "name": "FFmpegLib",
-      "source_files": "NHAVKit2/Library/FFmpeg/include/**/*.h",
-      "public_header_files": "NHAVKit2/Library/FFmpeg/include/**/*.h",
-      "header_mappings_dir": "NHAVKit2/Library/FFmpeg/include",
-      "vendored_libraries": "NHAVKit2/Library/FFmpeg/lib/*.a",
-      "frameworks": [
-        "AVFoundation",
-        "VideoToolbox",
-        "AudioToolbox"
-      ],
-      "libraries": [
-        "z",
-        "bz2",
-        "iconv"
-      ]
-    },
-    {
       "name": "X26xLib",
       "source_files": "NHAVKit2/Library/x264/include/**/*.h",
       "public_header_files": "NHAVKit2/Library/x264/include/**/*.h",
       "header_mappings_dir": "NHAVKit2/Library/x264/include",
-      "vendored_libraries": "NHAVKit2/Library/x264/lib/*.a",
-      "frameworks": [
-        "VideoToolbox",
-        "AudioToolbox"
-      ],
-      "libraries": [
-        "z",
-        "bz2",
-        "iconv"
-      ]
-    },
-    {
-      "name": "FFmpegEncoder",
-      "source_files": "NHAVKit2/Capture/Encoder/FFmpeg/*.{h,m}",
-      "public_header_files": "NHAVKit2/Capture/Encoder/FFmpeg/NHFFmpegSession.h",
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ],
-        "NHAVKit2/FFmpegLib": [
-
-        ],
-        "NHAVKit2/Capture": [
-
-        ]
-      }
-    },
-    {
-      "name": "FFmpegDecoder",
-      "source_files": "NHAVKit2/Play/Decoder/FFmpeg/*.{h,m}",
-      "public_header_files": "NHAVKit2/Play/Decoder/FFmpeg/NHFFmpegPlayer.h",
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ],
-        "NHAVKit2/FFmpegLib": [
-
-        ],
-        "NHAVKit2/Play": [
-
-        ]
-      }
-    },
-    {
-      "name": "X26xEncoder",
-      "source_files": "NHAVKit2/Capture/Encoder/X264/*.{h,m}",
-      "public_header_files": "NHAVKit2/Capture/Encoder/X264/NHX264Manager.h",
-      "private_header_files": "NHAVKit2/Capture/Encoder/X264/{NHH264Encoder,NHWriteH264Stream,NHX264OutputProtocol}.h",
-      "frameworks": [
-        "VideoToolbox",
-        "AudioToolbox"
-      ],
-      "libraries": [
-        "z",
-        "bz2",
-        "iconv"
-      ],
-      "dependencies": {
-        "NHAVKit2/Baseic": [
-
-        ],
-        "NHAVKit2/FFmpegLib": [
-
-        ],
-        "NHAVKit2/X26xLib": [
-
-        ],
-        "NHAVKit2/FFmpegEncoder": [
-
-        ]
-      }
+      "vendored_libraries": "NHAVKit2/Library/x264/lib/*.a"
     },
     {
       "name": "Play",
       "source_files": "NHAVKit2/Play/**/*.{h,m}",
-      "public_header_files": [
-        "NHAVKit2/Play/Decoder/*.h",
-        "NHAVKit2/Play/Common/{NHPlayerProtocol}.h",
-        "NHAVKit2/Play/Unit/{NHImageHandle}.h",
-        "NHAVKit2/Play/NHPlayKit.h"
-      ],
-      "exclude_files": "NHAVKit2/Play/Decoder/FFmpeg/**/*.{h,m}",
+      "public_header_files": "NHAVKit2/Play/**/*.h",
       "resources": "NHAVKit2/Play/Library/NHPlay.bundle",
-      "frameworks": [
-        "AVFoundation",
-        "VideoToolbox"
-      ],
-      "libraries": [
-        "z",
-        "bz2",
-        "iconv"
-      ],
+      "frameworks": "AVFoundation",
       "dependencies": {
         "NHAVKit2/Baseic": [
 
@@ -176,31 +72,22 @@
         "NHAVKit2/Capture/Library/GPUImage/Source/*.h",
         "NHAVKit2/Capture/Library/GPUImage/Source/iOS/*.{h,m}"
       ],
-      "public_header_files": [
-        "NHAVKit2/Capture/Encoder/*.h",
-        "NHAVKit2/Capture/Filter/*.h",
-        "NHAVKit2/Capture/Library/GPUImage/Source/**/*.h",
-        "NHAVKit2/Capture/Common/NHCaptureSessionProtocol.h",
-        "NHAVKit2/Capture/Unit/{NHExportConfig,NHFrameImage,NHGifTool}.h",
-        "NHAVKit2/Capture/NHCaptureKit.h"
-      ],
-      "exclude_files": [
-        "NHAVKit2/Capture/Encoder/FFmpeg/**/*.{h,m}",
-        "NHAVKit2/Capture/Encoder/X264/**/*.{h,m}"
-      ],
       "resources": "NHAVKit2/Capture/Library/GPUImage/Resources/*.png",
+      "public_header_files": [
+        "NHAVKit2/Capture/**/*.h",
+        "NHAVKit2/Capture/Library/GPUImage/Resources/*.png"
+      ],
       "frameworks": [
         "OpenGLES",
         "AVFoundation",
-        "VideoToolbox"
-      ],
-      "libraries": [
-        "z",
-        "bz2",
-        "iconv"
+        "VideoToolbox",
+        "AudioToolbox"
       ],
       "dependencies": {
         "NHAVKit2/Baseic": [
+
+        ],
+        "NHAVKit2/X26xLib": [
 
         ]
       }

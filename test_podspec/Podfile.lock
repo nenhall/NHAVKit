@@ -2,29 +2,13 @@ PODS:
   - NHAVKit2 (0.0.1):
     - NHAVKit2/Baseic (= 0.0.1)
     - NHAVKit2/Capture (= 0.0.1)
-    - NHAVKit2/FFmpegDecoder (= 0.0.1)
-    - NHAVKit2/FFmpegEncoder (= 0.0.1)
     - NHAVKit2/Play (= 0.0.1)
-    - NHAVKit2/X26xEncoder (= 0.0.1)
   - NHAVKit2/Baseic (0.0.1)
   - NHAVKit2/Capture (0.0.1):
     - NHAVKit2/Baseic
-  - NHAVKit2/FFmpegDecoder (0.0.1):
-    - NHAVKit2/Baseic
-    - NHAVKit2/FFmpegLib
-    - NHAVKit2/Play
-  - NHAVKit2/FFmpegEncoder (0.0.1):
-    - NHAVKit2/Baseic
-    - NHAVKit2/Capture
-    - NHAVKit2/FFmpegLib
-  - NHAVKit2/FFmpegLib (0.0.1)
+    - NHAVKit2/X26xLib
   - NHAVKit2/Play (0.0.1):
     - NHAVKit2/Baseic
-  - NHAVKit2/X26xEncoder (0.0.1):
-    - NHAVKit2/Baseic
-    - NHAVKit2/FFmpegEncoder
-    - NHAVKit2/FFmpegLib
-    - NHAVKit2/X26xLib
   - NHAVKit2/X26xLib (0.0.1)
 
 DEPENDENCIES:
@@ -35,8 +19,8 @@ EXTERNAL SOURCES:
     :path: "../NHAVKit2.podspec"
 
 SPEC CHECKSUMS:
-  NHAVKit2: f3d49bc9f2e8e116efcd46a00f8ba5f4e56ca11f
+  NHAVKit2: fd85de9eb6fa6a7c3c042665b72840136f23c7c4
 
-PODFILE CHECKSUM: cdd65dd9c0716120e815767631185e16bed14904
+PODFILE CHECKSUM: cf130c3b507f9cdc131c913653da16bbb3c52961
 
 COCOAPODS: 1.8.4

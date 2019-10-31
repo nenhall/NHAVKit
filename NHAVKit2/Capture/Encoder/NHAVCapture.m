@@ -13,14 +13,6 @@
 #import "NHCapturePrivate.h"
 
 
-#ifdef ENABLE_FFMPEG
-#import "NHFFmpegSession.h"
-#endif
-
-#ifdef ENABLE_X264
-#import "NHX264Manager.h"
-#endif
-
 
 typedef enum : NSUInteger {
     NHCaptureGPUImage,
@@ -46,9 +38,7 @@ GPUImageVideoCameraDelegate>
 @property (nonatomic, strong) UITapGestureRecognizer *focusGesture;
 @property (nonatomic, weak  ) AVCaptureConnection *videoCaptureConnection;
 @property (nonatomic, weak  ) AVCaptureConnection *audioCaptureConnection;
-#ifdef ENABLE_X264
-@property (nonatomic, strong) NHX264Manager *x264Manger;
-#endif
+//@property (nonatomic, strong) NHX264Manager *x264Manger;
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageStillCamera *gpuStillCamera;
 @property (nonatomic, strong) GPUImageMovieWriter *gpuMovieWriter;

@@ -4,12 +4,12 @@ source 'https://github.com/CocoaPods/Specs.git'
 #'Baseic', 'Play', 'Capture', 'FFmpegEncoder','FFmpegDecoder', 'X26xEncoder'
 
 target 'testpod' do
-  pod 'NHAVKit2', :path => '../NHAVKit2.podspec'
+ pod 'NHAVKit2', :path => '../NHAVKit2.podspec'
 #  pod 'NHAVKit2/Baseic', :path => '../NHAVKit2.podspec'
 #  pod 'NHAVKit2/Play', :path => '../NHAVKit2.podspec'
 #  pod 'NHAVKit2/Capture', :path => '../NHAVKit2.podspec'
 #  pod 'NHAVKit2/X26xEncoder', :path => '../NHAVKit2.podspec'
-#  pod 'NHAVKit2/FFmpegEncoder', :path => '../NHAVKit2.podspec'
+  # pod 'NHAVKit2/FFmpegEncoder', :path => '../NHAVKit2.podspec'
 #  pod 'NHAVKit2/FFmpegDecoder', :path => '../NHAVKit2.podspec'
 
   

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Framework/NHFFmpegDecoder/NHFFmpegDecoder.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Framework/NHFFmpegEncoder/NHFFmpegEncoder.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Framework/NHPlayKit/NHPlayKit.xcodeproj">
    </FileRef>
    <FileRef

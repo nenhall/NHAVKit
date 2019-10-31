@@ -1,1 +1,0 @@
-../../../../../NHAVKit2/Capture/Unit/NHVideoConfiguration.h

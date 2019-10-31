@@ -6,14 +6,15 @@
 //  Copyright © 2019 nenhall. All rights reserved.
 //
 
-#import "NHBasePlayer.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "NHImageHandle.h"
 #import "NHPlayerProtocol.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NHAVPlayer : NHBasePlayer
+@interface NHAVPlayer : NSObject
 
 /// 播放对象代理
 @property (nonatomic, weak) id<NHPlayerDelegate> delegate;
