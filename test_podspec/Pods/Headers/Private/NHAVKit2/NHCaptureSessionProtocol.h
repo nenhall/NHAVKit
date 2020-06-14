@@ -1,1 +1,0 @@
-../../../../../NHAVKit2/Capture/Common/NHCaptureSessionProtocol.h

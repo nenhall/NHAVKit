@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestObjective-C/TestObjective-C.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NHAVKitDemo/NHAVKitDemo.xcodeproj">
    </FileRef>
    <FileRef
