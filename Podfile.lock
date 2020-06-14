@@ -1,0 +1,71 @@
+PODS:
+  - Alamofire (5.0.5)
+  - Codextended (0.3.0)
+  - HandyJSON (5.0.2)
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (3.5.2)
+  - PermissionKit (1.1.0):
+    - PermissionKit/Core (= 1.1.0)
+  - PermissionKit/Core (1.1.0)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.5)
+  - Codextended (~> 0.3.0)
+  - HandyJSON
+  - IBAnimatable (~> 6.1.0)
+  - IQKeyboardManagerSwift (~> 6.5.5)
+  - Kingfisher (~> 5.13.3)
+  - Moya (~> 14.0.0)
+  - ObjectMapper (~> 3.5.2)
+  - PermissionKit (from `https://github.com/lixiang1994/PermissionKit.git`)
+  - SnapKit (~> 5.0.1)
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Codextended
+    - HandyJSON
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Moya
+    - ObjectMapper
+    - SnapKit
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  PermissionKit:
+    :git: https://github.com/lixiang1994/PermissionKit.git
+
+CHECKOUT OPTIONS:
+  PermissionKit:
+    :commit: 7fa00ff662070bad856e593004bc57ec3802f404
+    :git: https://github.com/lixiang1994/PermissionKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Codextended: f384271b8694376ad766ddbf2a011efbfdcee905
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  PermissionKit: 455c947483f02a9b7375051b8ca9d37afe27d017
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: b86d2b8e0b1108e4b989596d57001b8216e69991
+
+COCOAPODS: 1.9.1

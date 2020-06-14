@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NHAVKitDemo/NHAVKitDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHAVEditor/NHAVEditor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHCapture/NHCapture.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHPlayer/NHPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NHCocoa/NHCocoa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

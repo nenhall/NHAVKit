@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3D17AEEF366FDA99DF739C /* Pods_NHAVKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0545FE30E9914EE359B42F17 /* Pods_NHAVKitDemo.framework */; };
+		EEBCD2F724961AB20025C445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCD2F624961AB20025C445 /* AppDelegate.swift */; };
+		EEBCD2F924961AB20025C445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCD2F824961AB20025C445 /* SceneDelegate.swift */; };
+		EEBCD2FB24961AB20025C445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCD2FA24961AB20025C445 /* ViewController.swift */; };
+		EEBCD2FE24961AB20025C445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBCD2FC24961AB20025C445 /* Main.storyboard */; };
+		EEBCD30024961AB40025C445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBCD2FF24961AB40025C445 /* Assets.xcassets */; };
+		EEBCD30324961AB40025C445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBCD30124961AB40025C445 /* LaunchScreen.storyboard */; };
+		EEBCD30C24961B6D0025C445 /* NHAVEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCD30B24961B6D0025C445 /* NHAVEditor.framework */; };
+		EEBCD30E24961B6D0025C445 /* NHCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCD30D24961B6D0025C445 /* NHCapture.framework */; };
+		EEBCD31024961B6D0025C445 /* NHCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCD30F24961B6D0025C445 /* NHCocoa.framework */; };
+		EEBCD31224961B6D0025C445 /* NHPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCD31124961B6D0025C445 /* NHPlayer.framework */; };
+		EEBCD31424961B800025C445 /* NHAVEditor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEBCD30B24961B6D0025C445 /* NHAVEditor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEBCD31524961B800025C445 /* NHCapture.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEBCD30D24961B6D0025C445 /* NHCapture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEBCD31624961B800025C445 /* NHCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEBCD30F24961B6D0025C445 /* NHCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEBCD31724961B800025C445 /* NHPlayer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEBCD31124961B6D0025C445 /* NHPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEBCD31324961B740025C445 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEBCD31424961B800025C445 /* NHAVEditor.framework in CopyFiles */,
+				EEBCD31524961B800025C445 /* NHCapture.framework in CopyFiles */,
+				EEBCD31624961B800025C445 /* NHCocoa.framework in CopyFiles */,
+				EEBCD31724961B800025C445 /* NHPlayer.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0545FE30E9914EE359B42F17 /* Pods_NHAVKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHAVKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3548757052594AAC1D546247 /* Pods-NHAVKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-NHAVKitDemo/Pods-NHAVKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C6D9117096775C2D8C812A /* Pods-NHAVKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHAVKitDemo.release.xcconfig"; path = "Target Support Files/Pods-NHAVKitDemo/Pods-NHAVKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EEBCD2F324961AB20025C445 /* NHAVKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHAVKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBCD2F624961AB20025C445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEBCD2F824961AB20025C445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EEBCD2FA24961AB20025C445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEBCD2FD24961AB20025C445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEBCD2FF24961AB40025C445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBCD30224961AB40025C445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEBCD30424961AB40025C445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBCD30B24961B6D0025C445 /* NHAVEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHAVEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBCD30D24961B6D0025C445 /* NHCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBCD30F24961B6D0025C445 /* NHCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBCD31124961B6D0025C445 /* NHPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NHPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEBCD2F024961AB20025C445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBCD30C24961B6D0025C445 /* NHAVEditor.framework in Frameworks */,
+				EEBCD30E24961B6D0025C445 /* NHCapture.framework in Frameworks */,
+				EEBCD31024961B6D0025C445 /* NHCocoa.framework in Frameworks */,
+				EEBCD31224961B6D0025C445 /* NHPlayer.framework in Frameworks */,
+				EE3D17AEEF366FDA99DF739C /* Pods_NHAVKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F16BDCB97D6464383C7EB27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3548757052594AAC1D546247 /* Pods-NHAVKitDemo.debug.xcconfig */,
+				D3C6D9117096775C2D8C812A /* Pods-NHAVKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		EEBCD2EA24961AB20025C445 = {
+			isa = PBXGroup;
+			children = (
+				EEBCD2F524961AB20025C445 /* NHAVKitDemo */,
+				EEBCD2F424961AB20025C445 /* Products */,
+				EEBCD30A24961B6D0025C445 /* Frameworks */,
+				5F16BDCB97D6464383C7EB27 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EEBCD2F424961AB20025C445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCD2F324961AB20025C445 /* NHAVKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEBCD2F524961AB20025C445 /* NHAVKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCD2F624961AB20025C445 /* AppDelegate.swift */,
+				EEBCD2F824961AB20025C445 /* SceneDelegate.swift */,
+				EEBCD2FA24961AB20025C445 /* ViewController.swift */,
+				EEBCD2FC24961AB20025C445 /* Main.storyboard */,
+				EEBCD2FF24961AB40025C445 /* Assets.xcassets */,
+				EEBCD30124961AB40025C445 /* LaunchScreen.storyboard */,
+				EEBCD30424961AB40025C445 /* Info.plist */,
+			);
+			path = NHAVKitDemo;
+			sourceTree = "<group>";
+		};
+		EEBCD30A24961B6D0025C445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCD30B24961B6D0025C445 /* NHAVEditor.framework */,
+				EEBCD30D24961B6D0025C445 /* NHCapture.framework */,
+				EEBCD30F24961B6D0025C445 /* NHCocoa.framework */,
+				EEBCD31124961B6D0025C445 /* NHPlayer.framework */,
+				0545FE30E9914EE359B42F17 /* Pods_NHAVKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEBCD2F224961AB20025C445 /* NHAVKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBCD30724961AB40025C445 /* Build configuration list for PBXNativeTarget "NHAVKitDemo" */;
+			buildPhases = (
+				C7ED3F61216F6E225591FB97 /* [CP] Check Pods Manifest.lock */,
+				EEBCD2EF24961AB20025C445 /* Sources */,
+				EEBCD2F024961AB20025C445 /* Frameworks */,
+				EEBCD2F124961AB20025C445 /* Resources */,
+				EEBCD31324961B740025C445 /* CopyFiles */,
+				3A69BB8C34A4D64EA0E43A03 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHAVKitDemo;
+			productName = NHAVKitDemo;
+			productReference = EEBCD2F324961AB20025C445 /* NHAVKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEBCD2EB24961AB20025C445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = nenhall;
+				TargetAttributes = {
+					EEBCD2F224961AB20025C445 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EEBCD2EE24961AB20025C445 /* Build configuration list for PBXProject "NHAVKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEBCD2EA24961AB20025C445;
+			productRefGroup = EEBCD2F424961AB20025C445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEBCD2F224961AB20025C445 /* NHAVKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEBCD2F124961AB20025C445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBCD30324961AB40025C445 /* LaunchScreen.storyboard in Resources */,
+				EEBCD30024961AB40025C445 /* Assets.xcassets in Resources */,
+				EEBCD2FE24961AB20025C445 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A69BB8C34A4D64EA0E43A03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVKitDemo/Pods-NHAVKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHAVKitDemo/Pods-NHAVKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHAVKitDemo/Pods-NHAVKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7ED3F61216F6E225591FB97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NHAVKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEBCD2EF24961AB20025C445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBCD2FB24961AB20025C445 /* ViewController.swift in Sources */,
+				EEBCD2F724961AB20025C445 /* AppDelegate.swift in Sources */,
+				EEBCD2F924961AB20025C445 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEBCD2FC24961AB20025C445 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBCD2FD24961AB20025C445 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEBCD30124961AB40025C445 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBCD30224961AB40025C445 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEBCD30524961AB40025C445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEBCD30624961AB40025C445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEBCD30824961AB40025C445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3548757052594AAC1D546247 /* Pods-NHAVKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHAVKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.NHAVKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEBCD30924961AB40025C445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C6D9117096775C2D8C812A /* Pods-NHAVKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NHAVKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nenhall.NHAVKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEBCD2EE24961AB20025C445 /* Build configuration list for PBXProject "NHAVKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBCD30524961AB40025C445 /* Debug */,
+				EEBCD30624961AB40025C445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBCD30724961AB40025C445 /* Build configuration list for PBXNativeTarget "NHAVKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBCD30824961AB40025C445 /* Debug */,
+				EEBCD30924961AB40025C445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEBCD2EB24961AB20025C445 /* Project object */;
+}
